@@ -2,7 +2,9 @@ ECE544Project3
 Group Members:
 -Alex Beaulier
 -Erik Fox
--Project Description:
+
+
+Project Description:
 
 
 -List of Tasks:
