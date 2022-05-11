@@ -6,13 +6,8 @@ Project Description:
 
 
 List of Tasks:
--Erik:
-  -Build HW
-  -Build Embsys
-  -Create Pmod Peripheral and Drivers
--Alex:
-  -Control Application
-  -FreeRtos
+-Erik: Build HW; Build Embsys; Create Pmod Peripheral and Drivers
+-Alex: Control Application; FreeRtos
   
 Meeting 5/11/22 - Divide labor
 First Tasks: Saturday 5/14
