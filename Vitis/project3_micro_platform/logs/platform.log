@@ -1,0 +1,814 @@
+TRACE::2022-05-11.12:01:25::SCWPlatform::Trying to open the hw design at D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-11.12:01:25::SCWPlatform::DSA given D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-11.12:01:25::SCWPlatform::DSA absoulate path D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-11.12:01:28::SCWPlatform::DSA directory D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw
+TRACE::2022-05-11.12:01:28::SCWPlatform:: Platform Path D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-11.12:01:28::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-05-11.12:01:28::SCWPlatform::Do not have an existing db opened. 
+TRACE::2022-05-11.12:01:28::SCWPlatform::Opened new HwDB with name nexysA7fpga_0
+TRACE::2022-05-11.12:01:28::SCWWriter::formatted JSON is {
+	"platformName":	"project3_micro_platform",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"project3_micro_platform",
+	"platHandOff":	"D:/PortlandState/ECE_544/Labs/project_2/nexysA7fpga.xsa",
+	"platIntHandOff":	"<platformDir>/hw/nexysA7fpga.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	""
+}
+TRACE::2022-05-11.12:01:28::SCWWriter::formatted JSON is {
+	"platformName":	"project3_micro_platform",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"project3_micro_platform",
+	"platHandOff":	"D:/PortlandState/ECE_544/Labs/project_2/nexysA7fpga.xsa",
+	"platIntHandOff":	"<platformDir>/hw/nexysA7fpga.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"project3_micro_platform",
+	"systems":	[{
+			"systemName":	"project3_micro_platform",
+			"systemDesc":	"project3_micro_platform",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"project3_micro_platform"
+		}]
+}
+TRACE::2022-05-11.12:01:28::SCWPlatform::Boot application domains not present, creating them
+TRACE::2022-05-11.12:01:28::SCWPlatform::Pure FPGA device, no boot application will be created.
+TRACE::2022-05-11.12:01:28::SCWWriter::formatted JSON is {
+	"platformName":	"project3_micro_platform",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"project3_micro_platform",
+	"platHandOff":	"D:/PortlandState/ECE_544/Labs/project_2/nexysA7fpga.xsa",
+	"platIntHandOff":	"<platformDir>/hw/nexysA7fpga.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"project3_micro_platform",
+	"systems":	[{
+			"systemName":	"project3_micro_platform",
+			"systemDesc":	"project3_micro_platform",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"project3_micro_platform"
+		}]
+}
+TRACE::2022-05-11.12:01:28::SCWPlatform::Trying to open the hw design at D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-11.12:01:28::SCWPlatform::DSA given D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-11.12:01:28::SCWPlatform::DSA absoulate path D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-11.12:01:28::SCWPlatform::DSA directory D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw
+TRACE::2022-05-11.12:01:28::SCWPlatform:: Platform Path D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-11.12:01:28::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-05-11.12:01:28::SCWPlatform::Trying to set the existing hwdb with name nexysA7fpga_0
+TRACE::2022-05-11.12:01:28::SCWPlatform::Opened existing hwdb nexysA7fpga_0
+TRACE::2022-05-11.12:01:28::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-05-11.12:01:28::SCWDomain::checking for install qemu data   : 
+TRACE::2022-05-11.12:01:28::SCWPlatform::Trying to open the hw design at D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-11.12:01:28::SCWPlatform::DSA given D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-11.12:01:28::SCWPlatform::DSA absoulate path D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-11.12:01:28::SCWPlatform::DSA directory D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw
+TRACE::2022-05-11.12:01:28::SCWPlatform:: Platform Path D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-11.12:01:28::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-05-11.12:01:28::SCWPlatform::Trying to set the existing hwdb with name nexysA7fpga_0
+TRACE::2022-05-11.12:01:28::SCWPlatform::Opened existing hwdb nexysA7fpga_0
+TRACE::2022-05-11.12:01:28::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-05-11.12:01:28::SCWPlatform::Trying to open the hw design at D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-11.12:01:28::SCWPlatform::DSA given D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-11.12:01:28::SCWPlatform::DSA absoulate path D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-11.12:01:28::SCWPlatform::DSA directory D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw
+TRACE::2022-05-11.12:01:28::SCWPlatform:: Platform Path D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-11.12:01:28::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-05-11.12:01:28::SCWPlatform::Trying to set the existing hwdb with name nexysA7fpga_0
+TRACE::2022-05-11.12:01:28::SCWPlatform::Opened existing hwdb nexysA7fpga_0
+TRACE::2022-05-11.12:01:28::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-05-11.12:01:28::SCWPlatform::Trying to open the hw design at D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-11.12:01:28::SCWPlatform::DSA given D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-11.12:01:28::SCWPlatform::DSA absoulate path D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-11.12:01:28::SCWPlatform::DSA directory D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw
+TRACE::2022-05-11.12:01:28::SCWPlatform:: Platform Path D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-11.12:01:28::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-05-11.12:01:28::SCWPlatform::Trying to set the existing hwdb with name nexysA7fpga_0
+TRACE::2022-05-11.12:01:28::SCWPlatform::Opened existing hwdb nexysA7fpga_0
+TRACE::2022-05-11.12:01:28::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-05-11.12:01:28::SCWMssOS::Checking the sw design at  D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-05-11.12:01:28::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2022-05-11.12:01:28::SCWMssOS::No sw design opened at  D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-05-11.12:01:28::SCWMssOS::mss does not exists at D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-05-11.12:01:28::SCWMssOS::Creating sw design at  D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-05-11.12:01:28::SCWMssOS::Adding the swdes entry, created swdb D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/microblaze_0/standalone_domain/bsp/system.mss with des name D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-05-11.12:01:28::SCWMssOS::updating the scw layer changes to swdes at   D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-05-11.12:01:28::SCWMssOS::Writing mss at D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-05-11.12:01:28::SCWMssOS::Completed writing the mss file at D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/microblaze_0/standalone_domain/bsp
+TRACE::2022-05-11.12:01:28::SCWMssOS::Picking up changes from newly written mss file into SCW Layer. 
+TRACE::2022-05-11.12:01:28::SCWMssOS::Updated the changes from newly written mss file into SCW Layer. 
+TRACE::2022-05-11.12:01:28::SCWMssOS::Completed writing the mss file at D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/microblaze_0/standalone_domain/bsp
+TRACE::2022-05-11.12:01:28::SCWMssOS::Forcing BSP Sources regeneration.
+TRACE::2022-05-11.12:01:43::SCWMssOS::Saving the mss changes D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-05-11.12:01:43::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2022-05-11.12:01:43::SCWMssOS::Running validate of swdbs.
+KEYINFO::2022-05-11.12:01:43::SCWMssOS::Could not open the swdb for D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/microblaze_0/standalone_domain/bsp/system.mss
+KEYINFO::2022-05-11.12:01:43::SCWMssOS::Could not open the sw design at  D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/microblaze_0/standalone_domain/bsp/system.mss
+ERROR: [Hsi 55-1558] Software Design D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/microblaze_0/standalone_domain/bsp/system.mss is not found
+
+TRACE::2022-05-11.12:01:43::SCWMssOS::Cleared the swdb table entry
+TRACE::2022-05-11.12:01:43::SCWMssOS::Adding the swdes entry, mss present, able to open swdb D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/microblaze_0/standalone_domain/bsp/system.mss with des name system
+TRACE::2022-05-11.12:01:43::SCWMssOS::Writing the mss file completed D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-05-11.12:01:43::SCWMssOS::Commit changes completed.
+TRACE::2022-05-11.12:01:43::SCWPlatform::Trying to open the hw design at D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-11.12:01:43::SCWPlatform::DSA given D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-11.12:01:43::SCWPlatform::DSA absoulate path D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-11.12:01:43::SCWPlatform::DSA directory D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw
+TRACE::2022-05-11.12:01:43::SCWPlatform:: Platform Path D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-11.12:01:43::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-05-11.12:01:43::SCWPlatform::Trying to set the existing hwdb with name nexysA7fpga_0
+TRACE::2022-05-11.12:01:43::SCWPlatform::Opened existing hwdb nexysA7fpga_0
+TRACE::2022-05-11.12:01:43::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-05-11.12:01:43::SCWMssOS::Checking the sw design at  D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-05-11.12:01:43::SCWMssOS::DEBUG:  swdes dump  D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2022-05-11.12:01:43::SCWMssOS::Sw design exists and opened at  D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-05-11.12:01:43::SCWPlatform::Trying to open the hw design at D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-11.12:01:43::SCWPlatform::DSA given D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-11.12:01:43::SCWPlatform::DSA absoulate path D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-11.12:01:43::SCWPlatform::DSA directory D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw
+TRACE::2022-05-11.12:01:43::SCWPlatform:: Platform Path D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-11.12:01:43::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-05-11.12:01:43::SCWPlatform::Trying to set the existing hwdb with name nexysA7fpga_0
+TRACE::2022-05-11.12:01:43::SCWPlatform::Opened existing hwdb nexysA7fpga_0
+TRACE::2022-05-11.12:01:43::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-05-11.12:01:43::SCWMssOS::Checking the sw design at  D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-05-11.12:01:43::SCWMssOS::DEBUG:  swdes dump  D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2022-05-11.12:01:43::SCWMssOS::Sw design exists and opened at  D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-05-11.12:01:43::SCWPlatform::Trying to open the hw design at D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-11.12:01:43::SCWPlatform::DSA given D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-11.12:01:43::SCWPlatform::DSA absoulate path D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-11.12:01:43::SCWPlatform::DSA directory D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw
+TRACE::2022-05-11.12:01:43::SCWPlatform:: Platform Path D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-11.12:01:43::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-05-11.12:01:43::SCWPlatform::Trying to set the existing hwdb with name nexysA7fpga_0
+TRACE::2022-05-11.12:01:43::SCWPlatform::Opened existing hwdb nexysA7fpga_0
+TRACE::2022-05-11.12:01:43::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-05-11.12:01:43::SCWMssOS::Checking the sw design at  D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-05-11.12:01:43::SCWMssOS::DEBUG:  swdes dump  D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2022-05-11.12:01:43::SCWMssOS::Sw design exists and opened at  D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-05-11.12:01:43::SCWWriter::formatted JSON is {
+	"platformName":	"project3_micro_platform",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"project3_micro_platform",
+	"platHandOff":	"D:/PortlandState/ECE_544/Labs/project_2/nexysA7fpga.xsa",
+	"platIntHandOff":	"<platformDir>/hw/nexysA7fpga.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"project3_micro_platform",
+	"systems":	[{
+			"systemName":	"project3_micro_platform",
+			"systemDesc":	"project3_micro_platform",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"project3_micro_platform",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone_domain",
+					"domainDesc":	"standalone_domain",
+					"processors":	"microblaze_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.3",
+					"mssFile":	"",
+					"md5Digest":	"338a0e7c4511743c5a9925b72a40c762",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+LOG::2022-05-11.12:01:43::SCWPlatform::Started generating the artifacts platform project3_micro_platform
+TRACE::2022-05-11.12:01:43::SCWPlatform::Sanity checking of platform is completed
+LOG::2022-05-11.12:01:43::SCWPlatform::Started generating the artifacts for system configuration project3_micro_platform
+LOG::2022-05-11.12:01:43::SCWSystem::Checking the domain standalone_domain
+LOG::2022-05-11.12:01:43::SCWSystem::Not a boot domain 
+LOG::2022-05-11.12:01:43::SCWSystem::Started Processing the domain standalone_domain
+TRACE::2022-05-11.12:01:43::SCWDomain::Generating domain artifcats
+TRACE::2022-05-11.12:01:43::SCWMssOS::Generating standalone artifcats
+TRACE::2022-05-11.12:01:43::SCWMssOS:: Copying the user libraries. 
+TRACE::2022-05-11.12:01:43::SCWPlatform::Trying to open the hw design at D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-11.12:01:43::SCWPlatform::DSA given D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-11.12:01:43::SCWPlatform::DSA absoulate path D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-11.12:01:43::SCWPlatform::DSA directory D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw
+TRACE::2022-05-11.12:01:43::SCWPlatform:: Platform Path D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-11.12:01:43::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-05-11.12:01:43::SCWPlatform::Trying to set the existing hwdb with name nexysA7fpga_0
+TRACE::2022-05-11.12:01:43::SCWPlatform::Opened existing hwdb nexysA7fpga_0
+TRACE::2022-05-11.12:01:43::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-05-11.12:01:43::SCWMssOS::Checking the sw design at  D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-05-11.12:01:43::SCWMssOS::DEBUG:  swdes dump  D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2022-05-11.12:01:43::SCWMssOS::Sw design exists and opened at  D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-05-11.12:01:43::SCWMssOS::Completed writing the mss file at D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/microblaze_0/standalone_domain/bsp
+TRACE::2022-05-11.12:01:43::SCWMssOS::Mss edits present, copying mssfile into export location D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-05-11.12:01:43::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2022-05-11.12:01:43::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2022-05-11.12:01:43::SCWDomain::Skipping the build for domain :  standalone_domain
+TRACE::2022-05-11.12:01:43::SCWMssOS::skipping the bsp build ... 
+TRACE::2022-05-11.12:01:43::SCWMssOS::Copying to export directory.
+TRACE::2022-05-11.12:01:43::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2022-05-11.12:01:43::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+LOG::2022-05-11.12:01:43::SCWSystem::Completed Processing the domain standalone_domain
+LOG::2022-05-11.12:01:43::SCWSystem::Completed Processing the sysconfig project3_micro_platform
+LOG::2022-05-11.12:01:43::SCWPlatform::Completed generating the artifacts for system configuration project3_micro_platform
+TRACE::2022-05-11.12:01:43::SCWPlatform::Started preparing the platform 
+TRACE::2022-05-11.12:01:43::SCWSystem::Writing the bif file for system config project3_micro_platform
+TRACE::2022-05-11.12:01:43::SCWSystem::dir created 
+TRACE::2022-05-11.12:01:43::SCWSystem::Writing the bif 
+TRACE::2022-05-11.12:01:43::SCWPlatform::Started writing the spfm file 
+TRACE::2022-05-11.12:01:43::SCWPlatform::Started writing the xpfm file 
+TRACE::2022-05-11.12:01:43::SCWPlatform::Completed generating the platform
+TRACE::2022-05-11.12:01:43::SCWMssOS::Saving the mss changes D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-05-11.12:01:43::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2022-05-11.12:01:43::SCWMssOS::Completed writemss as part of save.
+TRACE::2022-05-11.12:01:43::SCWMssOS::Commit changes completed.
+TRACE::2022-05-11.12:01:43::SCWPlatform::Trying to open the hw design at D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-11.12:01:43::SCWPlatform::DSA given D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-11.12:01:43::SCWPlatform::DSA absoulate path D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-11.12:01:43::SCWPlatform::DSA directory D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw
+TRACE::2022-05-11.12:01:43::SCWPlatform:: Platform Path D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-11.12:01:43::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-05-11.12:01:43::SCWPlatform::Trying to set the existing hwdb with name nexysA7fpga_0
+TRACE::2022-05-11.12:01:43::SCWPlatform::Opened existing hwdb nexysA7fpga_0
+TRACE::2022-05-11.12:01:43::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-05-11.12:01:43::SCWMssOS::Checking the sw design at  D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-05-11.12:01:43::SCWMssOS::DEBUG:  swdes dump  D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2022-05-11.12:01:43::SCWMssOS::Sw design exists and opened at  D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-05-11.12:01:43::SCWPlatform::Trying to open the hw design at D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-11.12:01:43::SCWPlatform::DSA given D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-11.12:01:43::SCWPlatform::DSA absoulate path D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-11.12:01:43::SCWPlatform::DSA directory D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw
+TRACE::2022-05-11.12:01:43::SCWPlatform:: Platform Path D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-11.12:01:43::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-05-11.12:01:43::SCWPlatform::Trying to set the existing hwdb with name nexysA7fpga_0
+TRACE::2022-05-11.12:01:43::SCWPlatform::Opened existing hwdb nexysA7fpga_0
+TRACE::2022-05-11.12:01:43::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-05-11.12:01:43::SCWMssOS::Checking the sw design at  D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-05-11.12:01:43::SCWMssOS::DEBUG:  swdes dump  D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2022-05-11.12:01:43::SCWMssOS::Sw design exists and opened at  D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-05-11.12:01:43::SCWPlatform::Trying to open the hw design at D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-11.12:01:43::SCWPlatform::DSA given D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-11.12:01:43::SCWPlatform::DSA absoulate path D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-11.12:01:43::SCWPlatform::DSA directory D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw
+TRACE::2022-05-11.12:01:43::SCWPlatform:: Platform Path D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-11.12:01:43::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-05-11.12:01:43::SCWPlatform::Trying to set the existing hwdb with name nexysA7fpga_0
+TRACE::2022-05-11.12:01:43::SCWPlatform::Opened existing hwdb nexysA7fpga_0
+TRACE::2022-05-11.12:01:43::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-05-11.12:01:43::SCWMssOS::Checking the sw design at  D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-05-11.12:01:43::SCWMssOS::DEBUG:  swdes dump  D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2022-05-11.12:01:43::SCWMssOS::Sw design exists and opened at  D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-05-11.12:01:43::SCWWriter::formatted JSON is {
+	"platformName":	"project3_micro_platform",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"project3_micro_platform",
+	"platHandOff":	"D:/PortlandState/ECE_544/Labs/project_2/nexysA7fpga.xsa",
+	"platIntHandOff":	"<platformDir>/hw/nexysA7fpga.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"project3_micro_platform",
+	"systems":	[{
+			"systemName":	"project3_micro_platform",
+			"systemDesc":	"project3_micro_platform",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"project3_micro_platform",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone_domain",
+					"domainDesc":	"standalone_domain",
+					"processors":	"microblaze_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.3",
+					"mssFile":	"",
+					"md5Digest":	"338a0e7c4511743c5a9925b72a40c762",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2022-05-11.12:01:43::SCWPlatform::updated the xpfm file.
+TRACE::2022-05-11.12:01:43::SCWPlatform::Trying to open the hw design at D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-11.12:01:43::SCWPlatform::DSA given D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-11.12:01:43::SCWPlatform::DSA absoulate path D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-11.12:01:43::SCWPlatform::DSA directory D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw
+TRACE::2022-05-11.12:01:43::SCWPlatform:: Platform Path D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-11.12:01:43::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-05-11.12:01:43::SCWPlatform::Trying to set the existing hwdb with name nexysA7fpga_0
+TRACE::2022-05-11.12:01:43::SCWPlatform::Opened existing hwdb nexysA7fpga_0
+TRACE::2022-05-11.12:01:43::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-05-11.12:01:43::SCWMssOS::Checking the sw design at  D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-05-11.12:01:43::SCWMssOS::DEBUG:  swdes dump  D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2022-05-11.12:01:43::SCWMssOS::Sw design exists and opened at  D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-05-11.12:01:43::SCWMssOS::Saving the mss changes D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-05-11.12:01:43::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2022-05-11.12:01:43::SCWMssOS::Completed writemss as part of save.
+TRACE::2022-05-11.12:01:43::SCWMssOS::Commit changes completed.
+TRACE::2022-05-11.12:01:43::SCWPlatform::Trying to open the hw design at D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-11.12:01:43::SCWPlatform::DSA given D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-11.12:01:43::SCWPlatform::DSA absoulate path D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-11.12:01:43::SCWPlatform::DSA directory D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw
+TRACE::2022-05-11.12:01:43::SCWPlatform:: Platform Path D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-11.12:01:43::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-05-11.12:01:43::SCWPlatform::Trying to set the existing hwdb with name nexysA7fpga_0
+TRACE::2022-05-11.12:01:43::SCWPlatform::Opened existing hwdb nexysA7fpga_0
+TRACE::2022-05-11.12:01:43::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-05-11.12:01:43::SCWMssOS::Checking the sw design at  D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-05-11.12:01:43::SCWMssOS::DEBUG:  swdes dump  D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2022-05-11.12:01:43::SCWMssOS::Sw design exists and opened at  D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-05-11.12:01:43::SCWPlatform::Trying to open the hw design at D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-11.12:01:43::SCWPlatform::DSA given D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-11.12:01:43::SCWPlatform::DSA absoulate path D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-11.12:01:43::SCWPlatform::DSA directory D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw
+TRACE::2022-05-11.12:01:43::SCWPlatform:: Platform Path D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-11.12:01:43::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-05-11.12:01:43::SCWPlatform::Trying to set the existing hwdb with name nexysA7fpga_0
+TRACE::2022-05-11.12:01:43::SCWPlatform::Opened existing hwdb nexysA7fpga_0
+TRACE::2022-05-11.12:01:43::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-05-11.12:01:43::SCWMssOS::Checking the sw design at  D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-05-11.12:01:43::SCWMssOS::DEBUG:  swdes dump  D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2022-05-11.12:01:43::SCWMssOS::Sw design exists and opened at  D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-05-11.12:01:43::SCWPlatform::Trying to open the hw design at D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-11.12:01:43::SCWPlatform::DSA given D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-11.12:01:43::SCWPlatform::DSA absoulate path D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-11.12:01:43::SCWPlatform::DSA directory D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw
+TRACE::2022-05-11.12:01:43::SCWPlatform:: Platform Path D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-11.12:01:43::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-05-11.12:01:43::SCWPlatform::Trying to set the existing hwdb with name nexysA7fpga_0
+TRACE::2022-05-11.12:01:43::SCWPlatform::Opened existing hwdb nexysA7fpga_0
+TRACE::2022-05-11.12:01:43::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-05-11.12:01:43::SCWMssOS::Checking the sw design at  D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-05-11.12:01:43::SCWMssOS::DEBUG:  swdes dump  D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2022-05-11.12:01:43::SCWMssOS::Sw design exists and opened at  D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-05-11.12:01:43::SCWWriter::formatted JSON is {
+	"platformName":	"project3_micro_platform",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"project3_micro_platform",
+	"platHandOff":	"D:/PortlandState/ECE_544/Labs/project_2/nexysA7fpga.xsa",
+	"platIntHandOff":	"<platformDir>/hw/nexysA7fpga.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"project3_micro_platform",
+	"systems":	[{
+			"systemName":	"project3_micro_platform",
+			"systemDesc":	"project3_micro_platform",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"project3_micro_platform",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone_domain",
+					"domainDesc":	"standalone_domain",
+					"processors":	"microblaze_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.3",
+					"mssFile":	"",
+					"md5Digest":	"338a0e7c4511743c5a9925b72a40c762",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+TRACE::2022-05-11.12:01:43::SCWPlatform::Trying to open the hw design at D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-11.12:01:43::SCWPlatform::DSA given D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-11.12:01:43::SCWPlatform::DSA absoulate path D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-11.12:01:43::SCWPlatform::DSA directory D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw
+TRACE::2022-05-11.12:01:43::SCWPlatform:: Platform Path D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-11.12:01:43::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-05-11.12:01:43::SCWPlatform::Trying to set the existing hwdb with name nexysA7fpga_0
+TRACE::2022-05-11.12:01:43::SCWPlatform::Opened existing hwdb nexysA7fpga_0
+TRACE::2022-05-11.12:01:43::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-05-11.12:01:43::SCWMssOS::Checking the sw design at  D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-05-11.12:01:43::SCWMssOS::DEBUG:  swdes dump  D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2022-05-11.12:01:43::SCWMssOS::Sw design exists and opened at  D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-05-11.12:01:43::SCWPlatform::Trying to open the hw design at D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-11.12:01:43::SCWPlatform::DSA given D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-11.12:01:43::SCWPlatform::DSA absoulate path D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-11.12:01:43::SCWPlatform::DSA directory D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw
+TRACE::2022-05-11.12:01:44::SCWPlatform:: Platform Path D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-11.12:01:44::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-05-11.12:01:44::SCWPlatform::Trying to set the existing hwdb with name nexysA7fpga_0
+TRACE::2022-05-11.12:01:44::SCWPlatform::Opened existing hwdb nexysA7fpga_0
+TRACE::2022-05-11.12:01:44::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-05-11.12:01:44::SCWMssOS::Checking the sw design at  D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-05-11.12:01:44::SCWMssOS::DEBUG:  swdes dump  D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2022-05-11.12:01:44::SCWMssOS::Sw design exists and opened at  D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-05-11.12:01:44::SCWPlatform::Trying to open the hw design at D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-11.12:01:44::SCWPlatform::DSA given D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-11.12:01:44::SCWPlatform::DSA absoulate path D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-11.12:01:44::SCWPlatform::DSA directory D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw
+TRACE::2022-05-11.12:01:44::SCWPlatform:: Platform Path D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-11.12:01:44::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-05-11.12:01:44::SCWPlatform::Trying to set the existing hwdb with name nexysA7fpga_0
+TRACE::2022-05-11.12:01:44::SCWPlatform::Opened existing hwdb nexysA7fpga_0
+TRACE::2022-05-11.12:01:44::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-05-11.12:01:44::SCWMssOS::Checking the sw design at  D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-05-11.12:01:44::SCWMssOS::DEBUG:  swdes dump  D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2022-05-11.12:01:44::SCWMssOS::Sw design exists and opened at  D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-05-11.12:01:44::SCWMssOS::Saving the mss changes D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-05-11.12:01:44::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2022-05-11.12:01:44::SCWMssOS::Completed writemss as part of save.
+TRACE::2022-05-11.12:01:44::SCWMssOS::Commit changes completed.
+TRACE::2022-05-11.12:01:44::SCWPlatform::Trying to open the hw design at D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-11.12:01:44::SCWPlatform::DSA given D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-11.12:01:44::SCWPlatform::DSA absoulate path D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-11.12:01:44::SCWPlatform::DSA directory D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw
+TRACE::2022-05-11.12:01:44::SCWPlatform:: Platform Path D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-11.12:01:44::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-05-11.12:01:44::SCWPlatform::Trying to set the existing hwdb with name nexysA7fpga_0
+TRACE::2022-05-11.12:01:44::SCWPlatform::Opened existing hwdb nexysA7fpga_0
+TRACE::2022-05-11.12:01:44::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-05-11.12:01:44::SCWMssOS::Checking the sw design at  D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-05-11.12:01:44::SCWMssOS::DEBUG:  swdes dump  D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2022-05-11.12:01:44::SCWMssOS::Sw design exists and opened at  D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-05-11.12:01:44::SCWPlatform::Trying to open the hw design at D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-11.12:01:44::SCWPlatform::DSA given D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-11.12:01:44::SCWPlatform::DSA absoulate path D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-11.12:01:44::SCWPlatform::DSA directory D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw
+TRACE::2022-05-11.12:01:44::SCWPlatform:: Platform Path D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-11.12:01:44::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-05-11.12:01:44::SCWPlatform::Trying to set the existing hwdb with name nexysA7fpga_0
+TRACE::2022-05-11.12:01:44::SCWPlatform::Opened existing hwdb nexysA7fpga_0
+TRACE::2022-05-11.12:01:44::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-05-11.12:01:44::SCWMssOS::Checking the sw design at  D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-05-11.12:01:44::SCWMssOS::DEBUG:  swdes dump  D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2022-05-11.12:01:44::SCWMssOS::Sw design exists and opened at  D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-05-11.12:01:44::SCWPlatform::Trying to open the hw design at D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-11.12:01:44::SCWPlatform::DSA given D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-11.12:01:44::SCWPlatform::DSA absoulate path D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-11.12:01:44::SCWPlatform::DSA directory D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw
+TRACE::2022-05-11.12:01:44::SCWPlatform:: Platform Path D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-11.12:01:44::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-05-11.12:01:44::SCWPlatform::Trying to set the existing hwdb with name nexysA7fpga_0
+TRACE::2022-05-11.12:01:44::SCWPlatform::Opened existing hwdb nexysA7fpga_0
+TRACE::2022-05-11.12:01:44::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-05-11.12:01:44::SCWMssOS::Checking the sw design at  D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-05-11.12:01:44::SCWMssOS::DEBUG:  swdes dump  D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2022-05-11.12:01:44::SCWMssOS::Sw design exists and opened at  D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-05-11.12:01:44::SCWWriter::formatted JSON is {
+	"platformName":	"project3_micro_platform",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"project3_micro_platform",
+	"platHandOff":	"D:/PortlandState/ECE_544/Labs/project_2/nexysA7fpga.xsa",
+	"platIntHandOff":	"<platformDir>/hw/nexysA7fpga.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"project3_micro_platform",
+	"systems":	[{
+			"systemName":	"project3_micro_platform",
+			"systemDesc":	"project3_micro_platform",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"project3_micro_platform",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on microblaze_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"microblaze_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.3",
+					"mssFile":	"",
+					"md5Digest":	"338a0e7c4511743c5a9925b72a40c762",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+TRACE::2022-05-11.12:01:44::SCWMssOS::Saving the mss changes D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-05-11.12:01:44::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2022-05-11.12:01:44::SCWMssOS::Completed writemss as part of save.
+TRACE::2022-05-11.12:01:44::SCWMssOS::Commit changes completed.
+TRACE::2022-05-11.12:01:44::SCWPlatform::Trying to open the hw design at D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-11.12:01:44::SCWPlatform::DSA given D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-11.12:01:44::SCWPlatform::DSA absoulate path D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-11.12:01:44::SCWPlatform::DSA directory D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw
+TRACE::2022-05-11.12:01:44::SCWPlatform:: Platform Path D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-11.12:01:44::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-05-11.12:01:44::SCWPlatform::Trying to set the existing hwdb with name nexysA7fpga_0
+TRACE::2022-05-11.12:01:44::SCWPlatform::Opened existing hwdb nexysA7fpga_0
+TRACE::2022-05-11.12:01:44::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-05-11.12:01:44::SCWMssOS::Checking the sw design at  D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-05-11.12:01:44::SCWMssOS::DEBUG:  swdes dump  D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2022-05-11.12:01:44::SCWMssOS::Sw design exists and opened at  D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-05-11.12:01:44::SCWPlatform::Trying to open the hw design at D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-11.12:01:44::SCWPlatform::DSA given D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-11.12:01:44::SCWPlatform::DSA absoulate path D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-11.12:01:44::SCWPlatform::DSA directory D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw
+TRACE::2022-05-11.12:01:44::SCWPlatform:: Platform Path D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-11.12:01:44::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-05-11.12:01:44::SCWPlatform::Trying to set the existing hwdb with name nexysA7fpga_0
+TRACE::2022-05-11.12:01:44::SCWPlatform::Opened existing hwdb nexysA7fpga_0
+TRACE::2022-05-11.12:01:44::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-05-11.12:01:44::SCWMssOS::Checking the sw design at  D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-05-11.12:01:44::SCWMssOS::DEBUG:  swdes dump  D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2022-05-11.12:01:44::SCWMssOS::Sw design exists and opened at  D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-05-11.12:01:44::SCWPlatform::Trying to open the hw design at D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-11.12:01:44::SCWPlatform::DSA given D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-11.12:01:44::SCWPlatform::DSA absoulate path D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-11.12:01:44::SCWPlatform::DSA directory D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw
+TRACE::2022-05-11.12:01:44::SCWPlatform:: Platform Path D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-11.12:01:44::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-05-11.12:01:44::SCWPlatform::Trying to set the existing hwdb with name nexysA7fpga_0
+TRACE::2022-05-11.12:01:44::SCWPlatform::Opened existing hwdb nexysA7fpga_0
+TRACE::2022-05-11.12:01:44::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-05-11.12:01:44::SCWMssOS::Checking the sw design at  D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-05-11.12:01:44::SCWMssOS::DEBUG:  swdes dump  D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2022-05-11.12:01:44::SCWMssOS::Sw design exists and opened at  D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-05-11.12:01:44::SCWWriter::formatted JSON is {
+	"platformName":	"project3_micro_platform",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"project3_micro_platform",
+	"platHandOff":	"D:/PortlandState/ECE_544/Labs/project_2/nexysA7fpga.xsa",
+	"platIntHandOff":	"<platformDir>/hw/nexysA7fpga.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"project3_micro_platform",
+	"systems":	[{
+			"systemName":	"project3_micro_platform",
+			"systemDesc":	"project3_micro_platform",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"project3_micro_platform",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on microblaze_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"microblaze_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.3",
+					"mssFile":	"",
+					"md5Digest":	"338a0e7c4511743c5a9925b72a40c762",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+TRACE::2022-05-11.12:01:44::SCWPlatform::Clearing the existing platform
+TRACE::2022-05-11.12:01:44::SCWSystem::Clearing the existing sysconfig
+TRACE::2022-05-11.12:01:44::SCWMssOS::Removing the swdes entry for  D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-05-11.12:01:44::SCWSystem::Clearing the domains completed.
+TRACE::2022-05-11.12:01:44::SCWPlatform::Clearing the opened hw db.
+TRACE::2022-05-11.12:01:44::SCWPlatform::DSA given D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-11.12:01:44::SCWPlatform::DSA absoulate path D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-11.12:01:44::SCWPlatform:: Platform location is D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw
+TRACE::2022-05-11.12:01:44::SCWPlatform:: Platform Path D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-11.12:01:44::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-05-11.12:01:44::SCWPlatform::Removing the HwDB with name D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-11.12:01:44::SCWPlatform::Trying to open the hw design at D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-11.12:01:44::SCWPlatform::DSA given D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-11.12:01:44::SCWPlatform::DSA absoulate path D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-11.12:01:44::SCWPlatform::DSA directory D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw
+TRACE::2022-05-11.12:01:44::SCWPlatform:: Platform Path D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-11.12:01:44::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-05-11.12:01:44::SCWPlatform::Do not have an existing db opened. 
+TRACE::2022-05-11.12:01:45::SCWPlatform::Opened new HwDB with name nexysA7fpga_1
+TRACE::2022-05-11.12:01:45::SCWReader::Active system found as  project3_micro_platform
+TRACE::2022-05-11.12:01:45::SCWReader::Handling sysconfig project3_micro_platform
+TRACE::2022-05-11.12:01:45::SCWDomain::checking for install qemu data   : 
+TRACE::2022-05-11.12:01:45::SCWPlatform::Trying to open the hw design at D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-11.12:01:45::SCWPlatform::DSA given D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-11.12:01:45::SCWPlatform::DSA absoulate path D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-11.12:01:45::SCWPlatform::DSA directory D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw
+TRACE::2022-05-11.12:01:45::SCWPlatform:: Platform Path D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-11.12:01:45::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-05-11.12:01:45::SCWPlatform::Trying to set the existing hwdb with name nexysA7fpga_1
+TRACE::2022-05-11.12:01:45::SCWPlatform::Opened existing hwdb nexysA7fpga_1
+TRACE::2022-05-11.12:01:45::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-05-11.12:01:45::SCWPlatform::Trying to open the hw design at D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-11.12:01:45::SCWPlatform::DSA given D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-11.12:01:45::SCWPlatform::DSA absoulate path D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-11.12:01:45::SCWPlatform::DSA directory D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw
+TRACE::2022-05-11.12:01:45::SCWPlatform:: Platform Path D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-11.12:01:45::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-05-11.12:01:45::SCWPlatform::Trying to set the existing hwdb with name nexysA7fpga_1
+TRACE::2022-05-11.12:01:45::SCWPlatform::Opened existing hwdb nexysA7fpga_1
+TRACE::2022-05-11.12:01:45::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-05-11.12:01:45::SCWPlatform::Trying to open the hw design at D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-11.12:01:45::SCWPlatform::DSA given D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-11.12:01:45::SCWPlatform::DSA absoulate path D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-11.12:01:45::SCWPlatform::DSA directory D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw
+TRACE::2022-05-11.12:01:45::SCWPlatform:: Platform Path D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-11.12:01:45::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-05-11.12:01:45::SCWPlatform::Trying to set the existing hwdb with name nexysA7fpga_1
+TRACE::2022-05-11.12:01:45::SCWPlatform::Opened existing hwdb nexysA7fpga_1
+TRACE::2022-05-11.12:01:45::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-05-11.12:01:45::SCWPlatform::Trying to open the hw design at D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-11.12:01:45::SCWPlatform::DSA given D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-11.12:01:45::SCWPlatform::DSA absoulate path D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-11.12:01:45::SCWPlatform::DSA directory D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw
+TRACE::2022-05-11.12:01:45::SCWPlatform:: Platform Path D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-11.12:01:45::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-05-11.12:01:45::SCWPlatform::Trying to set the existing hwdb with name nexysA7fpga_1
+TRACE::2022-05-11.12:01:45::SCWPlatform::Opened existing hwdb nexysA7fpga_1
+TRACE::2022-05-11.12:01:45::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-05-11.12:01:45::SCWMssOS::Checking the sw design at  D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-05-11.12:01:45::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2022-05-11.12:01:45::SCWMssOS::No sw design opened at  D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-05-11.12:01:45::SCWMssOS::mss exists loading the mss file  D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-05-11.12:01:45::SCWMssOS::Opened the sw design from mss  D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-05-11.12:01:45::SCWMssOS::Adding the swdes entry D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/microblaze_0/standalone_domain/bsp/system.mss with des name system
+TRACE::2022-05-11.12:01:45::SCWMssOS::updating the scw layer about changes
+TRACE::2022-05-11.12:01:45::SCWMssOS::Opened the sw design.  D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-05-11.12:01:45::SCWMssOS::Saving the mss changes D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-05-11.12:01:45::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2022-05-11.12:01:45::SCWMssOS::Completed writemss as part of save.
+TRACE::2022-05-11.12:01:45::SCWMssOS::Commit changes completed.
+TRACE::2022-05-11.12:01:45::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2022-05-11.12:01:45::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2022-05-11.12:01:45::SCWPlatform::Trying to open the hw design at D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-11.12:01:45::SCWPlatform::DSA given D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-11.12:01:45::SCWPlatform::DSA absoulate path D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-11.12:01:45::SCWPlatform::DSA directory D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw
+TRACE::2022-05-11.12:01:45::SCWPlatform:: Platform Path D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-11.12:01:45::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-05-11.12:01:45::SCWPlatform::Trying to set the existing hwdb with name nexysA7fpga_1
+TRACE::2022-05-11.12:01:45::SCWPlatform::Opened existing hwdb nexysA7fpga_1
+TRACE::2022-05-11.12:01:45::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-05-11.12:01:45::SCWMssOS::Checking the sw design at  D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-05-11.12:01:45::SCWMssOS::DEBUG:  swdes dump  D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2022-05-11.12:01:45::SCWMssOS::Sw design exists and opened at  D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-05-11.12:01:45::SCWReader::No isolation master present  
+TRACE::2022-05-11.12:02:14::SCWPlatform::Clearing the existing platform
+TRACE::2022-05-11.12:02:14::SCWSystem::Clearing the existing sysconfig
+TRACE::2022-05-11.12:02:14::SCWMssOS::Removing the swdes entry for  D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2022-05-11.12:02:14::SCWSystem::Clearing the domains completed.
+TRACE::2022-05-11.12:02:14::SCWPlatform::Clearing the opened hw db.
+TRACE::2022-05-11.12:02:14::SCWPlatform::DSA given D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-11.12:02:14::SCWPlatform::DSA absoulate path D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-11.12:02:14::SCWPlatform:: Platform location is D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw
+TRACE::2022-05-11.12:02:14::SCWPlatform:: Platform Path D:/PortlandState/ECE_544/Labs/project_3/Vitis/project3_micro_platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-11.12:02:14::SCWPlatform:: Unique name xilinx:::0.0
