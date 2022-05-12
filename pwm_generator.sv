@@ -21,14 +21,11 @@ module pwm_generator(
 		    	else 
                 		begin
 			        	counter <= counter + 1'b1;
-                    			if(counter < duty_cycle )
-                        			begin
-                            				pwm_out <= '1;
-                        			end
-                    			else
+					if(counter >= duty_cycle )
                         			begin
                             				pwm_out <= '0;
                         			end
+
 		        	end
 	    	end
 endmodule
