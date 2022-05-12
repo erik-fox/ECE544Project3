@@ -16,7 +16,7 @@ module pwm_generator(
             		if ( !reset || counter == MAX_COUNT ) 
             			begin	 
 			        	counter <= '0;
-					pwm_out	<= '0;
+					pwm_out	<= '1;
 				end
 		    	else 
                 		begin
