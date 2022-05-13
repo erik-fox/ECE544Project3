@@ -1,35 +1,44 @@
 module tachometer(
+    input   logic           clock,
     input   logic           system_reset,
-    input   logic           timer_reset,
-    input   logic           timer_on,
-    input   logic           encoder_in,
-    output  logic           tachometer_ready,
     output  logic   [31:0]  data_out
 );
 
+
+    parameter  PERCENT_SECOND   = 1000;
+    parameter  CLOCK_FREQ       = 100000000;   
+    localparam NUM_CLOCKS       = CLOCK_FREQ/PERCENT_SECOND;
+
+    logic   [31:0]  counter;
     logic   [31:0]  pulse_counter;
 
-    always_ff @( posedge encoder_in)
+    always_ff @(posedge clock)
         begin
-            if(!system_reset || timer_reset ) 
+            if(!system_reset)  
                 begin
-                    pulse_counter       <= '0;
-                    data_out            <= '0;
-                    tachometer_ready    <= '1;
-                   
+                    counter <= '0;
                 end
             else
                 begin
-                    if(timer_on)
+                    counter <= counter + 1'b1;
+                    if(counter == NUM_CLOCKS)
                         begin
-                            pulse_counter       <= pulse_counter + 1'b1;
+                            counter     <= 0;
+                            data_out    <= pulse_counter;
                         end
-                    else
-                        begin
-                            tachometer_ready    <= '0;
-                            data_out            <= pulse_counter;
-                        end
+                end
+        end
 
+    always_ff @( posedge encoder_in ||  !system_reset)
+        begin
+            if(!system_reset) 
+                begin
+                    pulse_counter       <= '0;
+                    tachometer_ready    <= '1;
+                end
+            else
+                begin
+                    pulse_counter   <= pulse_counter + 1'b1;
                 end
         end
 
