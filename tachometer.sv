@@ -11,20 +11,25 @@ module tachometer(
 
     logic   [31:0]  counter;
     logic   [31:0]  pulse_counter;
+    logic   [31:0]  previous_pulse;
 
     always_ff @(posedge clock)
         begin
             if(!system_reset)  
                 begin
-                    counter <= '0;
+                    counter         <= '0;
+                    data_out        <= '0;
+                    previous_pulse  <= '0;
                 end
             else
                 begin
                     counter <= counter + 1'b1;
                     if(counter == NUM_CLOCKS)
                         begin
-                            counter     <= 0;
-                            data_out    <= pulse_counter;
+                            counter         <= 0;
+                            previous_pulse  <= pulse_counter;
+                            data_out        <= previous_pulse - pulse_counter;
+
                         end
                 end
         end
@@ -34,7 +39,6 @@ module tachometer(
             if(!system_reset) 
                 begin
                     pulse_counter       <= '0;
-                    tachometer_ready    <= '1;
                 end
             else
                 begin
