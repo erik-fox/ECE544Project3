@@ -28,7 +28,7 @@ module tachometer(
                         begin
                             counter         <= 0;
                             previous_pulse  <= pulse_counter;
-                            data_out        <= previous_pulse - pulse_counter;
+                            data_out        <= pulse_counter - previous_pulse;
 
                         end
                 end
