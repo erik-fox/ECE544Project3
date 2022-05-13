@@ -11,7 +11,7 @@ module pwm_generator(
 
 	logic	[31:0]	counter;
 
-	always_ff@(posedge clk) 
+	always_ff@(posedge clock) 
         	begin
             		if ( !reset || counter == MAX_COUNT ) 
             			begin	 
