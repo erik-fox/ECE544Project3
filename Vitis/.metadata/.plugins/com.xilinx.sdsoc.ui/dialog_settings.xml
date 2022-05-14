@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
-	<item key="sdx.custom.platform.repository.locations" value=""/>
-	<item key="sdx.custom.platform.repository.last.directory.dialog.location" value="D:\PortlandState\ECE_544\Labs\project_3\Vitis\project3_micro_platform\export\project3_micro_platform"/>
+	<item key="sdx.custom.platform.repository.locations" value="D:\PortlandState\ECE_544\Labs\project_3\Vitis\Project3_MBlaze_Platform\export\Project3_MBlaze_Platform"/>
+	<item key="sdx.custom.platform.repository.last.directory.dialog.location" value="D:\PortlandState\ECE_544\Labs\project_3\Vitis\Project3_MBlaze_Platform\export\Project3_MBlaze_Platform"/>
 </section>
