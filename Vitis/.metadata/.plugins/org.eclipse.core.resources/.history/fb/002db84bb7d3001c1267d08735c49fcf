@@ -804,7 +804,7 @@ void ENC_State_Update(){
 }
 
 void OLED_Update(){
-	if (OLED_updatelock == 2 | OLED_updatelock == 4) {//ENC or center button
+	if (OLED_updatelock == 2 | OLED_updatelock == 4) {
 		RGB_Combo  = OLEDrgb_BuildRGB(LED1_Red,LED1_Green,LED1_Blue);
 		fillColor = RGB_Combo;
 		linecolor = RGB_Combo;
@@ -817,7 +817,7 @@ void OLED_Update(){
 		OLEDrgb_SetCursor(&pmodOLEDrgb_inst, 7, 2);
 		PMDIO_putnum(&pmodOLEDrgb_inst,RPM_Target,10);
 	}
-	if(OLED_updatelock == 1){//Pshbtns pressed
+	if(OLED_updatelock == 1){
 		if (Kpid_current_state == KP){
 			OLEDrgb_SetCursor(&pmodOLEDrgb_inst, 4, 3);
 			OLEDrgb_PutString(&pmodOLEDrgb_inst,"    ");
@@ -836,6 +836,14 @@ void OLED_Update(){
 		}
 	}
 	if(OLED_updatelock == 4){ //Center button pressed
+		OLEDrgb_SetCursor(&pmodOLEDrgb_inst, 7, 1);
+		OLEDrgb_PutString(&pmodOLEDrgb_inst,"    ");
+		OLEDrgb_SetCursor(&pmodOLEDrgb_inst, 7, 1);
+		PMDIO_putnum(&pmodOLEDrgb_inst,RPM_Current,10);
+		OLEDrgb_SetCursor(&pmodOLEDrgb_inst, 7, 2);
+		OLEDrgb_PutString(&pmodOLEDrgb_inst,"    ");
+		OLEDrgb_SetCursor(&pmodOLEDrgb_inst, 7, 2);
+		PMDIO_putnum(&pmodOLEDrgb_inst,RPM_Target,10);
 		OLEDrgb_SetCursor(&pmodOLEDrgb_inst, 4, 3);
 		OLEDrgb_PutString(&pmodOLEDrgb_inst,"    ");
 		OLEDrgb_SetCursor(&pmodOLEDrgb_inst, 4, 3);
@@ -849,7 +857,7 @@ void OLED_Update(){
 		OLEDrgb_SetCursor(&pmodOLEDrgb_inst, 4, 5);
 		PMDIO_putnum(&pmodOLEDrgb_inst,Kd,5);
 	}
-	if(OLED_updatelock == 5){//Switches activated
+	if(OLED_updatelock == 5){
 		if (Kpid_current_state == KP){
 		OLEDrgb_SetCursor(&pmodOLEDrgb_inst, 7, 6);
 		OLEDrgb_PutString(&pmodOLEDrgb_inst,"Kp");

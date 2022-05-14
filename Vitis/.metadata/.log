@@ -10531,3 +10531,239 @@ Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-247: Laun
 
 !ENTRY com.xilinx.sdk.utils 0 0 2022-05-14 11:43:20.781
 !MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-247: Launching SystemDebugger_Project3_ApplicationMBlaze_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-14 11:54:50.972
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/PortlandState/ECE_544/Labs/project_3/Vitis/Project3_MBlaze_Platform/export/Project3_MBlaze_Platform/hw/nexysA7fpga.xsa D:/PortlandState/ECE_544/Labs/project_3/Vitis/Project3_MBlaze_Platform/export/Project3_MBlaze_Platform/sw/Project3_MBlaze_Platform/standalone_domain/system.mss ], Thread: Worker-260: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-14 11:54:50.976
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/PortlandState/ECE_544/Labs/project_3/Vitis/Project3_MBlaze_Platform/export/Project3_MBlaze_Platform/hw/nexysA7fpga.xsa D:/PortlandState/ECE_544/Labs/project_3/Vitis/Project3_MBlaze_Platform/export/Project3_MBlaze_Platform/sw/Project3_MBlaze_Platform/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-260: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-14 11:54:50.976
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/PortlandState/ECE_544/Labs/project_3/Vitis/Project3_MBlaze_Platform/export/Project3_MBlaze_Platform/hw/nexysA7fpga.xsa D:/PortlandState/ECE_544/Labs/project_3/Vitis/Project3_MBlaze_Platform/export/Project3_MBlaze_Platform/sw/Project3_MBlaze_Platform/standalone_domain/system.mss], Thread: Worker-260: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-14 11:54:50.979
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/PortlandState/ECE_544/Labs/project_3/Vitis/Project3_MBlaze_Platform/export/Project3_MBlaze_Platform/hw/nexysA7fpga.xsa D:/PortlandState/ECE_544/Labs/project_3/Vitis/Project3_MBlaze_Platform/export/Project3_MBlaze_Platform/sw/Project3_MBlaze_Platform/standalone_domain/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "7.3",
+}]. Thread: Worker-260: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2022-05-14 11:54:50.980
+!MESSAGE Generating MD5 hash for file: D:\PortlandState\ECE_544\Labs\project_3\Vitis\Project3_MBlaze_Platform\export\Project3_MBlaze_Platform\sw\Project3_MBlaze_Platform\standalone_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-14 11:54:50.981
+!MESSAGE XSCT Command: [::hsi::utils::closesw D:/PortlandState/ECE_544/Labs/project_3/Vitis/Project3_MBlaze_Platform/export/Project3_MBlaze_Platform/sw/Project3_MBlaze_Platform/standalone_domain/system.mss], Thread: Worker-260: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-14 11:54:50.983
+!MESSAGE XSCT command with result: [::hsi::utils::closesw D:/PortlandState/ECE_544/Labs/project_3/Vitis/Project3_MBlaze_Platform/export/Project3_MBlaze_Platform/sw/Project3_MBlaze_Platform/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-260: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-14 11:55:20.299
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/PortlandState/ECE_544/Labs/project_3/Vitis/Project3_MBlaze_Platform/export/Project3_MBlaze_Platform/hw/nexysA7fpga.xsa D:/PortlandState/ECE_544/Labs/project_3/Vitis/Project3_MBlaze_Platform/export/Project3_MBlaze_Platform/sw/Project3_MBlaze_Platform/standalone_domain/system.mss ], Thread: Worker-254: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-14 11:55:20.303
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/PortlandState/ECE_544/Labs/project_3/Vitis/Project3_MBlaze_Platform/export/Project3_MBlaze_Platform/hw/nexysA7fpga.xsa D:/PortlandState/ECE_544/Labs/project_3/Vitis/Project3_MBlaze_Platform/export/Project3_MBlaze_Platform/sw/Project3_MBlaze_Platform/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-254: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-14 11:55:20.304
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/PortlandState/ECE_544/Labs/project_3/Vitis/Project3_MBlaze_Platform/export/Project3_MBlaze_Platform/hw/nexysA7fpga.xsa D:/PortlandState/ECE_544/Labs/project_3/Vitis/Project3_MBlaze_Platform/export/Project3_MBlaze_Platform/sw/Project3_MBlaze_Platform/standalone_domain/system.mss], Thread: Worker-254: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-14 11:55:20.308
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/PortlandState/ECE_544/Labs/project_3/Vitis/Project3_MBlaze_Platform/export/Project3_MBlaze_Platform/hw/nexysA7fpga.xsa D:/PortlandState/ECE_544/Labs/project_3/Vitis/Project3_MBlaze_Platform/export/Project3_MBlaze_Platform/sw/Project3_MBlaze_Platform/standalone_domain/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "7.3",
+}]. Thread: Worker-254: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2022-05-14 11:55:20.308
+!MESSAGE Generating MD5 hash for file: D:\PortlandState\ECE_544\Labs\project_3\Vitis\Project3_MBlaze_Platform\export\Project3_MBlaze_Platform\sw\Project3_MBlaze_Platform\standalone_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-14 11:55:20.309
+!MESSAGE XSCT Command: [::hsi::utils::closesw D:/PortlandState/ECE_544/Labs/project_3/Vitis/Project3_MBlaze_Platform/export/Project3_MBlaze_Platform/sw/Project3_MBlaze_Platform/standalone_domain/system.mss], Thread: Worker-254: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-14 11:55:20.311
+!MESSAGE XSCT command with result: [::hsi::utils::closesw D:/PortlandState/ECE_544/Labs/project_3/Vitis/Project3_MBlaze_Platform/export/Project3_MBlaze_Platform/sw/Project3_MBlaze_Platform/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-254: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-14 11:55:22.492
+!MESSAGE XSCT Command: [disconnect tcfchan#30], Thread: Thread-4105
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-14 11:55:22.499
+!MESSAGE XSCT command with result: [disconnect tcfchan#30], Result: [null, ]. Thread: Thread-4105
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-14 11:55:22.651
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-248: Launching SystemDebugger_Project3_ApplicationMBlaze_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-14 11:55:22.657
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#31]. Thread: Worker-248: Launching SystemDebugger_Project3_ApplicationMBlaze_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-14 11:55:22.658
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-248: Launching SystemDebugger_Project3_ApplicationMBlaze_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-14 11:55:22.671
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Nexys A7 -100T 210292B17F4AA]. Thread: Worker-248: Launching SystemDebugger_Project3_ApplicationMBlaze_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-14 11:55:22.671
+!MESSAGE XSCT Command: [version -server], Thread: Worker-248: Launching SystemDebugger_Project3_ApplicationMBlaze_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-14 11:55:22.673
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2020.2]. Thread: Worker-248: Launching SystemDebugger_Project3_ApplicationMBlaze_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-14 11:55:22.674
+!MESSAGE XSCT Command: [version], Thread: Worker-248: Launching SystemDebugger_Project3_ApplicationMBlaze_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-14 11:55:22.674
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2020.2
+SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-248: Launching SystemDebugger_Project3_ApplicationMBlaze_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-14 11:55:22.675
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-248: Launching SystemDebugger_Project3_ApplicationMBlaze_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-14 11:55:22.681
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Nexys A7 -100T 210292B17F4AA]. Thread: Worker-248: Launching SystemDebugger_Project3_ApplicationMBlaze_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-14 11:55:22.682
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292B17F4AA" && level==1}], Thread: Worker-248: Launching SystemDebugger_Project3_ApplicationMBlaze_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-14 11:55:22.710
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292B17F4AA" && level==1}], Result: [null,      2  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: Worker-248: Launching SystemDebugger_Project3_ApplicationMBlaze_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-14 11:55:22.711
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-248: Launching SystemDebugger_Project3_ApplicationMBlaze_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-14 11:55:22.719
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Nexys A7 -100T 210292B17F4AA]. Thread: Worker-248: Launching SystemDebugger_Project3_ApplicationMBlaze_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-14 11:55:22.720
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292B17F4AA" && level==1}], Thread: Worker-248: Launching SystemDebugger_Project3_ApplicationMBlaze_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-14 11:55:22.746
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292B17F4AA" && level==1}], Result: [null,      2  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: Worker-248: Launching SystemDebugger_Project3_ApplicationMBlaze_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-14 11:55:22.747
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-248: Launching SystemDebugger_Project3_ApplicationMBlaze_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-14 11:55:22.756
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Nexys A7 -100T 210292B17F4AA]. Thread: Worker-248: Launching SystemDebugger_Project3_ApplicationMBlaze_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-14 11:55:22.756
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292B17F4AA" && level==1}], Thread: Worker-248: Launching SystemDebugger_Project3_ApplicationMBlaze_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-14 11:55:22.784
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292B17F4AA" && level==1}], Result: [null,      2  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: Worker-248: Launching SystemDebugger_Project3_ApplicationMBlaze_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-14 11:55:22.784
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-248: Launching SystemDebugger_Project3_ApplicationMBlaze_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-14 11:55:22.794
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Nexys A7 -100T 210292B17F4AA]. Thread: Worker-248: Launching SystemDebugger_Project3_ApplicationMBlaze_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-14 11:55:22.794
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292B17F4AA" && level==1}], Thread: Worker-248: Launching SystemDebugger_Project3_ApplicationMBlaze_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-14 11:55:22.817
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292B17F4AA" && level==1}], Result: [null,      2  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: Worker-248: Launching SystemDebugger_Project3_ApplicationMBlaze_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-14 11:55:22.818
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-248: Launching SystemDebugger_Project3_ApplicationMBlaze_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-14 11:55:22.826
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Nexys A7 -100T 210292B17F4AA]. Thread: Worker-248: Launching SystemDebugger_Project3_ApplicationMBlaze_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-14 11:55:22.827
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292B17F4AA" && level==1}], Thread: Worker-248: Launching SystemDebugger_Project3_ApplicationMBlaze_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-14 11:55:22.852
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292B17F4AA" && level==1}], Result: [null,      2  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: Worker-248: Launching SystemDebugger_Project3_ApplicationMBlaze_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-14 11:55:22.852
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Nexys A7 -100T 210292B17F4AA" && level == 0}], Thread: Worker-248: Launching SystemDebugger_Project3_ApplicationMBlaze_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-14 11:55:22.873
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Nexys A7 -100T 210292B17F4AA" && level == 0}], Result: [null, ]. Thread: Worker-248: Launching SystemDebugger_Project3_ApplicationMBlaze_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-14 11:55:22.874
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-248: Launching SystemDebugger_Project3_ApplicationMBlaze_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-14 11:55:22.875
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-248: Launching SystemDebugger_Project3_ApplicationMBlaze_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-14 11:55:22.894
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-14 11:55:22.902
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Nexys A7 -100T 210292B17F4AA]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-14 11:55:22.902
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292B17F4AA" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-14 11:55:22.926
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292B17F4AA" && level==1}], Result: [null,      2  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-14 11:55:22.927
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292B17F4AA" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292B17F4AA-13631093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-14 11:55:22.973
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292B17F4AA" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292B17F4AA-13631093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-14 11:55:22.973
+!MESSAGE XSCT Command: [fpga -file D:/PortlandState/ECE_544/Labs/project_3/Vitis/Project3_ApplicationMBlaze/_ide/bitstream/nexysA7fpga.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-14 11:55:25.171
+!MESSAGE XSCT command with result: [fpga -file D:/PortlandState/ECE_544/Labs/project_3/Vitis/Project3_ApplicationMBlaze/_ide/bitstream/nexysA7fpga.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-14 11:55:25.203
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-248: Launching SystemDebugger_Project3_ApplicationMBlaze_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-14 11:55:25.232
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-248: Launching SystemDebugger_Project3_ApplicationMBlaze_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-14 11:55:25.233
+!MESSAGE XSCT Command: [loadhw -hw D:/PortlandState/ECE_544/Labs/project_3/Vitis/Project3_MBlaze_Platform/export/Project3_MBlaze_Platform/hw/nexysA7fpga.xsa -regs], Thread: Worker-248: Launching SystemDebugger_Project3_ApplicationMBlaze_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-14 11:55:25.246
+!MESSAGE XSCT command with result: [loadhw -hw D:/PortlandState/ECE_544/Labs/project_3/Vitis/Project3_MBlaze_Platform/export/Project3_MBlaze_Platform/hw/nexysA7fpga.xsa -regs], Result: [null, nexysA7fpga_6]. Thread: Worker-248: Launching SystemDebugger_Project3_ApplicationMBlaze_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-14 11:55:25.246
+!MESSAGE XSCT Command: [configparams mdm-detect-bscan-mask 2], Thread: Worker-248: Launching SystemDebugger_Project3_ApplicationMBlaze_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-14 11:55:25.248
+!MESSAGE XSCT command with result: [configparams mdm-detect-bscan-mask 2], Result: [null, ]. Thread: Worker-248: Launching SystemDebugger_Project3_ApplicationMBlaze_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-14 11:55:25.249
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-248: Launching SystemDebugger_Project3_ApplicationMBlaze_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-14 11:55:25.270
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-248: Launching SystemDebugger_Project3_ApplicationMBlaze_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-14 11:55:25.271
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-248: Launching SystemDebugger_Project3_ApplicationMBlaze_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-14 11:55:25.275
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-248: Launching SystemDebugger_Project3_ApplicationMBlaze_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-14 11:55:25.276
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-248: Launching SystemDebugger_Project3_ApplicationMBlaze_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-14 11:55:28.288
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-248: Launching SystemDebugger_Project3_ApplicationMBlaze_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-14 11:55:28.289
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-248: Launching SystemDebugger_Project3_ApplicationMBlaze_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-14 11:55:28.308
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-248: Launching SystemDebugger_Project3_ApplicationMBlaze_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-14 11:55:28.308
+!MESSAGE XSCT Command: [dow D:/PortlandState/ECE_544/Labs/project_3/Vitis/Project3_ApplicationMBlaze/Debug/Project3_ApplicationMBlaze.elf], Thread: Worker-248: Launching SystemDebugger_Project3_ApplicationMBlaze_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-14 11:55:28.491
+!MESSAGE XSCT command with result: [dow D:/PortlandState/ECE_544/Labs/project_3/Vitis/Project3_ApplicationMBlaze/Debug/Project3_ApplicationMBlaze.elf], Result: [null, ]. Thread: Worker-248: Launching SystemDebugger_Project3_ApplicationMBlaze_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-14 11:55:28.585
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-248: Launching SystemDebugger_Project3_ApplicationMBlaze_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-14 11:55:28.654
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-248: Launching SystemDebugger_Project3_ApplicationMBlaze_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-14 11:55:28.655
+!MESSAGE XSCT Command: [con], Thread: Worker-248: Launching SystemDebugger_Project3_ApplicationMBlaze_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-14 11:55:28.915
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-248: Launching SystemDebugger_Project3_ApplicationMBlaze_system
