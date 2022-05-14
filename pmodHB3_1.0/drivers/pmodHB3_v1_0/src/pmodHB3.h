@@ -5,12 +5,21 @@
 
 /****************** Include Files ********************/
 #include "xil_types.h"
+#include "xil_io.h"
 #include "xstatus.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <stdint.h>
+#include "microblaze_sleep.h"
 
 #define PMODHB3_S00_AXI_SLV_REG0_OFFSET 0
 #define PMODHB3_S00_AXI_SLV_REG1_OFFSET 4
 #define PMODHB3_S00_AXI_SLV_REG2_OFFSET 8
 #define PMODHB3_S00_AXI_SLV_REG3_OFFSET 12
+#define DIR_BIT_MASK 0x80000000
+#define PWM_BIT_MASK 0x7FFFFFFF
+#define FORWARD 1
+#define BACKWARD 0
 
 
 /**************************** Type Definitions *****************************/

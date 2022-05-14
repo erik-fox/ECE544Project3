@@ -49,11 +49,20 @@ XStatus PMODHB3_Reg_SelfTest(void * baseaddr_p)
 	for (write_loop_index = 0 ; write_loop_index < 4; write_loop_index++)
 	  PMODHB3_mWriteReg (baseaddr, write_loop_index*4, (write_loop_index+1)*READ_WRITE_MUL_FACTOR);
 	for (read_loop_index = 0 ; read_loop_index < 4; read_loop_index++)
-	  if ( PMODHB3_mReadReg (baseaddr, read_loop_index*4) != (read_loop_index+1)*READ_WRITE_MUL_FACTOR){
-	    xil_printf ("Error reading register value at address %x\n", (int)baseaddr + read_loop_index*4);
-	    return XST_FAILURE;
-	  }
-
+	{
+		// slave register 1 (Tachometer) is a read-only register so skip it
+		if (read_loop_index == 1) 
+		{
+			continue;
+		}
+		else
+		{
+			if ( PMODHB3_mReadReg (baseaddr, read_loop_index*4) != (read_loop_index+1)*READ_WRITE_MUL_FACTOR){
+				xil_printf ("Error reading register value at address %x\n", (int)baseaddr + read_loop_index*4);
+				return XST_FAILURE;
+			}
+		}
+	}
 	xil_printf("   - slave register write/read passed\n\n\r");
 
 	return XST_SUCCESS;
