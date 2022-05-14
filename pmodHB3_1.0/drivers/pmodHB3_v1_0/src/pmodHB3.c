@@ -4,12 +4,6 @@
 #include "pmodHB3.h"
 u32 PMODHB3_BaseAddress;
 /************************** Function Definitions ***************************/
-//Functions
-
-
-//change direction
-// set speed
-
 
 int PMODHB3_initialize(u32 BaseAddr)
 {
@@ -54,7 +48,7 @@ void PMODHB3_setDIR(bool direction)
     current_state = PMODHB3_getPWM() ;
     old_direction = current_state & DIR_BIT_MASK;
     old_pwm = current_state & PWM_BIT_MASK;
-    NEXYS4IO_mWriteReg(PMODHB3_BaseAddress, PMODHB3_S00_AXI_SLV_REG0_OFFSET, old_direction & DIR_BIT_MASK);
+    NEXYS4IO_mWriteReg(PMODHB3_BaseAddress, PMODHB3_S00_AXI_SLV_REG0_OFFSET, old_direction );
     usleep(1000);
     if(direction == FORWARD)
     {
