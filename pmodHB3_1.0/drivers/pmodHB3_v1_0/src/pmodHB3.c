@@ -52,12 +52,15 @@ void PMODHB3_setDIR(bool direction)
     usleep(1000);
     if(direction == FORWARD)
     {
+        NEXYS4IO_mWriteReg(PMODHB3_BaseAddress, PMODHB3_S00_AXI_SLV_REG0_OFFSET, DIR_BIT_MASK );
         next_state = DIR_BIT_MASK | old_pwm;
     }
     else
     {
-        next_state = old_pwm; 
+        NEXYS4IO_mWriteReg(PMODHB3_BaseAddress, PMODHB3_S00_AXI_SLV_REG0_OFFSET, 0x00000000 );
+        next_state = old_pwm & PWM_BIT_MASK; 
     }
-	
+	usleep(1000);
 	NEXYS4IO_mWriteReg(PMODHB3_BaseAddress, PMODHB3_S00_AXI_SLV_REG0_OFFSET, next_state);
 }
+
