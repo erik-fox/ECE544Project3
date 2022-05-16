@@ -1,7 +1,7 @@
 
-
 /***************************** Include Files *******************************/
 #include "pmodHB3.h"
+
 u32 PMODHB3_BaseAddress;
 /************************** Function Definitions ***************************/
 
@@ -40,7 +40,7 @@ void PMODHB3_setPWM(u32 pwmvalue)
     current_state = PMODHB3_getPWM();
     next_state = current_state & DIR_BIT_MASK; // if the msb in current state is 1 next_state will be 0x80000000, if 0 next_state will be 0x00000000,
 	next_state = pwmvalue + next_state;//add old direction bit to new pwm value to keep direction the same
-	NEXYS4IO_mWriteReg(PMODHB3_BaseAddress, PMODHB3_S00_AXI_SLV_REG0_OFFSET, next_state);
+	PMODHB3_mWriteReg(PMODHB3_BaseAddress, PMODHB3_S00_AXI_SLV_REG0_OFFSET, next_state);
 }
 void PMODHB3_setDIR(bool direction)
 {
@@ -48,19 +48,19 @@ void PMODHB3_setDIR(bool direction)
     current_state = PMODHB3_getPWM() ;
     old_direction = current_state & DIR_BIT_MASK;
     old_pwm = current_state & PWM_BIT_MASK;
-    NEXYS4IO_mWriteReg(PMODHB3_BaseAddress, PMODHB3_S00_AXI_SLV_REG0_OFFSET, old_direction );
+    PMODHB3_mWriteReg(PMODHB3_BaseAddress, PMODHB3_S00_AXI_SLV_REG0_OFFSET, old_direction );
     usleep(1000);
     if(direction == FORWARD)
     {
-        NEXYS4IO_mWriteReg(PMODHB3_BaseAddress, PMODHB3_S00_AXI_SLV_REG0_OFFSET, DIR_BIT_MASK );
+        PMODHB3_mWriteReg(PMODHB3_BaseAddress, PMODHB3_S00_AXI_SLV_REG0_OFFSET, DIR_BIT_MASK );
         next_state = DIR_BIT_MASK | old_pwm;
     }
     else
     {
-        NEXYS4IO_mWriteReg(PMODHB3_BaseAddress, PMODHB3_S00_AXI_SLV_REG0_OFFSET, 0x00000000 );
+        PMODHB3_mWriteReg(PMODHB3_BaseAddress, PMODHB3_S00_AXI_SLV_REG0_OFFSET, 0x00000000 );
         next_state = old_pwm & PWM_BIT_MASK; 
     }
 	usleep(1000);
-	NEXYS4IO_mWriteReg(PMODHB3_BaseAddress, PMODHB3_S00_AXI_SLV_REG0_OFFSET, next_state);
+	PMODHB3_mWriteReg(PMODHB3_BaseAddress, PMODHB3_S00_AXI_SLV_REG0_OFFSET, next_state);
 }
 

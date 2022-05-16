@@ -28,14 +28,14 @@
  * @note    Self test may fail if data memory and device are not on the same bus.
  *
  */
-XStatus PMODHB3_Reg_SelfTest(void * baseaddr_p)
+XStatus PMODHB3_Reg_SelfTest(u32 baseaddr_p)
 {
 	u32 baseaddr;
 	int write_loop_index;
 	int read_loop_index;
 	int Index;
 
-	baseaddr = (u32) baseaddr_p;
+	baseaddr =  baseaddr_p;
 
 	xil_printf("******************************\n\r");
 	xil_printf("* User Peripheral Self Test\n\r");

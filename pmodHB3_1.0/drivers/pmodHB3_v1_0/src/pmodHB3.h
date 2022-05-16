@@ -11,6 +11,9 @@
 #include <stdlib.h>
 #include <stdint.h>
 #include "microblaze_sleep.h"
+#include "stdbool.h"
+
+
 
 #define PMODHB3_S00_AXI_SLV_REG0_OFFSET 0
 #define PMODHB3_S00_AXI_SLV_REG1_OFFSET 4
@@ -83,6 +86,13 @@
  * @note    Self test may fail if data memory and device are not on the same bus.
  *
  */
-XStatus PMODHB3_Reg_SelfTest(void * baseaddr_p);
+XStatus PMODHB3_Reg_SelfTest(u32 baseaddr_p);
+
+int PMODHB3_initialize(u32 BaseAddr);
+u32 PMODHB3_getTachometer(void);
+u32 PMODHB3_TachometerRPM(void);
+u32 PMODHB3_getPWM(void);
+void PMODHB3_setPWM(u32 pwmvalue);
+void PMODHB3_setDIR(bool direction);
 
 #endif // PMODHB3_H
