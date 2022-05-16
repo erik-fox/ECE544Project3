@@ -1,0 +1,13 @@
+16:32:19 **** Incremental Build of configuration Debug for project Project3_application ****
+make all 
+'Building file: ../src/Project3_source.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Project3_source.o" -ID:/PortlandState/ECE_544/Labs/project_3/Vitis2/Project3_platform2/export/Project3_platform2/sw/Project3_platform2/standalone_domain/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Project3_source.d" -MT"src/Project3_source.o" -o "src/Project3_source.o" "../src/Project3_source.c"
+../src/Project3_source.c:41:10: fatal error: xstatus.h: No such file or directory
+   41 | #include "xstatus.h"
+      |          ^~~~~~~~~~~
+compilation terminated.
+make: *** [src/subdir.mk:29: src/Project3_source.o] Error 1
+
+16:32:19 Build Finished (took 311ms)
+

@@ -1,25 +1,17 @@
 Nothing to build in platform 'Project3_MBlaze_Platform'
 
-11:55:20 **** Incremental Build of configuration Debug for project Project3_ApplicationMBlaze ****
+16:03:07 **** Incremental Build of configuration Debug for project Project3_ApplicationMBlaze ****
 make all 
 'Building file: ../src/Project3_source.c'
 'Invoking: MicroBlaze gcc compiler'
 mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Project3_source.o" -ID:/PortlandState/ECE_544/Labs/project_3/Vitis/Project3_MBlaze_Platform/export/Project3_MBlaze_Platform/sw/Project3_MBlaze_Platform/standalone_domain/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Project3_source.d" -MT"src/Project3_source.o" -o "src/Project3_source.o" "../src/Project3_source.c"
-../src/Project3_source.c: In function 'main':
-../src/Project3_source.c:286:2: warning: statement with no effect [-Wunused-value]
-  286 |  GreenLED_Clear;
-      |  ^~~~~~~~~~~~~~
 ../src/Project3_source.c: In function 'PshBtn_Update':
-../src/Project3_source.c:667:3: warning: enumeration value 'Neutral' not handled in switch [-Wswitch]
-  667 |   switch(Kpid_current_state){
+../src/Project3_source.c:720:3: warning: enumeration value 'Neutral' not handled in switch [-Wswitch]
+  720 |   switch(Kpid_current_state){
       |   ^~~~~~
-../src/Project3_source.c:706:3: warning: enumeration value 'Neutral' not handled in switch [-Wswitch]
-  706 |   switch(Kpid_current_state){
+../src/Project3_source.c:759:3: warning: enumeration value 'Neutral' not handled in switch [-Wswitch]
+  759 |   switch(Kpid_current_state){
       |   ^~~~~~
-../src/Project3_source.c: In function 'OLED_Update':
-../src/Project3_source.c:807:22: warning: suggest parentheses around comparison in operand of '|' [-Wparentheses]
-  807 |  if (OLED_updatelock == 2 | OLED_updatelock == 4) {//ENC or center button
-      |      ~~~~~~~~~~~~~~~~^~~~
 'Finished building: ../src/Project3_source.c'
 ' '
 'Building target: Project3_ApplicationMBlaze.elf'
@@ -30,6 +22,6 @@ mb-gcc -Wl,-T -Wl,../src/lscript.ld -LD:/PortlandState/ECE_544/Labs/project_3/Vi
 'Invoking: MicroBlaze Print Size'
 mb-size Project3_ApplicationMBlaze.elf  |tee "Project3_ApplicationMBlaze.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  26640	    460	   3860	  30960	   78f0	Project3_ApplicationMBlaze.elf
+  26500	    460	   3864	  30824	   7868	Project3_ApplicationMBlaze.elf
 'Finished building: Project3_ApplicationMBlaze.elf.size'
 ' '

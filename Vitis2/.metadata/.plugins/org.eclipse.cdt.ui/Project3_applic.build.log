@@ -1,0 +1,28 @@
+18:01:01 **** Incremental Build of configuration Debug for project Project3_applic ****
+make all 
+'Building file: ../src/Project3_source.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Project3_source.o" -ID:/PortlandState/ECE_544/Labs/project_3/Vitis2/Project3_platform/export/Project3_platform/sw/Project3_platform/standalone_domain/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Project3_source.d" -MT"src/Project3_source.o" -o "src/Project3_source.o" "../src/Project3_source.c"
+../src/Project3_source.c: In function 'PshBtn_Update':
+../src/Project3_source.c:741:3: warning: enumeration value 'Neutral' not handled in switch [-Wswitch]
+  741 |   switch(Kpid_current_state){
+      |   ^~~~~~
+../src/Project3_source.c:785:3: warning: enumeration value 'Neutral' not handled in switch [-Wswitch]
+  785 |   switch(Kpid_current_state){
+      |   ^~~~~~
+'Finished building: ../src/Project3_source.c'
+' '
+'Building target: Project3_applic.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -LD:/PortlandState/ECE_544/Labs/project_3/Vitis2/Project3_platform/export/Project3_platform/sw/Project3_platform/standalone_domain/bsplib/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "Project3_applic.elf"  ./src/Project3_source.o ./src/platform.o ./src/pmodCMPS2_helper_functions.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Project3_applic.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size Project3_applic.elf  |tee "Project3_applic.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  26604	    460	   3872	  30936	   78d8	Project3_applic.elf
+'Finished building: Project3_applic.elf.size'
+' '
+
+18:01:02 Build Finished (took 927ms)
+

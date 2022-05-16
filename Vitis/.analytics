@@ -62,3 +62,13 @@ timestamp=[2022-05-14 11:41:38], mode=BUILD, duration=0:00:00.879, duration_ms=8
 timestamp=[2022-05-14 11:43:12], mode=BUILD, duration=0:00:00.940, duration_ms=940, data={name=Project3_ApplicationMBlaze, configuration=Debug, clean_build=false}
 timestamp=[2022-05-14 11:54:51], mode=BUILD, duration=0:00:00.970, duration_ms=970, data={name=Project3_ApplicationMBlaze, configuration=Debug, clean_build=false}
 timestamp=[2022-05-14 11:55:21], mode=BUILD, duration=0:00:00.875, duration_ms=875, data={name=Project3_ApplicationMBlaze, configuration=Debug, clean_build=false}
+timestamp=[2022-05-15 12:58:54], mode=WORKBENCH_START, duration=0:00:53.177, duration_ms=53177, data={}
+timestamp=[2022-05-15 12:58:56], mode=WORKBENCH_UI_INIT, duration=0:00:01.935, duration_ms=1935, data={editors_count=7, platform_editors_count=3, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=Project3_ApplicationMBlaze,Project3_ApplicationMBlaze_system,Project3_MBlaze_Platform,RemoteSystemsTempFiles}
+timestamp=[2022-05-15 12:58:57], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.684, duration_ms=684, data={}
+timestamp=[2022-05-15 14:55:28], mode=PLATFORM_GENERATION, duration=0:00:22.369, duration_ms=22369, data={name=Project3_MBlaze_Platform}
+timestamp=[2022-05-15 14:55:29], mode=BUILD, duration=0:00:00.591, duration_ms=591, data={name=Project3_ApplicationMBlaze, configuration=Debug, clean_build=false}
+timestamp=[2022-05-15 14:58:03], mode=BUILD, duration=0:00:01.992, duration_ms=1992, data={name=Project3_ApplicationMBlaze, configuration=Debug, clean_build=false}
+timestamp=[2022-05-15 14:58:15], mode=BUILD, duration=0:00:01.008, duration_ms=1008, data={name=Project3_ApplicationMBlaze, configuration=Debug, clean_build=false}
+timestamp=[2022-05-15 15:50:18], mode=BUILD, duration=0:00:00.430, duration_ms=430, data={name=Project3_ApplicationMBlaze, configuration=Debug, clean_build=false}
+timestamp=[2022-05-15 16:02:38], mode=BUILD, duration=0:00:00.586, duration_ms=586, data={name=Project3_ApplicationMBlaze, configuration=Debug, clean_build=false}
+timestamp=[2022-05-15 16:03:08], mode=BUILD, duration=0:00:01.012, duration_ms=1012, data={name=Project3_ApplicationMBlaze, configuration=Debug, clean_build=false}

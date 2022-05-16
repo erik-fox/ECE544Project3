@@ -16,3 +16,4 @@ platform write
 platform generate -domains 
 platform active {Project3_MBlaze_Platform}
 platform generate
+platform generate
