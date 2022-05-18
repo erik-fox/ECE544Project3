@@ -384,19 +384,15 @@ int	 do_init(void)
 	//Initialize OLED
 	OLEDrgb_begin(&pmodOLEDrgb_inst, RGBDSPLY_GPIO_BASEADDR, RGBDSPLY_SPI_BASEADDR);
 
-
-	NX4IO_SSEG_setSSEG_DATA(SSEGLO, 0x5);
 	//Initialize the pmodENC and hardware
 	PMODENC544_initialize(PMODENC_BASEADDR);
-
-	NX4IO_SSEG_setSSEG_DATA(SSEGLO, 0x6);
+	NX4IO_SSEG_setSSEG_DATA(SSEGLO, 0x5);
 	status = AXI_Timer_initialize();
 	if (status != XST_SUCCESS)
 	{
 		return XST_FAILURE;
 	}
 
-	NX4IO_SSEG_setSSEG_DATA(SSEGLO, 0x7);
 	// initialize the interrupt controller
 	status = XIntc_Initialize(&IntrptCtlrInst, INTC_DEVICE_ID);
 	if (status != XST_SUCCESS)
