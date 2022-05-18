@@ -1108,3 +1108,741 @@ con
 
 17:59:25 INFO  : Launch script is exported to file 'D:\PortlandState\ECE_544\Labs\project_3\Vitis2\Project3_applic_system\_ide\scripts\systemdebugger_project3_applic_system_standalone.tcl'
 18:01:01 INFO  : Checking for BSP changes to sync application flags for project 'Project3_applic'...
+12:05:49 INFO  : Launching XSCT server: xsct.bat -n  -interactive D:\PortlandState\ECE_544\Labs\project_3\Vitis2\temp_xsdb_launch_script.tcl
+12:06:00 INFO  : XSCT server has started successfully.
+12:06:00 INFO  : Successfully done setting XSCT server connection channel  
+12:06:00 INFO  : plnx-install-location is set to ''
+12:06:00 INFO  : Successfully done setting workspace for the tool. 
+12:06:20 INFO  : Platform repository initialization has completed.
+12:06:21 INFO  : Registering command handlers for Vitis TCF services
+12:06:58 INFO  : Successfully done query RDI_DATADIR 
+07:52:48 INFO  : Launching XSCT server: xsct.bat -n  -interactive D:\PortlandState\ECE_544\Labs\project_3\Vitis2\temp_xsdb_launch_script.tcl
+07:53:05 INFO  : XSCT server has started successfully.
+07:53:05 INFO  : plnx-install-location is set to ''
+07:53:05 INFO  : Successfully done setting XSCT server connection channel  
+07:53:05 INFO  : Successfully done setting workspace for the tool. 
+07:53:22 INFO  : Registering command handlers for Vitis TCF services
+07:53:22 INFO  : Platform repository initialization has completed.
+07:53:53 INFO  : Successfully done query RDI_DATADIR 
+08:18:16 INFO  : Result from executing command 'getProjects': Project3_platform
+08:18:16 INFO  : Result from executing command 'getPlatforms': Project3_platform|D:/PortlandState/ECE_544/Labs/project_3/Vitis2/Project3_platform/export/Project3_platform/Project3_platform.xpfm
+08:18:17 INFO  : Checking for BSP changes to sync application flags for project 'Project3_applic'...
+10:25:59 INFO  : Result from executing command 'getProjects': FreeRTOS_Project3_Platform;Project3_platform
+10:25:59 INFO  : Result from executing command 'getPlatforms': Project3_platform|D:/PortlandState/ECE_544/Labs/project_3/Vitis2/Project3_platform/export/Project3_platform/Project3_platform.xpfm
+10:29:22 INFO  : Result from executing command 'getProjects': FreeRTOS_Project3_Platform;Project3_platform
+10:29:22 INFO  : Result from executing command 'getPlatforms': FreeRTOS_Project3_Platform|D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/export/FreeRTOS_Project3_Platform/FreeRTOS_Project3_Platform.xpfm;Project3_platform|D:/PortlandState/ECE_544/Labs/project_3/Vitis2/Project3_platform/export/Project3_platform/Project3_platform.xpfm
+10:38:06 INFO  : Checking for BSP changes to sync application flags for project 'Project3_applic'...
+13:12:04 INFO  : Checking for BSP changes to sync application flags for project 'FreeRTOS_App_Project'...
+13:14:28 INFO  : Checking for BSP changes to sync application flags for project 'FreeRTOS_App_Project'...
+13:14:55 INFO  : Checking for BSP changes to sync application flags for project 'FreeRTOS_App_Project'...
+13:15:14 INFO  : Checking for BSP changes to sync application flags for project 'FreeRTOS_App_Project'...
+13:18:24 INFO  : Checking for BSP changes to sync application flags for project 'FreeRTOS_App_Project'...
+13:19:24 INFO  : Checking for BSP changes to sync application flags for project 'FreeRTOS_App_Project'...
+13:41:45 INFO  : Checking for BSP changes to sync application flags for project 'FreeRTOS_App_Project'...
+13:57:46 INFO  : Checking for BSP changes to sync application flags for project 'FreeRTOS_App_Project'...
+14:11:00 INFO  : Checking for BSP changes to sync application flags for project 'FreeRTOS_App_Project'...
+14:11:46 ERROR : An unexpected exception occurred in the module 'reading platform'
+14:11:51 INFO  : Checking for BSP changes to sync application flags for project 'FreeRTOS_App_Project'...
+14:31:19 INFO  : Checking for BSP changes to sync application flags for project 'FreeRTOS_App_Project'...
+14:40:53 INFO  : Checking for BSP changes to sync application flags for project 'FreeRTOS_App_Project'...
+14:41:15 INFO  : Checking for BSP changes to sync application flags for project 'FreeRTOS_App_Project'...
+14:41:35 INFO  : Checking for BSP changes to sync application flags for project 'FreeRTOS_App_Project'...
+15:08:00 INFO  : Checking for BSP changes to sync application flags for project 'FreeRTOS_App_Project'...
+15:08:20 INFO  : Checking for BSP changes to sync application flags for project 'FreeRTOS_App_Project'...
+15:09:07 INFO  : Checking for BSP changes to sync application flags for project 'FreeRTOS_App_Project'...
+15:09:35 INFO  : Checking for BSP changes to sync application flags for project 'FreeRTOS_App_Project'...
+15:09:48 INFO  : Checking for BSP changes to sync application flags for project 'FreeRTOS_App_Project'...
+15:13:40 INFO  : Checking for BSP changes to sync application flags for project 'FreeRTOS_App_Project'...
+15:13:54 INFO  : Checking for BSP changes to sync application flags for project 'FreeRTOS_App_Project'...
+15:16:54 INFO  : Checking for BSP changes to sync application flags for project 'FreeRTOS_App_Project'...
+15:18:17 INFO  : Checking for BSP changes to sync application flags for project 'FreeRTOS_App_Project'...
+15:18:59 INFO  : Checking for BSP changes to sync application flags for project 'FreeRTOS_App_Project'...
+15:19:10 INFO  : Checking for BSP changes to sync application flags for project 'FreeRTOS_App_Project'...
+15:19:28 INFO  : Checking for BSP changes to sync application flags for project 'FreeRTOS_App_Project'...
+15:20:33 INFO  : Checking for BSP changes to sync application flags for project 'FreeRTOS_App_Project'...
+15:22:25 INFO  : Checking for BSP changes to sync application flags for project 'FreeRTOS_App_Project'...
+15:23:52 INFO  : Checking for BSP changes to sync application flags for project 'FreeRTOS_App_Project'...
+15:24:05 INFO  : Checking for BSP changes to sync application flags for project 'FreeRTOS_App_Project'...
+15:24:40 INFO  : Checking for BSP changes to sync application flags for project 'FreeRTOS_App_Project'...
+15:25:20 INFO  : Checking for BSP changes to sync application flags for project 'FreeRTOS_App_Project'...
+15:25:30 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:25:31 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:25:31 INFO  : Jtag cable 'Digilent Nexys4DDR 210292A8B0CDA' is selected.
+15:25:31 INFO  : Jtag cable 'Digilent Nexys4DDR 210292A8B0CDA' is selected.
+15:25:31 INFO  : 'jtag frequency' command is executed.
+15:25:31 INFO  : 'jtag frequency' command is executed.
+15:25:32 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A8B0CDA" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A8B0CDA-13631093-0"}' command is executed.
+15:25:32 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A8B0CDA" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A8B0CDA-13631093-0"}' command is executed.
+15:25:34 INFO  : Device configured successfully with "D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_App_Project/_ide/bitstream/nexysA7fpga.bit"
+15:25:36 INFO  : Device configured successfully with "D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_App_Project/_ide/bitstream/nexysA7fpga.bit"
+15:25:37 INFO  : Context for processor 'microblaze_0' is selected.
+15:25:37 INFO  : Context for processor 'microblaze_0' is selected.
+15:25:37 INFO  : Hardware design and registers information is loaded from 'D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/export/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa'.
+15:25:37 INFO  : Hardware design and registers information is loaded from 'D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/export/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa'.
+15:25:37 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+15:25:37 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+15:25:37 INFO  : Context for processor 'microblaze_0' is selected.
+15:25:37 INFO  : Context for processor 'microblaze_0' is selected.
+15:25:37 INFO  : System reset is completed.
+15:25:37 INFO  : System reset is completed.
+15:25:40 INFO  : 'after 3000' command is executed.
+15:25:43 INFO  : 'after 3000' command is executed.
+15:25:43 INFO  : Context for processor 'microblaze_0' is selected.
+15:25:43 INFO  : Context for processor 'microblaze_0' is selected.
+15:25:43 INFO  : The application 'D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_App_Project/Debug/FreeRTOS_App_Project.elf' is downloaded to processor 'microblaze_0'.
+15:25:43 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A8B0CDA" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A8B0CDA-13631093-0"}
+fpga -file D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_App_Project/_ide/bitstream/nexysA7fpga.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/export/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_App_Project/Debug/FreeRTOS_App_Project.elf
+----------------End of Script----------------
+
+15:25:43 INFO  : The application 'D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_App_Project/Debug/FreeRTOS_App_Project.elf' is downloaded to processor 'microblaze_0'.
+15:25:43 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A8B0CDA" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A8B0CDA-13631093-0"}
+fpga -file D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_App_Project/_ide/bitstream/nexysA7fpga.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/export/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_App_Project/Debug/FreeRTOS_App_Project.elf
+----------------End of Script----------------
+
+15:25:43 INFO  : Context for processor 'microblaze_0' is selected.
+15:25:44 INFO  : 'con' command is executed.
+15:25:44 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+15:25:44 INFO  : Launch script is exported to file 'D:\PortlandState\ECE_544\Labs\project_3\Vitis2\FreeRTOS_App_Project_system\_ide\scripts\systemdebugger_freertos_app_project_system_standalone.tcl'
+15:25:44 INFO  : Context for processor 'microblaze_0' is selected.
+15:25:44 ERROR : Already running
+15:26:27 INFO  : Checking for BSP changes to sync application flags for project 'FreeRTOS_App_Project'...
+15:26:31 INFO  : Disconnected from the channel tcfchan#3.
+15:26:31 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:26:32 INFO  : Jtag cable 'Digilent Nexys4DDR 210292A8B0CDA' is selected.
+15:26:32 INFO  : 'jtag frequency' command is executed.
+15:26:32 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A8B0CDA" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A8B0CDA-13631093-0"}' command is executed.
+15:26:34 INFO  : Device configured successfully with "D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_App_Project/_ide/bitstream/nexysA7fpga.bit"
+15:26:34 INFO  : Context for processor 'microblaze_0' is selected.
+15:26:34 INFO  : Hardware design and registers information is loaded from 'D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/export/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa'.
+15:26:34 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+15:26:34 INFO  : Context for processor 'microblaze_0' is selected.
+15:26:34 INFO  : System reset is completed.
+15:26:37 INFO  : 'after 3000' command is executed.
+15:26:37 INFO  : Context for processor 'microblaze_0' is selected.
+15:26:37 INFO  : The application 'D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_App_Project/Debug/FreeRTOS_App_Project.elf' is downloaded to processor 'microblaze_0'.
+15:26:37 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A8B0CDA" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A8B0CDA-13631093-0"}
+fpga -file D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_App_Project/_ide/bitstream/nexysA7fpga.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/export/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_App_Project/Debug/FreeRTOS_App_Project.elf
+----------------End of Script----------------
+
+15:26:38 INFO  : Context for processor 'microblaze_0' is selected.
+15:26:38 INFO  : 'con' command is executed.
+15:26:38 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+15:26:38 INFO  : Launch script is exported to file 'D:\PortlandState\ECE_544\Labs\project_3\Vitis2\FreeRTOS_App_Project_system\_ide\scripts\systemdebugger_freertos_app_project_system_standalone.tcl'
+15:26:43 INFO  : Disconnected from the channel tcfchan#4.
+15:26:43 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:26:43 INFO  : Jtag cable 'Digilent Nexys4DDR 210292A8B0CDA' is selected.
+15:26:43 INFO  : 'jtag frequency' command is executed.
+15:26:44 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A8B0CDA" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A8B0CDA-13631093-0"}' command is executed.
+15:26:46 INFO  : Device configured successfully with "D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_App_Project/_ide/bitstream/nexysA7fpga.bit"
+15:26:46 INFO  : Context for processor 'microblaze_0' is selected.
+15:26:46 INFO  : Hardware design and registers information is loaded from 'D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/export/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa'.
+15:26:46 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+15:26:46 INFO  : Context for processor 'microblaze_0' is selected.
+15:26:46 INFO  : System reset is completed.
+15:26:49 INFO  : 'after 3000' command is executed.
+15:26:49 INFO  : Context for processor 'microblaze_0' is selected.
+15:26:49 INFO  : The application 'D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_App_Project/Debug/FreeRTOS_App_Project.elf' is downloaded to processor 'microblaze_0'.
+15:26:49 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A8B0CDA" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A8B0CDA-13631093-0"}
+fpga -file D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_App_Project/_ide/bitstream/nexysA7fpga.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/export/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_App_Project/Debug/FreeRTOS_App_Project.elf
+----------------End of Script----------------
+
+15:26:49 INFO  : Context for processor 'microblaze_0' is selected.
+15:26:50 INFO  : 'con' command is executed.
+15:26:50 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+15:26:50 INFO  : Launch script is exported to file 'D:\PortlandState\ECE_544\Labs\project_3\Vitis2\FreeRTOS_App_Project_system\_ide\scripts\systemdebugger_freertos_app_project_system_standalone.tcl'
+15:27:41 INFO  : Disconnected from the channel tcfchan#5.
+15:27:42 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:27:42 INFO  : Jtag cable 'Digilent Nexys4DDR 210292A8B0CDA' is selected.
+15:27:42 INFO  : 'jtag frequency' command is executed.
+15:27:42 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A8B0CDA" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A8B0CDA-13631093-0"}' command is executed.
+15:27:44 INFO  : Device configured successfully with "D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_App_Project/_ide/bitstream/nexysA7fpga.bit"
+15:27:44 INFO  : Context for processor 'microblaze_0' is selected.
+15:27:44 INFO  : Hardware design and registers information is loaded from 'D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/export/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa'.
+15:27:44 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+15:27:44 INFO  : Context for processor 'microblaze_0' is selected.
+15:27:44 INFO  : System reset is completed.
+15:27:47 INFO  : 'after 3000' command is executed.
+15:27:47 INFO  : Context for processor 'microblaze_0' is selected.
+15:27:48 INFO  : The application 'D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_App_Project/Debug/FreeRTOS_App_Project.elf' is downloaded to processor 'microblaze_0'.
+15:27:48 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A8B0CDA" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A8B0CDA-13631093-0"}
+fpga -file D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_App_Project/_ide/bitstream/nexysA7fpga.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/export/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_App_Project/Debug/FreeRTOS_App_Project.elf
+----------------End of Script----------------
+
+15:27:48 INFO  : Context for processor 'microblaze_0' is selected.
+15:27:48 INFO  : 'con' command is executed.
+15:27:48 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+15:27:48 INFO  : Launch script is exported to file 'D:\PortlandState\ECE_544\Labs\project_3\Vitis2\FreeRTOS_App_Project_system\_ide\scripts\systemdebugger_freertos_app_project_system_standalone.tcl'
+15:29:13 INFO  : Checking for BSP changes to sync application flags for project 'FreeRTOS_App_Project'...
+15:29:17 INFO  : Disconnected from the channel tcfchan#6.
+15:29:18 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:29:18 INFO  : Jtag cable 'Digilent Nexys4DDR 210292A8B0CDA' is selected.
+15:29:18 INFO  : 'jtag frequency' command is executed.
+15:29:18 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A8B0CDA" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A8B0CDA-13631093-0"}' command is executed.
+15:29:20 INFO  : Device configured successfully with "D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_App_Project/_ide/bitstream/nexysA7fpga.bit"
+15:29:20 INFO  : Context for processor 'microblaze_0' is selected.
+15:29:20 INFO  : Hardware design and registers information is loaded from 'D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/export/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa'.
+15:29:20 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+15:29:20 INFO  : Context for processor 'microblaze_0' is selected.
+15:29:20 INFO  : System reset is completed.
+15:29:23 INFO  : 'after 3000' command is executed.
+15:29:23 INFO  : Context for processor 'microblaze_0' is selected.
+15:29:24 INFO  : The application 'D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_App_Project/Debug/FreeRTOS_App_Project.elf' is downloaded to processor 'microblaze_0'.
+15:29:24 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A8B0CDA" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A8B0CDA-13631093-0"}
+fpga -file D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_App_Project/_ide/bitstream/nexysA7fpga.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/export/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_App_Project/Debug/FreeRTOS_App_Project.elf
+----------------End of Script----------------
+
+15:29:24 INFO  : Context for processor 'microblaze_0' is selected.
+15:29:24 INFO  : 'con' command is executed.
+15:29:24 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+15:29:24 INFO  : Launch script is exported to file 'D:\PortlandState\ECE_544\Labs\project_3\Vitis2\FreeRTOS_App_Project_system\_ide\scripts\systemdebugger_freertos_app_project_system_standalone.tcl'
+15:29:46 INFO  : Disconnected from the channel tcfchan#7.
+15:29:47 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:29:47 INFO  : Jtag cable 'Digilent Nexys4DDR 210292A8B0CDA' is selected.
+15:29:47 INFO  : 'jtag frequency' command is executed.
+15:29:47 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A8B0CDA" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A8B0CDA-13631093-0"}' command is executed.
+15:29:49 INFO  : Device configured successfully with "D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_App_Project/_ide/bitstream/nexysA7fpga.bit"
+15:29:49 INFO  : Context for processor 'microblaze_0' is selected.
+15:29:49 INFO  : Hardware design and registers information is loaded from 'D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/export/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa'.
+15:29:49 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+15:29:49 INFO  : Context for processor 'microblaze_0' is selected.
+15:29:49 INFO  : System reset is completed.
+15:29:52 INFO  : 'after 3000' command is executed.
+15:29:52 INFO  : Context for processor 'microblaze_0' is selected.
+15:29:53 INFO  : The application 'D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_App_Project/Debug/FreeRTOS_App_Project.elf' is downloaded to processor 'microblaze_0'.
+15:29:53 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A8B0CDA" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A8B0CDA-13631093-0"}
+fpga -file D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_App_Project/_ide/bitstream/nexysA7fpga.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/export/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_App_Project/Debug/FreeRTOS_App_Project.elf
+----------------End of Script----------------
+
+15:29:53 INFO  : Context for processor 'microblaze_0' is selected.
+15:29:53 INFO  : 'con' command is executed.
+15:29:53 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+15:29:53 INFO  : Launch script is exported to file 'D:\PortlandState\ECE_544\Labs\project_3\Vitis2\FreeRTOS_App_Project_system\_ide\scripts\systemdebugger_freertos_app_project_system_standalone.tcl'
+15:30:09 INFO  : Disconnected from the channel tcfchan#8.
+15:30:09 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:30:09 INFO  : Jtag cable 'Digilent Nexys4DDR 210292A8B0CDA' is selected.
+15:30:09 INFO  : 'jtag frequency' command is executed.
+15:30:09 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A8B0CDA" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A8B0CDA-13631093-0"}' command is executed.
+15:30:11 INFO  : Device configured successfully with "D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_App_Project/_ide/bitstream/nexysA7fpga.bit"
+15:30:12 INFO  : Context for processor 'microblaze_0' is selected.
+15:30:12 INFO  : Hardware design and registers information is loaded from 'D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/export/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa'.
+15:30:12 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+15:30:12 INFO  : Context for processor 'microblaze_0' is selected.
+15:30:12 INFO  : System reset is completed.
+15:30:15 INFO  : 'after 3000' command is executed.
+15:30:15 INFO  : Context for processor 'microblaze_0' is selected.
+15:30:15 INFO  : The application 'D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_App_Project/Debug/FreeRTOS_App_Project.elf' is downloaded to processor 'microblaze_0'.
+15:30:15 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A8B0CDA" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A8B0CDA-13631093-0"}
+fpga -file D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_App_Project/_ide/bitstream/nexysA7fpga.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/export/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_App_Project/Debug/FreeRTOS_App_Project.elf
+----------------End of Script----------------
+
+15:30:15 INFO  : Context for processor 'microblaze_0' is selected.
+15:30:15 INFO  : 'con' command is executed.
+15:30:15 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+15:30:15 INFO  : Launch script is exported to file 'D:\PortlandState\ECE_544\Labs\project_3\Vitis2\FreeRTOS_App_Project_system\_ide\scripts\systemdebugger_freertos_app_project_system_standalone.tcl'
+15:31:27 INFO  : Disconnected from the channel tcfchan#9.
+15:31:27 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:31:27 INFO  : Jtag cable 'Digilent Nexys4DDR 210292A8B0CDA' is selected.
+15:31:28 INFO  : 'jtag frequency' command is executed.
+15:31:28 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A8B0CDA" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A8B0CDA-13631093-0"}' command is executed.
+15:31:30 INFO  : Device configured successfully with "D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_App_Project/_ide/bitstream/nexysA7fpga.bit"
+15:31:30 INFO  : Context for processor 'microblaze_0' is selected.
+15:31:30 INFO  : Hardware design and registers information is loaded from 'D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/export/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa'.
+15:31:30 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+15:31:30 INFO  : Context for processor 'microblaze_0' is selected.
+15:31:30 INFO  : System reset is completed.
+15:31:33 INFO  : 'after 3000' command is executed.
+15:31:33 INFO  : Context for processor 'microblaze_0' is selected.
+15:31:33 INFO  : The application 'D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_App_Project/Debug/FreeRTOS_App_Project.elf' is downloaded to processor 'microblaze_0'.
+15:31:33 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A8B0CDA" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A8B0CDA-13631093-0"}
+fpga -file D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_App_Project/_ide/bitstream/nexysA7fpga.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/export/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_App_Project/Debug/FreeRTOS_App_Project.elf
+----------------End of Script----------------
+
+15:31:33 INFO  : Context for processor 'microblaze_0' is selected.
+15:31:34 INFO  : 'con' command is executed.
+15:31:34 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+15:31:34 INFO  : Launch script is exported to file 'D:\PortlandState\ECE_544\Labs\project_3\Vitis2\FreeRTOS_App_Project_system\_ide\scripts\systemdebugger_freertos_app_project_system_standalone.tcl'
+15:31:41 INFO  : Disconnected from the channel tcfchan#10.
+15:31:41 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:31:42 INFO  : Jtag cable 'Digilent Nexys4DDR 210292A8B0CDA' is selected.
+15:31:42 INFO  : 'jtag frequency' command is executed.
+15:31:42 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A8B0CDA" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A8B0CDA-13631093-0"}' command is executed.
+15:31:44 INFO  : Device configured successfully with "D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_App_Project/_ide/bitstream/nexysA7fpga.bit"
+15:31:44 INFO  : Context for processor 'microblaze_0' is selected.
+15:31:44 INFO  : Hardware design and registers information is loaded from 'D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/export/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa'.
+15:31:44 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+15:31:44 INFO  : Context for processor 'microblaze_0' is selected.
+15:31:44 INFO  : System reset is completed.
+15:31:47 INFO  : 'after 3000' command is executed.
+15:31:47 INFO  : Context for processor 'microblaze_0' is selected.
+15:31:47 INFO  : The application 'D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_App_Project/Debug/FreeRTOS_App_Project.elf' is downloaded to processor 'microblaze_0'.
+15:31:47 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A8B0CDA" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A8B0CDA-13631093-0"}
+fpga -file D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_App_Project/_ide/bitstream/nexysA7fpga.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/export/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_App_Project/Debug/FreeRTOS_App_Project.elf
+----------------End of Script----------------
+
+15:31:48 INFO  : Context for processor 'microblaze_0' is selected.
+15:31:48 INFO  : 'con' command is executed.
+15:31:48 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+15:31:48 INFO  : Launch script is exported to file 'D:\PortlandState\ECE_544\Labs\project_3\Vitis2\FreeRTOS_App_Project_system\_ide\scripts\systemdebugger_freertos_app_project_system_standalone.tcl'
+15:32:01 INFO  : Disconnected from the channel tcfchan#11.
+15:32:01 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:32:01 INFO  : Jtag cable 'Digilent Nexys4DDR 210292A8B0CDA' is selected.
+15:32:01 INFO  : 'jtag frequency' command is executed.
+15:32:01 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A8B0CDA" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A8B0CDA-13631093-0"}' command is executed.
+15:32:03 INFO  : Device configured successfully with "D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_App_Project/_ide/bitstream/nexysA7fpga.bit"
+15:32:04 INFO  : Context for processor 'microblaze_0' is selected.
+15:32:04 INFO  : Hardware design and registers information is loaded from 'D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/export/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa'.
+15:32:04 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+15:32:04 INFO  : Context for processor 'microblaze_0' is selected.
+15:32:04 INFO  : System reset is completed.
+15:32:07 INFO  : 'after 3000' command is executed.
+15:32:07 INFO  : Context for processor 'microblaze_0' is selected.
+15:32:07 INFO  : The application 'D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_App_Project/Debug/FreeRTOS_App_Project.elf' is downloaded to processor 'microblaze_0'.
+15:32:07 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A8B0CDA" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A8B0CDA-13631093-0"}
+fpga -file D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_App_Project/_ide/bitstream/nexysA7fpga.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/export/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_App_Project/Debug/FreeRTOS_App_Project.elf
+----------------End of Script----------------
+
+15:32:07 INFO  : Context for processor 'microblaze_0' is selected.
+15:32:07 INFO  : 'con' command is executed.
+15:32:07 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+15:32:07 INFO  : Launch script is exported to file 'D:\PortlandState\ECE_544\Labs\project_3\Vitis2\FreeRTOS_App_Project_system\_ide\scripts\systemdebugger_freertos_app_project_system_standalone.tcl'
+15:32:43 INFO  : Disconnected from the channel tcfchan#12.
+15:32:44 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:32:44 INFO  : Jtag cable 'Digilent Nexys4DDR 210292A8B0CDA' is selected.
+15:32:44 INFO  : 'jtag frequency' command is executed.
+15:32:44 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A8B0CDA" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A8B0CDA-13631093-0"}' command is executed.
+15:32:47 INFO  : Device configured successfully with "D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_App_Project/_ide/bitstream/nexysA7fpga.bit"
+15:32:47 INFO  : Context for processor 'microblaze_0' is selected.
+15:32:47 INFO  : Hardware design and registers information is loaded from 'D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/export/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa'.
+15:32:47 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+15:32:47 INFO  : Context for processor 'microblaze_0' is selected.
+15:32:47 INFO  : System reset is completed.
+15:32:50 INFO  : 'after 3000' command is executed.
+15:32:50 INFO  : Context for processor 'microblaze_0' is selected.
+15:32:50 INFO  : The application 'D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_App_Project/Debug/FreeRTOS_App_Project.elf' is downloaded to processor 'microblaze_0'.
+15:32:50 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A8B0CDA" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A8B0CDA-13631093-0"}
+fpga -file D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_App_Project/_ide/bitstream/nexysA7fpga.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/export/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_App_Project/Debug/FreeRTOS_App_Project.elf
+----------------End of Script----------------
+
+15:32:50 INFO  : Context for processor 'microblaze_0' is selected.
+15:32:51 INFO  : 'con' command is executed.
+15:32:51 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+15:32:51 INFO  : Launch script is exported to file 'D:\PortlandState\ECE_544\Labs\project_3\Vitis2\FreeRTOS_App_Project_system\_ide\scripts\systemdebugger_freertos_app_project_system_standalone.tcl'
+15:32:56 INFO  : Disconnected from the channel tcfchan#13.
+15:32:56 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:32:56 INFO  : Jtag cable 'Digilent Nexys4DDR 210292A8B0CDA' is selected.
+15:32:56 INFO  : 'jtag frequency' command is executed.
+15:32:57 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A8B0CDA" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A8B0CDA-13631093-0"}' command is executed.
+15:32:59 INFO  : Device configured successfully with "D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_App_Project/_ide/bitstream/nexysA7fpga.bit"
+15:32:59 INFO  : Context for processor 'microblaze_0' is selected.
+15:32:59 INFO  : Hardware design and registers information is loaded from 'D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/export/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa'.
+15:32:59 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+15:32:59 INFO  : Context for processor 'microblaze_0' is selected.
+15:32:59 INFO  : System reset is completed.
+15:33:02 INFO  : 'after 3000' command is executed.
+15:33:02 INFO  : Context for processor 'microblaze_0' is selected.
+15:33:02 INFO  : The application 'D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_App_Project/Debug/FreeRTOS_App_Project.elf' is downloaded to processor 'microblaze_0'.
+15:33:02 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A8B0CDA" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A8B0CDA-13631093-0"}
+fpga -file D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_App_Project/_ide/bitstream/nexysA7fpga.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/export/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_App_Project/Debug/FreeRTOS_App_Project.elf
+----------------End of Script----------------
+
+15:33:02 INFO  : Context for processor 'microblaze_0' is selected.
+15:33:03 INFO  : 'con' command is executed.
+15:33:03 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+15:33:03 INFO  : Launch script is exported to file 'D:\PortlandState\ECE_544\Labs\project_3\Vitis2\FreeRTOS_App_Project_system\_ide\scripts\systemdebugger_freertos_app_project_system_standalone.tcl'
+15:33:18 INFO  : Disconnected from the channel tcfchan#14.
+15:33:18 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:33:18 INFO  : Jtag cable 'Digilent Nexys4DDR 210292A8B0CDA' is selected.
+15:33:18 INFO  : 'jtag frequency' command is executed.
+15:33:18 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A8B0CDA" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A8B0CDA-13631093-0"}' command is executed.
+15:33:20 INFO  : Device configured successfully with "D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_App_Project/_ide/bitstream/nexysA7fpga.bit"
+15:33:20 INFO  : Context for processor 'microblaze_0' is selected.
+15:33:20 INFO  : Hardware design and registers information is loaded from 'D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/export/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa'.
+15:33:20 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+15:33:20 INFO  : Context for processor 'microblaze_0' is selected.
+15:33:20 INFO  : System reset is completed.
+15:33:23 INFO  : 'after 3000' command is executed.
+15:33:23 INFO  : Context for processor 'microblaze_0' is selected.
+15:33:24 INFO  : The application 'D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_App_Project/Debug/FreeRTOS_App_Project.elf' is downloaded to processor 'microblaze_0'.
+15:33:24 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A8B0CDA" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A8B0CDA-13631093-0"}
+fpga -file D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_App_Project/_ide/bitstream/nexysA7fpga.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/export/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_App_Project/Debug/FreeRTOS_App_Project.elf
+----------------End of Script----------------
+
+15:33:24 INFO  : Context for processor 'microblaze_0' is selected.
+15:33:24 INFO  : 'con' command is executed.
+15:33:24 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+15:33:24 INFO  : Launch script is exported to file 'D:\PortlandState\ECE_544\Labs\project_3\Vitis2\FreeRTOS_App_Project_system\_ide\scripts\systemdebugger_freertos_app_project_system_standalone.tcl'
+15:33:31 INFO  : Disconnected from the channel tcfchan#15.
+15:33:31 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:33:31 INFO  : Jtag cable 'Digilent Nexys4DDR 210292A8B0CDA' is selected.
+15:33:31 INFO  : 'jtag frequency' command is executed.
+15:33:32 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A8B0CDA" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A8B0CDA-13631093-0"}' command is executed.
+15:33:34 INFO  : Device configured successfully with "D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_App_Project/_ide/bitstream/nexysA7fpga.bit"
+15:33:34 INFO  : Context for processor 'microblaze_0' is selected.
+15:33:34 INFO  : Hardware design and registers information is loaded from 'D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/export/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa'.
+15:33:34 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+15:33:34 INFO  : Context for processor 'microblaze_0' is selected.
+15:33:34 INFO  : System reset is completed.
+15:33:37 INFO  : 'after 3000' command is executed.
+15:33:37 INFO  : Context for processor 'microblaze_0' is selected.
+15:33:37 INFO  : The application 'D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_App_Project/Debug/FreeRTOS_App_Project.elf' is downloaded to processor 'microblaze_0'.
+15:33:37 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A8B0CDA" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A8B0CDA-13631093-0"}
+fpga -file D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_App_Project/_ide/bitstream/nexysA7fpga.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/export/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_App_Project/Debug/FreeRTOS_App_Project.elf
+----------------End of Script----------------
+
+15:33:37 INFO  : Context for processor 'microblaze_0' is selected.
+15:33:38 INFO  : 'con' command is executed.
+15:33:38 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+15:33:38 INFO  : Launch script is exported to file 'D:\PortlandState\ECE_544\Labs\project_3\Vitis2\FreeRTOS_App_Project_system\_ide\scripts\systemdebugger_freertos_app_project_system_standalone.tcl'
+15:33:52 INFO  : Checking for BSP changes to sync application flags for project 'FreeRTOS_App_Project'...
+15:33:55 INFO  : Disconnected from the channel tcfchan#16.
+15:33:56 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:33:56 INFO  : Jtag cable 'Digilent Nexys4DDR 210292A8B0CDA' is selected.
+15:33:56 INFO  : 'jtag frequency' command is executed.
+15:33:56 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A8B0CDA" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A8B0CDA-13631093-0"}' command is executed.
+15:33:59 INFO  : Device configured successfully with "D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_App_Project/_ide/bitstream/nexysA7fpga.bit"
+15:33:59 INFO  : Context for processor 'microblaze_0' is selected.
+15:33:59 INFO  : Hardware design and registers information is loaded from 'D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/export/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa'.
+15:33:59 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+15:33:59 INFO  : Context for processor 'microblaze_0' is selected.
+15:33:59 INFO  : System reset is completed.
+15:34:02 INFO  : 'after 3000' command is executed.
+15:34:02 INFO  : Context for processor 'microblaze_0' is selected.
+15:34:03 INFO  : The application 'D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_App_Project/Debug/FreeRTOS_App_Project.elf' is downloaded to processor 'microblaze_0'.
+15:34:03 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A8B0CDA" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A8B0CDA-13631093-0"}
+fpga -file D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_App_Project/_ide/bitstream/nexysA7fpga.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/export/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_App_Project/Debug/FreeRTOS_App_Project.elf
+----------------End of Script----------------
+
+15:34:03 INFO  : Context for processor 'microblaze_0' is selected.
+15:34:03 INFO  : 'con' command is executed.
+15:34:03 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+15:34:03 INFO  : Launch script is exported to file 'D:\PortlandState\ECE_544\Labs\project_3\Vitis2\FreeRTOS_App_Project_system\_ide\scripts\systemdebugger_freertos_app_project_system_standalone.tcl'
+15:35:51 INFO  : Checking for BSP changes to sync application flags for project 'FreeRTOS_App_Project'...
+15:35:53 INFO  : Disconnected from the channel tcfchan#17.
+15:35:54 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:35:54 INFO  : Jtag cable 'Digilent Nexys4DDR 210292A8B0CDA' is selected.
+15:35:54 INFO  : 'jtag frequency' command is executed.
+15:35:55 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A8B0CDA" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A8B0CDA-13631093-0"}' command is executed.
+15:35:57 INFO  : Device configured successfully with "D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_App_Project/_ide/bitstream/nexysA7fpga.bit"
+15:35:57 INFO  : Context for processor 'microblaze_0' is selected.
+15:35:57 INFO  : Hardware design and registers information is loaded from 'D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/export/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa'.
+15:35:57 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+15:35:57 INFO  : Context for processor 'microblaze_0' is selected.
+15:35:57 INFO  : System reset is completed.
+15:36:00 INFO  : 'after 3000' command is executed.
+15:36:00 INFO  : Context for processor 'microblaze_0' is selected.
+15:36:00 INFO  : The application 'D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_App_Project/Debug/FreeRTOS_App_Project.elf' is downloaded to processor 'microblaze_0'.
+15:36:00 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A8B0CDA" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A8B0CDA-13631093-0"}
+fpga -file D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_App_Project/_ide/bitstream/nexysA7fpga.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/export/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_App_Project/Debug/FreeRTOS_App_Project.elf
+----------------End of Script----------------
+
+15:36:01 INFO  : Context for processor 'microblaze_0' is selected.
+15:36:01 INFO  : 'con' command is executed.
+15:36:01 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+15:36:01 INFO  : Launch script is exported to file 'D:\PortlandState\ECE_544\Labs\project_3\Vitis2\FreeRTOS_App_Project_system\_ide\scripts\systemdebugger_freertos_app_project_system_standalone.tcl'
+15:37:24 INFO  : Checking for BSP changes to sync application flags for project 'FreeRTOS_App_Project'...
+15:37:28 INFO  : Disconnected from the channel tcfchan#18.
+15:37:28 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:37:29 INFO  : Jtag cable 'Digilent Nexys4DDR 210292A8B0CDA' is selected.
+15:37:29 INFO  : 'jtag frequency' command is executed.
+15:37:29 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A8B0CDA" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A8B0CDA-13631093-0"}' command is executed.
+15:37:31 INFO  : Device configured successfully with "D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_App_Project/_ide/bitstream/nexysA7fpga.bit"
+15:37:31 INFO  : Context for processor 'microblaze_0' is selected.
+15:37:31 INFO  : Hardware design and registers information is loaded from 'D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/export/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa'.
+15:37:31 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+15:37:31 INFO  : Context for processor 'microblaze_0' is selected.
+15:37:31 INFO  : System reset is completed.
+15:37:34 INFO  : 'after 3000' command is executed.
+15:37:34 INFO  : Context for processor 'microblaze_0' is selected.
+15:37:35 INFO  : The application 'D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_App_Project/Debug/FreeRTOS_App_Project.elf' is downloaded to processor 'microblaze_0'.
+15:37:35 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A8B0CDA" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A8B0CDA-13631093-0"}
+fpga -file D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_App_Project/_ide/bitstream/nexysA7fpga.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/export/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_App_Project/Debug/FreeRTOS_App_Project.elf
+----------------End of Script----------------
+
+15:37:35 INFO  : Context for processor 'microblaze_0' is selected.
+15:37:35 INFO  : 'con' command is executed.
+15:37:35 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+15:37:35 INFO  : Launch script is exported to file 'D:\PortlandState\ECE_544\Labs\project_3\Vitis2\FreeRTOS_App_Project_system\_ide\scripts\systemdebugger_freertos_app_project_system_standalone.tcl'
+15:38:27 INFO  : Disconnected from the channel tcfchan#19.
+15:38:27 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:38:27 INFO  : Jtag cable 'Digilent Nexys4DDR 210292A8B0CDA' is selected.
+15:38:27 INFO  : 'jtag frequency' command is executed.
+15:38:27 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A8B0CDA" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A8B0CDA-13631093-0"}' command is executed.
+15:38:30 INFO  : Device configured successfully with "D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_App_Project/_ide/bitstream/nexysA7fpga.bit"
+15:38:30 INFO  : Context for processor 'microblaze_0' is selected.
+15:38:30 INFO  : Hardware design and registers information is loaded from 'D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/export/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa'.
+15:38:30 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+15:38:30 INFO  : Context for processor 'microblaze_0' is selected.
+15:38:30 INFO  : System reset is completed.
+15:38:33 INFO  : 'after 3000' command is executed.
+15:38:33 INFO  : Context for processor 'microblaze_0' is selected.
+15:38:33 INFO  : The application 'D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_App_Project/Debug/FreeRTOS_App_Project.elf' is downloaded to processor 'microblaze_0'.
+15:38:33 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292A8B0CDA" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292A8B0CDA-13631093-0"}
+fpga -file D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_App_Project/_ide/bitstream/nexysA7fpga.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/export/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_App_Project/Debug/FreeRTOS_App_Project.elf
+----------------End of Script----------------
+
+15:38:33 INFO  : Context for processor 'microblaze_0' is selected.
+15:38:33 INFO  : 'con' command is executed.
+15:38:33 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+15:38:33 INFO  : Launch script is exported to file 'D:\PortlandState\ECE_544\Labs\project_3\Vitis2\FreeRTOS_App_Project_system\_ide\scripts\systemdebugger_freertos_app_project_system_standalone.tcl'

@@ -1,0 +1,1225 @@
+TRACE::2022-05-18.10:25:40::SCWPlatform::Trying to open the hw design at D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:25:40::SCWPlatform::DSA given D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:25:40::SCWPlatform::DSA absoulate path D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:25:40::SCWPlatform::DSA directory D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw
+TRACE::2022-05-18.10:25:40::SCWPlatform:: Platform Path D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:25:40::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-05-18.10:25:40::SCWPlatform::Do not have an existing db opened. 
+TRACE::2022-05-18.10:25:40::SCWPlatform::Opened new HwDB with name nexysA7fpga_2
+TRACE::2022-05-18.10:25:40::SCWWriter::formatted JSON is {
+	"platformName":	"FreeRTOS_Project3_Platform",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"FreeRTOS_Project3_Platform",
+	"platHandOff":	"D:/PortlandState/ECE_544/Labs/project_3/nexysA7fpga.xsa",
+	"platIntHandOff":	"<platformDir>/hw/nexysA7fpga.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	""
+}
+TRACE::2022-05-18.10:25:40::SCWWriter::formatted JSON is {
+	"platformName":	"FreeRTOS_Project3_Platform",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"FreeRTOS_Project3_Platform",
+	"platHandOff":	"D:/PortlandState/ECE_544/Labs/project_3/nexysA7fpga.xsa",
+	"platIntHandOff":	"<platformDir>/hw/nexysA7fpga.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"FreeRTOS_Project3_Platform",
+	"systems":	[{
+			"systemName":	"FreeRTOS_Project3_Platform",
+			"systemDesc":	"FreeRTOS_Project3_Platform",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"FreeRTOS_Project3_Platform"
+		}]
+}
+TRACE::2022-05-18.10:25:40::SCWPlatform::Boot application domains not present, creating them
+TRACE::2022-05-18.10:25:40::SCWPlatform::Pure FPGA device, no boot application will be created.
+TRACE::2022-05-18.10:25:40::SCWWriter::formatted JSON is {
+	"platformName":	"FreeRTOS_Project3_Platform",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"FreeRTOS_Project3_Platform",
+	"platHandOff":	"D:/PortlandState/ECE_544/Labs/project_3/nexysA7fpga.xsa",
+	"platIntHandOff":	"<platformDir>/hw/nexysA7fpga.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"FreeRTOS_Project3_Platform",
+	"systems":	[{
+			"systemName":	"FreeRTOS_Project3_Platform",
+			"systemDesc":	"FreeRTOS_Project3_Platform",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"FreeRTOS_Project3_Platform"
+		}]
+}
+TRACE::2022-05-18.10:25:40::SCWPlatform::Trying to open the hw design at D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:25:40::SCWPlatform::DSA given D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:25:40::SCWPlatform::DSA absoulate path D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:25:40::SCWPlatform::DSA directory D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw
+TRACE::2022-05-18.10:25:40::SCWPlatform:: Platform Path D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:25:40::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-05-18.10:25:40::SCWPlatform::Trying to set the existing hwdb with name nexysA7fpga_2
+TRACE::2022-05-18.10:25:40::SCWPlatform::Opened existing hwdb nexysA7fpga_2
+TRACE::2022-05-18.10:25:40::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-05-18.10:25:40::SCWDomain::checking for install qemu data   : 
+TRACE::2022-05-18.10:25:40::SCWPlatform::Trying to open the hw design at D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:25:40::SCWPlatform::DSA given D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:25:40::SCWPlatform::DSA absoulate path D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:25:40::SCWPlatform::DSA directory D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw
+TRACE::2022-05-18.10:25:40::SCWPlatform:: Platform Path D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:25:40::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-05-18.10:25:40::SCWPlatform::Trying to set the existing hwdb with name nexysA7fpga_2
+TRACE::2022-05-18.10:25:40::SCWPlatform::Opened existing hwdb nexysA7fpga_2
+TRACE::2022-05-18.10:25:40::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-05-18.10:25:40::SCWPlatform::Trying to open the hw design at D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:25:40::SCWPlatform::DSA given D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:25:40::SCWPlatform::DSA absoulate path D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:25:40::SCWPlatform::DSA directory D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw
+TRACE::2022-05-18.10:25:40::SCWPlatform:: Platform Path D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:25:40::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-05-18.10:25:40::SCWPlatform::Trying to set the existing hwdb with name nexysA7fpga_2
+TRACE::2022-05-18.10:25:40::SCWPlatform::Opened existing hwdb nexysA7fpga_2
+TRACE::2022-05-18.10:25:40::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-05-18.10:25:40::SCWPlatform::Trying to open the hw design at D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:25:40::SCWPlatform::DSA given D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:25:40::SCWPlatform::DSA absoulate path D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:25:40::SCWPlatform::DSA directory D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw
+TRACE::2022-05-18.10:25:40::SCWPlatform:: Platform Path D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:25:40::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-05-18.10:25:40::SCWPlatform::Trying to set the existing hwdb with name nexysA7fpga_2
+TRACE::2022-05-18.10:25:40::SCWPlatform::Opened existing hwdb nexysA7fpga_2
+TRACE::2022-05-18.10:25:40::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-05-18.10:25:40::SCWMssOS::Checking the sw design at  D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2022-05-18.10:25:40::SCWMssOS::DEBUG:  swdes dump  D:/PortlandState/ECE_544/Labs/project_3/Vitis2/Project3_platform/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2022-05-18.10:25:40::SCWMssOS::No sw design opened at  D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2022-05-18.10:25:40::SCWMssOS::mss does not exists at D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2022-05-18.10:25:40::SCWMssOS::Creating sw design at  D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2022-05-18.10:25:40::SCWMssOS::Adding the swdes entry, created swdb D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss with des name D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2022-05-18.10:25:40::SCWMssOS::updating the scw layer changes to swdes at   D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2022-05-18.10:25:40::SCWMssOS::Writing mss at D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2022-05-18.10:25:40::SCWMssOS::Completed writing the mss file at D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/microblaze_0/freertos10_xilinx_domain/bsp
+TRACE::2022-05-18.10:25:40::SCWMssOS::Picking up changes from newly written mss file into SCW Layer. 
+TRACE::2022-05-18.10:25:40::SCWMssOS::Updated the changes from newly written mss file into SCW Layer. 
+TRACE::2022-05-18.10:25:40::SCWMssOS::Completed writing the mss file at D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/microblaze_0/freertos10_xilinx_domain/bsp
+TRACE::2022-05-18.10:25:40::SCWMssOS::Forcing BSP Sources regeneration.
+TRACE::2022-05-18.10:25:58::SCWMssOS::Saving the mss changes D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2022-05-18.10:25:58::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2022-05-18.10:25:58::SCWMssOS::Running validate of swdbs.
+KEYINFO::2022-05-18.10:25:58::SCWMssOS::Could not open the swdb for D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+KEYINFO::2022-05-18.10:25:58::SCWMssOS::Could not open the sw design at  D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+ERROR: [Hsi 55-1558] Software Design D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss is not found
+
+TRACE::2022-05-18.10:25:58::SCWMssOS::Cleared the swdb table entry
+TRACE::2022-05-18.10:25:58::SCWMssOS::Adding the swdes entry, mss present, able to open swdb D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss with des name system_0
+TRACE::2022-05-18.10:25:58::SCWMssOS::Writing the mss file completed D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2022-05-18.10:25:58::SCWMssOS::Commit changes completed.
+TRACE::2022-05-18.10:25:58::SCWPlatform::Trying to open the hw design at D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:25:58::SCWPlatform::DSA given D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:25:58::SCWPlatform::DSA absoulate path D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:25:58::SCWPlatform::DSA directory D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw
+TRACE::2022-05-18.10:25:58::SCWPlatform:: Platform Path D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:25:58::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-05-18.10:25:58::SCWPlatform::Trying to set the existing hwdb with name nexysA7fpga_2
+TRACE::2022-05-18.10:25:58::SCWPlatform::Opened existing hwdb nexysA7fpga_2
+TRACE::2022-05-18.10:25:58::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-05-18.10:25:58::SCWMssOS::Checking the sw design at  D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2022-05-18.10:25:58::SCWMssOS::DEBUG:  swdes dump  D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss|system_0||
+D:/PortlandState/ECE_544/Labs/project_3/Vitis2/Project3_platform/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2022-05-18.10:25:58::SCWMssOS::Sw design exists and opened at  D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2022-05-18.10:25:58::SCWPlatform::Trying to open the hw design at D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:25:58::SCWPlatform::DSA given D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:25:58::SCWPlatform::DSA absoulate path D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:25:58::SCWPlatform::DSA directory D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw
+TRACE::2022-05-18.10:25:58::SCWPlatform:: Platform Path D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:25:58::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-05-18.10:25:58::SCWPlatform::Trying to set the existing hwdb with name nexysA7fpga_2
+TRACE::2022-05-18.10:25:58::SCWPlatform::Opened existing hwdb nexysA7fpga_2
+TRACE::2022-05-18.10:25:58::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-05-18.10:25:58::SCWMssOS::Checking the sw design at  D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2022-05-18.10:25:58::SCWMssOS::DEBUG:  swdes dump  D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss|system_0||
+D:/PortlandState/ECE_544/Labs/project_3/Vitis2/Project3_platform/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2022-05-18.10:25:58::SCWMssOS::Sw design exists and opened at  D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2022-05-18.10:25:58::SCWPlatform::Trying to open the hw design at D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:25:58::SCWPlatform::DSA given D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:25:58::SCWPlatform::DSA absoulate path D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:25:58::SCWPlatform::DSA directory D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw
+TRACE::2022-05-18.10:25:58::SCWPlatform:: Platform Path D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:25:58::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-05-18.10:25:58::SCWPlatform::Trying to set the existing hwdb with name nexysA7fpga_2
+TRACE::2022-05-18.10:25:58::SCWPlatform::Opened existing hwdb nexysA7fpga_2
+TRACE::2022-05-18.10:25:58::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-05-18.10:25:58::SCWMssOS::Checking the sw design at  D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2022-05-18.10:25:58::SCWMssOS::DEBUG:  swdes dump  D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss|system_0||
+D:/PortlandState/ECE_544/Labs/project_3/Vitis2/Project3_platform/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2022-05-18.10:25:58::SCWMssOS::Sw design exists and opened at  D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2022-05-18.10:25:58::SCWWriter::formatted JSON is {
+	"platformName":	"FreeRTOS_Project3_Platform",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"FreeRTOS_Project3_Platform",
+	"platHandOff":	"D:/PortlandState/ECE_544/Labs/project_3/nexysA7fpga.xsa",
+	"platIntHandOff":	"<platformDir>/hw/nexysA7fpga.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"FreeRTOS_Project3_Platform",
+	"systems":	[{
+			"systemName":	"FreeRTOS_Project3_Platform",
+			"systemDesc":	"FreeRTOS_Project3_Platform",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"FreeRTOS_Project3_Platform",
+			"sysActiveDom":	"freertos10_xilinx_domain",
+			"sysDefaultDom":	"freertos10_xilinx_domain",
+			"domains":	[{
+					"domainName":	"freertos10_xilinx_domain",
+					"domainDispName":	"freertos10_xilinx_domain",
+					"domainDesc":	"freertos10_xilinx_domain",
+					"processors":	"microblaze_0",
+					"os":	"freertos10_xilinx",
+					"sdxOs":	"freertos10_xilinx",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"1.7",
+					"mssFile":	"",
+					"md5Digest":	"5dfe561edc1a9010b0710d41b254d748",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+LOG::2022-05-18.10:25:58::SCWPlatform::Started generating the artifacts platform FreeRTOS_Project3_Platform
+TRACE::2022-05-18.10:25:58::SCWPlatform::Sanity checking of platform is completed
+LOG::2022-05-18.10:25:58::SCWPlatform::Started generating the artifacts for system configuration FreeRTOS_Project3_Platform
+LOG::2022-05-18.10:25:58::SCWSystem::Checking the domain freertos10_xilinx_domain
+LOG::2022-05-18.10:25:58::SCWSystem::Not a boot domain 
+LOG::2022-05-18.10:25:58::SCWSystem::Started Processing the domain freertos10_xilinx_domain
+TRACE::2022-05-18.10:25:58::SCWDomain::Generating domain artifcats
+TRACE::2022-05-18.10:25:58::SCWMssOS::Generating standalone artifcats
+TRACE::2022-05-18.10:25:58::SCWMssOS:: Copying the user libraries. 
+TRACE::2022-05-18.10:25:58::SCWPlatform::Trying to open the hw design at D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:25:58::SCWPlatform::DSA given D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:25:58::SCWPlatform::DSA absoulate path D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:25:58::SCWPlatform::DSA directory D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw
+TRACE::2022-05-18.10:25:58::SCWPlatform:: Platform Path D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:25:58::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-05-18.10:25:58::SCWPlatform::Trying to set the existing hwdb with name nexysA7fpga_2
+TRACE::2022-05-18.10:25:58::SCWPlatform::Opened existing hwdb nexysA7fpga_2
+TRACE::2022-05-18.10:25:58::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-05-18.10:25:58::SCWMssOS::Checking the sw design at  D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2022-05-18.10:25:58::SCWMssOS::DEBUG:  swdes dump  D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss|system_0||
+D:/PortlandState/ECE_544/Labs/project_3/Vitis2/Project3_platform/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2022-05-18.10:25:58::SCWMssOS::Sw design exists and opened at  D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2022-05-18.10:25:58::SCWMssOS::Completed writing the mss file at D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/microblaze_0/freertos10_xilinx_domain/bsp
+TRACE::2022-05-18.10:25:58::SCWMssOS::Mss edits present, copying mssfile into export location D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2022-05-18.10:25:59::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2022-05-18.10:25:59::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2022-05-18.10:25:59::SCWDomain::Skipping the build for domain :  freertos10_xilinx_domain
+TRACE::2022-05-18.10:25:59::SCWMssOS::skipping the bsp build ... 
+TRACE::2022-05-18.10:25:59::SCWMssOS::Copying to export directory.
+TRACE::2022-05-18.10:25:59::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2022-05-18.10:25:59::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+LOG::2022-05-18.10:25:59::SCWSystem::Completed Processing the domain freertos10_xilinx_domain
+LOG::2022-05-18.10:25:59::SCWSystem::Completed Processing the sysconfig FreeRTOS_Project3_Platform
+LOG::2022-05-18.10:25:59::SCWPlatform::Completed generating the artifacts for system configuration FreeRTOS_Project3_Platform
+TRACE::2022-05-18.10:25:59::SCWPlatform::Started preparing the platform 
+TRACE::2022-05-18.10:25:59::SCWSystem::Writing the bif file for system config FreeRTOS_Project3_Platform
+TRACE::2022-05-18.10:25:59::SCWSystem::dir created 
+TRACE::2022-05-18.10:25:59::SCWSystem::Writing the bif 
+TRACE::2022-05-18.10:25:59::SCWPlatform::Started writing the spfm file 
+TRACE::2022-05-18.10:25:59::SCWPlatform::Started writing the xpfm file 
+TRACE::2022-05-18.10:25:59::SCWPlatform::Completed generating the platform
+TRACE::2022-05-18.10:25:59::SCWMssOS::Saving the mss changes D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2022-05-18.10:25:59::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2022-05-18.10:25:59::SCWMssOS::Completed writemss as part of save.
+TRACE::2022-05-18.10:25:59::SCWMssOS::Commit changes completed.
+TRACE::2022-05-18.10:25:59::SCWPlatform::Trying to open the hw design at D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:25:59::SCWPlatform::DSA given D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:25:59::SCWPlatform::DSA absoulate path D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:25:59::SCWPlatform::DSA directory D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw
+TRACE::2022-05-18.10:25:59::SCWPlatform:: Platform Path D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:25:59::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-05-18.10:25:59::SCWPlatform::Trying to set the existing hwdb with name nexysA7fpga_2
+TRACE::2022-05-18.10:25:59::SCWPlatform::Opened existing hwdb nexysA7fpga_2
+TRACE::2022-05-18.10:25:59::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-05-18.10:25:59::SCWMssOS::Checking the sw design at  D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2022-05-18.10:25:59::SCWMssOS::DEBUG:  swdes dump  D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss|system_0||
+D:/PortlandState/ECE_544/Labs/project_3/Vitis2/Project3_platform/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2022-05-18.10:25:59::SCWMssOS::Sw design exists and opened at  D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2022-05-18.10:25:59::SCWPlatform::Trying to open the hw design at D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:25:59::SCWPlatform::DSA given D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:25:59::SCWPlatform::DSA absoulate path D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:25:59::SCWPlatform::DSA directory D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw
+TRACE::2022-05-18.10:25:59::SCWPlatform:: Platform Path D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:25:59::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-05-18.10:25:59::SCWPlatform::Trying to set the existing hwdb with name nexysA7fpga_2
+TRACE::2022-05-18.10:25:59::SCWPlatform::Opened existing hwdb nexysA7fpga_2
+TRACE::2022-05-18.10:25:59::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-05-18.10:25:59::SCWMssOS::Checking the sw design at  D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2022-05-18.10:25:59::SCWMssOS::DEBUG:  swdes dump  D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss|system_0||
+D:/PortlandState/ECE_544/Labs/project_3/Vitis2/Project3_platform/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2022-05-18.10:25:59::SCWMssOS::Sw design exists and opened at  D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2022-05-18.10:25:59::SCWPlatform::Trying to open the hw design at D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:25:59::SCWPlatform::DSA given D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:25:59::SCWPlatform::DSA absoulate path D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:25:59::SCWPlatform::DSA directory D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw
+TRACE::2022-05-18.10:25:59::SCWPlatform:: Platform Path D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:25:59::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-05-18.10:25:59::SCWPlatform::Trying to set the existing hwdb with name nexysA7fpga_2
+TRACE::2022-05-18.10:25:59::SCWPlatform::Opened existing hwdb nexysA7fpga_2
+TRACE::2022-05-18.10:25:59::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-05-18.10:25:59::SCWMssOS::Checking the sw design at  D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2022-05-18.10:25:59::SCWMssOS::DEBUG:  swdes dump  D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss|system_0||
+D:/PortlandState/ECE_544/Labs/project_3/Vitis2/Project3_platform/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2022-05-18.10:25:59::SCWMssOS::Sw design exists and opened at  D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2022-05-18.10:25:59::SCWWriter::formatted JSON is {
+	"platformName":	"FreeRTOS_Project3_Platform",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"FreeRTOS_Project3_Platform",
+	"platHandOff":	"D:/PortlandState/ECE_544/Labs/project_3/nexysA7fpga.xsa",
+	"platIntHandOff":	"<platformDir>/hw/nexysA7fpga.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"FreeRTOS_Project3_Platform",
+	"systems":	[{
+			"systemName":	"FreeRTOS_Project3_Platform",
+			"systemDesc":	"FreeRTOS_Project3_Platform",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"FreeRTOS_Project3_Platform",
+			"sysActiveDom":	"freertos10_xilinx_domain",
+			"sysDefaultDom":	"freertos10_xilinx_domain",
+			"domains":	[{
+					"domainName":	"freertos10_xilinx_domain",
+					"domainDispName":	"freertos10_xilinx_domain",
+					"domainDesc":	"freertos10_xilinx_domain",
+					"processors":	"microblaze_0",
+					"os":	"freertos10_xilinx",
+					"sdxOs":	"freertos10_xilinx",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"1.7",
+					"mssFile":	"",
+					"md5Digest":	"5dfe561edc1a9010b0710d41b254d748",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2022-05-18.10:25:59::SCWPlatform::updated the xpfm file.
+TRACE::2022-05-18.10:25:59::SCWPlatform::Trying to open the hw design at D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:25:59::SCWPlatform::DSA given D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:25:59::SCWPlatform::DSA absoulate path D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:25:59::SCWPlatform::DSA directory D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw
+TRACE::2022-05-18.10:25:59::SCWPlatform:: Platform Path D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:25:59::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-05-18.10:25:59::SCWPlatform::Trying to set the existing hwdb with name nexysA7fpga_2
+TRACE::2022-05-18.10:25:59::SCWPlatform::Opened existing hwdb nexysA7fpga_2
+TRACE::2022-05-18.10:25:59::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-05-18.10:25:59::SCWMssOS::Checking the sw design at  D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2022-05-18.10:25:59::SCWMssOS::DEBUG:  swdes dump  D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss|system_0||
+D:/PortlandState/ECE_544/Labs/project_3/Vitis2/Project3_platform/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2022-05-18.10:25:59::SCWMssOS::Sw design exists and opened at  D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2022-05-18.10:25:59::SCWMssOS::Saving the mss changes D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2022-05-18.10:25:59::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2022-05-18.10:25:59::SCWMssOS::Completed writemss as part of save.
+TRACE::2022-05-18.10:25:59::SCWMssOS::Commit changes completed.
+TRACE::2022-05-18.10:25:59::SCWPlatform::Trying to open the hw design at D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:25:59::SCWPlatform::DSA given D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:25:59::SCWPlatform::DSA absoulate path D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:25:59::SCWPlatform::DSA directory D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw
+TRACE::2022-05-18.10:25:59::SCWPlatform:: Platform Path D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:25:59::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-05-18.10:25:59::SCWPlatform::Trying to set the existing hwdb with name nexysA7fpga_2
+TRACE::2022-05-18.10:25:59::SCWPlatform::Opened existing hwdb nexysA7fpga_2
+TRACE::2022-05-18.10:25:59::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-05-18.10:25:59::SCWMssOS::Checking the sw design at  D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2022-05-18.10:25:59::SCWMssOS::DEBUG:  swdes dump  D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss|system_0||
+D:/PortlandState/ECE_544/Labs/project_3/Vitis2/Project3_platform/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2022-05-18.10:25:59::SCWMssOS::Sw design exists and opened at  D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2022-05-18.10:25:59::SCWPlatform::Trying to open the hw design at D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:25:59::SCWPlatform::DSA given D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:25:59::SCWPlatform::DSA absoulate path D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:25:59::SCWPlatform::DSA directory D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw
+TRACE::2022-05-18.10:25:59::SCWPlatform:: Platform Path D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:25:59::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-05-18.10:25:59::SCWPlatform::Trying to set the existing hwdb with name nexysA7fpga_2
+TRACE::2022-05-18.10:25:59::SCWPlatform::Opened existing hwdb nexysA7fpga_2
+TRACE::2022-05-18.10:25:59::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-05-18.10:25:59::SCWMssOS::Checking the sw design at  D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2022-05-18.10:25:59::SCWMssOS::DEBUG:  swdes dump  D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss|system_0||
+D:/PortlandState/ECE_544/Labs/project_3/Vitis2/Project3_platform/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2022-05-18.10:25:59::SCWMssOS::Sw design exists and opened at  D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2022-05-18.10:25:59::SCWPlatform::Trying to open the hw design at D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:25:59::SCWPlatform::DSA given D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:25:59::SCWPlatform::DSA absoulate path D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:25:59::SCWPlatform::DSA directory D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw
+TRACE::2022-05-18.10:25:59::SCWPlatform:: Platform Path D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:25:59::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-05-18.10:25:59::SCWPlatform::Trying to set the existing hwdb with name nexysA7fpga_2
+TRACE::2022-05-18.10:25:59::SCWPlatform::Opened existing hwdb nexysA7fpga_2
+TRACE::2022-05-18.10:25:59::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-05-18.10:25:59::SCWMssOS::Checking the sw design at  D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2022-05-18.10:25:59::SCWMssOS::DEBUG:  swdes dump  D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss|system_0||
+D:/PortlandState/ECE_544/Labs/project_3/Vitis2/Project3_platform/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2022-05-18.10:25:59::SCWMssOS::Sw design exists and opened at  D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2022-05-18.10:25:59::SCWWriter::formatted JSON is {
+	"platformName":	"FreeRTOS_Project3_Platform",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"FreeRTOS_Project3_Platform",
+	"platHandOff":	"D:/PortlandState/ECE_544/Labs/project_3/nexysA7fpga.xsa",
+	"platIntHandOff":	"<platformDir>/hw/nexysA7fpga.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"FreeRTOS_Project3_Platform",
+	"systems":	[{
+			"systemName":	"FreeRTOS_Project3_Platform",
+			"systemDesc":	"FreeRTOS_Project3_Platform",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"FreeRTOS_Project3_Platform",
+			"sysActiveDom":	"freertos10_xilinx_domain",
+			"sysDefaultDom":	"freertos10_xilinx_domain",
+			"domains":	[{
+					"domainName":	"freertos10_xilinx_domain",
+					"domainDispName":	"freertos10_xilinx_domain",
+					"domainDesc":	"freertos10_xilinx_domain",
+					"processors":	"microblaze_0",
+					"os":	"freertos10_xilinx",
+					"sdxOs":	"freertos10_xilinx",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"1.7",
+					"mssFile":	"",
+					"md5Digest":	"5dfe561edc1a9010b0710d41b254d748",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+TRACE::2022-05-18.10:25:59::SCWPlatform::Trying to open the hw design at D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:25:59::SCWPlatform::DSA given D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:25:59::SCWPlatform::DSA absoulate path D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:25:59::SCWPlatform::DSA directory D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw
+TRACE::2022-05-18.10:25:59::SCWPlatform:: Platform Path D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:25:59::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-05-18.10:25:59::SCWPlatform::Trying to set the existing hwdb with name nexysA7fpga_2
+TRACE::2022-05-18.10:25:59::SCWPlatform::Opened existing hwdb nexysA7fpga_2
+TRACE::2022-05-18.10:25:59::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-05-18.10:25:59::SCWMssOS::Checking the sw design at  D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2022-05-18.10:25:59::SCWMssOS::DEBUG:  swdes dump  D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss|system_0||
+D:/PortlandState/ECE_544/Labs/project_3/Vitis2/Project3_platform/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2022-05-18.10:25:59::SCWMssOS::Sw design exists and opened at  D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2022-05-18.10:25:59::SCWPlatform::Trying to open the hw design at D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:25:59::SCWPlatform::DSA given D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:25:59::SCWPlatform::DSA absoulate path D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:25:59::SCWPlatform::DSA directory D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw
+TRACE::2022-05-18.10:25:59::SCWPlatform:: Platform Path D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:25:59::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-05-18.10:25:59::SCWPlatform::Trying to set the existing hwdb with name nexysA7fpga_2
+TRACE::2022-05-18.10:25:59::SCWPlatform::Opened existing hwdb nexysA7fpga_2
+TRACE::2022-05-18.10:25:59::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-05-18.10:25:59::SCWMssOS::Checking the sw design at  D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2022-05-18.10:25:59::SCWMssOS::DEBUG:  swdes dump  D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss|system_0||
+D:/PortlandState/ECE_544/Labs/project_3/Vitis2/Project3_platform/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2022-05-18.10:25:59::SCWMssOS::Sw design exists and opened at  D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2022-05-18.10:25:59::SCWPlatform::Trying to open the hw design at D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:25:59::SCWPlatform::DSA given D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:25:59::SCWPlatform::DSA absoulate path D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:25:59::SCWPlatform::DSA directory D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw
+TRACE::2022-05-18.10:25:59::SCWPlatform:: Platform Path D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:25:59::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-05-18.10:25:59::SCWPlatform::Trying to set the existing hwdb with name nexysA7fpga_2
+TRACE::2022-05-18.10:25:59::SCWPlatform::Opened existing hwdb nexysA7fpga_2
+TRACE::2022-05-18.10:25:59::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-05-18.10:25:59::SCWMssOS::Checking the sw design at  D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2022-05-18.10:25:59::SCWMssOS::DEBUG:  swdes dump  D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss|system_0||
+D:/PortlandState/ECE_544/Labs/project_3/Vitis2/Project3_platform/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2022-05-18.10:25:59::SCWMssOS::Sw design exists and opened at  D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2022-05-18.10:25:59::SCWMssOS::Saving the mss changes D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2022-05-18.10:25:59::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2022-05-18.10:25:59::SCWMssOS::Completed writemss as part of save.
+TRACE::2022-05-18.10:25:59::SCWMssOS::Commit changes completed.
+TRACE::2022-05-18.10:25:59::SCWPlatform::Trying to open the hw design at D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:25:59::SCWPlatform::DSA given D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:25:59::SCWPlatform::DSA absoulate path D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:25:59::SCWPlatform::DSA directory D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw
+TRACE::2022-05-18.10:25:59::SCWPlatform:: Platform Path D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:25:59::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-05-18.10:25:59::SCWPlatform::Trying to set the existing hwdb with name nexysA7fpga_2
+TRACE::2022-05-18.10:25:59::SCWPlatform::Opened existing hwdb nexysA7fpga_2
+TRACE::2022-05-18.10:25:59::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-05-18.10:25:59::SCWMssOS::Checking the sw design at  D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2022-05-18.10:25:59::SCWMssOS::DEBUG:  swdes dump  D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss|system_0||
+D:/PortlandState/ECE_544/Labs/project_3/Vitis2/Project3_platform/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2022-05-18.10:25:59::SCWMssOS::Sw design exists and opened at  D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2022-05-18.10:25:59::SCWPlatform::Trying to open the hw design at D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:25:59::SCWPlatform::DSA given D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:25:59::SCWPlatform::DSA absoulate path D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:25:59::SCWPlatform::DSA directory D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw
+TRACE::2022-05-18.10:25:59::SCWPlatform:: Platform Path D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:25:59::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-05-18.10:25:59::SCWPlatform::Trying to set the existing hwdb with name nexysA7fpga_2
+TRACE::2022-05-18.10:25:59::SCWPlatform::Opened existing hwdb nexysA7fpga_2
+TRACE::2022-05-18.10:25:59::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-05-18.10:25:59::SCWMssOS::Checking the sw design at  D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2022-05-18.10:25:59::SCWMssOS::DEBUG:  swdes dump  D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss|system_0||
+D:/PortlandState/ECE_544/Labs/project_3/Vitis2/Project3_platform/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2022-05-18.10:25:59::SCWMssOS::Sw design exists and opened at  D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2022-05-18.10:25:59::SCWPlatform::Trying to open the hw design at D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:25:59::SCWPlatform::DSA given D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:25:59::SCWPlatform::DSA absoulate path D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:25:59::SCWPlatform::DSA directory D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw
+TRACE::2022-05-18.10:25:59::SCWPlatform:: Platform Path D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:25:59::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-05-18.10:25:59::SCWPlatform::Trying to set the existing hwdb with name nexysA7fpga_2
+TRACE::2022-05-18.10:25:59::SCWPlatform::Opened existing hwdb nexysA7fpga_2
+TRACE::2022-05-18.10:25:59::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-05-18.10:25:59::SCWMssOS::Checking the sw design at  D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2022-05-18.10:25:59::SCWMssOS::DEBUG:  swdes dump  D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss|system_0||
+D:/PortlandState/ECE_544/Labs/project_3/Vitis2/Project3_platform/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2022-05-18.10:25:59::SCWMssOS::Sw design exists and opened at  D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2022-05-18.10:25:59::SCWWriter::formatted JSON is {
+	"platformName":	"FreeRTOS_Project3_Platform",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"FreeRTOS_Project3_Platform",
+	"platHandOff":	"D:/PortlandState/ECE_544/Labs/project_3/nexysA7fpga.xsa",
+	"platIntHandOff":	"<platformDir>/hw/nexysA7fpga.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"FreeRTOS_Project3_Platform",
+	"systems":	[{
+			"systemName":	"FreeRTOS_Project3_Platform",
+			"systemDesc":	"FreeRTOS_Project3_Platform",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"FreeRTOS_Project3_Platform",
+			"sysActiveDom":	"freertos10_xilinx_domain",
+			"sysDefaultDom":	"freertos10_xilinx_domain",
+			"domains":	[{
+					"domainName":	"freertos10_xilinx_domain",
+					"domainDispName":	"freertos10_xilinx on microblaze_0",
+					"domainDesc":	"freertos10_xilinx_domain",
+					"processors":	"microblaze_0",
+					"os":	"freertos10_xilinx",
+					"sdxOs":	"freertos10_xilinx",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"1.7",
+					"mssFile":	"",
+					"md5Digest":	"5dfe561edc1a9010b0710d41b254d748",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+TRACE::2022-05-18.10:25:59::SCWMssOS::Saving the mss changes D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2022-05-18.10:25:59::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2022-05-18.10:25:59::SCWMssOS::Completed writemss as part of save.
+TRACE::2022-05-18.10:25:59::SCWMssOS::Commit changes completed.
+TRACE::2022-05-18.10:25:59::SCWPlatform::Trying to open the hw design at D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:25:59::SCWPlatform::DSA given D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:25:59::SCWPlatform::DSA absoulate path D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:25:59::SCWPlatform::DSA directory D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw
+TRACE::2022-05-18.10:25:59::SCWPlatform:: Platform Path D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:25:59::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-05-18.10:25:59::SCWPlatform::Trying to set the existing hwdb with name nexysA7fpga_2
+TRACE::2022-05-18.10:25:59::SCWPlatform::Opened existing hwdb nexysA7fpga_2
+TRACE::2022-05-18.10:25:59::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-05-18.10:25:59::SCWMssOS::Checking the sw design at  D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2022-05-18.10:25:59::SCWMssOS::DEBUG:  swdes dump  D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss|system_0||
+D:/PortlandState/ECE_544/Labs/project_3/Vitis2/Project3_platform/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2022-05-18.10:25:59::SCWMssOS::Sw design exists and opened at  D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2022-05-18.10:25:59::SCWPlatform::Trying to open the hw design at D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:25:59::SCWPlatform::DSA given D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:25:59::SCWPlatform::DSA absoulate path D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:25:59::SCWPlatform::DSA directory D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw
+TRACE::2022-05-18.10:25:59::SCWPlatform:: Platform Path D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:25:59::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-05-18.10:25:59::SCWPlatform::Trying to set the existing hwdb with name nexysA7fpga_2
+TRACE::2022-05-18.10:25:59::SCWPlatform::Opened existing hwdb nexysA7fpga_2
+TRACE::2022-05-18.10:25:59::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-05-18.10:25:59::SCWMssOS::Checking the sw design at  D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2022-05-18.10:25:59::SCWMssOS::DEBUG:  swdes dump  D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss|system_0||
+D:/PortlandState/ECE_544/Labs/project_3/Vitis2/Project3_platform/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2022-05-18.10:25:59::SCWMssOS::Sw design exists and opened at  D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2022-05-18.10:25:59::SCWPlatform::Trying to open the hw design at D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:25:59::SCWPlatform::DSA given D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:25:59::SCWPlatform::DSA absoulate path D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:25:59::SCWPlatform::DSA directory D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw
+TRACE::2022-05-18.10:25:59::SCWPlatform:: Platform Path D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:25:59::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-05-18.10:25:59::SCWPlatform::Trying to set the existing hwdb with name nexysA7fpga_2
+TRACE::2022-05-18.10:25:59::SCWPlatform::Opened existing hwdb nexysA7fpga_2
+TRACE::2022-05-18.10:25:59::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-05-18.10:25:59::SCWMssOS::Checking the sw design at  D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2022-05-18.10:25:59::SCWMssOS::DEBUG:  swdes dump  D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss|system_0||
+D:/PortlandState/ECE_544/Labs/project_3/Vitis2/Project3_platform/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2022-05-18.10:25:59::SCWMssOS::Sw design exists and opened at  D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2022-05-18.10:25:59::SCWWriter::formatted JSON is {
+	"platformName":	"FreeRTOS_Project3_Platform",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"FreeRTOS_Project3_Platform",
+	"platHandOff":	"D:/PortlandState/ECE_544/Labs/project_3/nexysA7fpga.xsa",
+	"platIntHandOff":	"<platformDir>/hw/nexysA7fpga.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"FreeRTOS_Project3_Platform",
+	"systems":	[{
+			"systemName":	"FreeRTOS_Project3_Platform",
+			"systemDesc":	"FreeRTOS_Project3_Platform",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"FreeRTOS_Project3_Platform",
+			"sysActiveDom":	"freertos10_xilinx_domain",
+			"sysDefaultDom":	"freertos10_xilinx_domain",
+			"domains":	[{
+					"domainName":	"freertos10_xilinx_domain",
+					"domainDispName":	"freertos10_xilinx on microblaze_0",
+					"domainDesc":	"freertos10_xilinx_domain",
+					"processors":	"microblaze_0",
+					"os":	"freertos10_xilinx",
+					"sdxOs":	"freertos10_xilinx",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"1.7",
+					"mssFile":	"",
+					"md5Digest":	"5dfe561edc1a9010b0710d41b254d748",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+TRACE::2022-05-18.10:26:00::SCWPlatform::Clearing the existing platform
+TRACE::2022-05-18.10:26:00::SCWSystem::Clearing the existing sysconfig
+TRACE::2022-05-18.10:26:00::SCWMssOS::Removing the swdes entry for  D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2022-05-18.10:26:00::SCWSystem::Clearing the domains completed.
+TRACE::2022-05-18.10:26:00::SCWPlatform::Clearing the opened hw db.
+TRACE::2022-05-18.10:26:00::SCWPlatform::DSA given D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:26:00::SCWPlatform::DSA absoulate path D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:26:00::SCWPlatform:: Platform location is D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw
+TRACE::2022-05-18.10:26:00::SCWPlatform:: Platform Path D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:26:00::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-05-18.10:26:00::SCWPlatform::Removing the HwDB with name D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:26:00::SCWPlatform::Trying to open the hw design at D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:26:00::SCWPlatform::DSA given D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:26:00::SCWPlatform::DSA absoulate path D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:26:00::SCWPlatform::DSA directory D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw
+TRACE::2022-05-18.10:26:00::SCWPlatform:: Platform Path D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:26:00::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-05-18.10:26:00::SCWPlatform::Do not have an existing db opened. 
+TRACE::2022-05-18.10:26:00::SCWPlatform::Opened new HwDB with name nexysA7fpga_3
+TRACE::2022-05-18.10:26:00::SCWReader::Active system found as  FreeRTOS_Project3_Platform
+TRACE::2022-05-18.10:26:00::SCWReader::Handling sysconfig FreeRTOS_Project3_Platform
+TRACE::2022-05-18.10:26:00::SCWDomain::checking for install qemu data   : 
+TRACE::2022-05-18.10:26:00::SCWPlatform::Trying to open the hw design at D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:26:00::SCWPlatform::DSA given D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:26:00::SCWPlatform::DSA absoulate path D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:26:00::SCWPlatform::DSA directory D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw
+TRACE::2022-05-18.10:26:00::SCWPlatform:: Platform Path D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:26:00::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-05-18.10:26:00::SCWPlatform::Trying to set the existing hwdb with name nexysA7fpga_3
+TRACE::2022-05-18.10:26:00::SCWPlatform::Opened existing hwdb nexysA7fpga_3
+TRACE::2022-05-18.10:26:00::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-05-18.10:26:00::SCWPlatform::Trying to open the hw design at D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:26:00::SCWPlatform::DSA given D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:26:00::SCWPlatform::DSA absoulate path D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:26:00::SCWPlatform::DSA directory D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw
+TRACE::2022-05-18.10:26:00::SCWPlatform:: Platform Path D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:26:00::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-05-18.10:26:00::SCWPlatform::Trying to set the existing hwdb with name nexysA7fpga_3
+TRACE::2022-05-18.10:26:00::SCWPlatform::Opened existing hwdb nexysA7fpga_3
+TRACE::2022-05-18.10:26:00::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-05-18.10:26:00::SCWPlatform::Trying to open the hw design at D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:26:00::SCWPlatform::DSA given D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:26:00::SCWPlatform::DSA absoulate path D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:26:00::SCWPlatform::DSA directory D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw
+TRACE::2022-05-18.10:26:00::SCWPlatform:: Platform Path D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:26:00::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-05-18.10:26:00::SCWPlatform::Trying to set the existing hwdb with name nexysA7fpga_3
+TRACE::2022-05-18.10:26:00::SCWPlatform::Opened existing hwdb nexysA7fpga_3
+TRACE::2022-05-18.10:26:00::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-05-18.10:26:00::SCWPlatform::Trying to open the hw design at D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:26:00::SCWPlatform::DSA given D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:26:00::SCWPlatform::DSA absoulate path D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:26:00::SCWPlatform::DSA directory D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw
+TRACE::2022-05-18.10:26:00::SCWPlatform:: Platform Path D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:26:00::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-05-18.10:26:00::SCWPlatform::Trying to set the existing hwdb with name nexysA7fpga_3
+TRACE::2022-05-18.10:26:00::SCWPlatform::Opened existing hwdb nexysA7fpga_3
+TRACE::2022-05-18.10:26:00::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-05-18.10:26:00::SCWMssOS::Checking the sw design at  D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2022-05-18.10:26:00::SCWMssOS::DEBUG:  swdes dump  D:/PortlandState/ECE_544/Labs/project_3/Vitis2/Project3_platform/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2022-05-18.10:26:00::SCWMssOS::No sw design opened at  D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2022-05-18.10:26:00::SCWMssOS::mss exists loading the mss file  D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2022-05-18.10:26:00::SCWMssOS::Opened the sw design from mss  D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2022-05-18.10:26:00::SCWMssOS::Adding the swdes entry D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss with des name system_0
+TRACE::2022-05-18.10:26:00::SCWMssOS::updating the scw layer about changes
+TRACE::2022-05-18.10:26:00::SCWMssOS::Opened the sw design.  D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2022-05-18.10:26:00::SCWMssOS::Saving the mss changes D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2022-05-18.10:26:00::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2022-05-18.10:26:00::SCWMssOS::Completed writemss as part of save.
+TRACE::2022-05-18.10:26:00::SCWMssOS::Commit changes completed.
+TRACE::2022-05-18.10:26:00::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2022-05-18.10:26:00::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2022-05-18.10:26:00::SCWPlatform::Trying to open the hw design at D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:26:00::SCWPlatform::DSA given D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:26:00::SCWPlatform::DSA absoulate path D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:26:00::SCWPlatform::DSA directory D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw
+TRACE::2022-05-18.10:26:00::SCWPlatform:: Platform Path D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:26:00::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-05-18.10:26:00::SCWPlatform::Trying to set the existing hwdb with name nexysA7fpga_3
+TRACE::2022-05-18.10:26:00::SCWPlatform::Opened existing hwdb nexysA7fpga_3
+TRACE::2022-05-18.10:26:00::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-05-18.10:26:00::SCWMssOS::Checking the sw design at  D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2022-05-18.10:26:00::SCWMssOS::DEBUG:  swdes dump  D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss|system_0||
+D:/PortlandState/ECE_544/Labs/project_3/Vitis2/Project3_platform/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2022-05-18.10:26:00::SCWMssOS::Sw design exists and opened at  D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2022-05-18.10:26:00::SCWReader::No isolation master present  
+LOG::2022-05-18.10:29:11::SCWPlatform::Started generating the artifacts platform FreeRTOS_Project3_Platform
+TRACE::2022-05-18.10:29:11::SCWPlatform::Sanity checking of platform is completed
+LOG::2022-05-18.10:29:11::SCWPlatform::Started generating the artifacts for system configuration FreeRTOS_Project3_Platform
+LOG::2022-05-18.10:29:11::SCWSystem::Checking the domain freertos10_xilinx_domain
+LOG::2022-05-18.10:29:11::SCWSystem::Not a boot domain 
+LOG::2022-05-18.10:29:11::SCWSystem::Started Processing the domain freertos10_xilinx_domain
+TRACE::2022-05-18.10:29:11::SCWDomain::Generating domain artifcats
+TRACE::2022-05-18.10:29:11::SCWMssOS::Generating standalone artifcats
+TRACE::2022-05-18.10:29:11::SCWMssOS:: Copying the user libraries. 
+TRACE::2022-05-18.10:29:11::SCWPlatform::Trying to open the hw design at D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:29:11::SCWPlatform::DSA given D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:29:11::SCWPlatform::DSA absoulate path D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:29:11::SCWPlatform::DSA directory D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw
+TRACE::2022-05-18.10:29:11::SCWPlatform:: Platform Path D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:29:11::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-05-18.10:29:11::SCWPlatform::Trying to set the existing hwdb with name nexysA7fpga_3
+TRACE::2022-05-18.10:29:11::SCWPlatform::Opened existing hwdb nexysA7fpga_3
+TRACE::2022-05-18.10:29:11::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-05-18.10:29:11::SCWMssOS::Checking the sw design at  D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2022-05-18.10:29:11::SCWMssOS::DEBUG:  swdes dump  D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss|system_0||
+D:/PortlandState/ECE_544/Labs/project_3/Vitis2/Project3_platform/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2022-05-18.10:29:11::SCWMssOS::Sw design exists and opened at  D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2022-05-18.10:29:11::SCWMssOS::Completed writing the mss file at D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/microblaze_0/freertos10_xilinx_domain/bsp
+TRACE::2022-05-18.10:29:11::SCWMssOS::Mss edits present, copying mssfile into export location D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2022-05-18.10:29:11::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2022-05-18.10:29:11::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2022-05-18.10:29:11::SCWDomain::Building the domain as part of full build :  freertos10_xilinx_domain
+TRACE::2022-05-18.10:29:11::SCWMssOS::doing bsp build ... 
+TRACE::2022-05-18.10:29:11::SCWMssOS::System Command Ran  D: & cd  D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/microblaze_0/freertos10_xilinx_domain/bsp & make 
+TRACE::2022-05-18.10:29:11::SCWMssOS::make --no-print-directory seq_libs
+
+TRACE::2022-05-18.10:29:11::SCWMssOS::"Running Make include in microblaze_0/libsrc/bram_v4_5/src"
+
+TRACE::2022-05-18.10:29:11::SCWMssOS::make -C microblaze_0/libsrc/bram_v4_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+TRACE::2022-05-18.10:29:11::SCWMssOS::R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall 
+TRACE::2022-05-18.10:29:11::SCWMssOS::-Wextra"
+
+TRACE::2022-05-18.10:29:11::SCWMssOS::"Running Make include in microblaze_0/libsrc/cpu_v2_12/src"
+
+TRACE::2022-05-18.10:29:11::SCWMssOS::make -C microblaze_0/libsrc/cpu_v2_12/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+TRACE::2022-05-18.10:29:11::SCWMssOS::R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall 
+TRACE::2022-05-18.10:29:11::SCWMssOS::-Wextra"
+
+TRACE::2022-05-18.10:29:11::SCWMssOS::"Running Make include in microblaze_0/libsrc/freertos10_xilinx_v1_7/src"
+
+TRACE::2022-05-18.10:29:11::SCWMssOS::make -C microblaze_0/libsrc/freertos10_xilinx_v1_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb
+TRACE::2022-05-18.10:29:11::SCWMssOS::-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-se
+TRACE::2022-05-18.10:29:11::SCWMssOS::ctions -Wall -Wextra"
+
+TRACE::2022-05-18.10:29:12::SCWMssOS::"includes"
+
+TRACE::2022-05-18.10:29:12::SCWMssOS::"Running Make include in microblaze_0/libsrc/gpio_v4_7/src"
+
+TRACE::2022-05-18.10:29:12::SCWMssOS::make -C microblaze_0/libsrc/gpio_v4_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+TRACE::2022-05-18.10:29:12::SCWMssOS::R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall 
+TRACE::2022-05-18.10:29:12::SCWMssOS::-Wextra"
+
+TRACE::2022-05-18.10:29:13::SCWMssOS::"Running Make include in microblaze_0/libsrc/intc_v3_12/src"
+
+TRACE::2022-05-18.10:29:13::SCWMssOS::make -C microblaze_0/libsrc/intc_v3_12/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPIL
+TRACE::2022-05-18.10:29:13::SCWMssOS::ER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall
+TRACE::2022-05-18.10:29:13::SCWMssOS:: -Wextra"
+
+TRACE::2022-05-18.10:29:13::SCWMssOS::"Running Make include in microblaze_0/libsrc/nexys4io_v1_0/src"
+
+TRACE::2022-05-18.10:29:13::SCWMssOS::make -C microblaze_0/libsrc/nexys4io_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COM
+TRACE::2022-05-18.10:29:13::SCWMssOS::PILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -W
+TRACE::2022-05-18.10:29:13::SCWMssOS::all -Wextra"
+
+TRACE::2022-05-18.10:29:13::SCWMssOS::"Running Make include in microblaze_0/libsrc/PmodENC544_v1_0/src"
+
+TRACE::2022-05-18.10:29:13::SCWMssOS::make -C microblaze_0/libsrc/PmodENC544_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "C
+TRACE::2022-05-18.10:29:13::SCWMssOS::OMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections 
+TRACE::2022-05-18.10:29:13::SCWMssOS::-Wall -Wextra"
+
+TRACE::2022-05-18.10:29:13::SCWMssOS::"Running Make include in microblaze_0/libsrc/pmodHB3_v1_0/src"
+
+TRACE::2022-05-18.10:29:13::SCWMssOS::make -C microblaze_0/libsrc/pmodHB3_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMP
+TRACE::2022-05-18.10:29:13::SCWMssOS::ILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wa
+TRACE::2022-05-18.10:29:13::SCWMssOS::ll -Wextra"
+
+TRACE::2022-05-18.10:29:13::SCWMssOS::"Running Make include in microblaze_0/libsrc/PmodOLEDrgb_v1_0/src"
+
+TRACE::2022-05-18.10:29:13::SCWMssOS::make -C microblaze_0/libsrc/PmodOLEDrgb_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "
+TRACE::2022-05-18.10:29:13::SCWMssOS::COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections
+TRACE::2022-05-18.10:29:13::SCWMssOS:: -Wall -Wextra"
+
+TRACE::2022-05-18.10:29:13::SCWMssOS::"Running Make include in microblaze_0/libsrc/tmrctr_v4_7/src"
+
+TRACE::2022-05-18.10:29:13::SCWMssOS::make -C microblaze_0/libsrc/tmrctr_v4_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPI
+TRACE::2022-05-18.10:29:13::SCWMssOS::LER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wal
+TRACE::2022-05-18.10:29:13::SCWMssOS::l -Wextra"
+
+TRACE::2022-05-18.10:29:13::SCWMssOS::"Running Make include in microblaze_0/libsrc/uartlite_v3_5/src"
+
+TRACE::2022-05-18.10:29:13::SCWMssOS::make -C microblaze_0/libsrc/uartlite_v3_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COM
+TRACE::2022-05-18.10:29:13::SCWMssOS::PILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -W
+TRACE::2022-05-18.10:29:13::SCWMssOS::all -Wextra"
+
+TRACE::2022-05-18.10:29:14::SCWMssOS::"Running Make include in microblaze_0/libsrc/wdttb_v5_1/src"
+
+TRACE::2022-05-18.10:29:14::SCWMssOS::make -C microblaze_0/libsrc/wdttb_v5_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPIL
+TRACE::2022-05-18.10:29:14::SCWMssOS::ER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall
+TRACE::2022-05-18.10:29:14::SCWMssOS:: -Wextra"
+
+TRACE::2022-05-18.10:29:14::SCWMssOS::"Running Make libs in microblaze_0/libsrc/nexys4io_v1_0/src"
+
+TRACE::2022-05-18.10:29:14::SCWMssOS::make -C microblaze_0/libsrc/nexys4io_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPIL
+TRACE::2022-05-18.10:29:14::SCWMssOS::ER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall
+TRACE::2022-05-18.10:29:14::SCWMssOS:: -Wextra"
+
+TRACE::2022-05-18.10:29:14::SCWMssOS::"Compiling nexys4IO..."
+
+TRACE::2022-05-18.10:29:14::SCWMssOS::"Running Make libs in microblaze_0/libsrc/PmodENC544_v1_0/src"
+
+TRACE::2022-05-18.10:29:14::SCWMssOS::make -C microblaze_0/libsrc/PmodENC544_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMP
+TRACE::2022-05-18.10:29:14::SCWMssOS::ILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wa
+TRACE::2022-05-18.10:29:14::SCWMssOS::ll -Wextra"
+
+TRACE::2022-05-18.10:29:14::SCWMssOS::"Compiling PmodENC544"
+
+TRACE::2022-05-18.10:29:15::SCWMssOS::"Running Make libs in microblaze_0/libsrc/pmodHB3_v1_0/src"
+
+TRACE::2022-05-18.10:29:15::SCWMssOS::make -C microblaze_0/libsrc/pmodHB3_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+TRACE::2022-05-18.10:29:15::SCWMssOS::R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall 
+TRACE::2022-05-18.10:29:15::SCWMssOS::-Wextra"
+
+TRACE::2022-05-18.10:29:15::SCWMssOS::"Compiling pmodHB3..."
+
+TRACE::2022-05-18.10:29:15::SCWMssOS::"Running Make libs in microblaze_0/libsrc/PmodOLEDrgb_v1_0/src"
+
+TRACE::2022-05-18.10:29:15::SCWMssOS::make -C microblaze_0/libsrc/PmodOLEDrgb_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COM
+TRACE::2022-05-18.10:29:15::SCWMssOS::PILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -W
+TRACE::2022-05-18.10:29:15::SCWMssOS::all -Wextra"
+
+TRACE::2022-05-18.10:29:15::SCWMssOS::"Compiling PmodOLEDrgb..."
+
+TRACE::2022-05-18.10:29:16::SCWMssOS::'Finished building libraries sequentially.'
+
+TRACE::2022-05-18.10:29:16::SCWMssOS::make -j --no-print-directory par_libs
+
+TRACE::2022-05-18.10:29:16::SCWMssOS::"Running Make include in microblaze_0/libsrc/bram_v4_5/src"
+
+TRACE::2022-05-18.10:29:16::SCWMssOS::make -C microblaze_0/libsrc/bram_v4_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+TRACE::2022-05-18.10:29:16::SCWMssOS::R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall 
+TRACE::2022-05-18.10:29:16::SCWMssOS::-Wextra"
+
+TRACE::2022-05-18.10:29:16::SCWMssOS::"Running Make include in microblaze_0/libsrc/cpu_v2_12/src"
+
+TRACE::2022-05-18.10:29:16::SCWMssOS::make -C microblaze_0/libsrc/cpu_v2_12/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+TRACE::2022-05-18.10:29:16::SCWMssOS::R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall 
+TRACE::2022-05-18.10:29:16::SCWMssOS::-Wextra"
+
+TRACE::2022-05-18.10:29:16::SCWMssOS::"Running Make include in microblaze_0/libsrc/freertos10_xilinx_v1_7/src"
+
+TRACE::2022-05-18.10:29:16::SCWMssOS::make -C microblaze_0/libsrc/freertos10_xilinx_v1_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb
+TRACE::2022-05-18.10:29:16::SCWMssOS::-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-se
+TRACE::2022-05-18.10:29:16::SCWMssOS::ctions -Wall -Wextra"
+
+TRACE::2022-05-18.10:29:16::SCWMssOS::"Running Make include in microblaze_0/libsrc/gpio_v4_7/src"
+
+TRACE::2022-05-18.10:29:16::SCWMssOS::make -C microblaze_0/libsrc/gpio_v4_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+TRACE::2022-05-18.10:29:16::SCWMssOS::R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall 
+TRACE::2022-05-18.10:29:16::SCWMssOS::-Wextra"
+
+TRACE::2022-05-18.10:29:16::SCWMssOS::"Running Make include in microblaze_0/libsrc/intc_v3_12/src"
+
+TRACE::2022-05-18.10:29:16::SCWMssOS::make -C microblaze_0/libsrc/intc_v3_12/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPIL
+TRACE::2022-05-18.10:29:16::SCWMssOS::ER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall
+TRACE::2022-05-18.10:29:16::SCWMssOS:: -Wextra"
+
+TRACE::2022-05-18.10:29:16::SCWMssOS::"Running Make include in microblaze_0/libsrc/nexys4io_v1_0/src"
+
+TRACE::2022-05-18.10:29:16::SCWMssOS::make -C microblaze_0/libsrc/nexys4io_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COM
+TRACE::2022-05-18.10:29:16::SCWMssOS::PILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -W
+TRACE::2022-05-18.10:29:16::SCWMssOS::all -Wextra"
+
+TRACE::2022-05-18.10:29:16::SCWMssOS::"Running Make include in microblaze_0/libsrc/PmodENC544_v1_0/src"
+
+TRACE::2022-05-18.10:29:16::SCWMssOS::make -C microblaze_0/libsrc/PmodENC544_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "C
+TRACE::2022-05-18.10:29:16::SCWMssOS::OMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections 
+TRACE::2022-05-18.10:29:16::SCWMssOS::-Wall -Wextra"
+
+TRACE::2022-05-18.10:29:16::SCWMssOS::"includes"
+
+TRACE::2022-05-18.10:29:16::SCWMssOS::"Running Make include in microblaze_0/libsrc/pmodHB3_v1_0/src"
+
+TRACE::2022-05-18.10:29:16::SCWMssOS::make -C microblaze_0/libsrc/pmodHB3_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMP
+TRACE::2022-05-18.10:29:16::SCWMssOS::ILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wa
+TRACE::2022-05-18.10:29:16::SCWMssOS::ll -Wextra"
+
+TRACE::2022-05-18.10:29:16::SCWMssOS::"Running Make include in microblaze_0/libsrc/PmodOLEDrgb_v1_0/src"
+
+TRACE::2022-05-18.10:29:16::SCWMssOS::make -C microblaze_0/libsrc/PmodOLEDrgb_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "
+TRACE::2022-05-18.10:29:16::SCWMssOS::COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections
+TRACE::2022-05-18.10:29:16::SCWMssOS:: -Wall -Wextra"
+
+TRACE::2022-05-18.10:29:16::SCWMssOS::"Running Make include in microblaze_0/libsrc/tmrctr_v4_7/src"
+
+TRACE::2022-05-18.10:29:16::SCWMssOS::make -C microblaze_0/libsrc/tmrctr_v4_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPI
+TRACE::2022-05-18.10:29:16::SCWMssOS::LER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wal
+TRACE::2022-05-18.10:29:16::SCWMssOS::l -Wextra"
+
+TRACE::2022-05-18.10:29:16::SCWMssOS::"Running Make include in microblaze_0/libsrc/uartlite_v3_5/src"
+
+TRACE::2022-05-18.10:29:16::SCWMssOS::make -C microblaze_0/libsrc/uartlite_v3_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COM
+TRACE::2022-05-18.10:29:16::SCWMssOS::PILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -W
+TRACE::2022-05-18.10:29:16::SCWMssOS::all -Wextra"
+
+TRACE::2022-05-18.10:29:16::SCWMssOS::"Running Make include in microblaze_0/libsrc/wdttb_v5_1/src"
+
+TRACE::2022-05-18.10:29:16::SCWMssOS::make -C microblaze_0/libsrc/wdttb_v5_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPIL
+TRACE::2022-05-18.10:29:16::SCWMssOS::ER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall
+TRACE::2022-05-18.10:29:16::SCWMssOS:: -Wextra"
+
+TRACE::2022-05-18.10:29:17::SCWMssOS::"Running Make libs in microblaze_0/libsrc/bram_v4_5/src"
+
+TRACE::2022-05-18.10:29:17::SCWMssOS::make -C microblaze_0/libsrc/bram_v4_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_F
+TRACE::2022-05-18.10:29:17::SCWMssOS::LAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -We
+TRACE::2022-05-18.10:29:17::SCWMssOS::xtra"
+
+TRACE::2022-05-18.10:29:17::SCWMssOS::"Running Make libs in microblaze_0/libsrc/cpu_v2_12/src"
+
+TRACE::2022-05-18.10:29:17::SCWMssOS::make -C microblaze_0/libsrc/cpu_v2_12/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_F
+TRACE::2022-05-18.10:29:17::SCWMssOS::LAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -We
+TRACE::2022-05-18.10:29:17::SCWMssOS::xtra"
+
+TRACE::2022-05-18.10:29:17::SCWMssOS::"Running Make libs in microblaze_0/libsrc/freertos10_xilinx_v1_7/src"
+
+TRACE::2022-05-18.10:29:17::SCWMssOS::make -C microblaze_0/libsrc/freertos10_xilinx_v1_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar
+TRACE::2022-05-18.10:29:17::SCWMssOS::" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-secti
+TRACE::2022-05-18.10:29:17::SCWMssOS::ons -Wall -Wextra"
+
+TRACE::2022-05-18.10:29:17::SCWMssOS::"Running Make libs in microblaze_0/libsrc/gpio_v4_7/src"
+
+TRACE::2022-05-18.10:29:17::SCWMssOS::make -C microblaze_0/libsrc/gpio_v4_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_F
+TRACE::2022-05-18.10:29:17::SCWMssOS::LAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -We
+TRACE::2022-05-18.10:29:17::SCWMssOS::xtra"
+
+TRACE::2022-05-18.10:29:17::SCWMssOS::"Running Make libs in microblaze_0/libsrc/tmrctr_v4_7/src"
+
+TRACE::2022-05-18.10:29:17::SCWMssOS::"Running Make libs in microblaze_0/libsrc/intc_v3_12/src"
+
+TRACE::2022-05-18.10:29:17::SCWMssOS::"Running Make libs in microblaze_0/libsrc/uartlite_v3_5/src"
+
+TRACE::2022-05-18.10:29:17::SCWMssOS::make -C microblaze_0/libsrc/intc_v3_12/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_
+TRACE::2022-05-18.10:29:17::SCWMssOS::FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -W
+TRACE::2022-05-18.10:29:17::SCWMssOS::extra"
+
+TRACE::2022-05-18.10:29:17::SCWMssOS::"Running Make libs in microblaze_0/libsrc/wdttb_v5_1/src"
+
+TRACE::2022-05-18.10:29:17::SCWMssOS::make -C microblaze_0/libsrc/uartlite_v3_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPIL
+TRACE::2022-05-18.10:29:17::SCWMssOS::ER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall
+TRACE::2022-05-18.10:29:17::SCWMssOS:: -Wextra"
+
+TRACE::2022-05-18.10:29:17::SCWMssOS::make -C microblaze_0/libsrc/tmrctr_v4_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER
+TRACE::2022-05-18.10:29:17::SCWMssOS::_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -
+TRACE::2022-05-18.10:29:17::SCWMssOS::Wextra"
+
+TRACE::2022-05-18.10:29:17::SCWMssOS::make -C microblaze_0/libsrc/wdttb_v5_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_
+TRACE::2022-05-18.10:29:17::SCWMssOS::FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -W
+TRACE::2022-05-18.10:29:17::SCWMssOS::extra"
+
+TRACE::2022-05-18.10:29:20::SCWMssOS::'Finished building libraries parallelly.'
+
+TRACE::2022-05-18.10:29:20::SCWMssOS::make --no-print-directory archive
+
+TRACE::2022-05-18.10:29:20::SCWMssOS::mb-ar -r  microblaze_0/lib/libxil.a microblaze_0/lib/xwdttb_g.o microblaze_0/lib/xplatform_info.o microblaze_0/lib/xuartlite.o 
+TRACE::2022-05-18.10:29:20::SCWMssOS::microblaze_0/lib/microblaze_disable_exceptions.o microblaze_0/lib/print.o microblaze_0/lib/xtmrctr_options.o microblaze_0/lib/_
+TRACE::2022-05-18.10:29:20::SCWMssOS::exit.o microblaze_0/lib/xil_testio.o microblaze_0/lib/microblaze_disable_dcache.o microblaze_0/lib/microblaze_flush_dcache_rang
+TRACE::2022-05-18.10:29:20::SCWMssOS::e.o microblaze_0/lib/xuartlite_sinit.o microblaze_0/lib/microblaze_flush_cache_ext.o microblaze_0/lib/xwdttb_config.o microblaz
+TRACE::2022-05-18.10:29:20::SCWMssOS::e_0/lib/xbram_sinit.o microblaze_0/lib/xwdttb.o microblaze_0/lib/xil_misc_psreset_api.o microblaze_0/lib/xil_cache.o microblaze
+TRACE::2022-05-18.10:29:20::SCWMssOS::_0/lib/xil_util.o microblaze_0/lib/inbyte.o microblaze_0/lib/xintc_intr.o microblaze_0/lib/xuartlite_stats.o microblaze_0/lib/m
+TRACE::2022-05-18.10:29:20::SCWMssOS::icroblaze_exception_handler.o microblaze_0/lib/xbram_g.o microblaze_0/lib/microblaze_scrub.o microblaze_0/lib/microblaze_invali
+TRACE::2022-05-18.10:29:20::SCWMssOS::date_dcache.o microblaze_0/lib/microblaze_disable_interrupts.o microblaze_0/lib/xbram_selftest.o microblaze_0/lib/microblaze_di
+TRACE::2022-05-18.10:29:20::SCWMssOS::sable_icache.o microblaze_0/lib/xgpio_g.o microblaze_0/lib/xil_mem.o microblaze_0/lib/microblaze_flush_cache_ext_range.o microb
+TRACE::2022-05-18.10:29:20::SCWMssOS::laze_0/lib/xtmrctr_intr.o microblaze_0/lib/xbram_intr.o microblaze_0/lib/xil_sleepcommon.o microblaze_0/lib/xil_printf.o microb
+TRACE::2022-05-18.10:29:20::SCWMssOS::laze_0/lib/xintc_g.o microblaze_0/lib/xuartlite_g.o microblaze_0/lib/xtmrctr_l.o microblaze_0/lib/xintc_selftest.o microblaze_0
+TRACE::2022-05-18.10:29:20::SCWMssOS::/lib/xintc_l.o microblaze_0/lib/outbyte.o microblaze_0/lib/microblaze_enable_exceptions.o microblaze_0/lib/xgpio_intr.o microbl
+TRACE::2022-05-18.10:29:20::SCWMssOS::aze_0/lib/microblaze_invalidate_dcache_range.o microblaze_0/lib/microblaze_invalidate_cache_ext.o microblaze_0/lib/microblaze_s
+TRACE::2022-05-18.10:29:20::SCWMssOS::leep.o microblaze_0/lib/hw_exception_handler.o microblaze_0/lib/xtmrctr.o microblaze_0/lib/xuartlite_selftest.o microblaze_0/li
+TRACE::2022-05-18.10:29:20::SCWMssOS::b/xgpio_sinit.o microblaze_0/lib/microblaze_update_dcache.o microblaze_0/lib/xil_testcache.o microblaze_0/lib/microblaze_selfte
+TRACE::2022-05-18.10:29:20::SCWMssOS::st.o microblaze_0/lib/microblaze_interrupts_g.o microblaze_0/lib/xio.o microblaze_0/lib/xtmrctr_g.o microblaze_0/lib/microblaze
+TRACE::2022-05-18.10:29:20::SCWMssOS::_enable_dcache.o microblaze_0/lib/xwdttb_sinit.o microblaze_0/lib/xbram.o microblaze_0/lib/microblaze_invalidate_icache_range.o
+TRACE::2022-05-18.10:29:20::SCWMssOS:: microblaze_0/lib/xtmrctr_selftest.o microblaze_0/lib/microblaze_init_dcache_range.o microblaze_0/lib/microblaze_invalidate_ica
+TRACE::2022-05-18.10:29:20::SCWMssOS::che.o microblaze_0/lib/errno.o microblaze_0/lib/xuartlite_l.o microblaze_0/lib/xintc_options.o microblaze_0/lib/microblaze_inva
+TRACE::2022-05-18.10:29:20::SCWMssOS::lidate_cache_ext_range.o microblaze_0/lib/xil_exception.o microblaze_0/lib/pvr.o microblaze_0/lib/xgpio.o microblaze_0/lib/xil_
+TRACE::2022-05-18.10:29:20::SCWMssOS::testmem.o microblaze_0/lib/microblaze_update_icache.o microblaze_0/lib/xuartlite_intr.o microblaze_0/lib/microblaze_flush_dcach
+TRACE::2022-05-18.10:29:20::SCWMssOS::e.o microblaze_0/lib/xil_clocking.o microblaze_0/lib/xil_assert.o microblaze_0/lib/microblaze_enable_interrupts.o microblaze_0/
+TRACE::2022-05-18.10:29:20::SCWMssOS::lib/xgpio_extra.o microblaze_0/lib/microblaze_enable_icache.o microblaze_0/lib/xintc.o microblaze_0/lib/xtmrctr_stats.o microbl
+TRACE::2022-05-18.10:29:20::SCWMssOS::aze_0/lib/microblaze_init_icache_range.o microblaze_0/lib/xtmrctr_sinit.o microblaze_0/lib/xwdttb_selftest.o microblaze_0/lib/f
+TRACE::2022-05-18.10:29:20::SCWMssOS::cntl.o microblaze_0/lib/xgpio_selftest.o
+
+TRACE::2022-05-18.10:29:21::SCWMssOS::'Finished building libraries'
+
+TRACE::2022-05-18.10:29:21::SCWMssOS::Copying to export directory.
+TRACE::2022-05-18.10:29:22::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2022-05-18.10:29:22::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+LOG::2022-05-18.10:29:22::SCWSystem::Completed Processing the domain freertos10_xilinx_domain
+LOG::2022-05-18.10:29:22::SCWSystem::Completed Processing the sysconfig FreeRTOS_Project3_Platform
+LOG::2022-05-18.10:29:22::SCWPlatform::Completed generating the artifacts for system configuration FreeRTOS_Project3_Platform
+TRACE::2022-05-18.10:29:22::SCWPlatform::Started preparing the platform 
+TRACE::2022-05-18.10:29:22::SCWSystem::Writing the bif file for system config FreeRTOS_Project3_Platform
+TRACE::2022-05-18.10:29:22::SCWSystem::dir created 
+TRACE::2022-05-18.10:29:22::SCWSystem::Writing the bif 
+TRACE::2022-05-18.10:29:22::SCWPlatform::Started writing the spfm file 
+TRACE::2022-05-18.10:29:22::SCWPlatform::Started writing the xpfm file 
+TRACE::2022-05-18.10:29:22::SCWPlatform::Completed generating the platform
+TRACE::2022-05-18.10:29:22::SCWMssOS::Saving the mss changes D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2022-05-18.10:29:22::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2022-05-18.10:29:22::SCWMssOS::Completed writemss as part of save.
+TRACE::2022-05-18.10:29:22::SCWMssOS::Commit changes completed.
+TRACE::2022-05-18.10:29:22::SCWPlatform::Trying to open the hw design at D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:29:22::SCWPlatform::DSA given D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:29:22::SCWPlatform::DSA absoulate path D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:29:22::SCWPlatform::DSA directory D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw
+TRACE::2022-05-18.10:29:22::SCWPlatform:: Platform Path D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:29:22::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-05-18.10:29:22::SCWPlatform::Trying to set the existing hwdb with name nexysA7fpga_3
+TRACE::2022-05-18.10:29:22::SCWPlatform::Opened existing hwdb nexysA7fpga_3
+TRACE::2022-05-18.10:29:22::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-05-18.10:29:22::SCWMssOS::Checking the sw design at  D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2022-05-18.10:29:22::SCWMssOS::DEBUG:  swdes dump  D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss|system_0||
+D:/PortlandState/ECE_544/Labs/project_3/Vitis2/Project3_platform/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2022-05-18.10:29:22::SCWMssOS::Sw design exists and opened at  D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2022-05-18.10:29:22::SCWWriter::formatted JSON is {
+	"platformName":	"FreeRTOS_Project3_Platform",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"FreeRTOS_Project3_Platform",
+	"platHandOff":	"D:/PortlandState/ECE_544/Labs/project_3/nexysA7fpga.xsa",
+	"platIntHandOff":	"<platformDir>/hw/nexysA7fpga.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"FreeRTOS_Project3_Platform",
+	"systems":	[{
+			"systemName":	"FreeRTOS_Project3_Platform",
+			"systemDesc":	"FreeRTOS_Project3_Platform",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"FreeRTOS_Project3_Platform",
+			"sysActiveDom":	"freertos10_xilinx_domain",
+			"sysDefaultDom":	"freertos10_xilinx_domain",
+			"domains":	[{
+					"domainName":	"freertos10_xilinx_domain",
+					"domainDispName":	"freertos10_xilinx on microblaze_0",
+					"domainDesc":	"freertos10_xilinx_domain",
+					"processors":	"microblaze_0",
+					"os":	"freertos10_xilinx",
+					"sdxOs":	"freertos10_xilinx",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"1.7",
+					"mssFile":	"",
+					"md5Digest":	"5dfe561edc1a9010b0710d41b254d748",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2022-05-18.10:29:22::SCWPlatform::updated the xpfm file.
+TRACE::2022-05-18.10:29:22::SCWPlatform::Trying to open the hw design at D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:29:22::SCWPlatform::DSA given D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:29:22::SCWPlatform::DSA absoulate path D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:29:22::SCWPlatform::DSA directory D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw
+TRACE::2022-05-18.10:29:22::SCWPlatform:: Platform Path D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.10:29:22::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-05-18.10:29:22::SCWPlatform::Trying to set the existing hwdb with name nexysA7fpga_3
+TRACE::2022-05-18.10:29:22::SCWPlatform::Opened existing hwdb nexysA7fpga_3
+TRACE::2022-05-18.10:29:22::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2022-05-18.10:29:22::SCWMssOS::Checking the sw design at  D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2022-05-18.10:29:22::SCWMssOS::DEBUG:  swdes dump  D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss|system_0||
+D:/PortlandState/ECE_544/Labs/project_3/Vitis2/Project3_platform/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2022-05-18.10:29:22::SCWMssOS::Sw design exists and opened at  D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss

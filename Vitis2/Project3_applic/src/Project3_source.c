@@ -43,9 +43,15 @@
 #include "nexys4IO.h"
 #include "PmodOLEDrgb.h"
 #include "PmodENC.h"
+#include "xparameters.h"
 #include "xgpio.h"
 #include "xintc.h"
 #include "xtmrctr.h"
+//Todo Figure out where these libraries are???
+//https://github.com/Xilinx/embeddedsw/blob/master/XilinxProcessorIPLib/drivers/wdttb/examples/xwdttb_intr_example.c
+//#include "xscugic.h"
+#include "xwdttb.h"
+#include "xil_exception.h"
 
 /* Kernel includes. */
 /*
@@ -125,21 +131,33 @@ xSemaphoreHandle binary_sem;
 #define INTC_DEVICE_ID			XPAR_INTC_0_DEVICE_ID
 #define FIT_INTERRUPT_ID		XPAR_MICROBLAZE_0_AXI_INTC_FIT_TIMER_0_INTERRUPT_INTR
 
+//	Watchdog
+#define WDTTB_DEVICE_ID		XPAR_WDTTB_0_DEVICE_ID
+#define INTC_DEVICE_ID		XPAR_INTC_0_DEVICE_ID
+#define WDTTB_IRPT_INTR		XPAR_INTC_0_WDTTB_0_WDT_INTERRUPT_VEC_ID
+#define INTC_DEVICE_ID		XPAR_SCUGIC_SINGLE_DEVICE_ID
+#define WDTTB_IRPT_INTR		XPAR_FABRIC_WDTTB_0_VEC_ID
+
 /**************************** Type Definitions ******************************/
 
 /***************** Macros (Inline Functions) Definitions ********************/
 
 /************************** Variable Definitions ****************************/
-// Microblaze peripheral instances
+// Microblaze peripheral instances PMODS
 uint64_t 	timestamp = 0L;
 PmodOLEDrgb	pmodOLEDrgb_inst;
 PmodENC 	pmodENC_inst;
+
+//GPIO
 XGpio		GPIOInst0;					// GPIO instance
 XGpio 		GPIOInstRH;
 XGpio 		GPIOInstGH;
 XGpio 		GPIOInstBH;
+
+//Interrupts and Timers
 XIntc 		IntrptCtlrInst;				// Interrupt Controller instance
 XTmrCtr		AXITimerInst;				// PWM timer instance
+XWdTb		WdtTbInstance;				/* Instance of Time Base WatchDog Timer */
 
 
 // The following variables are shared between non-interrupt processing and
@@ -237,6 +255,7 @@ void SSEG_Clear();
 void Switch_Update();
 void TriColorLED1_Update();
 void TriColorLED1_Clear();
+void Watchdog();
 /*****************************************************************************/
 
 
@@ -268,6 +287,7 @@ int main(void)
 	// loop the test until the user presses the encoder button
 	laststate = ENC_getState(&pmodENC_inst);
 
+	//Todo Watchdog start add here???
 	while (1)//Main Loop Start
 	{
 		//Update PMODENC state
@@ -1044,9 +1064,6 @@ void MotorENC_Update(){
 
 }
 
-
-
-
 void TriColorLED1_Update(){
 	NX4IO_RGBLED_setChnlEn(RGB1, true, true, true);
 	NX4IO_RGBLED_setDutyCycle(RGB1, Kp, Ki, Kd);
@@ -1055,4 +1072,105 @@ void TriColorLED1_Update(){
 void TriColorLED1_Clear(){
 	NX4IO_RGBLED_setChnlEn(RGB1, true, true, true);
 	NX4IO_RGBLED_setDutyCycle(RGB1, 0, 0, 0);
+}
+
+void Watchdog(){
+	//Watchdog Vars
+	u32 TWCSR0;
+	u32 TWCSR1;
+	u32 TBR;
+	u32 CSR0;
+	//u32 threeseconds = 3000000; //Setup in hardware
+
+	int Status;
+	XWdtTb_Config *Config;
+
+	//Step 1, Configure the driver
+	/*
+	 * Initialize the WDTTB driver so that it's ready to use look up
+	 * configuration in the config table, then initialize it.
+	 */
+	Config = XWdtTb_LookupConfig(GWdtDeviceId);
+		if (NULL == Config) {
+			return XST_FAILURE;
+		}
+
+	//Step 2, Initialize watchdog and timer
+	/*
+	 * Initialize the watchdog timer and timebase driver so that
+	 * it is ready to use.
+	 */
+	Status = XWdtTb_CfgInitialize(GWdtInstancePtr, Config,
+					  Config->BaseAddr);
+	if (Status != XST_SUCCESS) {
+		return XST_FAILURE;
+	}
+
+
+	//Step 3, Hardware test
+	/*
+	 * Perform a self-test to ensure that the hardware was built correctly
+	 */
+	Status = XWdtTb_SelfTest(GWdtInstancePtr);
+	if (Status != XST_SUCCESS) {
+		return XST_FAILURE;
+	}
+
+	//Step 4, Stop timer for interrupt
+	/*
+	 * Stop the timer to start the test for interrupt mode
+	 */
+	XWdtTb_Stop(GWdtInstancePtr);
+
+	//Step 5
+	/*
+	 * Connect the WdtTb to the interrupt subsystem so that interrupts
+	 * can occur
+	 */
+	Status = GWdtSetupIntrSystem(IntcInstancePtr, GWdtInstancePtr,
+					  GWdtIntrId);
+	if (Status != XST_SUCCESS) {
+		return XST_FAILURE;
+	}
+
+	//Step 6
+	/* Update GWOR Register */
+		XWdtTb_SetGenericWdtWindow(GWdtInstancePtr, WDTPSV_GWOR_COUNT);
+
+
+	//Step 7
+	/*
+	 * Start the WdtTb device
+	 */
+	GWdtExpired = FALSE;
+	XWdtTb_Start(GWdtInstancePtr);
+
+
+	//Step 8
+	/*
+	 * Wait for the first expiration of the GWDT
+	 */
+	while (GWdtExpired != TRUE);
+	GWdtExpired = FALSE;
+
+	//Step 9
+	/*
+	 * Wait for the second expiration of the GWDT
+	 */
+	while (GWdtExpired != TRUE);
+	GWdtExpired = FALSE;
+
+	//Step 10
+	/*
+	 * Disable and disconnect the interrupt system
+	 */
+	GWdtDisableIntrSystem(IntcInstancePtr, GWdtIntrId);
+
+	//Step 10
+	/*
+	 * Stop the timer
+	 */
+	XWdtTb_Stop(GWdtInstancePtr);
+
+	return XST_SUCCESS;
 }

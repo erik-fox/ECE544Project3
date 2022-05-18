@@ -1,0 +1,6 @@
+/*FreeRTOS_Project3_Platform*/
+the_ROM_image:
+{
+   <bitstream> 
+   <elf> 
+}
