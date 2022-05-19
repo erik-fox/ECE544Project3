@@ -1,5 +1,10 @@
-12:26:48 **** Incremental Build of configuration Debug for project FreeRTOS_P3_Application ****
+12:35:07 **** Incremental Build of configuration Debug for project FreeRTOS_P3_Application ****
 make all 
+'Building file: ../src/GPIOfunctions.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GPIOfunctions.o" -ID:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/GPIOfunctions.d" -MT"src/GPIOfunctions.o" -o "src/GPIOfunctions.o" "../src/GPIOfunctions.c"
+'Finished building: ../src/GPIOfunctions.c'
+' '
 'Building file: ../src/Project3_source.c'
 'Invoking: MicroBlaze gcc compiler'
 mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Project3_source.o" -ID:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Project3_source.d" -MT"src/Project3_source.o" -o "src/Project3_source.o" "../src/Project3_source.c"
@@ -23,5 +28,5 @@ d:/xilinx/vitis/2020.2/gnu/microblaze/nt/x86_64-oesdk-mingw32/usr/bin/microblaze
 collect2.exe: error: ld returned 1 exit status
 make: *** [makefile:38: FreeRTOS_P3_Application.elf] Error 1
 
-12:26:49 Build Finished (took 1s.341ms)
+12:35:08 Build Finished (took 1s.3ms)
 

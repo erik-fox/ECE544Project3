@@ -1339,3 +1339,51 @@ Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-175: Laun
 
 !ENTRY com.xilinx.sdk.utils 0 0 2022-05-19 12:26:48.199
 !MESSAGE XSCT command with result: [::hsi::utils::closesw D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss], Result: [null, ]. Thread: Worker-165: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-19 12:31:40.560
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/hw/nexysA7fpga.xsa D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss ], Thread: Worker-174: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-19 12:31:40.563
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/hw/nexysA7fpga.xsa D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss ], Result: [null, ]. Thread: Worker-174: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-19 12:31:40.564
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/hw/nexysA7fpga.xsa D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss], Thread: Worker-174: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-19 12:31:40.568
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/hw/nexysA7fpga.xsa D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "freertos10_xilinx",
+"osver": "1.7",
+}]. Thread: Worker-174: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2022-05-19 12:31:40.568
+!MESSAGE Generating MD5 hash for file: D:\PortlandState\ECE_544\Labs\project_3\Vitis2\FreeRTOS_P3_Update\export\FreeRTOS_P3_Update\sw\FreeRTOS_P3_Update\freertos10_xilinx_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-19 12:31:40.569
+!MESSAGE XSCT Command: [::hsi::utils::closesw D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss], Thread: Worker-174: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-19 12:31:40.571
+!MESSAGE XSCT command with result: [::hsi::utils::closesw D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss], Result: [null, ]. Thread: Worker-174: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-19 12:35:07.178
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/hw/nexysA7fpga.xsa D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss ], Thread: Worker-180: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-19 12:35:07.183
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/hw/nexysA7fpga.xsa D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss ], Result: [null, ]. Thread: Worker-180: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-19 12:35:07.183
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/hw/nexysA7fpga.xsa D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss], Thread: Worker-180: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-19 12:35:07.186
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/hw/nexysA7fpga.xsa D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "freertos10_xilinx",
+"osver": "1.7",
+}]. Thread: Worker-180: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2022-05-19 12:35:07.187
+!MESSAGE Generating MD5 hash for file: D:\PortlandState\ECE_544\Labs\project_3\Vitis2\FreeRTOS_P3_Update\export\FreeRTOS_P3_Update\sw\FreeRTOS_P3_Update\freertos10_xilinx_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-19 12:35:07.188
+!MESSAGE XSCT Command: [::hsi::utils::closesw D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss], Thread: Worker-180: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-19 12:35:07.190
+!MESSAGE XSCT command with result: [::hsi::utils::closesw D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss], Result: [null, ]. Thread: Worker-180: Build Project

@@ -22,3 +22,5 @@ platform config -updatehw {D:/PortlandState/ECE_544/Labs/project_3/nexysA7fpga.x
 platform generate
 platform clean
 platform generate
+platform clean
+platform generate
