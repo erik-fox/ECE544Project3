@@ -1,32 +1,21 @@
-12:35:07 **** Incremental Build of configuration Debug for project FreeRTOS_P3_Application ****
+12:52:31 **** Incremental Build of configuration Debug for project FreeRTOS_P3_Application ****
 make all 
-'Building file: ../src/GPIOfunctions.c'
+'Building file: ../src/pmodHB3.c'
 'Invoking: MicroBlaze gcc compiler'
-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GPIOfunctions.o" -ID:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/GPIOfunctions.d" -MT"src/GPIOfunctions.o" -o "src/GPIOfunctions.o" "../src/GPIOfunctions.c"
-'Finished building: ../src/GPIOfunctions.c'
-' '
-'Building file: ../src/Project3_source.c'
-'Invoking: MicroBlaze gcc compiler'
-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Project3_source.o" -ID:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Project3_source.d" -MT"src/Project3_source.o" -o "src/Project3_source.o" "../src/Project3_source.c"
-../src/Project3_source.c: In function 'PshBtn_Update':
-../src/Project3_source.c:733:3: warning: enumeration value 'Neutral' not handled in switch [-Wswitch]
-  733 |   switch(Kpid_current_state){
-      |   ^~~~~~
-../src/Project3_source.c:777:3: warning: enumeration value 'Neutral' not handled in switch [-Wswitch]
-  777 |   switch(Kpid_current_state){
-      |   ^~~~~~
-'Finished building: ../src/Project3_source.c'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/pmodHB3.o" -ID:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/pmodHB3.d" -MT"src/pmodHB3.o" -o "src/pmodHB3.o" "../src/pmodHB3.c"
+'Finished building: ../src/pmodHB3.c'
 ' '
 'Building target: FreeRTOS_P3_Application.elf'
 'Invoking: MicroBlaze gcc linker'
-mb-gcc -Wl,-T -Wl,../src/lscript.ld -LD:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/bsplib/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "FreeRTOS_P3_Application.elf"  ./src/GPIOfunctions.o ./src/Project3_source.o ./src/platform.o ./src/pmodCMPS2_helper_functions.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group
-d:/xilinx/vitis/2020.2/gnu/microblaze/nt/x86_64-oesdk-mingw32/usr/bin/microblaze-xilinx-elf/../../libexec/microblaze-xilinx-elf/gcc/microblaze-xilinx-elf/9.2.0/real-ld.exe: ./src/Project3_source.o: in function `Switch_Update':
-D:\PortlandState\ECE_544\Labs\project_3\Vitis2\FreeRTOS_P3_Application\Debug/../src/Project3_source.c:974: undefined reference to `PMODHB3_setDIR'
-d:/xilinx/vitis/2020.2/gnu/microblaze/nt/x86_64-oesdk-mingw32/usr/bin/microblaze-xilinx-elf/../../libexec/microblaze-xilinx-elf/gcc/microblaze-xilinx-elf/9.2.0/real-ld.exe: D:\PortlandState\ECE_544\Labs\project_3\Vitis2\FreeRTOS_P3_Application\Debug/../src/Project3_source.c:976: undefined reference to `PMODHB3_setDIR'
-d:/xilinx/vitis/2020.2/gnu/microblaze/nt/x86_64-oesdk-mingw32/usr/bin/microblaze-xilinx-elf/../../libexec/microblaze-xilinx-elf/gcc/microblaze-xilinx-elf/9.2.0/real-ld.exe: D:\PortlandState\ECE_544\Labs\project_3\Vitis2\FreeRTOS_P3_Application\Debug/../src/Project3_source.c:982: undefined reference to `PMODHB3_setPWM'
-d:/xilinx/vitis/2020.2/gnu/microblaze/nt/x86_64-oesdk-mingw32/usr/bin/microblaze-xilinx-elf/../../libexec/microblaze-xilinx-elf/gcc/microblaze-xilinx-elf/9.2.0/real-ld.exe: D:\PortlandState\ECE_544\Labs\project_3\Vitis2\FreeRTOS_P3_Application\Debug/../src/Project3_source.c:984: undefined reference to `PMODHB3_setPWM'
-collect2.exe: error: ld returned 1 exit status
-make: *** [makefile:38: FreeRTOS_P3_Application.elf] Error 1
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -LD:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/bsplib/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "FreeRTOS_P3_Application.elf"  ./src/GPIOfunctions.o ./src/Project3_source.o ./src/platform.o ./src/pmodCMPS2_helper_functions.o ./src/pmodHB3.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group
+'Finished building target: FreeRTOS_P3_Application.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size FreeRTOS_P3_Application.elf  |tee "FreeRTOS_P3_Application.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  30264	    504	   4224	  34992	   88b0	FreeRTOS_P3_Application.elf
+'Finished building: FreeRTOS_P3_Application.elf.size'
+' '
 
-12:35:08 Build Finished (took 1s.3ms)
+12:52:32 Build Finished (took 1s.147ms)
 

@@ -1387,3 +1387,278 @@ Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-175: Laun
 
 !ENTRY com.xilinx.sdk.utils 0 0 2022-05-19 12:35:07.190
 !MESSAGE XSCT command with result: [::hsi::utils::closesw D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss], Result: [null, ]. Thread: Worker-180: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-19 12:47:12.851
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/hw/nexysA7fpga.xsa D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss ], Thread: Worker-175: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-19 12:47:12.857
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/hw/nexysA7fpga.xsa D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss ], Result: [null, ]. Thread: Worker-175: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-19 12:47:12.857
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/hw/nexysA7fpga.xsa D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss], Thread: Worker-175: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-19 12:47:12.861
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/hw/nexysA7fpga.xsa D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "freertos10_xilinx",
+"osver": "1.7",
+}]. Thread: Worker-175: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2022-05-19 12:47:12.862
+!MESSAGE Generating MD5 hash for file: D:\PortlandState\ECE_544\Labs\project_3\Vitis2\FreeRTOS_P3_Update\export\FreeRTOS_P3_Update\sw\FreeRTOS_P3_Update\freertos10_xilinx_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-19 12:47:12.863
+!MESSAGE XSCT Command: [::hsi::utils::closesw D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss], Thread: Worker-175: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-19 12:47:12.865
+!MESSAGE XSCT command with result: [::hsi::utils::closesw D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss], Result: [null, ]. Thread: Worker-175: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-19 12:48:27.773
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/hw/nexysA7fpga.xsa D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss ], Thread: Worker-186: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-19 12:48:27.819
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/hw/nexysA7fpga.xsa D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss ], Result: [null, ]. Thread: Worker-186: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-19 12:48:27.822
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/hw/nexysA7fpga.xsa D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss], Thread: Worker-186: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-19 12:48:27.834
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/hw/nexysA7fpga.xsa D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "freertos10_xilinx",
+"osver": "1.7",
+}]. Thread: Worker-186: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2022-05-19 12:48:27.835
+!MESSAGE Generating MD5 hash for file: D:\PortlandState\ECE_544\Labs\project_3\Vitis2\FreeRTOS_P3_Update\export\FreeRTOS_P3_Update\sw\FreeRTOS_P3_Update\freertos10_xilinx_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-19 12:48:27.836
+!MESSAGE XSCT Command: [::hsi::utils::closesw D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss], Thread: Worker-186: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-19 12:48:27.845
+!MESSAGE XSCT command with result: [::hsi::utils::closesw D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss], Result: [null, ]. Thread: Worker-186: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-19 12:49:48.071
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/hw/nexysA7fpga.xsa D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss ], Thread: Worker-175: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-19 12:49:48.076
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/hw/nexysA7fpga.xsa D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss ], Result: [null, ]. Thread: Worker-175: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-19 12:49:48.076
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/hw/nexysA7fpga.xsa D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss], Thread: Worker-175: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-19 12:49:48.080
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/hw/nexysA7fpga.xsa D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "freertos10_xilinx",
+"osver": "1.7",
+}]. Thread: Worker-175: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2022-05-19 12:49:48.080
+!MESSAGE Generating MD5 hash for file: D:\PortlandState\ECE_544\Labs\project_3\Vitis2\FreeRTOS_P3_Update\export\FreeRTOS_P3_Update\sw\FreeRTOS_P3_Update\freertos10_xilinx_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-19 12:49:48.081
+!MESSAGE XSCT Command: [::hsi::utils::closesw D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss], Thread: Worker-175: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-19 12:49:48.083
+!MESSAGE XSCT command with result: [::hsi::utils::closesw D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss], Result: [null, ]. Thread: Worker-175: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-19 12:50:19.930
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/hw/nexysA7fpga.xsa D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss ], Thread: Worker-188: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-19 12:50:19.936
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/hw/nexysA7fpga.xsa D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss ], Result: [null, ]. Thread: Worker-188: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-19 12:50:19.936
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/hw/nexysA7fpga.xsa D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss], Thread: Worker-188: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-19 12:50:19.946
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/hw/nexysA7fpga.xsa D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "freertos10_xilinx",
+"osver": "1.7",
+}]. Thread: Worker-188: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2022-05-19 12:50:19.946
+!MESSAGE Generating MD5 hash for file: D:\PortlandState\ECE_544\Labs\project_3\Vitis2\FreeRTOS_P3_Update\export\FreeRTOS_P3_Update\sw\FreeRTOS_P3_Update\freertos10_xilinx_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-19 12:50:19.947
+!MESSAGE XSCT Command: [::hsi::utils::closesw D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss], Thread: Worker-188: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-19 12:50:19.950
+!MESSAGE XSCT command with result: [::hsi::utils::closesw D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss], Result: [null, ]. Thread: Worker-188: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-19 12:52:31.714
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/hw/nexysA7fpga.xsa D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss ], Thread: Worker-165: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-19 12:52:31.720
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/hw/nexysA7fpga.xsa D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss ], Result: [null, ]. Thread: Worker-165: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-19 12:52:31.721
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/hw/nexysA7fpga.xsa D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss], Thread: Worker-165: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-19 12:52:31.733
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/hw/nexysA7fpga.xsa D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "freertos10_xilinx",
+"osver": "1.7",
+}]. Thread: Worker-165: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2022-05-19 12:52:31.734
+!MESSAGE Generating MD5 hash for file: D:\PortlandState\ECE_544\Labs\project_3\Vitis2\FreeRTOS_P3_Update\export\FreeRTOS_P3_Update\sw\FreeRTOS_P3_Update\freertos10_xilinx_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-19 12:52:31.734
+!MESSAGE XSCT Command: [::hsi::utils::closesw D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss], Thread: Worker-165: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-19 12:52:31.736
+!MESSAGE XSCT command with result: [::hsi::utils::closesw D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss], Result: [null, ]. Thread: Worker-165: Build Project
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2022-05-19 12:52:35.697
+!MESSAGE Failed to evaluate: ReferenceExpression [definitionId=org.eclipse.ui.ide.showInDefinition]
+!STACK 0
+org.eclipse.core.runtime.CoreException: Error evaluating Property [org.eclipse.ui.ide.page.activePreferencePage, type=class org.eclipse.swt.widgets.Shell, tester=org.eclipse.ui.internal.ide.handlers.PagePropertyTester@41a5675]
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:68)
+	at org.eclipse.core.internal.expressions.TestExpression.evaluate(TestExpression.java:103)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:55)
+	at org.eclipse.core.internal.expressions.WithExpression.evaluate(WithExpression.java:81)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateOr(CompositeExpression.java:69)
+	at org.eclipse.core.internal.expressions.OrExpression.evaluate(OrExpression.java:25)
+	at org.eclipse.core.internal.expressions.ReferenceExpression.evaluate(ReferenceExpression.java:74)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:74)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:100)
+	at org.eclipse.ui.internal.services.EvaluationService.requestEvaluation(EvaluationService.java:290)
+	at org.eclipse.ui.internal.handlers.DirtyStateTracker.update(DirtyStateTracker.java:48)
+	at org.eclipse.ui.internal.handlers.DirtyStateTracker.propertyChanged(DirtyStateTracker.java:110)
+	at org.eclipse.ui.part.WorkbenchPart.firePropertyChange(WorkbenchPart.java:124)
+	at com.xilinx.ide.tools.lscript.ui.LscriptEditor.access$0(LscriptEditor.java:1)
+	at com.xilinx.ide.tools.lscript.ui.LscriptEditor$ResourceChangeListener.resourceChanged(LscriptEditor.java:188)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:305)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:295)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:158)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:380)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1502)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:539)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:412)
+	at org.eclipse.ui.actions.BuildAction$1.runInWorkspace(BuildAction.java:291)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4723)
+	at org.eclipse.swt.SWT.error(SWT.java:4638)
+	at org.eclipse.swt.SWT.error(SWT.java:4609)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:432)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:352)
+	at org.eclipse.swt.widgets.Widget.getData(Widget.java:497)
+	at org.eclipse.ui.internal.ide.handlers.PagePropertyTester.test(PagePropertyTester.java:39)
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:65)
+	... 25 more
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2022-05-19 12:52:36.160
+!MESSAGE Failed to evaluate: ReferenceExpression [definitionId=org.eclipse.ui.ide.showInDefinition]
+!STACK 0
+org.eclipse.core.runtime.CoreException: Error evaluating Property [org.eclipse.ui.ide.page.activePreferencePage, type=class org.eclipse.swt.widgets.Shell, tester=org.eclipse.ui.internal.ide.handlers.PagePropertyTester@41a5675]
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:68)
+	at org.eclipse.core.internal.expressions.TestExpression.evaluate(TestExpression.java:103)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:55)
+	at org.eclipse.core.internal.expressions.WithExpression.evaluate(WithExpression.java:81)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateOr(CompositeExpression.java:69)
+	at org.eclipse.core.internal.expressions.OrExpression.evaluate(OrExpression.java:25)
+	at org.eclipse.core.internal.expressions.ReferenceExpression.evaluate(ReferenceExpression.java:74)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:74)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:100)
+	at org.eclipse.ui.internal.services.EvaluationService.requestEvaluation(EvaluationService.java:290)
+	at org.eclipse.ui.internal.handlers.DirtyStateTracker.update(DirtyStateTracker.java:48)
+	at org.eclipse.ui.internal.handlers.DirtyStateTracker.propertyChanged(DirtyStateTracker.java:110)
+	at org.eclipse.ui.part.WorkbenchPart.firePropertyChange(WorkbenchPart.java:124)
+	at com.xilinx.ide.tools.lscript.ui.LscriptEditor.access$0(LscriptEditor.java:1)
+	at com.xilinx.ide.tools.lscript.ui.LscriptEditor$ResourceChangeListener.resourceChanged(LscriptEditor.java:188)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:305)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:295)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:158)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:380)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1502)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:49)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4723)
+	at org.eclipse.swt.SWT.error(SWT.java:4638)
+	at org.eclipse.swt.SWT.error(SWT.java:4609)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:432)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:352)
+	at org.eclipse.swt.widgets.Widget.getData(Widget.java:497)
+	at org.eclipse.ui.internal.ide.handlers.PagePropertyTester.test(PagePropertyTester.java:39)
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:65)
+	... 22 more
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2022-05-19 12:52:40.643
+!MESSAGE Failed to evaluate: ReferenceExpression [definitionId=org.eclipse.ui.ide.showInDefinition]
+!STACK 0
+org.eclipse.core.runtime.CoreException: Error evaluating Property [org.eclipse.ui.ide.page.activePreferencePage, type=class org.eclipse.swt.widgets.Shell, tester=org.eclipse.ui.internal.ide.handlers.PagePropertyTester@41a5675]
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:68)
+	at org.eclipse.core.internal.expressions.TestExpression.evaluate(TestExpression.java:103)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:55)
+	at org.eclipse.core.internal.expressions.WithExpression.evaluate(WithExpression.java:81)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateOr(CompositeExpression.java:69)
+	at org.eclipse.core.internal.expressions.OrExpression.evaluate(OrExpression.java:25)
+	at org.eclipse.core.internal.expressions.ReferenceExpression.evaluate(ReferenceExpression.java:74)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:74)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:100)
+	at org.eclipse.ui.internal.services.EvaluationService.requestEvaluation(EvaluationService.java:290)
+	at org.eclipse.ui.internal.handlers.DirtyStateTracker.update(DirtyStateTracker.java:48)
+	at org.eclipse.ui.internal.handlers.DirtyStateTracker.propertyChanged(DirtyStateTracker.java:110)
+	at org.eclipse.ui.part.WorkbenchPart.firePropertyChange(WorkbenchPart.java:124)
+	at com.xilinx.ide.tools.lscript.ui.LscriptEditor.access$0(LscriptEditor.java:1)
+	at com.xilinx.ide.tools.lscript.ui.LscriptEditor$ResourceChangeListener.resourceChanged(LscriptEditor.java:188)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:305)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:295)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:158)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:380)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1502)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:49)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4723)
+	at org.eclipse.swt.SWT.error(SWT.java:4638)
+	at org.eclipse.swt.SWT.error(SWT.java:4609)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:432)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:352)
+	at org.eclipse.swt.widgets.Widget.getData(Widget.java:497)
+	at org.eclipse.ui.internal.ide.handlers.PagePropertyTester.test(PagePropertyTester.java:39)
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:65)
+	... 22 more
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2022-05-19 12:52:41.317
+!MESSAGE Failed to evaluate: ReferenceExpression [definitionId=org.eclipse.ui.ide.showInDefinition]
+!STACK 0
+org.eclipse.core.runtime.CoreException: Error evaluating Property [org.eclipse.ui.ide.page.activePreferencePage, type=class org.eclipse.swt.widgets.Shell, tester=org.eclipse.ui.internal.ide.handlers.PagePropertyTester@41a5675]
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:68)
+	at org.eclipse.core.internal.expressions.TestExpression.evaluate(TestExpression.java:103)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:55)
+	at org.eclipse.core.internal.expressions.WithExpression.evaluate(WithExpression.java:81)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateOr(CompositeExpression.java:69)
+	at org.eclipse.core.internal.expressions.OrExpression.evaluate(OrExpression.java:25)
+	at org.eclipse.core.internal.expressions.ReferenceExpression.evaluate(ReferenceExpression.java:74)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:74)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:100)
+	at org.eclipse.ui.internal.services.EvaluationService.requestEvaluation(EvaluationService.java:290)
+	at org.eclipse.ui.internal.handlers.DirtyStateTracker.update(DirtyStateTracker.java:48)
+	at org.eclipse.ui.internal.handlers.DirtyStateTracker.propertyChanged(DirtyStateTracker.java:110)
+	at org.eclipse.ui.part.WorkbenchPart.firePropertyChange(WorkbenchPart.java:124)
+	at com.xilinx.ide.tools.lscript.ui.LscriptEditor.access$0(LscriptEditor.java:1)
+	at com.xilinx.ide.tools.lscript.ui.LscriptEditor$ResourceChangeListener.resourceChanged(LscriptEditor.java:188)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:305)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:295)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:158)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:380)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1502)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:49)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4723)
+	at org.eclipse.swt.SWT.error(SWT.java:4638)
+	at org.eclipse.swt.SWT.error(SWT.java:4609)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:432)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:352)
+	at org.eclipse.swt.widgets.Widget.getData(Widget.java:497)
+	at org.eclipse.ui.internal.ide.handlers.PagePropertyTester.test(PagePropertyTester.java:39)
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:65)
+	... 22 more

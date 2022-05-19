@@ -971,9 +971,9 @@ void Switch_Update(){
 	//SW 14 Test Direction TODO
 	mask1 = 1 << (15 - 1);
 	if((switch_values & mask1) == mask1){
-		PMODHB3_setDIR(1);
+		PMODHB3_setDIR(FORWARD);
 	}else{
-		PMODHB3_setDIR(0);
+		PMODHB3_setDIR(BACKWARD);
 	}
 
 	//SW 13 Test PWM TODO
