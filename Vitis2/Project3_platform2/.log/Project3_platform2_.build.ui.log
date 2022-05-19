@@ -1,126 +1,0 @@
-2022-05-15T16:32:14.552659200255-16:32:14 **** Build of project Project3_platform2 ****
-000-buildplatform.bat 50562 Project3_platform2  
-000-XSDB Server Channel: tcfchan#2
-000-Building the BSP Library for domain  - standalone_domain on processor microblaze_0
-000-make --no-print-directory seq_libs
-000-
-000-"Running Make include in microblaze_0/libsrc/bram_v4_5/src"
-000-
-000-make -C microblaze_0/libsrc/bram_v4_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
-000-R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall 
-000--Wextra"
-000-
-000-"Running Make include in microblaze_0/libsrc/cpu_v2_12/src"
-000-
-000-make -C microblaze_0/libsrc/cpu_v2_12/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
-000-R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall 
-000--Wextra"
-000-
-000-"Running Make include in microblaze_0/libsrc/intc_v3_12/src"
-000-
-000-make -C microblaze_0/libsrc/intc_v3_12/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPIL
-000-ER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall
-000- -Wextra"
-000-
-000-"Running Make include in microblaze_0/libsrc/nexys4io_v1_0/src"
-000-
-000-make -C microblaze_0/libsrc/nexys4io_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COM
-000-PILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -W
-000-all -Wextra"
-000-
-000-"Running Make include in microblaze_0/libsrc/PmodENC_v1_0/src"
-000-
-000-make -C microblaze_0/libsrc/PmodENC_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMP
-000-ILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wa
-000-ll -Wextra"
-000-
-000-"Running Make include in microblaze_0/libsrc/pmodHB3_v1_0/src"
-000-
-000-make -C microblaze_0/libsrc/pmodHB3_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMP
-000-ILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wa
-000-ll -Wextra"
-000-
-000-"Running Make include in microblaze_0/libsrc/PmodOLEDrgb_v1_0/src"
-000-
-000-make -C microblaze_0/libsrc/PmodOLEDrgb_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "
-000-COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections
-000- -Wall -Wextra"
-000-
-000-"Running Make include in microblaze_0/libsrc/standalone_v7_3/src"
-000-
-000-make -C microblaze_0/libsrc/standalone_v7_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "C
-000-OMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections 
-000--Wall -Wextra"
-000-
-000-"Running Make include in microblaze_0/libsrc/tmrctr_v4_7/src"
-000-
-000-make -C microblaze_0/libsrc/tmrctr_v4_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPI
-000-LER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wal
-000-l -Wextra"
-000-
-000-"Running Make include in microblaze_0/libsrc/uartlite_v3_5/src"
-000-
-000-make -C microblaze_0/libsrc/uartlite_v3_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COM
-000-PILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -W
-000-all -Wextra"
-000-
-000-"Running Make include in microblaze_0/libsrc/wdttb_v5_1/src"
-000-
-000-make -C microblaze_0/libsrc/wdttb_v5_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPIL
-000-ER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall
-000- -Wextra"
-000-
-000-"Running Make libs in microblaze_0/libsrc/nexys4io_v1_0/src"
-000-
-000-make -C microblaze_0/libsrc/nexys4io_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPIL
-000-ER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall
-000- -Wextra"
-000-
-000-"Compiling nexys4IO..."
-000-
-000-"Running Make libs in microblaze_0/libsrc/PmodENC_v1_0/src"
-000-
-000-make -C microblaze_0/libsrc/PmodENC_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
-000-R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall 
-000--Wextra"
-000-
-000-"Compiling PmodENC..."
-000-
-000-"Running Make libs in microblaze_0/libsrc/pmodHB3_v1_0/src"
-000-
-000-make -C microblaze_0/libsrc/pmodHB3_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
-000-R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall 
-000--Wextra"
-000-
-000-"Compiling pmodHB3..."
-000-
-000-pmodHB3_selftest.c: In function 'PMODHB3_Reg_SelfTest':
-000/Project3_platform252-1-1comparison of integer expressions of different signedness: 'u32' {aka 'long unsigned int'} and 'int' [-Wsign-compare]1-pmodHB3_selftest.c:52:56: warning: comparison of integer expressions of different signedness: 'u32' {aka 'long unsigned int'} and 'int' [-Wsign-compare]
-000-   52 |    if ( PMODHB3_mReadReg (baseaddr, read_loop_index*4) != (read_loop_index+1)*READ_WRITE_MUL_FACTOR){
-000-      |                                                        ^~
-000/Project3_platform236-1-1unused variable 'Index' [-Wunused-variable]1-pmodHB3_selftest.c:36:6: warning: unused variable 'Index' [-Wunused-variable]
-000-   36 |  int Index;
-000-      |      ^~~~~
-000-mb-ar: *.o: Invalid argument
-000/Project3_platform20-1-1make[2]: *** [Makefile:19: libs] Error 12-make[2]: *** [Makefile:19: libs] Error 1
-000/Project3_platform20-1-1make[1]: *** [Makefile:46: microblaze_0/libsrc/pmodHB3_v1_0/src/make.libs] Error 22-make[1]: *** [Makefile:46: microblaze_0/libsrc/pmodHB3_v1_0/src/make.libs] Error 2
-000/Project3_platform20-1-1make: *** [Makefile:18: all] Error 22-make: *** [Makefile:18: all] Error 2
-000-Failed to build  the bsp sources for domain - standalone_domain
-000-Failed to generate the platform.
-000-Reason: Failed to build  the bsp sources for domain - standalone_domain
-000-    invoked from within
-000-"::tcf::eval -progress {apply {{msg} {puts $msg}}} {tcf_send_command tcfchan#0 xsdb eval s es {{platform active Project3_platform2; platform generate }}}"
-000-    (procedure "::tcf::send_command" line 4)
-000-    invoked from within
-000-"tcf send_command $::xsdb::curchan xsdb eval s es [list "platform active $PLATFORM_NAME; platform generate $target"]"
-000-    invoked from within
-000-"if { $iswindows == 1 } {    
-000-
-000-    set XSDB_PORT [lindex $argv 0]
-000-    set PLATFORM_NAME [lindex $argv 1]
-000-    set arglen [llength $argv]
-000-    set lastind..."
-000-    (file "D:/Xilinx/Vitis/2020.2\scripts\vitis\util\buildplatform.tcl" line 11)
-00255-
-16:32:19 Build Finished (took 4s.479ms)
-

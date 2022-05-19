@@ -1,6 +1,6 @@
-12:52:34 **** Incremental Build of configuration Debug for project FreeRTOS_P3_Application_system ****
+14:26:42 **** Incremental Build of configuration Debug for project FreeRTOS_P3_Application_system ****
 make all 
 Skipping SD card image generation. Reason: "The system project only has applications for microblaze processors."
 
-12:52:34 Build Finished (took 197ms)
+14:26:42 Build Finished (took 195ms)
 

@@ -55,6 +55,8 @@
 
 #include "GPIOfunctions.h"
 
+/* Kernel includes. */
+/*
 #include "FreeRTOS.h"
 #include "task.h"
 #include "queue.h"
@@ -69,6 +71,7 @@ static xQueueHandle xQueue = NULL;
 
 //Declare a Semaphore
 xSemaphoreHandle binary_sem;
+ */
 
 
 /************************** Constant Definitions ****************************/

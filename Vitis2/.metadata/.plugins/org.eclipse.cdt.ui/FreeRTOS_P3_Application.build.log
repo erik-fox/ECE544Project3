@@ -1,21 +1,6 @@
-12:52:31 **** Incremental Build of configuration Debug for project FreeRTOS_P3_Application ****
+14:26:41 **** Incremental Build of configuration Debug for project FreeRTOS_P3_Application ****
 make all 
-'Building file: ../src/pmodHB3.c'
-'Invoking: MicroBlaze gcc compiler'
-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/pmodHB3.o" -ID:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/pmodHB3.d" -MT"src/pmodHB3.o" -o "src/pmodHB3.o" "../src/pmodHB3.c"
-'Finished building: ../src/pmodHB3.c'
-' '
-'Building target: FreeRTOS_P3_Application.elf'
-'Invoking: MicroBlaze gcc linker'
-mb-gcc -Wl,-T -Wl,../src/lscript.ld -LD:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/bsplib/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "FreeRTOS_P3_Application.elf"  ./src/GPIOfunctions.o ./src/Project3_source.o ./src/platform.o ./src/pmodCMPS2_helper_functions.o ./src/pmodHB3.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group
-'Finished building target: FreeRTOS_P3_Application.elf'
-' '
-'Invoking: MicroBlaze Print Size'
-mb-size FreeRTOS_P3_Application.elf  |tee "FreeRTOS_P3_Application.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  30264	    504	   4224	  34992	   88b0	FreeRTOS_P3_Application.elf
-'Finished building: FreeRTOS_P3_Application.elf.size'
-' '
+make: Nothing to be done for 'all'.
 
-12:52:32 Build Finished (took 1s.147ms)
+14:26:41 Build Finished (took 187ms)
 
