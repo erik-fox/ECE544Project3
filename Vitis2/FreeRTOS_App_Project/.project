@@ -3,7 +3,7 @@
 	<name>FreeRTOS_App_Project</name>
 	<comment>Created by Vitis v2020.2</comment>
 	<projects>
-		<project>FreeRTOS_Project3_Platform</project>
+		<project>FreeRTOS_P3_Update</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

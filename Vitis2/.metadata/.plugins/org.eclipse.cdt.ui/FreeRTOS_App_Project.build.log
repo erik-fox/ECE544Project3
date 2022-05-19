@@ -1,28 +1,7 @@
-15:48:52 **** Incremental Build of configuration Debug for project FreeRTOS_App_Project ****
-make all 
-'Building file: ../src/Project3_source.c'
-'Invoking: MicroBlaze gcc compiler'
-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Project3_source.o" -ID:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/export/FreeRTOS_Project3_Platform/sw/FreeRTOS_Project3_Platform/freertos10_xilinx_domain/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Project3_source.d" -MT"src/Project3_source.o" -o "src/Project3_source.o" "../src/Project3_source.c"
-../src/Project3_source.c: In function 'PshBtn_Update':
-../src/Project3_source.c:733:3: warning: enumeration value 'Neutral' not handled in switch [-Wswitch]
-  733 |   switch(Kpid_current_state){
-      |   ^~~~~~
-../src/Project3_source.c:777:3: warning: enumeration value 'Neutral' not handled in switch [-Wswitch]
-  777 |   switch(Kpid_current_state){
-      |   ^~~~~~
-'Finished building: ../src/Project3_source.c'
-' '
-'Building target: FreeRTOS_App_Project.elf'
-'Invoking: MicroBlaze gcc linker'
-mb-gcc -Wl,-T -Wl,../src/lscript.ld -LD:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/export/FreeRTOS_Project3_Platform/sw/FreeRTOS_Project3_Platform/freertos10_xilinx_domain/bsplib/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "FreeRTOS_App_Project.elf"  ./src/GPIOfunctions.o ./src/Project3_source.o ./src/platform.o ./src/pmodCMPS2_helper_functions.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group
-'Finished building target: FreeRTOS_App_Project.elf'
-' '
-'Invoking: MicroBlaze Print Size'
-mb-size FreeRTOS_App_Project.elf  |tee "FreeRTOS_App_Project.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  29484	    504	   4228	  34216	   85a8	FreeRTOS_App_Project.elf
-'Finished building: FreeRTOS_App_Project.elf.size'
+18:27:50 **** Clean-only build of configuration Debug for project FreeRTOS_App_Project ****
+make clean 
+rm -rf  ./src/GPIOfunctions.o ./src/Project3_source.o ./src/platform.o ./src/pmodCMPS2_helper_functions.o  ./src/GPIOfunctions.d ./src/Project3_source.d ./src/platform.d ./src/pmodCMPS2_helper_functions.d  FreeRTOS_App_Project.elf.size  FreeRTOS_App_Project.elf
 ' '
 
-15:48:53 Build Finished (took 1s.285ms)
+18:27:50 Build Finished (took 323ms)
 

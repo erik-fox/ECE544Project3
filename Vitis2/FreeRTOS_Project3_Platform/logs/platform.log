@@ -1223,3 +1223,14 @@ TRACE::2022-05-18.10:29:22::SCWMssOS::DEBUG:  swdes dump  D:/PortlandState/ECE_5
 D:/PortlandState/ECE_544/Labs/project_3/Vitis2/Project3_platform/microblaze_0/standalone_domain/bsp/system.mss|system||
 
 TRACE::2022-05-18.10:29:22::SCWMssOS::Sw design exists and opened at  D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2022-05-18.18:26:52::SCWPlatform::Clearing the existing platform
+TRACE::2022-05-18.18:26:52::SCWSystem::Clearing the existing sysconfig
+TRACE::2022-05-18.18:26:52::SCWMssOS::Removing the swdes entry for  D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/microblaze_0/freertos10_xilinx_domain/bsp/system.mss
+TRACE::2022-05-18.18:26:52::SCWSystem::Clearing the domains completed.
+TRACE::2022-05-18.18:26:52::SCWPlatform::Clearing the opened hw db.
+TRACE::2022-05-18.18:26:52::SCWPlatform::DSA given D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.18:26:52::SCWPlatform::DSA absoulate path D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.18:26:52::SCWPlatform:: Platform location is D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw
+TRACE::2022-05-18.18:26:52::SCWPlatform:: Platform Path D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa
+TRACE::2022-05-18.18:26:52::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2022-05-18.18:26:52::SCWPlatform::Removing the HwDB with name D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_Project3_Platform/hw/nexysA7fpga.xsa

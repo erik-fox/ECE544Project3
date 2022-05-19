@@ -3,7 +3,7 @@
 	<name>FreeRTOS_App_Project_system</name>
 	<comment></comment>
 	<projects>
-		<project>FreeRTOS_App_Project</project>
+		<project>FreeRTOS_P3_Update</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
