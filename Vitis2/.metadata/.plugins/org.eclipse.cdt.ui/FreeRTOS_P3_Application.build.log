@@ -1,6 +1,40 @@
-14:26:41 **** Incremental Build of configuration Debug for project FreeRTOS_P3_Application ****
+16:20:52 **** Incremental Build of configuration Debug for project FreeRTOS_P3_Application ****
 make all 
-make: Nothing to be done for 'all'.
+'Building file: ../src/Project3_source.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Project3_source.o" -ID:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Project3_source.d" -MT"src/Project3_source.o" -o "src/Project3_source.o" "../src/Project3_source.c"
+../src/Project3_source.c: In function 'main':
+../src/Project3_source.c:341:15: error: 'sem_taken_que_tx' undeclared (first use in this function)
+  341 |  xTaskCreate( sem_taken_que_tx,
+      |               ^~~~~~~~~~~~~~~~
+../src/Project3_source.c:341:15: note: each undeclared identifier is reported only once for each function it appears in
+../src/Project3_source.c:349:15: error: 'que_rx' undeclared (first use in this function)
+  349 |  xTaskCreate( que_rx,
+      |               ^~~~~~
+../src/Project3_source.c: In function 'PshBtn_Update':
+../src/Project3_source.c:763:3: warning: enumeration value 'Neutral' not handled in switch [-Wswitch]
+  763 |   switch(Kpid_current_state){
+      |   ^~~~~~
+../src/Project3_source.c:807:3: warning: enumeration value 'Neutral' not handled in switch [-Wswitch]
+  807 |   switch(Kpid_current_state){
+      |   ^~~~~~
+At top level:
+../src/Project3_source.c:169:21: warning: 'xQueue_Temp2' defined but not used [-Wunused-variable]
+  169 | static xQueueHandle xQueue_Temp2 = NULL;
+      |                     ^~~~~~~~~~~~
+../src/Project3_source.c:168:21: warning: 'xQueue_Temp1' defined but not used [-Wunused-variable]
+  168 | static xQueueHandle xQueue_Temp1 = NULL;
+      |                     ^~~~~~~~~~~~
+../src/Project3_source.c:167:21: warning: 'xQueue_Inputs_Update' defined but not used [-Wunused-variable]
+  167 | static xQueueHandle xQueue_Inputs_Update = NULL;
+      |                     ^~~~~~~~~~~~~~~~~~~~
+../src/Project3_source.c:166:21: warning: 'xQueue_Display_Update' defined but not used [-Wunused-variable]
+  166 | static xQueueHandle xQueue_Display_Update = NULL;
+      |                     ^~~~~~~~~~~~~~~~~~~~~
+../src/Project3_source.c:165:21: warning: 'xQueue_PID_Update' defined but not used [-Wunused-variable]
+  165 | static xQueueHandle xQueue_PID_Update = NULL;
+      |                     ^~~~~~~~~~~~~~~~~
+make: *** [src/subdir.mk:35: src/Project3_source.o] Error 1
 
-14:26:41 Build Finished (took 187ms)
+16:20:53 Build Finished (took 607ms)
 

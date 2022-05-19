@@ -48,7 +48,7 @@
 #include "xgpio.h"
 #include "xintc.h"
 #include "xtmrctr.h"
-//Todo Figure out where this library is???
+//Figure out where this library is???
 //#include "xscugic.h"
 #include "xwdttb.h"
 #include "xil_exception.h"
@@ -64,8 +64,6 @@
 #define mainQUEUE_LENGTH					( 1 )
 
 #define mainDONT_BLOCK						( portTickType ) 0
-
-static xQueueHandle xQueue = NULL;
 
 //Declare a Semaphore
 xSemaphoreHandle binary_sem;
@@ -117,9 +115,9 @@ xSemaphoreHandle binary_sem;
 #define PMODENC_HIGHADDR		XPAR_PMODENC544_0_S00_AXI_HIGHADDR
 
 //HB3 Definitions
-#define PMODHB3_DEVICE_ID		XPAR_PMODHB3_0_DEVICE_ID
-#define PMODHB3_BASEADDR		XPAR_PMODHB3_0_S00_AXI_BASEADDR
-#define PMODHB3_HIGHADDR		XPAR_PMODHB3_0_S00_AXI_HIGHADDR
+#define PMODHB3_DEVICE_ID		XPAR_PMODHB3_1_DEVICE_ID
+#define PMODHB3_BASEADDR		XPAR_PMODHB3_1_S00_AXI_BASEADDR
+#define PMODHB3_HIGHADDR		XPAR_PMODHB3_1_S00_AXI_HIGHADDR
 
 // Fixed Interval timer - 100 MHz input clock, 40KHz output clock
 // FIT_COUNT_1MSEC = FIT_CLOCK_FREQ_HZ * .001
@@ -159,6 +157,17 @@ XIntc 		IntrptCtlrInst;				// Interrupt Controller instance
 XTmrCtr		AXITimerInst;				// PWM timer instance
 XWdtTb		XWdtTbInstance;				/* Instance of Time Base WatchDog Timer */
 
+//Declare a Semaphore for flagging interrupt/PID-Visuals
+xSemaphoreHandle binary_sem;
+
+/* The queue used by the queue send and queue receive tasks. */
+static xQueueHandle xQueue = NULL;
+static xQueueHandle xQueue_PID_Update = NULL;
+static xQueueHandle xQueue_Display_Update = NULL;
+static xQueueHandle xQueue_Inputs_Update = NULL;
+static xQueueHandle xQueue_Temp1 = NULL;
+static xQueueHandle xQueue_Temp2 = NULL;
+//===============================End of Instances===================
 
 // The following variables are shared between non-interrupt processing and
 // interrupt processing such that they must be global(and declared volatile)
@@ -239,6 +248,8 @@ int	 do_init(void);											// initialize system
 void FIT_Handler(void);										// fixed interval timer interrupt handler
 int AXI_Timer_initialize(void);
 
+void masterthread(void *p);
+
 //Updaters for RTOS Conversion
 void GreenLED_Update();
 void GreenLED_Clear();
@@ -317,11 +328,33 @@ int main(void)
 		SSEG_Update();
 	}//EO Main Loop
 
-	//Clearing off all 7seg display digits & decimals, OLED
-	OLEDrgb_Clear(&pmodOLEDrgb_inst);
-	SSEG_Clear();
-	GreenLED_Clear();
+	//Create Semaphore
+	vSemaphoreCreateBinary(binary_sem);
 
+	/* Create the queue */
+	xQueue = xQueueCreate( mainQUEUE_LENGTH, sizeof( unsigned long ) );
+
+	/* Sanity check that the queue was created. */
+	configASSERT( xQueue );
+
+	//Create Task1
+	xTaskCreate( sem_taken_que_tx,
+				 ( const char * ) "TX",
+				 2048,
+				 NULL,
+				 1,
+				 NULL );
+
+	//Create Task2
+	xTaskCreate( que_rx,
+				"RX",
+				2048,
+				NULL,
+				2,
+				NULL );
+
+	vTaskStartScheduler();
+	return -1;	//Should never reach this line
 }
 
 
@@ -346,7 +379,7 @@ int	 do_init(void)
 	{
 		return XST_FAILURE;
 	}
-
+	PMODHB3_initialize(PMODHB3_BASEADDR);
 	// set all of the display digits to blanks and turn off
 	// the decimal points using the "raw" set functions.
 	// These registers are formatted according to the spec
@@ -835,7 +868,6 @@ void PshBtn_Update(){
 
 
 void ENC_Update(){
-	//state = ENC_getState(&pmodENC_inst);
 	state = PMODENC544_getBtnSwReg();
 	//Update the Encoder value, wrap if necessary
 	//ticks += (ENC_getRotation(state, laststate));
@@ -1046,6 +1078,16 @@ void OLED_Clear(){
 void MotorENC_Update(){
 
 }
+
+void masterthread(void *p){
+	//Create and initialize semaphores
+	//Create and initialize message queues
+	//Register interrupt handlers
+	//Create and start threads
+	//Enable WDT interrupt and start WDT
+}
+
+
 
 //void Watchdog(){
 //	//Watchdog Vars
