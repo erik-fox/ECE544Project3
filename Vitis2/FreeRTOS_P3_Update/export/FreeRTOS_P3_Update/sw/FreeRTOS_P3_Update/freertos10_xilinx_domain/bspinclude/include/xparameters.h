@@ -635,7 +635,7 @@
 
 
 /******************************************************************/
-
+//Interrupt GPIO SW and Buttons
 #define XPAR_INTC_SINGLE_BASEADDR 0x41200000
 #define XPAR_INTC_SINGLE_HIGHADDR 0x4120FFFF
 #define XPAR_INTC_SINGLE_DEVICE_ID XPAR_MICROBLAZE_0_AXI_INTC_DEVICE_ID
@@ -649,6 +649,7 @@
 
 /******************************************************************/
 
+//Watchdog Interrupt
 /* Canonical definitions for peripheral MICROBLAZE_0_AXI_INTC */
 #define XPAR_INTC_0_DEVICE_ID XPAR_MICROBLAZE_0_AXI_INTC_DEVICE_ID
 #define XPAR_INTC_0_BASEADDR 0x41200000U
