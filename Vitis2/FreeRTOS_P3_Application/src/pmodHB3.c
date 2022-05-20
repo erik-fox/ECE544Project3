@@ -23,7 +23,7 @@ u32 PMODHB3_TachometerRPM(void)
 {
 	u32 val;
 
-	val =  (PMODHB3_getTachometer()/12)* 1000 * 60;
+	val =  (PMODHB3_getTachometer()*60)/12;
 	return val;
 }
 

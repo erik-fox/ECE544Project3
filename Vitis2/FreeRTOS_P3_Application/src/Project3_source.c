@@ -120,13 +120,17 @@
 // Interrupt Controller parameters
 //Interrupt 2 is switches and buttons
 //Interrupt GPIO SW and Buttons
+/*
 #define XPAR_INTC_SINGLE_BASEADDR
 #define XPAR_INTC_SINGLE_HIGHADDR
+*/
 
 //Interrupt 1 is caused by timer
+/*
 #define XPAR_INTC_0_DEVICE_ID
 #define XPAR_INTC_0_BASEADDR
 #define XPAR_INTC_0_HIGHADDR
+*/
 
 //WD timer is interrupt 0
 //#define FIT_INTERRUPT_ID		XPAR_MICROBLAZE_0_AXI_INTC_FIT_TIMER_0_INTERRUPT_INTR
@@ -172,14 +176,12 @@ XWdtTb		XWdtTbInstance;				/* Instance of Time Base WatchDog Timer */
 xSemaphoreHandle binary_sem;
 
 /* The queue used by the queue send and queue receive tasks. */
-static xQueueHandle xQueue = NULL;
 static xQueueHandle xQueue_PID_Update = NULL;
 static xQueueHandle xQueue_Display_Update = NULL;
 static xQueueHandle xQueue_Inputs_Update = NULL;
-static xQueueHandle xQueue_Temp1 = NULL;
-static xQueueHandle xQueue_Temp2 = NULL;
 
 //Building Handlers for Xtaskcreate function, not sure what it's for
+static TaskHandle_t	xMaster_TaskHandler = NULL;
 static TaskHandle_t	xPID_TaskHandler = NULL;
 static TaskHandle_t	xDisplay_TaskHandler = NULL;
 static TaskHandle_t	xInputs_TaskHandler = NULL;
@@ -264,23 +266,22 @@ int	 do_init(void);											// initialize system
 void FIT_Handler(void);										// fixed interval timer interrupt handler
 int AXI_Timer_initialize(void);
 
-void masterthread(void *p);
+void Master_thread(void *p);
 void display_thread(void *p);
 void PID_thread(void *p);
 void parameter_input_thread(void *p);
 
 //Updaters for RTOS Conversion
-void GreenLED_Update();
+void GreenLED_Update(pid_vars* pid_vars);
 void GreenLED_Clear();
-void ENC_Update();
-void ENC_State_Update();
+void ROT_ENC_Update(pid_vars* pid_vars);
+int ROT_ENC_State_Update();
 void MotorENC_Update();
 void OLED_Initialize();
-void OLED_Update();
 void OLED_Clear();
-void PIDController_Update();
-void PshBtn_Update();
-void SSEG_Update();
+void PIDController_Thread();
+void PshBtn_Update(pid_vars* pid_vars);
+void SSEG_Update(pid_vars* pid_vars);
 void SSEG_Clear();
 void Switch_Update();
 void Watchdog();
@@ -294,74 +295,62 @@ void Watchdog();
 
 
 /************************** MAIN PROGRAM ************************************/
-int main(void)
+int main()
 {
+	portBASE_TYPE xStatus;
+
+	//init_platform
     init_platform();
 
 	uint32_t sts;
 
+	//Init peripherals
 	sts = do_init();
 	if (XST_SUCCESS != sts)
 	{
 		exit(1);
 	}
 
+
 	microblaze_enable_interrupts();
 
 	xil_printf("ECE 544 Project 3 Test Program \n\r");
 	xil_printf("By Alex Beaulier. 13-May-2022\n\n\r");
 
-
-
-	// blank the display digits and turn off the decimal points
-	SSEG_Clear();
-	//Startup for OLED, prepwork before writing begins to eliminate writing these every time.
-	OLED_Initialize();
-
-	// loop the test until the user presses the encoder button
-	laststate = PMODENC544_getBtnSwReg();
-
-	//Todo Watchdog start add here???
-	while (1)//Main Loop Start
+	/*
+		Handle WDT expired event
+		Initialize FreeRTOS
+		Create master_thread() and start FreeRTOS
+	*/
+	if (XWdtTb_IsWdtExpired(&XWdtTbInstance))
 	{
-		//Update PMODENC state
-		ENC_Update();
-		ENC_State_Update();
-		//Update Switches
-		Switch_Update();
+		//Handle it
+		//Stop the timer
+		XWdtTb_Stop(&XWdtTbInstance);
+	}
 
-		//Update Push Button
-		PshBtn_Update();
+	//START THE MASTER THREAD
+	xStatus = xTaskCreate( Master_thread,
+			 ( const char * ) "Master Thread",	//PC Name
+			 2048,	//usStackDepth
+			 NULL,
+			 1,		//Priority
+			 &xMaster_TaskHandler ); //Unsure what this does
+	if(xStatus == XST_FAILURE){
+		xil_printf("Failed Master Thread Generation\r\n");
+	}
 
-
-		/*HARDWARE IMPLEMENTATION Precursor
-		//Read Encoder Stack
-		//Calculate RPMs eventually
-			//MotorENC_Update();
-		*/
-		//PIDController_Update();
-
-		//Update PmodOLEDrgb
-		OLED_Update();
-
-		//Update Green LED
-		GreenLED_Update();
-
-		//Update last state elements
-
-		//Update 7-seg display
-		// 5678 target RPM and 1234 digits for current RPM
-		SSEG_Update();
-	}//EO Main Loop
-
-
-
+	//START RTOS
 	vTaskStartScheduler();
+
+	//CLEAN RTOS, SHOULD NEVER REACH IN THIS PROJECT
+	cleanup_platform();
+
 	return -1;	//Should never reach this line
 }
 
 /**************************** RTOS FUNCTIONS ******************************/
-void masterthread(void *p){
+void Master_thread(void *p){
 	portBASE_TYPE xStatus;
 
 	//Create and initialize semaphores
@@ -392,33 +381,33 @@ void masterthread(void *p){
 	*
 	*****************************************************************************/
 	//Create Task_PID
-	xStatus = xTaskCreate( PIDController_Update,
+	xStatus = xTaskCreate( PIDController_Thread,
 					 ( const char * ) "RX PID Update",	//PC Name
 					 2048,	//usStackDepth
 					 NULL,
-					 1,		//Priority
-					 xPID_TaskHandler ); //Unsure what this does
+					 2,		//Priority
+					 &xPID_TaskHandler ); //Unsure what this does
 	if(xStatus == XST_FAILURE){
 		xil_printf("Failed PID Generate Task\r\n");
 	}
 	//Create Task_Display
-	xTaskCreate( OLED_Update,
+	xStatus = xTaskCreate( display_thread,
 					 ( const char * ) "RX OLED Update",	//PC Name
 					 2048,	//usStackDepth
 					 NULL,
 					 1,		//Priority
-					 xDisplay_TaskHandler ); //Unsure what this does
+					 &xDisplay_TaskHandler ); //Unsure what this does
 	if(xStatus == XST_FAILURE){
 		xil_printf("Failed PID Generate Task\r\n");
 	}
 
 	//Create Task_Inputs
-	xTaskCreate( Switch_Update,
+	xStatus = xTaskCreate( parameter_input_thread,
 					 ( const char * ) "TX Inputs",	//PC Name
 					 2048,	//usStackDepth
 					 NULL,
-					 1,		//Priority
-					 xInputs_TaskHandler );	//Unsure what this does
+					 3,		//Priority
+					 &xInputs_TaskHandler );	//Unsure what this does
 	if(xStatus == XST_FAILURE){
 		xil_printf("Failed PID Generate Task\r\n");
 	}
@@ -438,17 +427,7 @@ void masterthread(void *p){
 	}
 	return -1;	//Should never reach this line
 }
-void display_thread(void *p){
-
-}
-void PID_thread(void *p){
-
-}
-void parameter_input_thread(void *p){
-
-}
 /**********************************************************/
-
 
 
 /**************************** HELPER FUNCTIONS ******************************/
@@ -525,12 +504,12 @@ int	 do_init(void)
 	NX4IO_SSEG_setSSEG_DATA(SSEGLO, 0x7);
 
 	// initialize the interrupt controller
-	/*
+
 	status = XIntc_Initialize(&IntrptCtlrInst, INTC_DEVICE_ID);
 	if (status != XST_SUCCESS)
 	{
 	   return XST_FAILURE;
-	}*/
+	}
 
 	// start the interrupt controller such that interrupts are enabled for
 	// all devices that cause interrupts.
@@ -539,6 +518,11 @@ int	 do_init(void)
 	{
 		return XST_FAILURE;
 	}
+
+	//blank the display digits and turn off the decimal points
+	SSEG_Clear();
+	//Startup for OLED, prepwork before writing begins to eliminate writing these every time.
+	OLED_Initialize();
 
 	return XST_SUCCESS;
 }
@@ -765,49 +749,9 @@ void OLED_Initialize(){
 	OLEDrgb_DrawRectangle(&pmodOLEDrgb_inst, startcol, startrow, endcol, endrow, linecolor, fillColor, true);
 }
 
-/****************************************************************************/
-/**
-* PIDController_Update() Function
-*
-* Calculates the appropriate compensation to an input system
-* Based on reference from Kravitz 544 lecture notes
-* (Output Control Methods) - May 4th
-*
-* @return *NONE*
-*
-* @note
-*
-*****************************************************************************/
-/*
-void PIDController_Update(){
-	//TODO implement the PID loop here
-
-	//Calc errors (d error, prev)
-	derivative = error - prev_error;
-	prev_error = error;
-
-	//Calc Integral
-	if(error < setpoint)
-		i = i + error;
-	else
-		i = 0;
-	output = offset  +
-		(error * Kd) +
-		(derivative * Kd) +
-		(i * Ki);
-	if (output < 1 )
-		output = 1;
-	if (output > 254)
-		output = 254;
-	PWM(output);
-
-}
-*/
 
 
-
-void GreenLED_Update(){
-	pid_vars pid_vars;
+void GreenLED_Update(pid_vars* pid_vars){
 	int switchvalues2 = 0;
 
 	//Watchdog light
@@ -817,20 +761,17 @@ void GreenLED_Update(){
 	}
 
 	//2 = Kp
-	if(pid_vars.Kp != 0){
+	if(pid_vars->Kp != 0){
 		switchvalues2 |= 1 << 2;
 	}
 	//1 = Ki
-	if(pid_vars.Ki != 0){
+	if(pid_vars->Ki != 0){
 		switchvalues2 |= 1 << 1;
 	}
 	//0 = Kd
-	if(pid_vars.Kd != 0){
+	if(pid_vars->Kd != 0){
 		switchvalues2 |= 1 << 0;
 	}
-
-	//Update all LEDs together
-	//TODO REPLACE NX4IO_setLEDs(switchvalues2);
 }
 
 
@@ -840,11 +781,8 @@ void GreenLED_Clear(){
 }
 
 
-
-
-void SSEG_Update(){
-	pid_vars pid_vars;
-	u32_ss_disp_val = (pid_vars.RPM_Current  * 100000) + (pid_vars.RPM_Target); //simple answer...
+void SSEG_Update(pid_vars* pid_vars){
+	u32_ss_disp_val = (pid_vars->RPM_Current  * 100000) + (pid_vars->RPM_Target); //simple answer...
 	NX4IO_SSEG_putU32Dec(u32_ss_disp_val,0);
 }
 
@@ -853,11 +791,7 @@ void SSEG_Clear(){
 	NX410_SSEG_setAllDigits(SSEGHI, CC_BLANK, CC_BLANK, CC_BLANK, CC_BLANK, DP_NONE);
 }
 
-void PshBtn_Update(){
-	//Determine Button
-	pid_vars pid_vars;
-	while(1)
-	{
+void PshBtn_Update(pid_vars* pid_vars){
 	if(Button_isPressed(&GPIOButton,BBTNU))
 	{
 		if(notpressed_BTNU == 0){
@@ -866,36 +800,38 @@ void PshBtn_Update(){
 		switch(Kpid_current_state){
 			case KP:
 				if(Incr_Status_KPID == One){
-					pid_vars.Kp += 1;
+					pid_vars->Kp += 1;
 				}
 				if(Incr_Status_KPID == Five){
-					pid_vars.Kp += 5;
+					pid_vars->Kp += 5;
 				}
 				if(Incr_Status_KPID == Ten){
-					pid_vars.Kp += 10;
+					pid_vars->Kp += 10;
 				}
 			break;
 			case KI:
 				if(Incr_Status_KPID == One){
-					pid_vars.Ki += 1;
+					pid_vars->Ki += 1;
 				}
 				if(Incr_Status_KPID == Five){
-					pid_vars.Ki += 5;
+					pid_vars->Ki += 5;
 				}
 				if(Incr_Status_KPID == Ten){
-					pid_vars.Ki += 10;
+					pid_vars->Ki += 10;
 				}
 			break;
 			case KD:
 				if(Incr_Status_KPID == One){
-					pid_vars.Kd += 1;
+					pid_vars->Kd += 1;
 				}
 				if(Incr_Status_KPID == Five){
-					pid_vars.Kd += 5;
+					pid_vars->Kd += 5;
 				}
 				if(Incr_Status_KPID == Ten){
-					pid_vars.Kd += 10;
+					pid_vars->Kd += 10;
 				}
+			break;
+			case Neutral:
 			break;
 		}
 		}
@@ -910,36 +846,38 @@ void PshBtn_Update(){
 		switch(Kpid_current_state){
 			case KP:
 				if(Incr_Status_KPID == One){
-					pid_vars.Kp = (pid_vars.Kp >= 1) ? pid_vars.Kp - 1 :  pid_vars.Kp;
+					pid_vars->Kp = (pid_vars->Kp >= 1) ? pid_vars->Kp - 1 :  pid_vars->Kp;
 				}
 				if(Incr_Status_KPID == Five){
-					pid_vars.Kp = (pid_vars.Kp >= 5) ? pid_vars.Kp - 5 :  pid_vars.Kp;
+					pid_vars->Kp = (pid_vars->Kp >= 5) ? pid_vars->Kp - 5 :  pid_vars->Kp;
 				}
 				if(Incr_Status_KPID == Ten){
-					pid_vars.Kp = (pid_vars.Kp >= 10) ? pid_vars.Kp - 10 : pid_vars.Kp;
+					pid_vars->Kp = (pid_vars->Kp >= 10) ? pid_vars->Kp - 10 : pid_vars->Kp;
 				}
 			break;
 			case KI:
 				if(Incr_Status_KPID == One){
-					pid_vars.Ki = (pid_vars.Ki >= 1) ? pid_vars.Ki - 1 :  pid_vars.Ki;
+					pid_vars->Ki = (pid_vars->Ki >= 1) ? pid_vars->Ki - 1 :  pid_vars->Ki;
 				}
 				if(Incr_Status_KPID == Five){
-					pid_vars.Ki = (pid_vars.Ki >= 5) ? pid_vars.Ki - 5 :  pid_vars.Ki;
+					pid_vars->Ki = (pid_vars->Ki >= 5) ? pid_vars->Ki - 5 :  pid_vars->Ki;
 				}
 				if(Incr_Status_KPID == Ten){
-					pid_vars.Ki = (pid_vars.Ki >= 10) ? pid_vars.Ki - 10 : pid_vars.Ki;
+					pid_vars->Ki = (pid_vars->Ki >= 10) ? pid_vars->Ki - 10 : pid_vars->Ki;
 				}
 			break;
 			case KD:
 				if(Incr_Status_KPID == One){
-					pid_vars.Kd = (pid_vars.Kd >= 1) ? pid_vars.Kd - 1 : pid_vars.Kd;
+					pid_vars->Kd = (pid_vars->Kd >= 1) ? pid_vars->Kd - 1 : pid_vars->Kd;
 				}
 				if(Incr_Status_KPID == Five){
-					pid_vars.Kd = (pid_vars.Kd >= 5) ? pid_vars.Kd - 5 : pid_vars.Kd;
+					pid_vars->Kd = (pid_vars->Kd >= 5) ? pid_vars->Kd - 5 : pid_vars->Kd;
 				}
 				if(Incr_Status_KPID == Ten){
-					pid_vars.Kd = (pid_vars.Kd >= 10) ? pid_vars.Kd - 10 : pid_vars.Kd;
+					pid_vars->Kd = (pid_vars->Kd >= 10) ? pid_vars->Kd - 10 : pid_vars->Kd;
 				}
+			break;
+			case Neutral:
 			break;
 		}
 		}
@@ -959,23 +897,20 @@ void PshBtn_Update(){
 		//Motor speed to 0
 		//TODO Turn off PWM sig to motor
 		//KPID constants to non zero val to guarantee effect
-		pid_vars.RPM_Target = 0;
-		pid_vars.Kp = 1;
-		pid_vars.Ki = 1;
-		pid_vars.Kd = 1;
+		pid_vars->RPM_Target = 0;
+		pid_vars->Kp = 1;
+		pid_vars->Ki = 1;
+		pid_vars->Kd = 1;
 	}
-	}//End while
 }
 
 
 
 
 
-void ENC_Update(){
-	pid_vars pid_vars;
+void ROT_ENC_Update(pid_vars* pid_vars){
 	state = PMODENC544_getBtnSwReg();
 	//Update the Encoder value, wrap if necessary
-	//ticks += (ENC_getRotation(state, laststate));
 	ticks = PMODENC544_getRotaryCount();
 
 	//Turn based update
@@ -983,16 +918,16 @@ void ENC_Update(){
 		OLED_updatelock = 2;
 		switch(Incr_Status_ROT_ENC){
 			case One:
-				pid_vars.RPM_Target = 1 + pid_vars.RPM_Target;
+				pid_vars->RPM_Target = 1 + pid_vars->RPM_Target;
 			break;
 			case Five:
-				pid_vars.RPM_Target += 5;
+				pid_vars->RPM_Target += 5;
 			break;
 			case Ten:
-				pid_vars.RPM_Target += 10;
+				pid_vars->RPM_Target += 10;
 			break;
 			case Default:
-				pid_vars.RPM_Target += 0;
+				pid_vars->RPM_Target += 0;
 			break;
 		}
 	}
@@ -1000,16 +935,16 @@ void ENC_Update(){
 		OLED_updatelock = 2;
 		switch(Incr_Status_ROT_ENC){
 			case One:
-				pid_vars.RPM_Target = (pid_vars.RPM_Target > 0) ? pid_vars.RPM_Target - 1 : pid_vars.RPM_Target - 0;
+				pid_vars->RPM_Target = (pid_vars->RPM_Target > 0) ? pid_vars->RPM_Target - 1 : pid_vars->RPM_Target - 0;
 			break;
 			case Five:
-				pid_vars.RPM_Target = (pid_vars.RPM_Target > 5) ? pid_vars.RPM_Target - 5 : pid_vars.RPM_Target - 0;
+				pid_vars->RPM_Target = (pid_vars->RPM_Target > 5) ? pid_vars->RPM_Target - 5 : pid_vars->RPM_Target - 0;
 			break;
 			case Ten:
-				pid_vars.RPM_Target = (pid_vars.RPM_Target > 10) ? pid_vars.RPM_Target - 10 : pid_vars.RPM_Target - 0;
+				pid_vars->RPM_Target = (pid_vars->RPM_Target > 10) ? pid_vars->RPM_Target - 10 : pid_vars->RPM_Target - 0;
 			break;
 			case Default:
-				pid_vars.RPM_Target -= 0;
+				pid_vars->RPM_Target -= 0;
 			break;
 		}
 	}
@@ -1018,78 +953,168 @@ void ENC_Update(){
 
 }
 
-void ENC_State_Update(){
-
+int ROT_ENC_State_Update(){
+	u_int32_t BtnStatus;
+	int mask1 = 1 << (2 - 1);
+	BtnStatus = PMODENC544_getBtnSwReg();
+	if((BtnStatus & mask1) == mask1){
+		BtnStatus = 1;
+	}else{
+		BtnStatus = 0;
+	}
+	return BtnStatus;
 }
 
+//
+//Receive new messages from parameter_input_thread()
+//Receive new messages from PID_thread()
+//Update LEDs Update Display
+void display_thread(void *p){
+	pid_vars pid_vars_OLED;
+	while(1){
+		xQueueReceive(xQueue_Display_Update,&pid_vars_OLED,200);	//Update the parameters every loop
 
-
-
-
-
-void OLED_Update(){
-	pid_vars pid_vars;
-	if ((OLED_updatelock == 2) | (OLED_updatelock == 4)) {//ENC or center button
-		RGB_Combo  = OLEDrgb_BuildRGB(LED1_Red,LED1_Green,LED1_Blue);
-		fillColor = RGB_Combo;
-		linecolor = RGB_Combo;
-		OLEDrgb_SetCursor(&pmodOLEDrgb_inst, 7, 1);
-		OLEDrgb_PutString(&pmodOLEDrgb_inst,"    ");
-		OLEDrgb_SetCursor(&pmodOLEDrgb_inst, 7, 1);
-		PMDIO_putnum(&pmodOLEDrgb_inst,pid_vars.RPM_Current,10);
-		OLEDrgb_SetCursor(&pmodOLEDrgb_inst, 7, 2);
-		OLEDrgb_PutString(&pmodOLEDrgb_inst,"    ");
-		OLEDrgb_SetCursor(&pmodOLEDrgb_inst, 7, 2);
-		PMDIO_putnum(&pmodOLEDrgb_inst,pid_vars.RPM_Target,10);
-	}
-	if(OLED_updatelock == 1){//Pshbtns pressed
-		if (Kpid_current_state == KP){
+		if ((OLED_updatelock == 2) | (OLED_updatelock == 4)) {//ENC or center button
+			RGB_Combo  = OLEDrgb_BuildRGB(LED1_Red,LED1_Green,LED1_Blue);
+			fillColor = RGB_Combo;
+			linecolor = RGB_Combo;
+			OLEDrgb_SetCursor(&pmodOLEDrgb_inst, 7, 1);
+			OLEDrgb_PutString(&pmodOLEDrgb_inst,"    ");
+			OLEDrgb_SetCursor(&pmodOLEDrgb_inst, 7, 1);
+			PMDIO_putnum(&pmodOLEDrgb_inst,pid_vars_OLED.RPM_Current,10);
+			OLEDrgb_SetCursor(&pmodOLEDrgb_inst, 7, 2);
+			OLEDrgb_PutString(&pmodOLEDrgb_inst,"    ");
+			OLEDrgb_SetCursor(&pmodOLEDrgb_inst, 7, 2);
+			PMDIO_putnum(&pmodOLEDrgb_inst,pid_vars_OLED.RPM_Target,10);
+		}
+		if(OLED_updatelock == 1){//Pshbtns pressed
+			if (Kpid_current_state == KP){
+				OLEDrgb_SetCursor(&pmodOLEDrgb_inst, 4, 3);
+				OLEDrgb_PutString(&pmodOLEDrgb_inst,"    ");
+				OLEDrgb_SetCursor(&pmodOLEDrgb_inst, 4, 3);
+				PMDIO_putnum(&pmodOLEDrgb_inst,pid_vars_OLED.Kp,10);
+			}else if(Kpid_current_state == KI){
+				OLEDrgb_SetCursor(&pmodOLEDrgb_inst, 4, 4);
+				OLEDrgb_PutString(&pmodOLEDrgb_inst,"    ");
+				OLEDrgb_SetCursor(&pmodOLEDrgb_inst, 4, 4);
+				PMDIO_putnum(&pmodOLEDrgb_inst,pid_vars_OLED.Ki,10);
+			}else if(Kpid_current_state == KD){
+				OLEDrgb_SetCursor(&pmodOLEDrgb_inst, 4, 5);
+				OLEDrgb_PutString(&pmodOLEDrgb_inst,"    ");
+				OLEDrgb_SetCursor(&pmodOLEDrgb_inst, 4, 5);
+				PMDIO_putnum(&pmodOLEDrgb_inst,pid_vars_OLED.Kd,10);
+			}
+		}
+		if(OLED_updatelock == 4){ //Center button pressed
 			OLEDrgb_SetCursor(&pmodOLEDrgb_inst, 4, 3);
 			OLEDrgb_PutString(&pmodOLEDrgb_inst,"    ");
 			OLEDrgb_SetCursor(&pmodOLEDrgb_inst, 4, 3);
-			PMDIO_putnum(&pmodOLEDrgb_inst,pid_vars.Kp,10);
-		}else if(Kpid_current_state == KI){
+			PMDIO_putnum(&pmodOLEDrgb_inst,pid_vars_OLED.Kp,10);
 			OLEDrgb_SetCursor(&pmodOLEDrgb_inst, 4, 4);
 			OLEDrgb_PutString(&pmodOLEDrgb_inst,"    ");
 			OLEDrgb_SetCursor(&pmodOLEDrgb_inst, 4, 4);
-			PMDIO_putnum(&pmodOLEDrgb_inst,pid_vars.Ki,10);
-		}else if(Kpid_current_state == KD){
+			PMDIO_putnum(&pmodOLEDrgb_inst,pid_vars_OLED.Ki,10);
 			OLEDrgb_SetCursor(&pmodOLEDrgb_inst, 4, 5);
 			OLEDrgb_PutString(&pmodOLEDrgb_inst,"    ");
 			OLEDrgb_SetCursor(&pmodOLEDrgb_inst, 4, 5);
-			PMDIO_putnum(&pmodOLEDrgb_inst,pid_vars.Kd,10);
+			PMDIO_putnum(&pmodOLEDrgb_inst,pid_vars_OLED.Kd,10);
 		}
-	}
-	if(OLED_updatelock == 4){ //Center button pressed
-		OLEDrgb_SetCursor(&pmodOLEDrgb_inst, 4, 3);
-		OLEDrgb_PutString(&pmodOLEDrgb_inst,"    ");
-		OLEDrgb_SetCursor(&pmodOLEDrgb_inst, 4, 3);
-		PMDIO_putnum(&pmodOLEDrgb_inst,pid_vars.Kp,10);
-		OLEDrgb_SetCursor(&pmodOLEDrgb_inst, 4, 4);
-		OLEDrgb_PutString(&pmodOLEDrgb_inst,"    ");
-		OLEDrgb_SetCursor(&pmodOLEDrgb_inst, 4, 4);
-		PMDIO_putnum(&pmodOLEDrgb_inst,pid_vars.Ki,10);
-		OLEDrgb_SetCursor(&pmodOLEDrgb_inst, 4, 5);
-		OLEDrgb_PutString(&pmodOLEDrgb_inst,"    ");
-		OLEDrgb_SetCursor(&pmodOLEDrgb_inst, 4, 5);
-		PMDIO_putnum(&pmodOLEDrgb_inst,pid_vars.Kd,10);
-	}
-	if(OLED_updatelock == 5){//Switches activated
-		if (Kpid_current_state == KP){
-		OLEDrgb_SetCursor(&pmodOLEDrgb_inst, 7, 6);
-		OLEDrgb_PutString(&pmodOLEDrgb_inst,"Kp");
-		}else if(Kpid_current_state == KI){
+		if(OLED_updatelock == 5){//Switches activated
+			if (Kpid_current_state == KP){
 			OLEDrgb_SetCursor(&pmodOLEDrgb_inst, 7, 6);
-			OLEDrgb_PutString(&pmodOLEDrgb_inst,"Ki");
-		}else if(Kpid_current_state == KD){
-			OLEDrgb_SetCursor(&pmodOLEDrgb_inst, 7, 6);
-			OLEDrgb_PutString(&pmodOLEDrgb_inst,"Kd");
+			OLEDrgb_PutString(&pmodOLEDrgb_inst,"Kp");
+			}else if(Kpid_current_state == KI){
+				OLEDrgb_SetCursor(&pmodOLEDrgb_inst, 7, 6);
+				OLEDrgb_PutString(&pmodOLEDrgb_inst,"Ki");
+			}else if(Kpid_current_state == KD){
+				OLEDrgb_SetCursor(&pmodOLEDrgb_inst, 7, 6);
+				OLEDrgb_PutString(&pmodOLEDrgb_inst,"Kd");
+			}
 		}
-	}
-	OLED_updatelock = 0;
+		GreenLED_Update(&pid_vars_OLED);
+		OLED_updatelock = 0;
+		SSEG_Update(&pid_vars_OLED);
+	}//EO While1
+	return -2; //Should never reach here
 }
 
 
+void parameter_input_thread(void *p){
+	pid_vars pid_vars_OLED;
+	int status;
+	while(1){
+		xQueueReceive(xQueue_Display_Update,&pid_vars_OLED,50);
+
+		//Update PMODENC state
+		//*NOTE PMOD enc not linked to interrupt semaphore, always read
+		ROT_ENC_Update(&pid_vars_OLED);
+		status = ROT_ENC_State_Update();
+
+		//TODO Turn this back on once interrupts on
+		//if(xSemaphoreTake(binary_sem,100)){
+			//Update Push Button
+			PshBtn_Update(&pid_vars_OLED);
+			//Update Switches
+			Switch_Update();
+		//}
+
+		//Modify the direction bit here based on rotaryenc feedback
+		if(status == 1){
+			PMODHB3_setDIR(1);
+		}else{
+			PMODHB3_setDIR(0);
+		}
+
+		//Send message to update_display thread
+		xQueueSend( xQueue_Display_Update,&pid_vars_OLED, mainDONT_BLOCK );
+		//Send message to control params with setpoint
+		xQueueSend( xQueue_PID_Update,&pid_vars_OLED, mainDONT_BLOCK );
+
+	}
+	return -3; //Should never reach here
+}
+
+
+/****************************************************************************/
+/**
+* PIDController_Thread() Function
+*
+* Calculates the appropriate compensation to an input system
+* Based on reference from Kravitz 544 lecture notes
+* (Output Control Methods) - May 4th
+*
+* @return *NONE*
+*
+* @note
+*
+*****************************************************************************/
+
+void PIDController_Thread(){
+	pid_vars pid_vars_PIDLocal;
+	int i;
+	while(1){
+		xQueueReceive(xQueue_PID_Update,&pid_vars_PIDLocal,50);
+		//TODO implement the PID loop here
+		//Calc errors (d error, prev)
+		pid_vars_PIDLocal.derivative = pid_vars_PIDLocal.error - pid_vars_PIDLocal.prev_error;
+		pid_vars_PIDLocal.prev_error = pid_vars_PIDLocal.error;
+
+		//Calc Integral
+		if(pid_vars_PIDLocal.error < pid_vars_PIDLocal.setpoint)
+			i = i + pid_vars_PIDLocal.error;
+		else
+			i = 0;
+		pid_vars_PIDLocal.output = pid_vars_PIDLocal.offset  +
+			(pid_vars_PIDLocal.error * pid_vars_PIDLocal.Kd) +
+			(pid_vars_PIDLocal.derivative * pid_vars_PIDLocal.Kd) +
+			(i * pid_vars_PIDLocal.Ki);
+		if (pid_vars_PIDLocal.output < 1 )
+			pid_vars_PIDLocal.output = 1;
+		if (pid_vars_PIDLocal.output > 254)
+			pid_vars_PIDLocal.output = 254;
+		PWM(pid_vars_PIDLocal.output);
+	}
+}
 
 
 void Switch_Update(){
