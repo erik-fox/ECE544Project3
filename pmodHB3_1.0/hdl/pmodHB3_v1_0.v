@@ -6,7 +6,7 @@
 	(
 		// Users to add parameters here
         parameter  PWM = 255,
-        parameter  PERCENT_SECOND = 1000,
+        parameter  PERCENT_SECOND = 1,
         parameter  CLOCK_FREQ = 100000000,
 		// User parameters ends
 		// Do not modify the parameters beyond this line
