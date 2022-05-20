@@ -1,4 +1,4 @@
-15:23:42 **** Incremental Build of configuration Debug for project FreeRTOS_P3_Application ****
+16:26:51 **** Incremental Build of configuration Debug for project FreeRTOS_P3_Application ****
 make all 
 'Building file: ../src/Project3_source.c'
 'Invoking: MicroBlaze gcc compiler'
@@ -11,45 +11,36 @@ mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Project3_source.o" -ID:/Portl
   353 | void Master_thread(void *p){
       |      ^~~~~~~~~~~~~
 ../src/Project3_source.c: In function 'display_thread':
-../src/Project3_source.c:1038:9: warning: 'return' with a value, in function returning void [-Wreturn-type]
- 1038 |  return -2; //Should never reach here
+../src/Project3_source.c:1037:9: warning: 'return' with a value, in function returning void [-Wreturn-type]
+ 1037 |  return -2; //Should never reach here
       |         ^
-../src/Project3_source.c:972:6: note: declared here
-  972 | void display_thread(void *p){
+../src/Project3_source.c:971:6: note: declared here
+  971 | void display_thread(void *p){
       |      ^~~~~~~~~~~~~~
 ../src/Project3_source.c: In function 'parameter_input_thread':
-../src/Project3_source.c:1074:9: warning: 'return' with a value, in function returning void [-Wreturn-type]
- 1074 |  return -3; //Should never reach here
+../src/Project3_source.c:1073:9: warning: 'return' with a value, in function returning void [-Wreturn-type]
+ 1073 |  return -3; //Should never reach here
       |         ^
-../src/Project3_source.c:1042:6: note: declared here
- 1042 | void parameter_input_thread(void *p){
+../src/Project3_source.c:1041:6: note: declared here
+ 1041 | void parameter_input_thread(void *p){
       |      ^~~~~~~~~~~~~~~~~~~~~~
 ../src/Project3_source.c: In function 'PIDController_Thread':
-../src/Project3_source.c:1107:20: error: 'pid_vars' {aka 'struct <anonymous>'} has no member named 'output'
- 1107 |   pid_vars_PIDLocal.output = pid_vars_PIDLocal.offset  +
-      |                    ^
-../src/Project3_source.c:1107:47: error: 'pid_vars' {aka 'struct <anonymous>'} has no member named 'offset'
- 1107 |   pid_vars_PIDLocal.output = pid_vars_PIDLocal.offset  +
-      |                                               ^
-../src/Project3_source.c:1111:24: error: 'pid_vars' {aka 'struct <anonymous>'} has no member named 'output'
- 1111 |   if (pid_vars_PIDLocal.output < 1 )
-      |                        ^
-../src/Project3_source.c:1112:21: error: 'pid_vars' {aka 'struct <anonymous>'} has no member named 'output'
- 1112 |    pid_vars_PIDLocal.output = 1;
-      |                     ^
-../src/Project3_source.c:1113:24: error: 'pid_vars' {aka 'struct <anonymous>'} has no member named 'output'
- 1113 |   if (pid_vars_PIDLocal.output > 254)
-      |                        ^
-../src/Project3_source.c:1114:21: error: 'pid_vars' {aka 'struct <anonymous>'} has no member named 'output'
- 1114 |    pid_vars_PIDLocal.output = 254;
-      |                     ^
-../src/Project3_source.c:1115:3: warning: implicit declaration of function 'PWM' [-Wimplicit-function-declaration]
- 1115 |   PWM(pid_vars_PIDLocal.output);
-      |   ^~~
-../src/Project3_source.c:1115:24: error: 'pid_vars' {aka 'struct <anonymous>'} has no member named 'output'
- 1115 |   PWM(pid_vars_PIDLocal.output);
-      |                        ^
-make: *** [src/subdir.mk:38: src/Project3_source.o] Error 1
+../src/Project3_source.c:1093:6: warning: unused variable 'i' [-Wunused-variable]
+ 1093 |  int i;
+      |      ^
+'Finished building: ../src/Project3_source.c'
+' '
+'Building target: FreeRTOS_P3_Application.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -LD:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/bsplib/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "FreeRTOS_P3_Application.elf"  ./src/GPIOfunctions.o ./src/Project3_source.o ./src/platform.o ./src/pmodCMPS2_helper_functions.o ./src/pmodHB3.o ./src/pmodHB3_selftest.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group
+'Finished building target: FreeRTOS_P3_Application.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size FreeRTOS_P3_Application.elf  |tee "FreeRTOS_P3_Application.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  49040	    504	  70136	 119680	  1d380	FreeRTOS_P3_Application.elf
+'Finished building: FreeRTOS_P3_Application.elf.size'
+' '
 
-15:23:43 Build Finished (took 377ms)
+16:26:54 Build Finished (took 2s.584ms)
 

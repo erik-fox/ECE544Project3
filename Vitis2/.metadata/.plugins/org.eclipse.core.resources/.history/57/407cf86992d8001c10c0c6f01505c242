@@ -331,12 +331,12 @@ int main()
 
 	//START THE MASTER THREAD
 	xStatus = xTaskCreate( Master_thread,
-			 ( const char * ) "MasterThread",	//PC Name
-			 4096,	//usStackDepth
+			 ( const char * ) "Master Thread",	//PC Name
+			 2048,	//usStackDepth
 			 NULL,
 			 1,		//Priority
 			 &xMaster_TaskHandler ); //Unsure what this does
-	if(xStatus == pdFAIL){
+	if(xStatus == XST_FAILURE){
 		xil_printf("Failed Master Thread Generation\r\n");
 	}
 
@@ -383,7 +383,7 @@ void Master_thread(void *p){
 	//Create Task_PID
 	xStatus = xTaskCreate( PIDController_Thread,
 					 ( const char * ) "RX PID Update",	//PC Name
-					 4096,	//usStackDepth
+					 2048,	//usStackDepth
 					 NULL,
 					 2,		//Priority
 					 &xPID_TaskHandler ); //Unsure what this does
@@ -393,7 +393,7 @@ void Master_thread(void *p){
 	//Create Task_Display
 	xStatus = xTaskCreate( display_thread,
 					 ( const char * ) "RX OLED Update",	//PC Name
-					 4096,	//usStackDepth
+					 2048,	//usStackDepth
 					 NULL,
 					 1,		//Priority
 					 &xDisplay_TaskHandler ); //Unsure what this does
@@ -404,7 +404,7 @@ void Master_thread(void *p){
 	//Create Task_Inputs
 	xStatus = xTaskCreate( parameter_input_thread,
 					 ( const char * ) "TX Inputs",	//PC Name
-					 4096,	//usStackDepth
+					 2048,	//usStackDepth
 					 NULL,
 					 3,		//Priority
 					 &xInputs_TaskHandler );	//Unsure what this does
@@ -420,7 +420,7 @@ void Master_thread(void *p){
 
 	//Register interrupt handlers
 	//Enable WDT interrupt and start WDT
-	//XWdtTb_Start(&XWdtTbInstance);
+	XWdtTb_Start(&XWdtTbInstance);
 	//Begin forever loop
 	while(1){
 
@@ -457,6 +457,7 @@ int	 do_init(void)
 	// and should remain unchanged when written to Nexys4IO...
 	// something else to check w/ the debugger when we bring the
 	// drivers up for the first time
+	NX4IO_SSEG_setSSEG_DATA(SSEGHI, 0x0058E30E);
 	NX4IO_SSEG_setSSEG_DATA(SSEGLO, 0x1);
 
 	// initialize the GPIO instances
