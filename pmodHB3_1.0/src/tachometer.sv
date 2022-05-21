@@ -6,9 +6,9 @@ module tachometer(
 );
 
 
-    parameter  PERCENT_SECOND   = 1000;
+
     parameter  CLOCK_FREQ       = 100000000;   
-    localparam NUM_CLOCKS       = CLOCK_FREQ/PERCENT_SECOND;
+    localparam NUM_CLOCKS       = CLOCK_FREQ;
 
     logic   [31:0]  counter;
     logic   [31:0]  pulse_counter;

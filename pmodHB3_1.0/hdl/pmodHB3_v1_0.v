@@ -6,7 +6,6 @@
 	(
 		// Users to add parameters here
         parameter  PWM = 255,
-        parameter  PERCENT_SECOND = 1,
         parameter  CLOCK_FREQ = 100000000,
 		// User parameters ends
 		// Do not modify the parameters beyond this line
@@ -53,7 +52,6 @@
 		.C_S_AXI_DATA_WIDTH(C_S00_AXI_DATA_WIDTH),
 		.C_S_AXI_ADDR_WIDTH(C_S00_AXI_ADDR_WIDTH),
 		.PWM(PWM),
-		.PERCENT_SECOND(PERCENT_SECOND),
 		.CLOCK_FREQ(CLOCK_FREQ)
 	) pmodHB3_v1_0_S00_AXI_inst (
 	    .encoder_in(SA),
