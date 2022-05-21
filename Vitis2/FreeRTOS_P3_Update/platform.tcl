@@ -27,3 +27,10 @@ platform generate
 platform generate -domains 
 platform clean
 platform generate
+platform active {FreeRTOS_P3_Update}
+platform config -updatehw {D:/PortlandState/ECE_544/Labs/project_3/nexysA7fpga.xsa}
+platform clean
+platform generate
+platform clean
+platform clean
+platform generate

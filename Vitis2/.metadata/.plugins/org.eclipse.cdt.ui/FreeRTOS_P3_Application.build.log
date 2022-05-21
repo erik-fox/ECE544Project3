@@ -1,22 +1,22 @@
-11:40:45 **** Incremental Build of configuration Debug for project FreeRTOS_P3_Application ****
+14:18:00 **** Incremental Build of configuration Debug for project FreeRTOS_P3_Application ****
 make all 
 'Building file: ../src/Project3_source.c'
 'Invoking: MicroBlaze gcc compiler'
 mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Project3_source.o" -ID:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Project3_source.d" -MT"src/Project3_source.o" -o "src/Project3_source.o" "../src/Project3_source.c"
 ../src/Project3_source.c: In function 'main':
-../src/Project3_source.c:333:11: warning: returning 'char *' from a function with return type 'int' makes integer from pointer without a cast [-Wint-conversion]
-  333 |    return "Watchdog STOP Fail";
+../src/Project3_source.c:338:11: warning: returning 'char *' from a function with return type 'int' makes integer from pointer without a cast [-Wint-conversion]
+  338 |    return "Watchdog STOP Fail";
       |           ^~~~~~~~~~~~~~~~~~~~
 ../src/Project3_source.c: In function 'Master_thread':
-../src/Project3_source.c:432:9: warning: 'return' with a value, in function returning void [-Wreturn-type]
-  432 |  return -1; //Should never reach this line
+../src/Project3_source.c:438:9: warning: 'return' with a value, in function returning void [-Wreturn-type]
+  438 |  return -1; //Should never reach this line
       |         ^
-../src/Project3_source.c:359:6: note: declared here
-  359 | void Master_thread(void *p){
+../src/Project3_source.c:365:6: note: declared here
+  365 | void Master_thread(void *p){
       |      ^~~~~~~~~~~~~
 ../src/Project3_source.c: In function 'do_init':
-../src/Project3_source.c:494:72: warning: passing argument 2 of 'xPortInstallInterruptHandler' from incompatible pointer type [-Wincompatible-pointer-types]
-  494 |   status = xPortInstallInterruptHandler( GPIO_1_PBSWITCH_INTR_PRESENT, GPIO_PBSWITCH_Handler, NULL );
+../src/Project3_source.c:500:72: warning: passing argument 2 of 'xPortInstallInterruptHandler' from incompatible pointer type [-Wincompatible-pointer-types]
+  500 |   status = xPortInstallInterruptHandler( GPIO_1_PBSWITCH_INTR_PRESENT, GPIO_PBSWITCH_Handler, NULL );
       |                                                                        ^~~~~~~~~~~~~~~~~~~~~
       |                                                                        |
       |                                                                        void (*)(void)
@@ -27,25 +27,25 @@ D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTO
   263 | BaseType_t xPortInstallInterruptHandler( uint8_t ucInterruptID, XInterruptHandler pxHandler, void *pvCallBackRef );
       |                                                                 ~~~~~~~~~~~~~~~~~~^~~~~~~~~
 ../src/Project3_source.c: In function 'display_thread':
-../src/Project3_source.c:1074:9: warning: 'return' with a value, in function returning void [-Wreturn-type]
- 1074 |  return -2; //Should never reach here
+../src/Project3_source.c:1081:9: warning: 'return' with a value, in function returning void [-Wreturn-type]
+ 1081 |  return -2; //Should never reach here
       |         ^
-../src/Project3_source.c:1008:6: note: declared here
- 1008 | void display_thread(void *p){
+../src/Project3_source.c:1014:6: note: declared here
+ 1014 | void display_thread(void *p){
       |      ^~~~~~~~~~~~~~
 ../src/Project3_source.c: In function 'parameter_input_thread':
-../src/Project3_source.c:1101:9: warning: 'return' with a value, in function returning void [-Wreturn-type]
- 1101 |  return -3; //Should never reach here
+../src/Project3_source.c:1108:9: warning: 'return' with a value, in function returning void [-Wreturn-type]
+ 1108 |  return -3; //Should never reach here
       |         ^
-../src/Project3_source.c:1078:6: note: declared here
- 1078 | void parameter_input_thread(void *p){
+../src/Project3_source.c:1085:6: note: declared here
+ 1085 | void parameter_input_thread(void *p){
       |      ^~~~~~~~~~~~~~~~~~~~~~
-../src/Project3_source.c:1080:6: warning: unused variable 'status' [-Wunused-variable]
- 1080 |  int status;
+../src/Project3_source.c:1087:6: warning: unused variable 'status' [-Wunused-variable]
+ 1087 |  int status;
       |      ^~~~~~
 ../src/Project3_source.c: In function 'PIDController_Thread':
-../src/Project3_source.c:1121:6: warning: unused variable 'i' [-Wunused-variable]
- 1121 |  int i;
+../src/Project3_source.c:1128:6: warning: unused variable 'i' [-Wunused-variable]
+ 1128 |  int i;
       |      ^
 'Finished building: ../src/Project3_source.c'
 ' '
@@ -57,9 +57,9 @@ mb-gcc -Wl,-T -Wl,../src/lscript.ld -LD:/PortlandState/ECE_544/Labs/project_3/Vi
 'Invoking: MicroBlaze Print Size'
 mb-size FreeRTOS_P3_Application.elf  |tee "FreeRTOS_P3_Application.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  54108	    532	  70152	 124792	  1e778	FreeRTOS_P3_Application.elf
+  56996	    528	  70140	 127664	  1f2b0	FreeRTOS_P3_Application.elf
 'Finished building: FreeRTOS_P3_Application.elf.size'
 ' '
 
-11:40:46 Build Finished (took 1s.3ms)
+14:18:01 Build Finished (took 950ms)
 

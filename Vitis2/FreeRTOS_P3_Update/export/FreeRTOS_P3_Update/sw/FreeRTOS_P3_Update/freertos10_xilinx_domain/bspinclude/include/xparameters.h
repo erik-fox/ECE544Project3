@@ -622,7 +622,6 @@
 /* Definitions for driver INTC */
 #define XPAR_XINTC_NUM_INSTANCES 1
 
-//Interrupt Handler?
 /* Definitions for peripheral MICROBLAZE_0_AXI_INTC */
 #define XPAR_MICROBLAZE_0_AXI_INTC_DEVICE_ID 0
 #define XPAR_MICROBLAZE_0_AXI_INTC_BASEADDR 0x41200000
@@ -636,7 +635,7 @@
 
 
 /******************************************************************/
-//Interrupt GPIO SW and Buttons
+
 #define XPAR_INTC_SINGLE_BASEADDR 0x41200000
 #define XPAR_INTC_SINGLE_HIGHADDR 0x4120FFFF
 #define XPAR_INTC_SINGLE_DEVICE_ID XPAR_MICROBLAZE_0_AXI_INTC_DEVICE_ID
@@ -650,7 +649,6 @@
 
 /******************************************************************/
 
-//Watchdog Interrupt
 /* Canonical definitions for peripheral MICROBLAZE_0_AXI_INTC */
 #define XPAR_INTC_0_DEVICE_ID XPAR_MICROBLAZE_0_AXI_INTC_DEVICE_ID
 #define XPAR_INTC_0_BASEADDR 0x41200000U
@@ -683,10 +681,10 @@
 /* Definitions for driver PMODHB3 */
 #define XPAR_PMODHB3_NUM_INSTANCES 1
 
-/* Definitions for peripheral PMODHB3_1 */
-#define XPAR_PMODHB3_1_DEVICE_ID 0
-#define XPAR_PMODHB3_1_S00_AXI_BASEADDR 0x44A10000
-#define XPAR_PMODHB3_1_S00_AXI_HIGHADDR 0x44A1FFFF
+/* Definitions for peripheral PMODHB3_0 */
+#define XPAR_PMODHB3_0_DEVICE_ID 0
+#define XPAR_PMODHB3_0_S00_AXI_BASEADDR 0x44A10000
+#define XPAR_PMODHB3_0_S00_AXI_HIGHADDR 0x44A1FFFF
 
 
 /******************************************************************/

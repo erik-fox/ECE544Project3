@@ -8,7 +8,7 @@ u32 PMODHB3_BaseAddress;
 int PMODHB3_initialize(u32 BaseAddr)
 {
 	PMODHB3_BaseAddress = BaseAddr;
-	return PMODHB3_Reg_SelfTest(PMODHB3_BaseAddress);
+	return PMODHB3_BaseAddress; //PMODHB3_Reg_SelfTest(PMODHB3_BaseAddress);
 }
 
 u32 PMODHB3_getTachometer(void)

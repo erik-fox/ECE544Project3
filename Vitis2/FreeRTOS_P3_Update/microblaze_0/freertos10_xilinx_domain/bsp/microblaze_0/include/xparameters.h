@@ -681,10 +681,10 @@
 /* Definitions for driver PMODHB3 */
 #define XPAR_PMODHB3_NUM_INSTANCES 1
 
-/* Definitions for peripheral PMODHB3_1 */
-#define XPAR_PMODHB3_1_DEVICE_ID 0
-#define XPAR_PMODHB3_1_S00_AXI_BASEADDR 0x44A10000
-#define XPAR_PMODHB3_1_S00_AXI_HIGHADDR 0x44A1FFFF
+/* Definitions for peripheral PMODHB3_0 */
+#define XPAR_PMODHB3_0_DEVICE_ID 0
+#define XPAR_PMODHB3_0_S00_AXI_BASEADDR 0x44A10000
+#define XPAR_PMODHB3_0_S00_AXI_HIGHADDR 0x44A1FFFF
 
 
 /******************************************************************/

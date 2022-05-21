@@ -107,9 +107,9 @@
 #define PMODENC_HIGHADDR		XPAR_PMODENC544_0_S00_AXI_HIGHADDR
 
 // HB3 Definitions
-#define PMODHB3_DEVICE_ID		XPAR_PMODHB3_1_DEVICE_ID
-#define PMODHB3_BASEADDR		XPAR_PMODHB3_1_S00_AXI_BASEADDR
-#define PMODHB3_HIGHADDR		XPAR_PMODHB3_1_S00_AXI_HIGHADDR
+#define PMODHB3_DEVICE_ID		XPAR_PMODHB3_0_DEVICE_ID
+#define PMODHB3_BASEADDR		XPAR_PMODHB3_0_S00_AXI_BASEADDR
+#define PMODHB3_HIGHADDR		XPAR_PMODHB3_0_S00_AXI_HIGHADDR
 
 // Fixed Interval timer - 100 MHz input clock, 40KHz output clock
 // FIT_COUNT_1MSEC = FIT_CLOCK_FREQ_HZ * .001
@@ -252,9 +252,14 @@ typedef struct{
 	volatile u8 Kd;
 	volatile u32 RPM_Target;
 	volatile u32 RPM_Current;
+	volatile u32 RPM_Error;
+	volatile u32 intg_Max;
+	volatile u32 intg_min;
 	volatile u32 EncoderVal;
 	volatile double integral;
+	volatile double integral_error;
 	volatile double derivative;
+	volatile double derivative_error;
 	volatile double setpoint;
 	volatile double error;
 	volatile double prev_error;
@@ -288,7 +293,7 @@ void PshBtn_Update(pid_vars* pid_vars);
 void SSEG_Update(pid_vars* pid_vars);
 void SSEG_Clear();
 void Switch_Update();
-void Watchdog(void *);
+void Watchdog_Hand(void *);
 /*****************************************************************************/
 
 
@@ -325,13 +330,14 @@ int main()
 	{
 		//Handle it
 		//Stop the timer
-		XWdtTb_Stop(&XWdtTbInstance);
+		XWdtTb_RestartWdt(&XWdtTbInstance);
 		//Reinitialize -> Not sure if it should be this or XWdtTb_Start after some reset?
 		sts = XWdtTb_Initialize(&XWdtTbInstance, WDTTB_DEVICE_ID);
 		if (sts == XST_FAILURE)
 		{
 			return "Watchdog STOP Fail";
 		}
+		xil_printf("\n WDT Reinitializedn");
 		//XWdtTb_RestartWdt(&XWdtTbInstance);
 	}
 
@@ -401,7 +407,7 @@ void Master_thread(void *p){
 					 ( const char * ) "RX OLED Update",	//PC Name
 					 1024,	//usStackDepth
 					 NULL,
-					 3,		//Priority
+					 1,		//Priority
 					 &xDisplay_TaskHandler ); //Unsure what this does
 	if( xStatus == pdPASS ){
 		 xil_printf("Passed Displpay Generation\r\n");
@@ -411,7 +417,7 @@ void Master_thread(void *p){
 					 ( const char * ) "TX Inputs",	//PC Name
 					 1024,	//usStackDepth
 					 NULL,
-					 2,		//Priority
+					 1,		//Priority
 					 &xInputs_TaskHandler );	//Unsure what this does
 	if( xStatus == pdPASS ){
 		 xil_printf("Passed Input Generation\r\n");
@@ -423,7 +429,7 @@ void Master_thread(void *p){
 
 	//Register interrupt handlers
 	//Enable WDT interrupt and start WDT
-	XWdtTb_Start(&XWdtTbInstance);
+	//XWdtTb_Start(&XWdtTbInstance);
 
 	//Begin forever loop
 	while(1){
@@ -534,7 +540,6 @@ int	 do_init(void)
 	NX4IO_SSEG_setSSEG_DATA(SSEGLO, 0x7);
 
 	// initialize the interrupt controller
-
 	status = XIntc_Initialize(&IntrptCtlrInst, INTC_DEVICE_ID);
 	if (status != XST_SUCCESS)
 	{
@@ -546,7 +551,7 @@ int	 do_init(void)
 	status = XIntc_Start(&IntrptCtlrInst, XIN_REAL_MODE);
 	if (status != XST_SUCCESS)
 	{
-		xil_printf("Interrupt Failed Generation");
+		xil_printf("Interrupt Failed Generation\r\n");
 		return XST_FAILURE;
 	}
 
@@ -554,14 +559,16 @@ int	 do_init(void)
 	status = XWdtTb_Initialize(&XWdtTbInstance,WDTTB_DEVICE_ID);
 	if(status != XST_SUCCESS)
 	{
-	  xil_printf("WDT Failed Generation");
+	  xil_printf("WDT Failed Generation\r\n");
 	  return XST_FAILURE;
 	}
-	status = xPortInstallInterruptHandler(WDTTB_INTERRUPT_ID, Watchdog, NULL);
+	xil_printf("WDT Initialized\r\n");
+	status = xPortInstallInterruptHandler(WDTTB_INTERRUPT_ID, Watchdog_Hand, NULL);
 	if(status != pdPASS)
 	{
 		return XST_FAILURE;
 	}
+	xil_printf("WDT Handler Initialized\r\n");
 	vPortEnableInterrupt(WDTTB_INTERRUPT_ID);
 
 	//blank the display digits and turn off the decimal points
@@ -776,7 +783,6 @@ void OLED_Initialize(){
 	OLEDrgb_PutString(&pmodOLEDrgb_inst,"Kd");
 	OLEDrgb_SetCursor(&pmodOLEDrgb_inst, 0, 6);
 	OLEDrgb_PutString(&pmodOLEDrgb_inst,"Select:");
-	OLEDrgb_DrawRectangle(&pmodOLEDrgb_inst, startcol, startrow, endcol, endrow, linecolor, fillColor, true);
 }
 
 
@@ -1067,10 +1073,11 @@ void display_thread(void *p){
 				OLEDrgb_PutString(&pmodOLEDrgb_inst,"Kd");
 			}
 		}
+		SSEG_Update(&pid_vars_OLED);
 		GreenLED_Update(&pid_vars_OLED);
 		OLED_updatelock = 0;
-		SSEG_Update(&pid_vars_OLED);
 	}//EO While1
+
 	return -2; //Should never reach here
 }
 
@@ -1091,7 +1098,6 @@ void parameter_input_thread(void *p){
 			//Update Switches
 			Switch_Update();
 		//}
-
 		//Send message to update_display thread
 		xQueueSend( xQueue_Display_Update,&pid_vars_OLED, mainDONT_BLOCK );
 		//Send message to control params with setpoint
@@ -1119,34 +1125,47 @@ void parameter_input_thread(void *p){
 void PIDController_Thread(){
 	pid_vars pid_vars_PIDLocal;
 	int i;
+	xil_printf("Looped\r\n");
 	while(1){
+		//Receive new control parameters and setpoint
 		xQueueReceive(xQueue_PID_Update,&pid_vars_PIDLocal,10);
+
 
 		//Set the direction bit right away
 		PMODHB3_setDIR(pid_vars_PIDLocal.direction);
 
-		//TODO implement the PID loop here
+		//motor speed from tachometer logic
+		pid_vars_PIDLocal.RPM_Current = PMODHB3_getTachometer();
 
-		/*
-		//Calc Deriv errors (d error, prev)
-		pid_vars_PIDLocal.derivative = pid_vars_PIDLocal.error - pid_vars_PIDLocal.prev_error;
-		pid_vars_PIDLocal.prev_error = pid_vars_PIDLocal.error;
+		//TODO Finish
+		//Update the PID control algorithm
+		//Calculate Proportional
+		pid_vars_PIDLocal.RPM_Error = pid_vars_PIDLocal.RPM_Current - pid_vars_PIDLocal.RPM_Target;
 
 		//Calc Integral
-		if(pid_vars_PIDLocal.error < pid_vars_PIDLocal.setpoint)
-			i = i + pid_vars_PIDLocal.error;
-		else
-			i = 0;
-		pid_vars_PIDLocal.output = pid_vars_PIDLocal.offset  +
-			(pid_vars_PIDLocal.error * pid_vars_PIDLocal.Kd) +
-			(pid_vars_PIDLocal.derivative * pid_vars_PIDLocal.Kd) +
-			(i * pid_vars_PIDLocal.Ki);
-		if (pid_vars_PIDLocal.output < 1 )
-			pid_vars_PIDLocal.output = 1;
-		if (pid_vars_PIDLocal.output > 254)
-			pid_vars_PIDLocal.output = 254;
-		PWM(pid_vars_PIDLocal.output);
-		*/
+		//Limit high and low
+		pid_vars_PIDLocal.integral += pid_vars_PIDLocal.RPM_Error;
+		if(pid_vars_PIDLocal.integral > 6000)
+			pid_vars_PIDLocal.integral = 6000;
+		if(pid_vars_PIDLocal.integral < 0)
+			pid_vars_PIDLocal.integral = 0;
+
+		//Calc Deriv errors (d error, prev)
+		pid_vars_PIDLocal.derivative = pid_vars_PIDLocal.RPM_Error - pid_vars_PIDLocal.prev_error;
+
+
+		//Calculate new PID output
+		pid_vars_PIDLocal.setpoint = (pid_vars_PIDLocal.RPM_Error + pid_vars_PIDLocal.integral
+				+ pid_vars_PIDLocal.derivative);
+
+		//Set the PWM of the motor to new calc
+		PMODHB3_setPWM(pid_vars_PIDLocal.setpoint);
+
+		pid_vars_PIDLocal.prev_error = pid_vars_PIDLocal.RPM_Error;
+
+		xQueueSend( xQueue_Display_Update,&pid_vars_PIDLocal, mainDONT_BLOCK );
+		//Sleep for fix in write
+		usleep(1000);
 	}
 }
 
@@ -1161,6 +1180,7 @@ void Switch_Update(){
 	if((switch_values & mask1) == mask1){
 		//Crash the system here, use a flag
 		wdt_crash_flag = 1;
+		//xil_printf("\n WDT Flag Set\r\n");
 	}else{
 		wdt_crash_flag = 0;
 	}
@@ -1264,7 +1284,7 @@ void GPIO_PBSWITCH_Handler(void){
 	XGpio_InterruptClear( &GPIOButton, 1);
 }
 
-void Watchdog(void *p)
+void Watchdog_Hand(void *p)
 {
 	//Responds from master thread
 	/*
@@ -1282,6 +1302,7 @@ void Watchdog(void *p)
 		XWdtTb_RestartWdt(&XWdtTbInstance);
 	}
 	*/
+	xil_printf("\n Inside WDT\n");
 	if(!wdt_crash_flag && system_running)
 	{
 		XWdtTb_RestartWdt(&XWdtTbInstance);
