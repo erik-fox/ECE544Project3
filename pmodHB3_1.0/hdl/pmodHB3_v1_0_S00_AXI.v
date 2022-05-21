@@ -4,7 +4,6 @@
 	(
 		// Users to add parameters here
         parameter  PWM = 255,
-        parameter  PERCENT_SECOND = 1000,
         parameter  CLOCK_FREQ = 100000000,
 		// User parameters ends
 		// Do not modify the parameters beyond this line
@@ -403,7 +402,7 @@
 	// Add user logic here
 	assign pwm_direction = slv_reg0[31];
 	pwm_generator #(.MAX_COUNT(PWM)) pwm0(.clock(S_AXI_ACLK),.reset(S_AXI_ARESETN),.duty_cycle({1'b0,slv_reg0[30:0]}),.pwm_out(pwm_out));
-	tachometer #(.PERCENT_SECOND(PERCENT_SECOND),.CLOCK_FREQ(CLOCK_FREQ)) t0(.clock(S_AXI_ACLK),.system_reset(S_AXI_ARESETN),.encoder_data(encoder_in),.data_out(tachometer_data));
+	tachometer #(.CLOCK_FREQ(CLOCK_FREQ)) t0(.clock(S_AXI_ACLK),.system_reset(S_AXI_ARESETN),.encoder_data(encoder_in),.data_out(tachometer_data));
 	// User logic ends
 
 	endmodule
