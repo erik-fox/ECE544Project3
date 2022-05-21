@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="usleep"/>
+		<item key="selection" value="Watchdog"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
-			<item value="usleep"/>
-			<item value="vTaskStartScheduler"/>
-			<item value="pid_vars"/>
-			<item value="xwdt"/>
-			<item value="xTaskCreate"/>
-			<item value="pdFAIL"/>
-			<item value="switch"/>
-			<item value="output"/>
-			<item value="offset"/>
-			<item value="xQueue_Display_Update"/>
-			<item value="PIDController_"/>
-			<item value="PIDController_Update"/>
-			<item value="Master_thread"/>
-			<item value="do_init"/>
-			<item value="xPID_TaskHandler"/>
+			<item value="Watchdog"/>
+			<item value="XWdtTbInstance"/>
+			<item value="XPAR_WDTTB_0_DEVICE_ID"/>
+			<item value="XWdtTb_"/>
+			<item value="XWdtTb_Start"/>
+			<item value="xwdttb"/>
+			<item value="XPAR_MICROBLAZE_0_AXI_INTC_AXI_TIMEBASE_WDT_0_WDT_INTERRUPT_INTR"/>
+			<item value="xwd"/>
+			<item value="xwdtinst"/>
+			<item value="WDTTB_INTERRUPT_ID"/>
+			<item value="IRPT"/>
+			<item value="irpt"/>
+			<item value=" XPAR_MICROBLAZE_0_AXI_INTC"/>
+			<item value="XWdtTb_Initialize"/>
+			<item value="initialize watch"/>
 		</list>
 		<list key="replacehistory">
 			<item value="pid_vars-&gt;"/>
@@ -31,7 +31,7 @@
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="-84"/>
+		<item key="DIALOG_X_ORIGIN" value="9"/>
 		<item key="DIALOG_Y_ORIGIN" value="308"/>
 		<item key="DIALOG_WIDTH" value="336"/>
 		<item key="DIALOG_HEIGHT" value="454"/>
