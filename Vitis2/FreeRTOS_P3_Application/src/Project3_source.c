@@ -88,6 +88,7 @@
 
 // Green LEDs
 #define GPIO_0_DEVICE_ID			XPAR_AXI_GPIO_0_DEVICE_ID
+#define GPIO_0_Base_GLEDS			XPAR_AXI_GPIO_0_BASEADDR
 #define GPIO_0_INPUT_0_CHANNEL		1
 #define GPIO_0_OUTPUT_0_CHANNEL		2
 
@@ -137,6 +138,7 @@
 
 //	Watchdog
 #define WDTTB_DEVICE_ID		XPAR_WDTTB_0_DEVICE_ID
+#define WDTTB_INTERRUPT_ID  XPAR_MICROBLAZE_0_AXI_INTC_AXI_TIMEBASE_WDT_0_WDT_INTERRUPT_INTR
 #define INTC_DEVICE_ID		XPAR_INTC_0_DEVICE_ID
 /*
 #define WDTTB_IRPT_INTR		XPAR_INTC_0_WDTTB_0_WDT_INTERRUPT_VEC_ID
@@ -164,7 +166,7 @@ PmodOLEDrgb	pmodOLEDrgb_inst;
 //PmodENC 	pmodENC_inst;
 
 //GPIO
-XGpio		GPIOInst0;					// GPIO instance
+XGpio		GPIOInst0;					// GPIO instance	//Green LEDs
 XGpio		GPIOButton;					// GPIO Buttons and Switches
 
 //Interrupts and Timers
@@ -201,8 +203,9 @@ volatile u32 LED1_Green  		= 0;	//Default 0%
 volatile u32 LED1_Blue			= 0;	//Default 5%
 
 volatile u32 switch_values		= 0;
-volatile int notpressed_BTNU = 0;
-volatile int notpressed_BTND = 0;
+volatile int notpressed_BTNU 	= 0;
+volatile int notpressed_BTND 	= 0;
+volatile int notpressed_BTNC 	= 0;
 
 //OLED function inputs
 volatile uint32_t u32_ss_disp_val = 0;
@@ -243,9 +246,10 @@ volatile Incr_Status Incr_Status_ROT_ENC = Default;	//SW 3:2
 
 //PID Variables
 typedef struct{
-	volatile u32 Kp;
-	volatile u32 Ki;
-	volatile u32 Kd;
+	volatile bool direction;
+	volatile u8 Kp;
+	volatile u8 Ki;
+	volatile u8 Kd;
 	volatile u32 RPM_Target;
 	volatile u32 RPM_Current;
 	volatile u32 EncoderVal;
@@ -257,34 +261,34 @@ typedef struct{
 }pid_vars;
 
 volatile u8 wdt_crash_flag = 0;
+volatile u8 system_running 	   = 1;
 
 /************************** Function Prototypes *****************************/
 void PMDIO_itoa(int32_t value, char *string, int32_t radix);
 void PMDIO_puthex(PmodOLEDrgb* InstancePtr, uint32_t num);
 void PMDIO_putnum(PmodOLEDrgb* InstancePtr, int32_t num, int32_t radix);
 int	 do_init(void);											// initialize system
-void FIT_Handler(void);										// fixed interval timer interrupt handler
+void GPIO_PBSWITCH_Handler(void);										// fixed interval timer interrupt handler
 int AXI_Timer_initialize(void);
 
 void Master_thread(void *p);
 void display_thread(void *p);
-void PID_thread(void *p);
+void PIDController_Thread();
 void parameter_input_thread(void *p);
 
 //Updaters for RTOS Conversion
 void GreenLED_Update(pid_vars* pid_vars);
 void GreenLED_Clear();
 void ROT_ENC_Update(pid_vars* pid_vars);
-int ROT_ENC_State_Update();
+bool ROT_ENC_State_Update();
 void MotorENC_Update();
 void OLED_Initialize();
 void OLED_Clear();
-void PIDController_Thread();
 void PshBtn_Update(pid_vars* pid_vars);
 void SSEG_Update(pid_vars* pid_vars);
 void SSEG_Clear();
 void Switch_Update();
-void Watchdog();
+void Watchdog(void *);
 /*****************************************************************************/
 
 
@@ -311,28 +315,30 @@ int main()
 		exit(1);
 	}
 
-
 	microblaze_enable_interrupts();
 
 	xil_printf("ECE 544 Project 3 Test Program \n\r");
 	xil_printf("By Alex Beaulier. 13-May-2022\n\n\r");
 
-	/*
-		Handle WDT expired event
-		Initialize FreeRTOS
-		Create master_thread() and start FreeRTOS
-	*/
-	/*if (XWdtTb_IsWdtExpired(&XWdtTbInstance))
+	//Handle WDT expired event, reset will cycle back here
+	if (XWdtTb_IsWdtExpired(&XWdtTbInstance))
 	{
 		//Handle it
 		//Stop the timer
 		XWdtTb_Stop(&XWdtTbInstance);
-	}*/
+		//Reinitialize -> Not sure if it should be this or XWdtTb_Start after some reset?
+		sts = XWdtTb_Initialize(&XWdtTbInstance, WDTTB_DEVICE_ID);
+		if (sts == XST_FAILURE)
+		{
+			return "Watchdog STOP Fail";
+		}
+		//XWdtTb_RestartWdt(&XWdtTbInstance);
+	}
 
 	//START THE MASTER THREAD
 	xStatus = xTaskCreate( Master_thread,
 			 ( const char * ) "MasterThread",	//PC Name
-			 4096,	//usStackDepth
+			 1024,	//usStackDepth
 			 NULL,
 			 1,		//Priority
 			 &xMaster_TaskHandler ); //Unsure what this does
@@ -383,47 +389,45 @@ void Master_thread(void *p){
 	//Create Task_PID
 	xStatus = xTaskCreate( PIDController_Thread,
 					 ( const char * ) "RX PID Update",	//PC Name
-					 4096,	//usStackDepth
+					 1024,	//usStackDepth
 					 NULL,
-					 2,		//Priority
+					 1,		//Priority
 					 &xPID_TaskHandler ); //Unsure what this does
-	if(xStatus == XST_FAILURE){
-		xil_printf("Failed PID Generate Task\r\n");
-	}
+	 if( xStatus == pdPASS ){
+		 xil_printf("Passed PID Generation \r\n");
+	 }
 	//Create Task_Display
 	xStatus = xTaskCreate( display_thread,
 					 ( const char * ) "RX OLED Update",	//PC Name
-					 4096,	//usStackDepth
+					 1024,	//usStackDepth
 					 NULL,
-					 1,		//Priority
+					 3,		//Priority
 					 &xDisplay_TaskHandler ); //Unsure what this does
-	if(xStatus == XST_FAILURE){
-		xil_printf("Failed PID Generate Task\r\n");
-	}
-
+	if( xStatus == pdPASS ){
+		 xil_printf("Passed Displpay Generation\r\n");
+	 }
 	//Create Task_Inputs
 	xStatus = xTaskCreate( parameter_input_thread,
 					 ( const char * ) "TX Inputs",	//PC Name
-					 4096,	//usStackDepth
+					 1024,	//usStackDepth
 					 NULL,
-					 3,		//Priority
+					 2,		//Priority
 					 &xInputs_TaskHandler );	//Unsure what this does
-	if(xStatus == XST_FAILURE){
-		xil_printf("Failed PID Generate Task\r\n");
-	}
+	if( xStatus == pdPASS ){
+		 xil_printf("Passed Input Generation\r\n");
+	 }
 	//END TASKS/THREADS SETUP==========================================
 
 	//Begin scheduling, possibly have to swap to main?
 	xil_printf("Starting the scheduler\r\n");
-	vTaskStartScheduler();
-
 
 	//Register interrupt handlers
 	//Enable WDT interrupt and start WDT
-	//XWdtTb_Start(&XWdtTbInstance);
+	XWdtTb_Start(&XWdtTbInstance);
+
 	//Begin forever loop
 	while(1){
-
+		system_running = 1;
 	}
 	return -1;	//Should never reach this line
 }
@@ -443,6 +447,7 @@ void Master_thread(void *p){
 int	 do_init(void)
 {
 	uint32_t status;				// status from Xilinx Lib calls
+	const unsigned char ucSetToInput = 0xFFU;
 
 	// initialize the Nexys4 driver and (some of)the devices
 	status = (uint32_t) NX4IO_initialize(NX4IO_BASEADDR);
@@ -465,26 +470,52 @@ int	 do_init(void)
 	{
 		return XST_FAILURE;
 	}
-
-
-
-
 	NX4IO_SSEG_setSSEG_DATA(SSEGLO, 0x2);
+
+	//Green LEDs
 	// GPIO0 channel 1 is an 8-bit input port.
 	// GPIO0 channel 2 is an 8-bit output port.
 	XGpio_SetDataDirection(&GPIOInst0, GPIO_0_INPUT_0_CHANNEL, 0xFF);
-	//XGpio_SetDataDirection(&GPIOInst0, GPIO_0_OUTPUT_0_CHANNEL, 0x00);
+	//XGpio_SetDataDirection(&GPIOInst0, GPIO_0_OUTPUT_0_CHANNEL, 0xFF);
 	NX4IO_SSEG_setSSEG_DATA(SSEGLO, 0x3);
+
+
 	// GPIO Switches and Pushbutton
 	status = XGpio_Initialize(&GPIOButton, GPIO_1_PBSWITCH_DEVICE_ID);
 	if (status != XST_SUCCESS)
 	{
 		return XST_FAILURE;
 	}
+	if( status == XST_SUCCESS )
+	{
+		/* Install the handler defined in this task for the button input.
+		*NOTE* The FreeRTOS defined xPortInstallInterruptHandler() API function
+		must be used for this purpose. */
+		status = xPortInstallInterruptHandler( GPIO_1_PBSWITCH_INTR_PRESENT, GPIO_PBSWITCH_Handler, NULL );
+		if( status == pdPASS )
+		{
+			xil_printf("Buttons and Switches interrupt handler installed\r\n");
+			/* Set switches and buttons to input. */
+			XGpio_SetDataDirection( &GPIOButton, 1, ucSetToInput );
+			XGpio_SetDataDirection( &GPIOButton, 2, ucSetToInput );
+
+			/* Enable the button input interrupts in the interrupt controller.
+			*NOTE* The vPortEnableInterrupt() API function must be used for this
+			purpose. */
+
+			vPortEnableInterrupt( GPIO_1_PBSWITCH_INTR_PRESENT );
+
+			/* Enable GPIO channel interrupts. */
+			XGpio_InterruptEnable( &GPIOButton, 1 );
+			XGpio_InterruptGlobalEnable( &GPIOButton );
+		}
+	}
+	configASSERT( ( status == pdPASS ) );
 	// GPIOButton channel 1 is an 16-bit output port. // Pushbutton
 	// GPIOButton channel 2 is an 16-bit output port. // Switch
 	XGpio_SetDataDirection(&GPIOButton, GPIO_1_Channel_1, 0x00);
 	XGpio_SetDataDirection(&GPIOButton, GPIO_1_Channel_2, 0x00);
+
 	NX4IO_SSEG_setSSEG_DATA(SSEGLO, 0x4);
 	//Initialize OLED
 	OLEDrgb_begin(&pmodOLEDrgb_inst, RGBDSPLY_GPIO_BASEADDR, RGBDSPLY_SPI_BASEADDR);
@@ -515,13 +546,30 @@ int	 do_init(void)
 	status = XIntc_Start(&IntrptCtlrInst, XIN_REAL_MODE);
 	if (status != XST_SUCCESS)
 	{
+		xil_printf("Interrupt Failed Generation");
 		return XST_FAILURE;
 	}
+
+	//Initialize watch dog
+	status = XWdtTb_Initialize(&XWdtTbInstance,WDTTB_DEVICE_ID);
+	if(status != XST_SUCCESS)
+	{
+	  xil_printf("WDT Failed Generation");
+	  return XST_FAILURE;
+	}
+	status = xPortInstallInterruptHandler(WDTTB_INTERRUPT_ID, Watchdog, NULL);
+	if(status != pdPASS)
+	{
+		return XST_FAILURE;
+	}
+	vPortEnableInterrupt(WDTTB_INTERRUPT_ID);
 
 	//blank the display digits and turn off the decimal points
 	SSEG_Clear();
 	//Startup for OLED, prepwork before writing begins to eliminate writing these every time.
 	OLED_Initialize();
+	//Grab state for the loop
+	laststate = PMODENC544_getBtnSwReg();
 
 	return XST_SUCCESS;
 }
@@ -704,23 +752,6 @@ void PMDIO_putnum(PmodOLEDrgb* InstancePtr, int32_t num, int32_t radix)
 }
 
 
-/**************************** INTERRUPT HANDLERS ******************************/
-/****************************************************************************/
-/**
-* Fixed interval timer interrupt handler
-*
-* Reads the GPIO port which reads back the hardware generated PWM wave for the RGB Leds
-*
- *****************************************************************************/
-
-void FIT_Handler(void)
-{
-	// Read the GPIO port to read back the generated PWM signal for RGB led's
-	gpio_in = XGpio_DiscreteRead(&GPIOInst0, GPIO_0_INPUT_0_CHANNEL);
-
-}
-
-
 /**************************** Task Functions ******************************/
 /****************************************************************************/
 /**
@@ -771,6 +802,7 @@ void GreenLED_Update(pid_vars* pid_vars){
 	if(pid_vars->Kd != 0){
 		switchvalues2 |= 1 << 0;
 	}
+	XGpio_DiscreteWrite(&GPIOInst0, GPIO_0_INPUT_0_CHANNEL, switchvalues2);
 }
 
 
@@ -780,7 +812,7 @@ void GreenLED_Clear(){
 }
 
 
-void SSEG_Update(pid_vars* pid_vars){
+void SSEG_Update( pid_vars* pid_vars){
 	u32_ss_disp_val = (pid_vars->RPM_Current  * 100000) + (pid_vars->RPM_Target); //simple answer...
 	NX4IO_SSEG_putU32Dec(u32_ss_disp_val,0);
 }
@@ -892,14 +924,19 @@ void PshBtn_Update(pid_vars* pid_vars){
 	}
 	if(Button_isPressed(&GPIOButton,BBTNC))
 	{
-		OLED_updatelock = 4;
-		//Motor speed to 0
-		//TODO Turn off PWM sig to motor
-		//KPID constants to non zero val to guarantee effect
-		pid_vars->RPM_Target = 0;
-		pid_vars->Kp = 1;
-		pid_vars->Ki = 1;
-		pid_vars->Kd = 1;
+		if(notpressed_BTNC == 0){
+			notpressed_BTNC = 1;
+			OLED_updatelock = 4;
+			//Motor speed to 0
+			//TODO Turn off PWM sig to motor
+			//KPID constants to non zero val to guarantee effect
+			pid_vars->RPM_Target = 0;
+			pid_vars->Kp = 1;
+			pid_vars->Ki = 1;
+			pid_vars->Kd = 1;
+		}
+	}else{
+		notpressed_BTNC = 0;
 	}
 }
 
@@ -917,13 +954,13 @@ void ROT_ENC_Update(pid_vars* pid_vars){
 		OLED_updatelock = 2;
 		switch(Incr_Status_ROT_ENC){
 			case One:
-				pid_vars->RPM_Target = 1 + pid_vars->RPM_Target;
+				pid_vars->RPM_Target = (pid_vars->RPM_Target < 6000) ? pid_vars->RPM_Target + 1 : pid_vars->RPM_Target;
 			break;
 			case Five:
-				pid_vars->RPM_Target += 5;
+				pid_vars->RPM_Target = (pid_vars->RPM_Target < 5995) ? pid_vars->RPM_Target + 5 : pid_vars->RPM_Target;
 			break;
 			case Ten:
-				pid_vars->RPM_Target += 10;
+				pid_vars->RPM_Target = (pid_vars->RPM_Target < 5990) ? pid_vars->RPM_Target + 10 : pid_vars->RPM_Target;
 			break;
 			case Default:
 				pid_vars->RPM_Target += 0;
@@ -952,7 +989,7 @@ void ROT_ENC_Update(pid_vars* pid_vars){
 
 }
 
-int ROT_ENC_State_Update(){
+bool ROT_ENC_State_Update(){
 	u_int32_t BtnStatus;
 	int mask1 = 1 << (2 - 1);
 	BtnStatus = PMODENC544_getBtnSwReg();
@@ -961,7 +998,7 @@ int ROT_ENC_State_Update(){
 	}else{
 		BtnStatus = 0;
 	}
-	return BtnStatus;
+	return (bool)BtnStatus;
 }
 
 //
@@ -971,7 +1008,7 @@ int ROT_ENC_State_Update(){
 void display_thread(void *p){
 	pid_vars pid_vars_OLED;
 	while(1){
-		xQueueReceive(xQueue_Display_Update,&pid_vars_OLED,200);	//Update the parameters every loop
+		xQueueReceive(xQueue_Display_Update,&pid_vars_OLED,10);	//Update the parameters every loop
 
 		if ((OLED_updatelock == 2) | (OLED_updatelock == 4)) {//ENC or center button
 			RGB_Combo  = OLEDrgb_BuildRGB(LED1_Red,LED1_Green,LED1_Blue);
@@ -1039,15 +1076,13 @@ void display_thread(void *p){
 
 
 void parameter_input_thread(void *p){
-	pid_vars pid_vars_OLED;
+	pid_vars pid_vars_OLED = {0};	//Initialize all to 0, otherwise randomness occurs
 	int status;
 	while(1){
-		xQueueReceive(xQueue_Display_Update,&pid_vars_OLED,50);
-
 		//Update PMODENC state
 		//*NOTE PMOD enc not linked to interrupt semaphore, always read
 		ROT_ENC_Update(&pid_vars_OLED);
-		status = ROT_ENC_State_Update();
+		pid_vars_OLED.direction = ROT_ENC_State_Update();
 
 		//TODO Turn this back on once interrupts on
 		//if(xSemaphoreTake(binary_sem,100)){
@@ -1056,13 +1091,6 @@ void parameter_input_thread(void *p){
 			//Update Switches
 			Switch_Update();
 		//}
-
-		//Modify the direction bit here based on rotaryenc feedback
-		if(status == 1){
-			PMODHB3_setDIR(1);
-		}else{
-			PMODHB3_setDIR(0);
-		}
 
 		//Send message to update_display thread
 		xQueueSend( xQueue_Display_Update,&pid_vars_OLED, mainDONT_BLOCK );
@@ -1092,7 +1120,11 @@ void PIDController_Thread(){
 	pid_vars pid_vars_PIDLocal;
 	int i;
 	while(1){
-		xQueueReceive(xQueue_PID_Update,&pid_vars_PIDLocal,50);
+		xQueueReceive(xQueue_PID_Update,&pid_vars_PIDLocal,10);
+
+		//Set the direction bit right away
+		PMODHB3_setDIR(pid_vars_PIDLocal.direction);
+
 		//TODO implement the PID loop here
 
 		/*
@@ -1127,7 +1159,10 @@ void Switch_Update(){
 	//SW 15 Watchdog
 	mask1 = 1 << (16 - 1);
 	if((switch_values & mask1) == mask1){
-		//Crash the system here...TODO
+		//Crash the system here, use a flag
+		wdt_crash_flag = 1;
+	}else{
+		wdt_crash_flag = 0;
 	}
 
 	/*
@@ -1140,7 +1175,6 @@ void Switch_Update(){
 	}
 
 	//TODO Tryout sleep test here Direction verification/Step fix
-	usleep(1000);
 
 	//SW 13 Test PWM TODO
 	mask1 = 1 << (14 - 1);
@@ -1217,109 +1251,51 @@ void MotorENC_Update(){
 
 }
 
+
+/**************************** INTERRUPT HANDLERS ******************************/
+/****************************************************************************/
+/**
+* GPIO BTNSW interrupt handler
+* Enables a semaphore for the gpio input function thread
+* Clears the interrupt instance
+ *****************************************************************************/
 void GPIO_PBSWITCH_Handler(void){
 	xSemaphoreGiveFromISR(binary_sem,NULL);
 	XGpio_InterruptClear( &GPIOButton, 1);
 }
 
+void Watchdog(void *p)
+{
+	//Responds from master thread
+	/*
+	xil_printf("Inside the WDT_handler");
+	//
+	if(wdt_crash_flag)
+	{
+		xil_printf("Crashing the system, reseting soon\r\n");
+	}
 
-//void Watchdog(){
-//	//Watchdog Vars
-//	u32 TWCSR0;
-//	u32 TWCSR1;
-//	u32 TBR;
-//	u32 CSR0;
-//	u32 threeseconds = 3000000;
-//
-//	int Status;
-//	XWdtTb_Config *Config;
-//
-//	//Step 1, Configure the driver
-//	/*
-//	 * Initialize the WDTTB driver so that it's ready to use look up
-//	 * configuration in the config table, then initialize it.
-//	 */
-//	Config = XWdtTb_LookupConfig(GWdtDeviceId);
-//		if (NULL == Config) {
-//			return XST_FAILURE;
-//		}
-//
-//	//Step 2, Initialize watchdog and timer
-//	/*
-//	 * Initialize the watchdog timer and timebase driver so that
-//	 * it is ready to use.
-//	 */
-//	Status = XWdtTb_CfgInitialize(GWdtInstancePtr, Config,
-//					  Config->BaseAddr);
-//	if (Status != XST_SUCCESS) {
-//		return XST_FAILURE;
-//	}
-//
-//
-//	//Step 3, Hardware test
-//	/*
-//	 * Perform a self-test to ensure that the hardware was built correctly
-//	 */
-//	Status = XWdtTb_SelfTest(GWdtInstancePtr);
-//	if (Status != XST_SUCCESS) {
-//		return XST_FAILURE;
-//	}
-//
-//	//Step 4, Stop timer for interrupt
-//	/*
-//	 * Stop the timer to start the test for interrupt mode
-//	 */
-//	XWdtTb_Stop(GWdtInstancePtr);
-//
-//	//Step 5
-//	/*
-//	 * Connect the WdtTb to the interrupt subsystem so that interrupts
-//	 * can occur
-//	 */
-//	Status = GWdtSetupIntrSystem(IntcInstancePtr, GWdtInstancePtr,
-//					  GWdtIntrId);
-//	if (Status != XST_SUCCESS) {
-//		return XST_FAILURE;
-//	}
-//
-//	//Step 6
-//	/* Update GWOR Register */
-//		XWdtTb_SetGenericWdtWindow(GWdtInstancePtr, WDTPSV_GWOR_COUNT);
-//
-//
-//	//Step 7
-//	/*
-//	 * Start the WdtTb device
-//	 */
-//	GWdtExpired = FALSE;
-//	XWdtTb_Start(GWdtInstancePtr);
-//
-//
-//	//Step 8
-//	/*
-//	 * Wait for the first expiration of the GWDT
-//	 */
-//	while (GWdtExpired != TRUE);
-//	GWdtExpired = FALSE;
-//
-//	//Step 9
-//	/*
-//	 * Wait for the second expiration of the GWDT
-//	 */
-//	while (GWdtExpired != TRUE);
-//	GWdtExpired = FALSE;
-//
-//	//Step 10
-//	/*
-//	 * Disable and disconnect the interrupt system
-//	 */
-//	GWdtDisableIntrSystem(IntcInstancePtr, GWdtIntrId);
-//
-//	//Step 10
-//	/*
-//	 * Stop the timer
-//	 */
-//	XWdtTb_Stop(GWdtInstancePtr);
-//
-//	return XST_SUCCESS;
-//}
+	//Force the crash, restart
+	if(!wdt_crash_flag)
+	{
+		xil_printf("Restarting\r\n");
+		XWdtTb_RestartWdt(&XWdtTbInstance);
+	}
+	*/
+	if(!wdt_crash_flag && system_running)
+	{
+		XWdtTb_RestartWdt(&XWdtTbInstance);
+		xil_printf("\n Inside the !force_crach\n");
+		system_running = 0;
+	}
+	else
+	{
+		xil_printf("Force crash Successful.CPU Reset");
+	}
+
+	XWdtTb_IntrClear(&XWdtTbInstance);
+}
+
+
+
+
