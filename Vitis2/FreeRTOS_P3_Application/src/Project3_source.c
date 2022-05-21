@@ -329,14 +329,8 @@ int main()
 	if (XWdtTb_IsWdtExpired(&XWdtTbInstance))
 	{
 		//Handle it
-		//Stop the timer
-		XWdtTb_RestartWdt(&XWdtTbInstance);
-		//Reinitialize -> Not sure if it should be this or XWdtTb_Start after some reset?
-		sts = XWdtTb_Initialize(&XWdtTbInstance, WDTTB_DEVICE_ID);
-		if (sts == XST_FAILURE)
-		{
-			return "Watchdog STOP Fail";
-		}
+		//Restart
+		//XWdtTb_RestartWdt(&XWdtTbInstance);
 		xil_printf("\n WDT Reinitializedn");
 		//XWdtTb_RestartWdt(&XWdtTbInstance);
 	}
@@ -397,7 +391,7 @@ void Master_thread(void *p){
 					 ( const char * ) "RX PID Update",	//PC Name
 					 1024,	//usStackDepth
 					 NULL,
-					 1,		//Priority
+					 2,		//Priority
 					 &xPID_TaskHandler ); //Unsure what this does
 	 if( xStatus == pdPASS ){
 		 xil_printf("Passed PID Generation \r\n");
@@ -407,7 +401,7 @@ void Master_thread(void *p){
 					 ( const char * ) "RX OLED Update",	//PC Name
 					 1024,	//usStackDepth
 					 NULL,
-					 1,		//Priority
+					 3,		//Priority
 					 &xDisplay_TaskHandler ); //Unsure what this does
 	if( xStatus == pdPASS ){
 		 xil_printf("Passed Displpay Generation\r\n");
@@ -556,7 +550,8 @@ int	 do_init(void)
 	}
 
 	//Initialize watch dog
-	status = XWdtTb_Initialize(&XWdtTbInstance,WDTTB_DEVICE_ID);
+	//Can use this initialize instead of config -> Roy comments class
+	status = XWdtTb_Initialize(&XWdtTbInstance,XPAR_AXI_TIMEBASE_WDT_0_DEVICE_ID);
 	if(status != XST_SUCCESS)
 	{
 	  xil_printf("WDT Failed Generation\r\n");
@@ -963,10 +958,10 @@ void ROT_ENC_Update(pid_vars* pid_vars){
 				pid_vars->RPM_Target = (pid_vars->RPM_Target < 6000) ? pid_vars->RPM_Target + 1 : pid_vars->RPM_Target;
 			break;
 			case Five:
-				pid_vars->RPM_Target = (pid_vars->RPM_Target < 5995) ? pid_vars->RPM_Target + 5 : pid_vars->RPM_Target;
+				pid_vars->RPM_Target = (pid_vars->RPM_Target <= 5995) ? pid_vars->RPM_Target + 5 : pid_vars->RPM_Target;
 			break;
 			case Ten:
-				pid_vars->RPM_Target = (pid_vars->RPM_Target < 5990) ? pid_vars->RPM_Target + 10 : pid_vars->RPM_Target;
+				pid_vars->RPM_Target = (pid_vars->RPM_Target <= 5990) ? pid_vars->RPM_Target + 10 : pid_vars->RPM_Target;
 			break;
 			case Default:
 				pid_vars->RPM_Target += 0;
@@ -980,10 +975,10 @@ void ROT_ENC_Update(pid_vars* pid_vars){
 				pid_vars->RPM_Target = (pid_vars->RPM_Target > 0) ? pid_vars->RPM_Target - 1 : pid_vars->RPM_Target - 0;
 			break;
 			case Five:
-				pid_vars->RPM_Target = (pid_vars->RPM_Target > 5) ? pid_vars->RPM_Target - 5 : pid_vars->RPM_Target - 0;
+				pid_vars->RPM_Target = (pid_vars->RPM_Target >= 5) ? pid_vars->RPM_Target - 5 : pid_vars->RPM_Target - 0;
 			break;
 			case Ten:
-				pid_vars->RPM_Target = (pid_vars->RPM_Target > 10) ? pid_vars->RPM_Target - 10 : pid_vars->RPM_Target - 0;
+				pid_vars->RPM_Target = (pid_vars->RPM_Target >= 10) ? pid_vars->RPM_Target - 10 : pid_vars->RPM_Target - 0;
 			break;
 			case Default:
 				pid_vars->RPM_Target -= 0;
@@ -1014,8 +1009,7 @@ bool ROT_ENC_State_Update(){
 void display_thread(void *p){
 	pid_vars pid_vars_OLED;
 	while(1){
-		xQueueReceive(xQueue_Display_Update,&pid_vars_OLED,10);	//Update the parameters every loop
-
+		xQueueReceive(xQueue_Display_Update,&pid_vars_OLED,50);	//Update the parameters every loop
 		if ((OLED_updatelock == 2) | (OLED_updatelock == 4)) {//ENC or center button
 			RGB_Combo  = OLEDrgb_BuildRGB(LED1_Red,LED1_Green,LED1_Blue);
 			fillColor = RGB_Combo;
@@ -1028,6 +1022,9 @@ void display_thread(void *p){
 			OLEDrgb_PutString(&pmodOLEDrgb_inst,"    ");
 			OLEDrgb_SetCursor(&pmodOLEDrgb_inst, 7, 2);
 			PMDIO_putnum(&pmodOLEDrgb_inst,pid_vars_OLED.RPM_Target,10);
+			if((OLED_updatelock == 2)){
+				OLED_updatelock = 0;
+			}
 		}
 		if(OLED_updatelock == 1){//Pshbtns pressed
 			if (Kpid_current_state == KP){
@@ -1035,16 +1032,19 @@ void display_thread(void *p){
 				OLEDrgb_PutString(&pmodOLEDrgb_inst,"    ");
 				OLEDrgb_SetCursor(&pmodOLEDrgb_inst, 4, 3);
 				PMDIO_putnum(&pmodOLEDrgb_inst,pid_vars_OLED.Kp,10);
+				OLED_updatelock = 0;
 			}else if(Kpid_current_state == KI){
 				OLEDrgb_SetCursor(&pmodOLEDrgb_inst, 4, 4);
 				OLEDrgb_PutString(&pmodOLEDrgb_inst,"    ");
 				OLEDrgb_SetCursor(&pmodOLEDrgb_inst, 4, 4);
 				PMDIO_putnum(&pmodOLEDrgb_inst,pid_vars_OLED.Ki,10);
+				OLED_updatelock = 0;
 			}else if(Kpid_current_state == KD){
 				OLEDrgb_SetCursor(&pmodOLEDrgb_inst, 4, 5);
 				OLEDrgb_PutString(&pmodOLEDrgb_inst,"    ");
 				OLEDrgb_SetCursor(&pmodOLEDrgb_inst, 4, 5);
 				PMDIO_putnum(&pmodOLEDrgb_inst,pid_vars_OLED.Kd,10);
+				OLED_updatelock = 0;
 			}
 		}
 		if(OLED_updatelock == 4){ //Center button pressed
@@ -1060,22 +1060,26 @@ void display_thread(void *p){
 			OLEDrgb_PutString(&pmodOLEDrgb_inst,"    ");
 			OLEDrgb_SetCursor(&pmodOLEDrgb_inst, 4, 5);
 			PMDIO_putnum(&pmodOLEDrgb_inst,pid_vars_OLED.Kd,10);
+			OLED_updatelock = 0;
 		}
 		if(OLED_updatelock == 5){//Switches activated
 			if (Kpid_current_state == KP){
-			OLEDrgb_SetCursor(&pmodOLEDrgb_inst, 7, 6);
-			OLEDrgb_PutString(&pmodOLEDrgb_inst,"Kp");
+				OLEDrgb_SetCursor(&pmodOLEDrgb_inst, 7, 6);
+				OLEDrgb_PutString(&pmodOLEDrgb_inst,"Kp");
+				OLED_updatelock = 0;
 			}else if(Kpid_current_state == KI){
 				OLEDrgb_SetCursor(&pmodOLEDrgb_inst, 7, 6);
 				OLEDrgb_PutString(&pmodOLEDrgb_inst,"Ki");
+				OLED_updatelock = 0;
 			}else if(Kpid_current_state == KD){
 				OLEDrgb_SetCursor(&pmodOLEDrgb_inst, 7, 6);
 				OLEDrgb_PutString(&pmodOLEDrgb_inst,"Kd");
+				OLED_updatelock = 0;
 			}
 		}
+		//xil_printf("Reached here\r\n");
 		SSEG_Update(&pid_vars_OLED);
 		GreenLED_Update(&pid_vars_OLED);
-		OLED_updatelock = 0;
 	}//EO While1
 
 	return -2; //Should never reach here
@@ -1128,8 +1132,7 @@ void PIDController_Thread(){
 	xil_printf("Looped\r\n");
 	while(1){
 		//Receive new control parameters and setpoint
-		xQueueReceive(xQueue_PID_Update,&pid_vars_PIDLocal,10);
-
+		xQueueReceive(xQueue_PID_Update,&pid_vars_PIDLocal,50);
 
 		//Set the direction bit right away
 		PMODHB3_setDIR(pid_vars_PIDLocal.direction);
@@ -1140,26 +1143,30 @@ void PIDController_Thread(){
 		//TODO Finish
 		//Update the PID control algorithm
 		//Calculate Proportional
-		pid_vars_PIDLocal.RPM_Error = pid_vars_PIDLocal.RPM_Current - pid_vars_PIDLocal.RPM_Target;
+		pid_vars_PIDLocal.RPM_Error = (pid_vars_PIDLocal.RPM_Current - pid_vars_PIDLocal.RPM_Target);
 
 		//Calc Integral
 		//Limit high and low
-		pid_vars_PIDLocal.integral += pid_vars_PIDLocal.RPM_Error;
+		pid_vars_PIDLocal.integral = (pid_vars_PIDLocal.integral + (double)pid_vars_PIDLocal.RPM_Error);
 		if(pid_vars_PIDLocal.integral > 6000)
 			pid_vars_PIDLocal.integral = 6000;
 		if(pid_vars_PIDLocal.integral < 0)
 			pid_vars_PIDLocal.integral = 0;
 
-		//Calc Deriv errors (d error, prev)
-		pid_vars_PIDLocal.derivative = pid_vars_PIDLocal.RPM_Error - pid_vars_PIDLocal.prev_error;
-
+		//Calc Deriv errors (d error, prev) (Not sure about dt)
+		pid_vars_PIDLocal.derivative = ((double)pid_vars_PIDLocal.RPM_Error - pid_vars_PIDLocal.prev_error); //error - prev_error / dt????
 
 		//Calculate new PID output
-		pid_vars_PIDLocal.setpoint = (pid_vars_PIDLocal.RPM_Error + pid_vars_PIDLocal.integral
-				+ pid_vars_PIDLocal.derivative);
+		pid_vars_PIDLocal.setpoint = ((double)pid_vars_PIDLocal.RPM_Error * (double)pid_vars_PIDLocal.Kp) + ((pid_vars_PIDLocal.integral) * (double)(pid_vars_PIDLocal.Ki/10)) + (pid_vars_PIDLocal.derivative * (double)pid_vars_PIDLocal.Kd);
+
+
+		//Convert the PID RPM Setpoint to a scaled pwm value
+		//0 - 6000 -> 0 - 255
+
 
 		//Set the PWM of the motor to new calc
-		PMODHB3_setPWM(pid_vars_PIDLocal.setpoint);
+		//PMODHB3_setPWM((u32)pid_vars_PIDLocal.setpoint);
+		PMODHB3_setPWM(pid_vars_PIDLocal.RPM_Target);
 
 		pid_vars_PIDLocal.prev_error = pid_vars_PIDLocal.RPM_Error;
 
@@ -1306,7 +1313,7 @@ void Watchdog_Hand(void *p)
 	if(!wdt_crash_flag && system_running)
 	{
 		XWdtTb_RestartWdt(&XWdtTbInstance);
-		xil_printf("\n Inside the !force_crach\n");
+		xil_printf("\n Inside the non-crash version\n");
 		system_running = 0;
 	}
 	else
