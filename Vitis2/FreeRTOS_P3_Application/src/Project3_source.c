@@ -1183,11 +1183,12 @@ void PIDController_Thread(){
 
 		//Set the PWM of the motor to new calc
 		//PMODHB3_setPWM((u32)pid_vars_PIDLocal.setpoint);
-		PMODHB3_setPWM(pid_vars_PIDLocal.setpoint);
+		PMODHB3_setPWM((pid_vars_PIDLocal.setpoint*255)/1000);
 
 		pid_vars_PIDPrev.prev_error = pid_vars_PIDLocal.RPM_Error;
 
 		xQueueSend( xQueue_Display_Update,&pid_vars_PIDLocal, mainDONT_BLOCK );
+		vTaskDelay(1000 / portTICK_PERIOD_MS);
 	}
 }
 
