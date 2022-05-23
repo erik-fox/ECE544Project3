@@ -295,6 +295,7 @@ void SSEG_Clear();
 void Switch_Update();
 void Watchdog_Hand(void *);
 void Setpoint_RPM_Convert(pid_vars* pid_vars);
+void SetpointFromRPM_Convert(pid_vars* pid_vars);
 /*****************************************************************************/
 
 
@@ -423,7 +424,7 @@ void Master_thread(void *p){
 
 	//Register interrupt handlers
 	//Enable WDT interrupt and start WDT
-	XWdtTb_Start(&XWdtTbInstance);
+	//XWdtTb_Start(&XWdtTbInstance);
 
 	//Begin forever loop
 	while(1){
@@ -954,7 +955,7 @@ void ROT_ENC_Update(pid_vars* pid_vars){
 		OLED_updatelock = 2;
 		switch(Incr_Status_ROT_ENC){
 			case One:
-				pid_vars->setpoint_target = (pid_vars->setpoint_target < 255) ? pid_vars->setpoint_target + 1 : pid_vars->setpoint_target;
+			pid_vars->setpoint_target = (pid_vars->setpoint_target < 255) ? pid_vars->setpoint_target + 1 : pid_vars->setpoint_target;
 			break;
 			case Five:
 				pid_vars->setpoint_target = (pid_vars->setpoint_target <= 250) ? pid_vars->setpoint_target + 5 : pid_vars->setpoint_target;
@@ -984,6 +985,7 @@ void ROT_ENC_Update(pid_vars* pid_vars){
 			break;
 		}
 	}
+	Setpoint_RPM_Convert(pid_vars);
 	laststate = state;
 	lastticks = ticks;
 
@@ -1099,7 +1101,7 @@ void parameter_input_thread(void *p){
 		pid_vars_OLED.direction = ROT_ENC_State_Update();
 
 		//TODO Turn this back on once interrupts on
-		//if(xSemaphoreTake(binary_sem,100)){
+		//if(xSemaphoreTake(binary_sem,0)){
 			//Update Push Button
 			PshBtn_Update(&pid_vars_OLED);
 			//Update Switches
@@ -1169,6 +1171,7 @@ void PIDController_Thread(){
 		//* Using sweep data @ 5.7V .9A draw
 		//0 - 1000 -> 0 - 255
 
+		//SetpointFromRPM_Convert(&pid_vars_PIDLocal);
 
 		//Limit the PWM value between 0 to 255
 		if(pid_vars_PIDLocal.setpoint > 255)
@@ -1176,16 +1179,15 @@ void PIDController_Thread(){
 		if (pid_vars_PIDLocal.setpoint < 0)
 			pid_vars_PIDLocal.setpoint = 0;
 
+
+
 		//Set the PWM of the motor to new calc
 		//PMODHB3_setPWM((u32)pid_vars_PIDLocal.setpoint);
-		PMODHB3_setPWM(pid_vars_PIDLocal.RPM_Target);
+		PMODHB3_setPWM(pid_vars_PIDLocal.setpoint);
 
 		pid_vars_PIDPrev.prev_error = pid_vars_PIDLocal.RPM_Error;
 
 		xQueueSend( xQueue_Display_Update,&pid_vars_PIDLocal, mainDONT_BLOCK );
-
-		//Sleep for fix in write
-		//usleep(1000);
 	}
 }
 
@@ -1313,25 +1315,59 @@ void Watchdog_Hand(void *p)
 }
 
 void Setpoint_RPM_Convert(pid_vars* pid_vars){
-	switch((int)&pid_vars->setpoint_target){
-	case 1   ...  50:
 
+	switch(pid_vars->setpoint_target){
+	case 0:
+		pid_vars->RPM_Target = 0;
+	break;
+
+	case 1   ...  50:
+	pid_vars->RPM_Target = (u32)((double)pid_vars->setpoint_target / 0.068493151);
 	break;
 
 	case 51  ... 100:
-
+	pid_vars->RPM_Target = (u32)((double)pid_vars->setpoint_target / 0.114285714);
 	break;
 
-	case 101 ... 101:
-
+	case 101 ... 150:
+	pid_vars->RPM_Target = (u32)((double)pid_vars->setpoint_target / 0.166852058);
 	break;
 
 	case 151 ... 200:
-
+	pid_vars->RPM_Target = (u32)((double)pid_vars->setpoint_target / 0.223311547);
 	break;
 
 	case 201 ... 255:
+	pid_vars->RPM_Target = (u32)((double)pid_vars->setpoint_target / 0.255178268);
+	break;
+	}
 
+}
+
+void SetpointFromRPM_Convert(pid_vars* pid_vars){
+	switch(pid_vars->setpoint_target){
+	case 0:
+		pid_vars->setpoint = 0;
+	break;
+
+	case 1   ...  50:
+	pid_vars->setpoint = pid_vars->setpoint * 0.068493151;
+	break;
+
+	case 51  ... 100:
+	pid_vars->setpoint = pid_vars->setpoint * 0.114285714;
+	break;
+
+	case 101 ... 150:
+	pid_vars->setpoint = pid_vars->setpoint * 0.166852058;
+	break;
+
+	case 151 ... 200:
+	pid_vars->setpoint = pid_vars->setpoint * 0.223311547;
+	break;
+
+	case 201 ... 255:
+	pid_vars->setpoint = pid_vars->setpoint * 0.255178268;
 	break;
 	}
 }
