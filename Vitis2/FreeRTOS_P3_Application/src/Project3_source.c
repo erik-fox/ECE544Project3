@@ -250,6 +250,7 @@ typedef struct{
 	volatile u8 Kp;
 	volatile u8 Ki;
 	volatile u8 Kd;
+	volatile u8  setpoint_current;
 	volatile u8	 setpoint_target;
 	volatile u32 RPM_Target;
 	volatile u32 RPM_Current;
@@ -267,7 +268,6 @@ typedef struct{
 }pid_vars;
 
 volatile u8 wdt_crash_flag = 0;
-volatile u8 system_running 	   = 1;
 
 /************************** Function Prototypes *****************************/
 void PMDIO_itoa(int32_t value, char *string, int32_t radix);
@@ -287,7 +287,6 @@ void GreenLED_Update(pid_vars* pid_vars);
 void GreenLED_Clear();
 void ROT_ENC_Update(pid_vars* pid_vars);
 bool ROT_ENC_State_Update();
-void MotorENC_Update();
 void OLED_Initialize();
 void OLED_Clear();
 void PshBtn_Update(pid_vars* pid_vars);
@@ -295,6 +294,7 @@ void SSEG_Update(pid_vars* pid_vars);
 void SSEG_Clear();
 void Switch_Update();
 void Watchdog_Hand(void *);
+void Setpoint_RPM_Convert(pid_vars* pid_vars);
 /*****************************************************************************/
 
 
@@ -328,7 +328,6 @@ int main()
 		//Restart
 		XWdtTb_RestartWdt(&XWdtTbInstance);
 		xil_printf("\n WDT Reinitialized\n\n");
-		//XWdtTb_RestartWdt(&XWdtTbInstance);
 	}
 
 	microblaze_enable_interrupts();
@@ -428,7 +427,6 @@ void Master_thread(void *p){
 
 	//Begin forever loop
 	while(1){
-		system_running = 1;
 	}
 	return -1;	//Should never reach this line
 }
@@ -815,7 +813,7 @@ void GreenLED_Clear(){
 
 
 void SSEG_Update( pid_vars* pid_vars){
-	u32_ss_disp_val = (pid_vars->RPM_Current  * 10000) + (pid_vars->RPM_Target); //simple answer...
+	u32_ss_disp_val = (pid_vars->setpoint_target  * 10000) + (pid_vars->setpoint_current); //simple answer...
 	NX4IO_SSEG_putU32Dec(u32_ss_disp_val,0);
 }
 
@@ -932,7 +930,7 @@ void PshBtn_Update(pid_vars* pid_vars){
 			//Motor speed to 0
 			//TODO Turn off PWM sig to motor
 			//KPID constants to non zero val to guarantee effect
-			pid_vars->RPM_Target = 0;
+			pid_vars->setpoint_target = 0;
 			pid_vars->Kp = 1;
 			pid_vars->Ki = 1;
 			pid_vars->Kd = 1;
@@ -1012,12 +1010,17 @@ void display_thread(void *p){
 	while(1){
 		xQueueReceive(xQueue_Display_Update,&pid_vars_OLED,50);	//Update the parameters every loop
 		if (pid_var_prev.RPM_Current != pid_vars_OLED.RPM_Current) {//ENC or center button
+			//Write if RPM target == 0 and RPM current == 0 or RPM Target isn't 0 and RPM curr isnt 0-> Filter bad
+			if((pid_vars_OLED.RPM_Current != 0 && pid_vars_OLED.RPM_Target != 0) ||
+					(pid_vars_OLED.RPM_Current >= 0 && pid_vars_OLED.RPM_Target == 0)){
 			OLEDrgb_SetCursor(&pmodOLEDrgb_inst, 7, 1);
 			OLEDrgb_PutString(&pmodOLEDrgb_inst,"    ");
 			OLEDrgb_SetCursor(&pmodOLEDrgb_inst, 7, 1);
 			PMDIO_putnum(&pmodOLEDrgb_inst,pid_vars_OLED.RPM_Current,10);
 			pid_var_prev.RPM_Current = pid_vars_OLED.RPM_Current;
+			vTaskDelay(10);
 			//usleep(100000);	//Can't do a sleep here, causes unresponsiveness
+			}
 		}
 		if (pid_var_prev.RPM_Target != pid_vars_OLED.RPM_Target) {//ENC or center button
 			OLEDrgb_SetCursor(&pmodOLEDrgb_inst, 7, 2);
@@ -1283,12 +1286,6 @@ void OLED_Clear(){
 
 }
 
-
-void MotorENC_Update(){
-
-}
-
-
 /**************************** INTERRUPT HANDLERS ******************************/
 /****************************************************************************/
 /**
@@ -1303,33 +1300,39 @@ void GPIO_PBSWITCH_Handler(void){
 
 void Watchdog_Hand(void *p)
 {
-	//Responds from master thread
-	/*
-	xil_printf("Inside the WDT_handler");
-	//
-	if(wdt_crash_flag)
-	{
-		xil_printf("Crashing the system, reseting soon\r\n");
-	}
-
-	//Force the crash, restart
+	xil_printf("In WDT\r\n");
 	if(!wdt_crash_flag)
 	{
-		xil_printf("Restarting\r\n");
+		xil_printf("WDT normal execution, resetting\r\n");
 		XWdtTb_RestartWdt(&XWdtTbInstance);
-	}
-	*/
-
-	xil_printf("\n Inside WDT\n");
-	if(!wdt_crash_flag) //&& system_running)
-	{
-		xil_printf("\n Inside the non-crash version\n");
-		XWdtTb_RestartWdt(&XWdtTbInstance);
-		system_running = 0;
 	}
 	else
 	{
-		xil_printf("Force crash Successful.CPU Reset\r\n");
+		xil_printf("WDT Forcing Crash\r\n");
+	}
+}
+
+void Setpoint_RPM_Convert(pid_vars* pid_vars){
+	switch((int)&pid_vars->setpoint_target){
+	case 1   ...  50:
+
+	break;
+
+	case 51  ... 100:
+
+	break;
+
+	case 101 ... 101:
+
+	break;
+
+	case 151 ... 200:
+
+	break;
+
+	case 201 ... 255:
+
+	break;
 	}
 }
 

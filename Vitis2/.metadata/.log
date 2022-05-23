@@ -9538,3 +9538,2053 @@ Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-209: Laun
 
 !ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 10:39:31.405
 !MESSAGE XSCT command with result: [::hsi::utils::closesw D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss], Result: [null, ]. Thread: Worker-208: Build Project
+
+!ENTRY org.eclipse.tcf 4 0 2022-05-23 12:03:17.802
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY org.eclipse.tcf 4 0 2022-05-23 12:03:17.827
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY org.eclipse.tcf 4 0 2022-05-23 12:03:17.847
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY org.eclipse.tcf 4 0 2022-05-23 12:03:17.847
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY org.eclipse.tcf 4 0 2022-05-23 12:03:17.848
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY org.eclipse.tcf 4 0 2022-05-23 12:03:17.848
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY org.eclipse.tcf 4 0 2022-05-23 12:03:17.849
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY org.eclipse.tcf 4 0 2022-05-23 12:03:17.850
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY org.eclipse.tcf 4 0 2022-05-23 12:03:17.850
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:04:03.092
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/hw/nexysA7fpga.xsa D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss ], Thread: Worker-216: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:04:03.098
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/hw/nexysA7fpga.xsa D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss ], Result: [null, ]. Thread: Worker-216: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:04:03.099
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/hw/nexysA7fpga.xsa D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss], Thread: Worker-216: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:04:03.102
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/hw/nexysA7fpga.xsa D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "freertos10_xilinx",
+"osver": "1.7",
+}]. Thread: Worker-216: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2022-05-23 12:04:03.103
+!MESSAGE Generating MD5 hash for file: D:\PortlandState\ECE_544\Labs\project_3\Vitis2\FreeRTOS_P3_Update\export\FreeRTOS_P3_Update\sw\FreeRTOS_P3_Update\freertos10_xilinx_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:04:03.104
+!MESSAGE XSCT Command: [::hsi::utils::closesw D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss], Thread: Worker-216: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:04:03.107
+!MESSAGE XSCT command with result: [::hsi::utils::closesw D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss], Result: [null, ]. Thread: Worker-216: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:04:09.900
+!MESSAGE XSCT Command: [disconnect tcfchan#116], Thread: Thread-8012
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:04:09.905
+!MESSAGE XSCT command with result: [disconnect tcfchan#116], Result: [null, ]. Thread: Thread-8012
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:04:10.009
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-210: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:04:10.025
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#117]. Thread: Worker-210: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:04:10.025
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-210: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:04:10.224
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   5  Digilent Nexys4DDR 210292743004A]. Thread: Worker-210: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:04:10.225
+!MESSAGE XSCT Command: [version -server], Thread: Worker-210: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:04:10.238
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2020.2]. Thread: Worker-210: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:04:10.238
+!MESSAGE XSCT Command: [version], Thread: Worker-210: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:04:10.240
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2020.2
+SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-210: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:04:10.240
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-210: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:04:10.254
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   5  Digilent Nexys4DDR 210292743004A]. Thread: Worker-210: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:04:10.255
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292743004A" && level==1}], Thread: Worker-210: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:04:10.303
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292743004A" && level==1}], Result: [null,      6  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: Worker-210: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:04:10.303
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-210: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:04:10.318
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   5  Digilent Nexys4DDR 210292743004A]. Thread: Worker-210: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:04:10.318
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292743004A" && level==1}], Thread: Worker-210: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:04:10.346
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292743004A" && level==1}], Result: [null,      6  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: Worker-210: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:04:10.346
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-210: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:04:10.356
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   5  Digilent Nexys4DDR 210292743004A]. Thread: Worker-210: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:04:10.357
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292743004A" && level==1}], Thread: Worker-210: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:04:10.381
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292743004A" && level==1}], Result: [null,      6  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: Worker-210: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:04:10.381
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-210: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:04:10.391
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   5  Digilent Nexys4DDR 210292743004A]. Thread: Worker-210: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:04:10.392
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292743004A" && level==1}], Thread: Worker-210: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:04:10.424
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292743004A" && level==1}], Result: [null,      6  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: Worker-210: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:04:10.426
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-210: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:04:10.435
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   5  Digilent Nexys4DDR 210292743004A]. Thread: Worker-210: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:04:10.436
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292743004A" && level==1}], Thread: Worker-210: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:04:10.474
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292743004A" && level==1}], Result: [null,      6  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: Worker-210: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:04:10.474
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Nexys4DDR 210292743004A" && level == 0}], Thread: Worker-210: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:04:10.496
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Nexys4DDR 210292743004A" && level == 0}], Result: [null, ]. Thread: Worker-210: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:04:10.496
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-210: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:04:10.497
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-210: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:04:10.515
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:04:10.525
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   5* Digilent Nexys4DDR 210292743004A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:04:10.525
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292743004A" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:04:10.549
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292743004A" && level==1}], Result: [null,      6  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:04:10.550
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:04:10.552
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#117]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:04:10.552
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:04:10.561
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   5* Digilent Nexys4DDR 210292743004A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:04:10.561
+!MESSAGE XSCT Command: [proc fetch_device_jtag_ctx { node_id } {
+foreach t [jtag ta -ta] {
+if {[dict get $t node_id] == $node_id} {
+return [dict get $t target_ctx]
+}
+}
+error cannot find a jtag device with node id $node_id}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:04:10.562
+!MESSAGE XSCT command with result: [proc fetch_device_jtag_ctx { node_id } {
+foreach t [jtag ta -ta] {
+if {[dict get $t node_id] == $node_id} {
+return [dict get $t target_ctx]
+}
+}
+error cannot find a jtag device with node id $node_id}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:04:10.562
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:04:10.570
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   5* Digilent Nexys4DDR 210292743004A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:04:10.570
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292743004A" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:04:10.598
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292743004A" && level==1}], Result: [null,      6  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:04:10.598
+!MESSAGE XSCT Command: [fetch_device_jtag_ctx 6], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:04:10.601
+!MESSAGE XSCT command with result: [fetch_device_jtag_ctx 6], Result: [null, jsn-Nexys4DDR-210292743004A-13631093-0]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:04:10.601
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292743004A" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292743004A-13631093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:04:10.642
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292743004A" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292743004A-13631093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:04:10.643
+!MESSAGE XSCT Command: [fpga -file D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Application/_ide/bitstream/nexysA7fpga.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:04:12.836
+!MESSAGE XSCT command with result: [fpga -file D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Application/_ide/bitstream/nexysA7fpga.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:04:12.866
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-210: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:04:12.889
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-210: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:04:12.889
+!MESSAGE XSCT Command: [loadhw -hw D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/hw/nexysA7fpga.xsa -regs], Thread: Worker-210: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:04:12.902
+!MESSAGE XSCT command with result: [loadhw -hw D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/hw/nexysA7fpga.xsa -regs], Result: [null, nexysA7fpga_15]. Thread: Worker-210: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:04:12.902
+!MESSAGE XSCT Command: [configparams mdm-detect-bscan-mask 2], Thread: Worker-210: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:04:12.904
+!MESSAGE XSCT command with result: [configparams mdm-detect-bscan-mask 2], Result: [null, ]. Thread: Worker-210: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:04:12.905
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-210: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:04:12.923
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-210: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:04:12.923
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-210: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:04:12.927
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-210: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:04:12.927
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-210: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:04:15.942
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-210: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:04:15.942
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-210: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:04:15.966
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-210: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:04:15.966
+!MESSAGE XSCT Command: [dow D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Application/Debug/FreeRTOS_P3_Application.elf], Thread: Worker-210: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:04:16.298
+!MESSAGE XSCT command with result: [dow D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Application/Debug/FreeRTOS_P3_Application.elf], Result: [null, ]. Thread: Worker-210: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:04:16.363
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-210: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:04:16.437
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-210: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:04:16.437
+!MESSAGE XSCT Command: [con], Thread: Worker-210: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:04:16.681
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-210: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:10:46.443
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/hw/nexysA7fpga.xsa D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss ], Thread: Worker-218: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:10:46.452
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/hw/nexysA7fpga.xsa D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss ], Result: [null, ]. Thread: Worker-218: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:10:46.452
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/hw/nexysA7fpga.xsa D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss], Thread: Worker-218: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:10:46.499
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/hw/nexysA7fpga.xsa D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "freertos10_xilinx",
+"osver": "1.7",
+}]. Thread: Worker-218: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2022-05-23 12:10:46.499
+!MESSAGE Generating MD5 hash for file: D:\PortlandState\ECE_544\Labs\project_3\Vitis2\FreeRTOS_P3_Update\export\FreeRTOS_P3_Update\sw\FreeRTOS_P3_Update\freertos10_xilinx_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:10:46.500
+!MESSAGE XSCT Command: [::hsi::utils::closesw D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss], Thread: Worker-218: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:10:46.504
+!MESSAGE XSCT command with result: [::hsi::utils::closesw D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss], Result: [null, ]. Thread: Worker-218: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:10:59.954
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/hw/nexysA7fpga.xsa D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss ], Thread: Worker-214: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:10:59.960
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/hw/nexysA7fpga.xsa D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss ], Result: [null, ]. Thread: Worker-214: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:10:59.960
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/hw/nexysA7fpga.xsa D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss], Thread: Worker-214: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:10:59.965
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/hw/nexysA7fpga.xsa D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "freertos10_xilinx",
+"osver": "1.7",
+}]. Thread: Worker-214: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2022-05-23 12:10:59.966
+!MESSAGE Generating MD5 hash for file: D:\PortlandState\ECE_544\Labs\project_3\Vitis2\FreeRTOS_P3_Update\export\FreeRTOS_P3_Update\sw\FreeRTOS_P3_Update\freertos10_xilinx_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:10:59.966
+!MESSAGE XSCT Command: [::hsi::utils::closesw D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss], Thread: Worker-214: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:10:59.984
+!MESSAGE XSCT command with result: [::hsi::utils::closesw D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss], Result: [null, ]. Thread: Worker-214: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:11:22.775
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/hw/nexysA7fpga.xsa D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss ], Thread: Worker-220: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:11:22.780
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/hw/nexysA7fpga.xsa D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss ], Result: [null, ]. Thread: Worker-220: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:11:22.781
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/hw/nexysA7fpga.xsa D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss], Thread: Worker-220: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:11:22.784
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/hw/nexysA7fpga.xsa D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "freertos10_xilinx",
+"osver": "1.7",
+}]. Thread: Worker-220: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2022-05-23 12:11:22.785
+!MESSAGE Generating MD5 hash for file: D:\PortlandState\ECE_544\Labs\project_3\Vitis2\FreeRTOS_P3_Update\export\FreeRTOS_P3_Update\sw\FreeRTOS_P3_Update\freertos10_xilinx_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:11:22.785
+!MESSAGE XSCT Command: [::hsi::utils::closesw D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss], Thread: Worker-220: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:11:22.788
+!MESSAGE XSCT command with result: [::hsi::utils::closesw D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss], Result: [null, ]. Thread: Worker-220: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:11:26.017
+!MESSAGE XSCT Command: [disconnect tcfchan#117], Thread: Thread-8127
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:11:26.067
+!MESSAGE XSCT command with result: [disconnect tcfchan#117], Result: [null, ]. Thread: Thread-8127
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:11:26.150
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-204: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:11:26.199
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#118]. Thread: Worker-204: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:11:26.199
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-204: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:11:26.388
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   5* Digilent Nexys4DDR 210292743004A]. Thread: Worker-204: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:11:26.388
+!MESSAGE XSCT Command: [version -server], Thread: Worker-204: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:11:26.396
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2020.2]. Thread: Worker-204: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:11:26.397
+!MESSAGE XSCT Command: [version], Thread: Worker-204: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:11:26.398
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2020.2
+SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-204: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:11:26.399
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-204: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:11:26.419
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   5* Digilent Nexys4DDR 210292743004A]. Thread: Worker-204: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:11:26.420
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292743004A" && level==1}], Thread: Worker-204: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:11:26.524
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292743004A" && level==1}], Result: [null,      6  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: Worker-204: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:11:26.525
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-204: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:11:26.541
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   5* Digilent Nexys4DDR 210292743004A]. Thread: Worker-204: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:11:26.542
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292743004A" && level==1}], Thread: Worker-204: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:11:26.569
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292743004A" && level==1}], Result: [null,      6  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: Worker-204: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:11:26.570
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-204: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:11:26.581
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   5* Digilent Nexys4DDR 210292743004A]. Thread: Worker-204: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:11:26.581
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292743004A" && level==1}], Thread: Worker-204: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:11:26.624
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292743004A" && level==1}], Result: [null,      6  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: Worker-204: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:11:26.625
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-204: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:11:26.650
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   5* Digilent Nexys4DDR 210292743004A]. Thread: Worker-204: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:11:26.650
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292743004A" && level==1}], Thread: Worker-204: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:11:26.686
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292743004A" && level==1}], Result: [null,      6  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: Worker-204: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:11:26.689
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-204: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:11:26.713
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   5* Digilent Nexys4DDR 210292743004A]. Thread: Worker-204: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:11:26.714
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292743004A" && level==1}], Thread: Worker-204: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:11:26.749
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292743004A" && level==1}], Result: [null,      6  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: Worker-204: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:11:26.749
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Nexys4DDR 210292743004A" && level == 0}], Thread: Worker-204: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:11:26.785
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Nexys4DDR 210292743004A" && level == 0}], Result: [null, ]. Thread: Worker-204: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:11:26.785
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-204: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:11:26.792
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-204: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:11:26.817
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:11:26.837
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   5* Digilent Nexys4DDR 210292743004A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:11:26.837
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292743004A" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:11:26.878
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292743004A" && level==1}], Result: [null,      6  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:11:26.879
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292743004A" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292743004A-13631093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:11:26.956
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292743004A" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292743004A-13631093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:11:26.956
+!MESSAGE XSCT Command: [fpga -file D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Application/_ide/bitstream/nexysA7fpga.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:11:29.620
+!MESSAGE XSCT command with result: [fpga -file D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Application/_ide/bitstream/nexysA7fpga.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:11:29.658
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-204: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:11:29.679
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-204: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:11:29.680
+!MESSAGE XSCT Command: [loadhw -hw D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/hw/nexysA7fpga.xsa -regs], Thread: Worker-204: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:11:29.696
+!MESSAGE XSCT command with result: [loadhw -hw D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/hw/nexysA7fpga.xsa -regs], Result: [null, nexysA7fpga_15]. Thread: Worker-204: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:11:29.696
+!MESSAGE XSCT Command: [configparams mdm-detect-bscan-mask 2], Thread: Worker-204: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:11:29.698
+!MESSAGE XSCT command with result: [configparams mdm-detect-bscan-mask 2], Result: [null, ]. Thread: Worker-204: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:11:29.698
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-204: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:11:29.718
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-204: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:11:29.718
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-204: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:11:29.723
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-204: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:11:29.723
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-204: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:11:32.737
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-204: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:11:32.737
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-204: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:11:32.762
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-204: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:11:32.763
+!MESSAGE XSCT Command: [dow D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Application/Debug/FreeRTOS_P3_Application.elf], Thread: Worker-204: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:11:33.101
+!MESSAGE XSCT command with result: [dow D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Application/Debug/FreeRTOS_P3_Application.elf], Result: [null, ]. Thread: Worker-204: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:11:33.177
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-204: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:11:33.259
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-204: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:11:33.259
+!MESSAGE XSCT Command: [con], Thread: Worker-204: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:11:33.498
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-204: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:15:13.344
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/hw/nexysA7fpga.xsa D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss ], Thread: Worker-217: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:15:13.373
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/hw/nexysA7fpga.xsa D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss ], Result: [null, ]. Thread: Worker-217: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:15:13.374
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/hw/nexysA7fpga.xsa D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss], Thread: Worker-217: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:15:13.378
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/hw/nexysA7fpga.xsa D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "freertos10_xilinx",
+"osver": "1.7",
+}]. Thread: Worker-217: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2022-05-23 12:15:13.378
+!MESSAGE Generating MD5 hash for file: D:\PortlandState\ECE_544\Labs\project_3\Vitis2\FreeRTOS_P3_Update\export\FreeRTOS_P3_Update\sw\FreeRTOS_P3_Update\freertos10_xilinx_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:15:13.378
+!MESSAGE XSCT Command: [::hsi::utils::closesw D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss], Thread: Worker-217: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:15:13.381
+!MESSAGE XSCT command with result: [::hsi::utils::closesw D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss], Result: [null, ]. Thread: Worker-217: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:15:25.324
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/hw/nexysA7fpga.xsa D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss ], Thread: Worker-209: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:15:25.340
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/hw/nexysA7fpga.xsa D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss ], Result: [null, ]. Thread: Worker-209: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:15:25.341
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/hw/nexysA7fpga.xsa D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss], Thread: Worker-209: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:15:25.344
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/hw/nexysA7fpga.xsa D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "freertos10_xilinx",
+"osver": "1.7",
+}]. Thread: Worker-209: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2022-05-23 12:15:25.345
+!MESSAGE Generating MD5 hash for file: D:\PortlandState\ECE_544\Labs\project_3\Vitis2\FreeRTOS_P3_Update\export\FreeRTOS_P3_Update\sw\FreeRTOS_P3_Update\freertos10_xilinx_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:15:25.346
+!MESSAGE XSCT Command: [::hsi::utils::closesw D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss], Thread: Worker-209: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:15:25.408
+!MESSAGE XSCT command with result: [::hsi::utils::closesw D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss], Result: [null, ]. Thread: Worker-209: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:15:36.404
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/hw/nexysA7fpga.xsa D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss ], Thread: Worker-221: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:15:36.418
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/hw/nexysA7fpga.xsa D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss ], Result: [null, ]. Thread: Worker-221: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:15:36.418
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/hw/nexysA7fpga.xsa D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss], Thread: Worker-221: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:15:36.428
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/hw/nexysA7fpga.xsa D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "freertos10_xilinx",
+"osver": "1.7",
+}]. Thread: Worker-221: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2022-05-23 12:15:36.428
+!MESSAGE Generating MD5 hash for file: D:\PortlandState\ECE_544\Labs\project_3\Vitis2\FreeRTOS_P3_Update\export\FreeRTOS_P3_Update\sw\FreeRTOS_P3_Update\freertos10_xilinx_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:15:36.429
+!MESSAGE XSCT Command: [::hsi::utils::closesw D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss], Thread: Worker-221: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:15:36.438
+!MESSAGE XSCT command with result: [::hsi::utils::closesw D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss], Result: [null, ]. Thread: Worker-221: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:15:52.324
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/hw/nexysA7fpga.xsa D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss ], Thread: Worker-218: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:15:52.332
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/hw/nexysA7fpga.xsa D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss ], Result: [null, ]. Thread: Worker-218: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:15:52.332
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/hw/nexysA7fpga.xsa D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss], Thread: Worker-218: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:15:52.337
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/hw/nexysA7fpga.xsa D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "freertos10_xilinx",
+"osver": "1.7",
+}]. Thread: Worker-218: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2022-05-23 12:15:52.338
+!MESSAGE Generating MD5 hash for file: D:\PortlandState\ECE_544\Labs\project_3\Vitis2\FreeRTOS_P3_Update\export\FreeRTOS_P3_Update\sw\FreeRTOS_P3_Update\freertos10_xilinx_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:15:52.339
+!MESSAGE XSCT Command: [::hsi::utils::closesw D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss], Thread: Worker-218: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:15:52.399
+!MESSAGE XSCT command with result: [::hsi::utils::closesw D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss], Result: [null, ]. Thread: Worker-218: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:17:23.925
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/hw/nexysA7fpga.xsa D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss ], Thread: Worker-220: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:17:24.025
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/hw/nexysA7fpga.xsa D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss ], Result: [null, ]. Thread: Worker-220: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:17:24.026
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/hw/nexysA7fpga.xsa D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss], Thread: Worker-220: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:17:24.042
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/hw/nexysA7fpga.xsa D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "freertos10_xilinx",
+"osver": "1.7",
+}]. Thread: Worker-220: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2022-05-23 12:17:24.042
+!MESSAGE Generating MD5 hash for file: D:\PortlandState\ECE_544\Labs\project_3\Vitis2\FreeRTOS_P3_Update\export\FreeRTOS_P3_Update\sw\FreeRTOS_P3_Update\freertos10_xilinx_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:17:24.043
+!MESSAGE XSCT Command: [::hsi::utils::closesw D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss], Thread: Worker-220: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:17:24.054
+!MESSAGE XSCT command with result: [::hsi::utils::closesw D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss], Result: [null, ]. Thread: Worker-220: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:19:13.813
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/hw/nexysA7fpga.xsa D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss ], Thread: Worker-221: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:19:13.821
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/hw/nexysA7fpga.xsa D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss ], Result: [null, ]. Thread: Worker-221: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:19:13.822
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/hw/nexysA7fpga.xsa D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss], Thread: Worker-221: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:19:13.825
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/hw/nexysA7fpga.xsa D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "freertos10_xilinx",
+"osver": "1.7",
+}]. Thread: Worker-221: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2022-05-23 12:19:13.826
+!MESSAGE Generating MD5 hash for file: D:\PortlandState\ECE_544\Labs\project_3\Vitis2\FreeRTOS_P3_Update\export\FreeRTOS_P3_Update\sw\FreeRTOS_P3_Update\freertos10_xilinx_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:19:13.827
+!MESSAGE XSCT Command: [::hsi::utils::closesw D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss], Thread: Worker-221: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:19:13.835
+!MESSAGE XSCT command with result: [::hsi::utils::closesw D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss], Result: [null, ]. Thread: Worker-221: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:19:20.657
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/hw/nexysA7fpga.xsa D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss ], Thread: Worker-209: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:19:20.739
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/hw/nexysA7fpga.xsa D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss ], Result: [null, ]. Thread: Worker-209: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:19:20.740
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/hw/nexysA7fpga.xsa D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss], Thread: Worker-209: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:19:20.751
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/hw/nexysA7fpga.xsa D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "freertos10_xilinx",
+"osver": "1.7",
+}]. Thread: Worker-209: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2022-05-23 12:19:20.751
+!MESSAGE Generating MD5 hash for file: D:\PortlandState\ECE_544\Labs\project_3\Vitis2\FreeRTOS_P3_Update\export\FreeRTOS_P3_Update\sw\FreeRTOS_P3_Update\freertos10_xilinx_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:19:20.752
+!MESSAGE XSCT Command: [::hsi::utils::closesw D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss], Thread: Worker-209: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:19:20.762
+!MESSAGE XSCT command with result: [::hsi::utils::closesw D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss], Result: [null, ]. Thread: Worker-209: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:20:21.319
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/hw/nexysA7fpga.xsa D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss ], Thread: Worker-222: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:20:21.330
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/hw/nexysA7fpga.xsa D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss ], Result: [null, ]. Thread: Worker-222: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:20:21.331
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/hw/nexysA7fpga.xsa D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss], Thread: Worker-222: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:20:21.340
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/hw/nexysA7fpga.xsa D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "freertos10_xilinx",
+"osver": "1.7",
+}]. Thread: Worker-222: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2022-05-23 12:20:21.340
+!MESSAGE Generating MD5 hash for file: D:\PortlandState\ECE_544\Labs\project_3\Vitis2\FreeRTOS_P3_Update\export\FreeRTOS_P3_Update\sw\FreeRTOS_P3_Update\freertos10_xilinx_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:20:21.341
+!MESSAGE XSCT Command: [::hsi::utils::closesw D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss], Thread: Worker-222: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:20:21.346
+!MESSAGE XSCT command with result: [::hsi::utils::closesw D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss], Result: [null, ]. Thread: Worker-222: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:20:25.558
+!MESSAGE XSCT Command: [disconnect tcfchan#118], Thread: Thread-8357
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:20:25.563
+!MESSAGE XSCT command with result: [disconnect tcfchan#118], Result: [null, ]. Thread: Thread-8357
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:20:36.695
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/hw/nexysA7fpga.xsa D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss ], Thread: Worker-215: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:20:36.699
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/hw/nexysA7fpga.xsa D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss ], Result: [null, ]. Thread: Worker-215: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:20:36.700
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/hw/nexysA7fpga.xsa D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss], Thread: Worker-215: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:20:36.704
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/hw/nexysA7fpga.xsa D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "freertos10_xilinx",
+"osver": "1.7",
+}]. Thread: Worker-215: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2022-05-23 12:20:36.704
+!MESSAGE Generating MD5 hash for file: D:\PortlandState\ECE_544\Labs\project_3\Vitis2\FreeRTOS_P3_Update\export\FreeRTOS_P3_Update\sw\FreeRTOS_P3_Update\freertos10_xilinx_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:20:36.705
+!MESSAGE XSCT Command: [::hsi::utils::closesw D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss], Thread: Worker-215: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:20:36.707
+!MESSAGE XSCT command with result: [::hsi::utils::closesw D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss], Result: [null, ]. Thread: Worker-215: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:21:01.634
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/hw/nexysA7fpga.xsa D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss ], Thread: Worker-222: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:21:01.754
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/hw/nexysA7fpga.xsa D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss ], Result: [null, ]. Thread: Worker-222: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:21:01.755
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/hw/nexysA7fpga.xsa D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss], Thread: Worker-222: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:21:01.760
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/hw/nexysA7fpga.xsa D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "freertos10_xilinx",
+"osver": "1.7",
+}]. Thread: Worker-222: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2022-05-23 12:21:01.760
+!MESSAGE Generating MD5 hash for file: D:\PortlandState\ECE_544\Labs\project_3\Vitis2\FreeRTOS_P3_Update\export\FreeRTOS_P3_Update\sw\FreeRTOS_P3_Update\freertos10_xilinx_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:21:01.761
+!MESSAGE XSCT Command: [::hsi::utils::closesw D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss], Thread: Worker-222: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:21:01.779
+!MESSAGE XSCT command with result: [::hsi::utils::closesw D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss], Result: [null, ]. Thread: Worker-222: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:21:06.429
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-209: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:21:06.443
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#119]. Thread: Worker-209: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:21:06.443
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-209: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:21:06.460
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   5* Digilent Nexys4DDR 210292743004A]. Thread: Worker-209: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:21:06.461
+!MESSAGE XSCT Command: [version -server], Thread: Worker-209: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:21:06.463
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2020.2]. Thread: Worker-209: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:21:06.463
+!MESSAGE XSCT Command: [version], Thread: Worker-209: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:21:06.464
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2020.2
+SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-209: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:21:06.464
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-209: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:21:06.477
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   5* Digilent Nexys4DDR 210292743004A]. Thread: Worker-209: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:21:06.478
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292743004A" && level==1}], Thread: Worker-209: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:21:06.553
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292743004A" && level==1}], Result: [null,      6  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: Worker-209: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:21:06.554
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-209: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:21:06.597
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   5* Digilent Nexys4DDR 210292743004A]. Thread: Worker-209: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:21:06.598
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292743004A" && level==1}], Thread: Worker-209: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:21:06.627
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292743004A" && level==1}], Result: [null,      6  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: Worker-209: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:21:06.627
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-209: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:21:06.638
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   5* Digilent Nexys4DDR 210292743004A]. Thread: Worker-209: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:21:06.639
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292743004A" && level==1}], Thread: Worker-209: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:21:06.672
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292743004A" && level==1}], Result: [null,      6  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: Worker-209: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:21:06.673
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-209: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:21:06.690
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   5* Digilent Nexys4DDR 210292743004A]. Thread: Worker-209: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:21:06.691
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292743004A" && level==1}], Thread: Worker-209: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:21:06.763
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292743004A" && level==1}], Result: [null,      6  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: Worker-209: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:21:06.764
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-209: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:21:06.777
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   5* Digilent Nexys4DDR 210292743004A]. Thread: Worker-209: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:21:06.778
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292743004A" && level==1}], Thread: Worker-209: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:21:06.811
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292743004A" && level==1}], Result: [null,      6  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: Worker-209: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:21:06.811
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Nexys4DDR 210292743004A" && level == 0}], Thread: Worker-209: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:21:06.857
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Nexys4DDR 210292743004A" && level == 0}], Result: [null, ]. Thread: Worker-209: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:21:06.858
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-209: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:21:06.862
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-209: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:21:06.889
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:21:06.914
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   5* Digilent Nexys4DDR 210292743004A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:21:06.914
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292743004A" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:21:06.963
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292743004A" && level==1}], Result: [null,      6  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:21:06.964
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292743004A" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292743004A-13631093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:21:07.038
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292743004A" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292743004A-13631093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:21:07.039
+!MESSAGE XSCT Command: [fpga -file D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Application/_ide/bitstream/nexysA7fpga.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:21:09.799
+!MESSAGE XSCT command with result: [fpga -file D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Application/_ide/bitstream/nexysA7fpga.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:21:09.851
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-209: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:21:09.900
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-209: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:21:09.901
+!MESSAGE XSCT Command: [loadhw -hw D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/hw/nexysA7fpga.xsa -regs], Thread: Worker-209: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:21:09.922
+!MESSAGE XSCT command with result: [loadhw -hw D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/hw/nexysA7fpga.xsa -regs], Result: [null, nexysA7fpga_15]. Thread: Worker-209: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:21:09.950
+!MESSAGE XSCT Command: [configparams mdm-detect-bscan-mask 2], Thread: Worker-209: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:21:09.952
+!MESSAGE XSCT command with result: [configparams mdm-detect-bscan-mask 2], Result: [null, ]. Thread: Worker-209: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:21:09.953
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-209: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:21:09.975
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-209: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:21:09.976
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-209: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:21:09.979
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-209: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:21:09.980
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-209: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:21:12.984
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-209: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:21:12.985
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-209: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:21:13.003
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-209: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:21:13.004
+!MESSAGE XSCT Command: [dow D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Application/Debug/FreeRTOS_P3_Application.elf], Thread: Worker-209: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:21:13.328
+!MESSAGE XSCT command with result: [dow D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Application/Debug/FreeRTOS_P3_Application.elf], Result: [null, ]. Thread: Worker-209: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:21:13.409
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-209: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:21:13.476
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-209: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:21:13.476
+!MESSAGE XSCT Command: [con], Thread: Worker-209: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:21:13.727
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-209: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:23:22.079
+!MESSAGE XSCT Command: [disconnect tcfchan#119], Thread: Thread-8441
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:23:22.083
+!MESSAGE XSCT command with result: [disconnect tcfchan#119], Result: [null, ]. Thread: Thread-8441
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:23:22.121
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-215: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:23:22.132
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#120]. Thread: Worker-215: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:23:22.133
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-215: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:23:22.148
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   5* Digilent Nexys4DDR 210292743004A]. Thread: Worker-215: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:23:22.148
+!MESSAGE XSCT Command: [version -server], Thread: Worker-215: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:23:22.150
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2020.2]. Thread: Worker-215: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:23:22.151
+!MESSAGE XSCT Command: [version], Thread: Worker-215: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:23:22.151
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2020.2
+SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-215: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:23:22.152
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-215: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:23:22.161
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   5* Digilent Nexys4DDR 210292743004A]. Thread: Worker-215: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:23:22.162
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292743004A" && level==1}], Thread: Worker-215: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:23:22.189
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292743004A" && level==1}], Result: [null,      6  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: Worker-215: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:23:22.189
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-215: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:23:22.198
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   5* Digilent Nexys4DDR 210292743004A]. Thread: Worker-215: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:23:22.199
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292743004A" && level==1}], Thread: Worker-215: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:23:22.224
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292743004A" && level==1}], Result: [null,      6  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: Worker-215: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:23:22.224
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-215: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:23:22.234
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   5* Digilent Nexys4DDR 210292743004A]. Thread: Worker-215: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:23:22.234
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292743004A" && level==1}], Thread: Worker-215: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:23:22.259
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292743004A" && level==1}], Result: [null,      6  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: Worker-215: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:23:22.259
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-215: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:23:22.266
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   5* Digilent Nexys4DDR 210292743004A]. Thread: Worker-215: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:23:22.266
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292743004A" && level==1}], Thread: Worker-215: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:23:22.286
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292743004A" && level==1}], Result: [null,      6  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: Worker-215: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:23:22.286
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-215: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:23:22.293
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   5* Digilent Nexys4DDR 210292743004A]. Thread: Worker-215: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:23:22.293
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292743004A" && level==1}], Thread: Worker-215: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:23:22.314
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292743004A" && level==1}], Result: [null,      6  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: Worker-215: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:23:22.314
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Nexys4DDR 210292743004A" && level == 0}], Thread: Worker-215: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:23:22.335
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Nexys4DDR 210292743004A" && level == 0}], Result: [null, ]. Thread: Worker-215: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:23:22.335
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-215: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:23:22.336
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-215: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:23:22.357
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:23:22.369
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   5* Digilent Nexys4DDR 210292743004A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:23:22.369
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292743004A" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:23:22.391
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292743004A" && level==1}], Result: [null,      6  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:23:22.392
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292743004A" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292743004A-13631093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:23:22.440
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292743004A" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292743004A-13631093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:23:22.441
+!MESSAGE XSCT Command: [fpga -file D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Application/_ide/bitstream/nexysA7fpga.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:23:24.651
+!MESSAGE XSCT command with result: [fpga -file D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Application/_ide/bitstream/nexysA7fpga.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:23:24.684
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-215: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:23:24.710
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-215: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:23:24.711
+!MESSAGE XSCT Command: [loadhw -hw D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/hw/nexysA7fpga.xsa -regs], Thread: Worker-215: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:23:24.725
+!MESSAGE XSCT command with result: [loadhw -hw D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/hw/nexysA7fpga.xsa -regs], Result: [null, nexysA7fpga_15]. Thread: Worker-215: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:23:24.725
+!MESSAGE XSCT Command: [configparams mdm-detect-bscan-mask 2], Thread: Worker-215: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:23:24.727
+!MESSAGE XSCT command with result: [configparams mdm-detect-bscan-mask 2], Result: [null, ]. Thread: Worker-215: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:23:24.728
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-215: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:23:24.749
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-215: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:23:24.749
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-215: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:23:24.757
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-215: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:23:24.758
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-215: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:23:27.759
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-215: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:23:27.760
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-215: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:23:27.793
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-215: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:23:27.794
+!MESSAGE XSCT Command: [dow D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Application/Debug/FreeRTOS_P3_Application.elf], Thread: Worker-215: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:23:28.164
+!MESSAGE XSCT command with result: [dow D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Application/Debug/FreeRTOS_P3_Application.elf], Result: [null, ]. Thread: Worker-215: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:23:28.250
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-215: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:23:28.332
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-215: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:23:28.333
+!MESSAGE XSCT Command: [con], Thread: Worker-215: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:23:28.605
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-215: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:06.130
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/hw/nexysA7fpga.xsa D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss ], Thread: Worker-218: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:06.136
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/hw/nexysA7fpga.xsa D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss ], Result: [null, ]. Thread: Worker-218: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:06.137
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/hw/nexysA7fpga.xsa D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss], Thread: Worker-218: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:06.148
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/hw/nexysA7fpga.xsa D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "freertos10_xilinx",
+"osver": "1.7",
+}]. Thread: Worker-218: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2022-05-23 12:24:06.148
+!MESSAGE Generating MD5 hash for file: D:\PortlandState\ECE_544\Labs\project_3\Vitis2\FreeRTOS_P3_Update\export\FreeRTOS_P3_Update\sw\FreeRTOS_P3_Update\freertos10_xilinx_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:06.149
+!MESSAGE XSCT Command: [::hsi::utils::closesw D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss], Thread: Worker-218: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:06.152
+!MESSAGE XSCT command with result: [::hsi::utils::closesw D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss], Result: [null, ]. Thread: Worker-218: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:10.178
+!MESSAGE XSCT Command: [disconnect tcfchan#120], Thread: Thread-8493
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:10.208
+!MESSAGE XSCT command with result: [disconnect tcfchan#120], Result: [null, ]. Thread: Thread-8493
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:10.297
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-215: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:10.314
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#121]. Thread: Worker-215: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:10.315
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-215: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:10.335
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   5* Digilent Nexys4DDR 210292743004A]. Thread: Worker-215: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:10.336
+!MESSAGE XSCT Command: [version -server], Thread: Worker-215: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:10.343
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2020.2]. Thread: Worker-215: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:10.343
+!MESSAGE XSCT Command: [version], Thread: Worker-215: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:10.377
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2020.2
+SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-215: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:10.377
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-215: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:10.641
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   5* Digilent Nexys4DDR 210292743004A]. Thread: Worker-215: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:10.646
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292743004A" && level==1}], Thread: Worker-215: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:10.679
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292743004A" && level==1}], Result: [null,      6  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: Worker-215: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:10.680
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-215: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:10.736
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   5* Digilent Nexys4DDR 210292743004A]. Thread: Worker-215: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:10.736
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292743004A" && level==1}], Thread: Worker-215: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:10.792
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292743004A" && level==1}], Result: [null,      6  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: Worker-215: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:10.792
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-215: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:10.815
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   5* Digilent Nexys4DDR 210292743004A]. Thread: Worker-215: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:10.817
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292743004A" && level==1}], Thread: Worker-215: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:10.887
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292743004A" && level==1}], Result: [null,      6  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: Worker-215: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:10.888
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-215: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:10.908
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   5* Digilent Nexys4DDR 210292743004A]. Thread: Worker-215: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:10.909
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292743004A" && level==1}], Thread: Worker-215: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:10.940
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292743004A" && level==1}], Result: [null,      6  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: Worker-215: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:10.940
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-215: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:10.954
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   5* Digilent Nexys4DDR 210292743004A]. Thread: Worker-215: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:10.954
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292743004A" && level==1}], Thread: Worker-215: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:10.999
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292743004A" && level==1}], Result: [null,      6  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: Worker-215: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:11.000
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Nexys4DDR 210292743004A" && level == 0}], Thread: Worker-215: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:11.053
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Nexys4DDR 210292743004A" && level == 0}], Result: [null, ]. Thread: Worker-215: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:11.053
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-215: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:11.060
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-215: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:11.089
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:11.111
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   5* Digilent Nexys4DDR 210292743004A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:11.111
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292743004A" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:11.162
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292743004A" && level==1}], Result: [null,      6  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:11.162
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292743004A" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292743004A-13631093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:11.262
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292743004A" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292743004A-13631093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:11.263
+!MESSAGE XSCT Command: [fpga -file D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Application/_ide/bitstream/nexysA7fpga.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:14.064
+!MESSAGE XSCT command with result: [fpga -file D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Application/_ide/bitstream/nexysA7fpga.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:14.104
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-215: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:14.146
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-215: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:14.147
+!MESSAGE XSCT Command: [loadhw -hw D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/hw/nexysA7fpga.xsa -regs], Thread: Worker-215: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:14.162
+!MESSAGE XSCT command with result: [loadhw -hw D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/hw/nexysA7fpga.xsa -regs], Result: [null, nexysA7fpga_15]. Thread: Worker-215: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:14.163
+!MESSAGE XSCT Command: [configparams mdm-detect-bscan-mask 2], Thread: Worker-215: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:14.165
+!MESSAGE XSCT command with result: [configparams mdm-detect-bscan-mask 2], Result: [null, ]. Thread: Worker-215: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:14.165
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-215: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:14.211
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-215: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:14.211
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-215: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:14.231
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-215: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:14.231
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-215: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:17.233
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-215: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:17.234
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-215: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:17.255
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-215: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:17.255
+!MESSAGE XSCT Command: [dow D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Application/Debug/FreeRTOS_P3_Application.elf], Thread: Worker-215: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:17.579
+!MESSAGE XSCT command with result: [dow D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Application/Debug/FreeRTOS_P3_Application.elf], Result: [null, ]. Thread: Worker-215: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:17.669
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-215: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:17.740
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-215: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:17.740
+!MESSAGE XSCT Command: [con], Thread: Worker-215: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:18.062
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-215: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:31.132
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/hw/nexysA7fpga.xsa D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss ], Thread: Worker-223: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:31.137
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/hw/nexysA7fpga.xsa D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss ], Result: [null, ]. Thread: Worker-223: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:31.137
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/hw/nexysA7fpga.xsa D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss], Thread: Worker-223: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:31.141
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/hw/nexysA7fpga.xsa D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "freertos10_xilinx",
+"osver": "1.7",
+}]. Thread: Worker-223: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2022-05-23 12:24:31.142
+!MESSAGE Generating MD5 hash for file: D:\PortlandState\ECE_544\Labs\project_3\Vitis2\FreeRTOS_P3_Update\export\FreeRTOS_P3_Update\sw\FreeRTOS_P3_Update\freertos10_xilinx_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:31.142
+!MESSAGE XSCT Command: [::hsi::utils::closesw D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss], Thread: Worker-223: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:31.144
+!MESSAGE XSCT command with result: [::hsi::utils::closesw D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss], Result: [null, ]. Thread: Worker-223: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:33.072
+!MESSAGE XSCT Command: [disconnect tcfchan#121], Thread: Thread-8543
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:33.076
+!MESSAGE XSCT command with result: [disconnect tcfchan#121], Result: [null, ]. Thread: Thread-8543
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:33.136
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-218: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:33.157
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#122]. Thread: Worker-218: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:33.158
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-218: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:33.181
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   5* Digilent Nexys4DDR 210292743004A]. Thread: Worker-218: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:33.181
+!MESSAGE XSCT Command: [version -server], Thread: Worker-218: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:33.184
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2020.2]. Thread: Worker-218: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:33.184
+!MESSAGE XSCT Command: [version], Thread: Worker-218: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:33.185
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2020.2
+SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-218: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:33.186
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-218: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:33.210
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   5* Digilent Nexys4DDR 210292743004A]. Thread: Worker-218: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:33.212
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292743004A" && level==1}], Thread: Worker-218: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:33.369
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292743004A" && level==1}], Result: [null,      6  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: Worker-218: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:33.369
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-218: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:33.434
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   5* Digilent Nexys4DDR 210292743004A]. Thread: Worker-218: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:33.435
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292743004A" && level==1}], Thread: Worker-218: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:33.583
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292743004A" && level==1}], Result: [null,      6  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: Worker-218: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:33.584
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-218: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:33.639
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   5* Digilent Nexys4DDR 210292743004A]. Thread: Worker-218: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:33.640
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292743004A" && level==1}], Thread: Worker-218: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:33.702
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292743004A" && level==1}], Result: [null,      6  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: Worker-218: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:33.702
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-218: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:33.911
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   5* Digilent Nexys4DDR 210292743004A]. Thread: Worker-218: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:33.911
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292743004A" && level==1}], Thread: Worker-218: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:33.939
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292743004A" && level==1}], Result: [null,      6  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: Worker-218: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:33.940
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-218: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:33.954
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   5* Digilent Nexys4DDR 210292743004A]. Thread: Worker-218: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:33.954
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292743004A" && level==1}], Thread: Worker-218: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:34.040
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292743004A" && level==1}], Result: [null,      6  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: Worker-218: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:34.040
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Nexys4DDR 210292743004A" && level == 0}], Thread: Worker-218: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:34.101
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Nexys4DDR 210292743004A" && level == 0}], Result: [null, ]. Thread: Worker-218: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:34.102
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-218: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:34.105
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-218: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:34.139
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:34.149
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   5* Digilent Nexys4DDR 210292743004A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:34.149
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292743004A" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:34.195
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292743004A" && level==1}], Result: [null,      6  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:34.195
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292743004A" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292743004A-13631093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:34.265
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292743004A" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292743004A-13631093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:34.265
+!MESSAGE XSCT Command: [fpga -file D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Application/_ide/bitstream/nexysA7fpga.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:36.921
+!MESSAGE XSCT command with result: [fpga -file D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Application/_ide/bitstream/nexysA7fpga.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:36.953
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-218: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:37.002
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-218: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:37.003
+!MESSAGE XSCT Command: [loadhw -hw D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/hw/nexysA7fpga.xsa -regs], Thread: Worker-218: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:37.057
+!MESSAGE XSCT command with result: [loadhw -hw D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/hw/nexysA7fpga.xsa -regs], Result: [null, nexysA7fpga_15]. Thread: Worker-218: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:37.058
+!MESSAGE XSCT Command: [configparams mdm-detect-bscan-mask 2], Thread: Worker-218: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:37.060
+!MESSAGE XSCT command with result: [configparams mdm-detect-bscan-mask 2], Result: [null, ]. Thread: Worker-218: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:37.061
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-218: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:37.255
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-218: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:37.255
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-218: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:37.262
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-218: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:37.263
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-218: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:40.274
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-218: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:40.274
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-218: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:40.293
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-218: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:40.293
+!MESSAGE XSCT Command: [dow D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Application/Debug/FreeRTOS_P3_Application.elf], Thread: Worker-218: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:40.624
+!MESSAGE XSCT command with result: [dow D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Application/Debug/FreeRTOS_P3_Application.elf], Result: [null, ]. Thread: Worker-218: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:40.710
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-218: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:40.771
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-218: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:40.771
+!MESSAGE XSCT Command: [con], Thread: Worker-218: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:24:41.022
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-218: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:25:34.124
+!MESSAGE XSCT Command: [disconnect tcfchan#122], Thread: Thread-8585
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:25:34.127
+!MESSAGE XSCT command with result: [disconnect tcfchan#122], Result: [null, ]. Thread: Thread-8585
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:25:34.160
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-209: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:25:34.165
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#123]. Thread: Worker-209: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:25:34.166
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-209: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:25:34.182
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   5* Digilent Nexys4DDR 210292743004A]. Thread: Worker-209: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:25:34.182
+!MESSAGE XSCT Command: [version -server], Thread: Worker-209: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:25:34.184
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2020.2]. Thread: Worker-209: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:25:34.185
+!MESSAGE XSCT Command: [version], Thread: Worker-209: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:25:34.186
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2020.2
+SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-209: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:25:34.186
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-209: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:25:34.198
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   5* Digilent Nexys4DDR 210292743004A]. Thread: Worker-209: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:25:34.199
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292743004A" && level==1}], Thread: Worker-209: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:25:34.232
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292743004A" && level==1}], Result: [null,      6  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: Worker-209: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:25:34.232
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-209: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:25:34.243
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   5* Digilent Nexys4DDR 210292743004A]. Thread: Worker-209: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:25:34.243
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292743004A" && level==1}], Thread: Worker-209: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:25:34.269
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292743004A" && level==1}], Result: [null,      6  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: Worker-209: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:25:34.270
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-209: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:25:34.279
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   5* Digilent Nexys4DDR 210292743004A]. Thread: Worker-209: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:25:34.279
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292743004A" && level==1}], Thread: Worker-209: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:25:34.303
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292743004A" && level==1}], Result: [null,      6  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: Worker-209: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:25:34.304
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-209: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:25:34.311
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   5* Digilent Nexys4DDR 210292743004A]. Thread: Worker-209: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:25:34.311
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292743004A" && level==1}], Thread: Worker-209: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:25:34.333
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292743004A" && level==1}], Result: [null,      6  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: Worker-209: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:25:34.334
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-209: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:25:34.341
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   5* Digilent Nexys4DDR 210292743004A]. Thread: Worker-209: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:25:34.342
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292743004A" && level==1}], Thread: Worker-209: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:25:34.365
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292743004A" && level==1}], Result: [null,      6  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: Worker-209: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:25:34.365
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Nexys4DDR 210292743004A" && level == 0}], Thread: Worker-209: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:25:34.387
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Nexys4DDR 210292743004A" && level == 0}], Result: [null, ]. Thread: Worker-209: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:25:34.387
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-209: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:25:34.388
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-209: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:25:34.417
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:25:34.427
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   5* Digilent Nexys4DDR 210292743004A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:25:34.427
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292743004A" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:25:34.449
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292743004A" && level==1}], Result: [null,      6  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:25:34.450
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292743004A" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292743004A-13631093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:25:34.495
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292743004A" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292743004A-13631093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:25:34.496
+!MESSAGE XSCT Command: [fpga -file D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Application/_ide/bitstream/nexysA7fpga.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:25:36.697
+!MESSAGE XSCT command with result: [fpga -file D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Application/_ide/bitstream/nexysA7fpga.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:25:36.728
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-209: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:25:36.751
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-209: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:25:36.752
+!MESSAGE XSCT Command: [loadhw -hw D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/hw/nexysA7fpga.xsa -regs], Thread: Worker-209: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:25:36.771
+!MESSAGE XSCT command with result: [loadhw -hw D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/hw/nexysA7fpga.xsa -regs], Result: [null, nexysA7fpga_15]. Thread: Worker-209: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:25:36.772
+!MESSAGE XSCT Command: [configparams mdm-detect-bscan-mask 2], Thread: Worker-209: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:25:36.774
+!MESSAGE XSCT command with result: [configparams mdm-detect-bscan-mask 2], Result: [null, ]. Thread: Worker-209: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:25:36.774
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-209: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:25:36.793
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-209: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:25:36.794
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-209: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:25:36.798
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-209: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:25:36.798
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-209: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:25:39.812
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-209: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:25:39.812
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-209: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:25:39.830
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-209: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:25:39.830
+!MESSAGE XSCT Command: [dow D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Application/Debug/FreeRTOS_P3_Application.elf], Thread: Worker-209: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:25:40.155
+!MESSAGE XSCT command with result: [dow D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Application/Debug/FreeRTOS_P3_Application.elf], Result: [null, ]. Thread: Worker-209: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:25:40.240
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-209: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:25:40.292
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-209: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:25:40.292
+!MESSAGE XSCT Command: [con], Thread: Worker-209: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:25:40.567
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-209: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:32:57.942
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/hw/nexysA7fpga.xsa D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss ], Thread: Worker-226: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:32:57.948
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/hw/nexysA7fpga.xsa D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss ], Result: [null, ]. Thread: Worker-226: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:32:57.948
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/hw/nexysA7fpga.xsa D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss], Thread: Worker-226: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:32:57.952
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/hw/nexysA7fpga.xsa D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "freertos10_xilinx",
+"osver": "1.7",
+}]. Thread: Worker-226: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2022-05-23 12:32:57.952
+!MESSAGE Generating MD5 hash for file: D:\PortlandState\ECE_544\Labs\project_3\Vitis2\FreeRTOS_P3_Update\export\FreeRTOS_P3_Update\sw\FreeRTOS_P3_Update\freertos10_xilinx_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:32:57.953
+!MESSAGE XSCT Command: [::hsi::utils::closesw D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss], Thread: Worker-226: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:32:57.955
+!MESSAGE XSCT command with result: [::hsi::utils::closesw D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/system.mss], Result: [null, ]. Thread: Worker-226: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:33:01.401
+!MESSAGE XSCT Command: [disconnect tcfchan#123], Thread: Thread-8695
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:33:01.432
+!MESSAGE XSCT command with result: [disconnect tcfchan#123], Result: [null, ]. Thread: Thread-8695
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:33:01.586
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-223: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:33:01.602
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#124]. Thread: Worker-223: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:33:01.602
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-223: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:33:01.620
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   5* Digilent Nexys4DDR 210292743004A]. Thread: Worker-223: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:33:01.620
+!MESSAGE XSCT Command: [version -server], Thread: Worker-223: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:33:01.644
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2020.2]. Thread: Worker-223: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:33:01.824
+!MESSAGE XSCT Command: [version], Thread: Worker-223: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:33:01.860
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2020.2
+SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-223: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:33:01.861
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-223: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:33:01.896
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   5* Digilent Nexys4DDR 210292743004A]. Thread: Worker-223: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:33:01.896
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292743004A" && level==1}], Thread: Worker-223: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:33:01.981
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292743004A" && level==1}], Result: [null,      6  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: Worker-223: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:33:01.984
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-223: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:33:02.000
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   5* Digilent Nexys4DDR 210292743004A]. Thread: Worker-223: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:33:02.000
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292743004A" && level==1}], Thread: Worker-223: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:33:02.039
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292743004A" && level==1}], Result: [null,      6  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: Worker-223: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:33:02.039
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-223: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:33:02.050
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   5* Digilent Nexys4DDR 210292743004A]. Thread: Worker-223: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:33:02.050
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292743004A" && level==1}], Thread: Worker-223: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:33:02.076
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292743004A" && level==1}], Result: [null,      6  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: Worker-223: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:33:02.077
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-223: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:33:02.086
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   5* Digilent Nexys4DDR 210292743004A]. Thread: Worker-223: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:33:02.087
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292743004A" && level==1}], Thread: Worker-223: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:33:02.120
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292743004A" && level==1}], Result: [null,      6  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: Worker-223: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:33:02.121
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-223: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:33:02.136
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   5* Digilent Nexys4DDR 210292743004A]. Thread: Worker-223: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:33:02.137
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292743004A" && level==1}], Thread: Worker-223: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:33:02.190
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292743004A" && level==1}], Result: [null,      6  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: Worker-223: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:33:02.190
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Nexys4DDR 210292743004A" && level == 0}], Thread: Worker-223: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:33:02.228
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Nexys4DDR 210292743004A" && level == 0}], Result: [null, ]. Thread: Worker-223: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:33:02.229
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-223: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:33:02.250
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-223: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:33:02.276
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:33:02.304
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   5* Digilent Nexys4DDR 210292743004A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:33:02.304
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292743004A" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:33:02.362
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292743004A" && level==1}], Result: [null,      6  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:33:02.363
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292743004A" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292743004A-13631093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:33:02.446
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292743004A" && level==0 && jtag_device_ctx=="jsn-Nexys4DDR-210292743004A-13631093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:33:02.447
+!MESSAGE XSCT Command: [fpga -file D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Application/_ide/bitstream/nexysA7fpga.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:33:05.086
+!MESSAGE XSCT command with result: [fpga -file D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Application/_ide/bitstream/nexysA7fpga.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:33:05.120
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-223: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:33:05.147
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-223: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:33:05.147
+!MESSAGE XSCT Command: [loadhw -hw D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/hw/nexysA7fpga.xsa -regs], Thread: Worker-223: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:33:05.161
+!MESSAGE XSCT command with result: [loadhw -hw D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/hw/nexysA7fpga.xsa -regs], Result: [null, nexysA7fpga_15]. Thread: Worker-223: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:33:05.161
+!MESSAGE XSCT Command: [configparams mdm-detect-bscan-mask 2], Thread: Worker-223: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:33:05.163
+!MESSAGE XSCT command with result: [configparams mdm-detect-bscan-mask 2], Result: [null, ]. Thread: Worker-223: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:33:05.164
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-223: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:33:05.185
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-223: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:33:05.186
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-223: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:33:05.190
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-223: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:33:05.191
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-223: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:33:08.203
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-223: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:33:08.204
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-223: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:33:08.226
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-223: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:33:08.226
+!MESSAGE XSCT Command: [dow D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Application/Debug/FreeRTOS_P3_Application.elf], Thread: Worker-223: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:33:08.538
+!MESSAGE XSCT command with result: [dow D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Application/Debug/FreeRTOS_P3_Application.elf], Result: [null, ]. Thread: Worker-223: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:33:08.628
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-223: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:33:08.726
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-223: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:33:08.726
+!MESSAGE XSCT Command: [con], Thread: Worker-223: Launching SystemDebugger_FreeRTOS_P3_Application_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-23 12:33:09.017
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-223: Launching SystemDebugger_FreeRTOS_P3_Application_system
