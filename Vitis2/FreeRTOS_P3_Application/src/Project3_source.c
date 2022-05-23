@@ -321,20 +321,20 @@ int main()
 		exit(1);
 	}
 
-	microblaze_enable_interrupts();
-
-	xil_printf("ECE 544 Project 3 Test Program \n\r");
-	xil_printf("By Alex Beaulier. 13-May-2022\n\n\r");
-
 	//Handle WDT expired event, reset will cycle back here
 	if (XWdtTb_IsWdtExpired(&XWdtTbInstance))
 	{
 		//Handle it
 		//Restart
-		//XWdtTb_RestartWdt(&XWdtTbInstance);
-		xil_printf("\n WDT Reinitializedn");
+		XWdtTb_RestartWdt(&XWdtTbInstance);
+		xil_printf("\n WDT Reinitialized\n\n");
 		//XWdtTb_RestartWdt(&XWdtTbInstance);
 	}
+
+	microblaze_enable_interrupts();
+
+	xil_printf("ECE 544 Project 3 Test Program \n\r");
+	xil_printf("By Alex Beaulier. 13-May-2022\n\n\r");
 
 	//START THE MASTER THREAD
 	xStatus = xTaskCreate( Master_thread,
@@ -424,7 +424,7 @@ void Master_thread(void *p){
 
 	//Register interrupt handlers
 	//Enable WDT interrupt and start WDT
-	//XWdtTb_Start(&XWdtTbInstance);
+	XWdtTb_Start(&XWdtTbInstance);
 
 	//Begin forever loop
 	while(1){
@@ -1321,18 +1321,16 @@ void Watchdog_Hand(void *p)
 	*/
 
 	xil_printf("\n Inside WDT\n");
-	if(!wdt_crash_flag && system_running)
+	if(!wdt_crash_flag) //&& system_running)
 	{
-		XWdtTb_RestartWdt(&XWdtTbInstance);
 		xil_printf("\n Inside the non-crash version\n");
+		XWdtTb_RestartWdt(&XWdtTbInstance);
 		system_running = 0;
 	}
 	else
 	{
-		xil_printf("Force crash Successful.CPU Reset");
+		xil_printf("Force crash Successful.CPU Reset\r\n");
 	}
-
-	XWdtTb_IntrClear(&XWdtTbInstance);
 }
 
 

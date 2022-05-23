@@ -34,3 +34,8 @@ platform generate
 platform clean
 platform clean
 platform generate
+platform config -updatehw {D:/PortlandState/ECE_544/Labs/project_3/nexysA7fpga.xsa}
+platform generate -domains 
+platform clean
+platform clean
+platform generate

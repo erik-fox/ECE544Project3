@@ -1,6 +1,6 @@
 Nothing to build in platform 'FreeRTOS_P3_Update'
 
-14:35:27 **** Incremental Build of configuration Debug for project FreeRTOS_P3_Application ****
+10:39:31 **** Incremental Build of configuration Debug for project FreeRTOS_P3_Application ****
 make all 
 'Building file: ../src/Project3_source.c'
 'Invoking: MicroBlaze gcc compiler'
@@ -55,6 +55,6 @@ mb-gcc -Wl,-T -Wl,../src/lscript.ld -LD:/PortlandState/ECE_544/Labs/project_3/Vi
 'Invoking: MicroBlaze Print Size'
 mb-size FreeRTOS_P3_Application.elf  |tee "FreeRTOS_P3_Application.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  58068	    524	  70144	 128736	  1f6e0	FreeRTOS_P3_Application.elf
+  58152	    524	  70140	 128816	  1f730	FreeRTOS_P3_Application.elf
 'Finished building: FreeRTOS_P3_Application.elf.size'
 ' '
