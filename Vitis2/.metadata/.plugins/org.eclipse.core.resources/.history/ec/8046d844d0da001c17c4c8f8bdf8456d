@@ -954,16 +954,16 @@ void ROT_ENC_Update(pid_vars* pid_vars){
 		OLED_updatelock = 2;
 		switch(Incr_Status_ROT_ENC){
 			case One:
-				pid_vars->setpoint_target = (pid_vars->setpoint_target < 255) ? pid_vars->setpoint_target + 1 : pid_vars->setpoint_target;
+				pid_vars->RPM_Target = (pid_vars->RPM_Target < 1000) ? pid_vars->RPM_Target + 1 : pid_vars->RPM_Target;
 			break;
 			case Five:
-				pid_vars->setpoint_target = (pid_vars->setpoint_target <= 250) ? pid_vars->setpoint_target + 5 : pid_vars->setpoint_target;
+				pid_vars->RPM_Target = (pid_vars->RPM_Target <= 995) ? pid_vars->RPM_Target + 5 : pid_vars->RPM_Target;
 			break;
 			case Ten:
-				pid_vars->setpoint_target = (pid_vars->setpoint_target <= 245) ? pid_vars->setpoint_target + 10 : pid_vars->setpoint_target;
+				pid_vars->RPM_Target = (pid_vars->RPM_Target <= 990) ? pid_vars->RPM_Target + 10 : pid_vars->RPM_Target;
 			break;
 			case Default:
-				pid_vars->setpoint_target == pid_vars->setpoint_target;
+				pid_vars->RPM_Target += 0;
 			break;
 		}
 	}
@@ -971,16 +971,16 @@ void ROT_ENC_Update(pid_vars* pid_vars){
 		OLED_updatelock = 2;
 		switch(Incr_Status_ROT_ENC){
 			case One:
-				pid_vars->setpoint_target = (pid_vars->setpoint_target > 0) ? pid_vars->setpoint_target - 1 : pid_vars->setpoint_target - 0;
+				pid_vars->RPM_Target = (pid_vars->RPM_Target > 0) ? pid_vars->RPM_Target - 1 : pid_vars->RPM_Target - 0;
 			break;
 			case Five:
-				pid_vars->setpoint_target = (pid_vars->setpoint_target >= 5) ? pid_vars->setpoint_target - 5 : pid_vars->setpoint_target - 0;
+				pid_vars->RPM_Target = (pid_vars->RPM_Target >= 5) ? pid_vars->RPM_Target - 5 : pid_vars->RPM_Target - 0;
 			break;
 			case Ten:
-				pid_vars->setpoint_target = (pid_vars->setpoint_target >= 10) ? pid_vars->setpoint_target - 10 : pid_vars->setpoint_target - 0;
+				pid_vars->RPM_Target = (pid_vars->RPM_Target >= 10) ? pid_vars->RPM_Target - 10 : pid_vars->RPM_Target - 0;
 			break;
 			case Default:
-				pid_vars->setpoint_target == pid_vars->setpoint_target;
+				pid_vars->RPM_Target -= 0;
 			break;
 		}
 	}

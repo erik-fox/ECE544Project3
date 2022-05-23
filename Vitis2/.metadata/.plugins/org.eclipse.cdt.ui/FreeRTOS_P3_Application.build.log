@@ -1,4 +1,4 @@
-12:32:57 **** Incremental Build of configuration Debug for project FreeRTOS_P3_Application ****
+12:41:16 **** Incremental Build of configuration Debug for project FreeRTOS_P3_Application ****
 make all 
 'Building file: ../src/Project3_source.c'
 'Invoking: MicroBlaze gcc compiler'
@@ -22,6 +22,13 @@ In file included from D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3
 D:/PortlandState/ECE_544/Labs/project_3/Vitis2/FreeRTOS_P3_Update/export/FreeRTOS_P3_Update/sw/FreeRTOS_P3_Update/freertos10_xilinx_domain/bspinclude/include/portmacro.h:263:83: note: expected 'XInterruptHandler' {aka 'void (*)(void *)'} but argument is of type 'void (*)(void)'
   263 | BaseType_t xPortInstallInterruptHandler( uint8_t ucInterruptID, XInterruptHandler pxHandler, void *pvCallBackRef );
       |                                                                 ~~~~~~~~~~~~~~~~~~^~~~~~~~~
+../src/Project3_source.c: In function 'ROT_ENC_Update':
+../src/Project3_source.c:966:31: warning: value computed is not used [-Wunused-value]
+  966 |     pid_vars->setpoint_target == pid_vars->setpoint_target;
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/Project3_source.c:983:31: warning: value computed is not used [-Wunused-value]
+  983 |     pid_vars->setpoint_target == pid_vars->setpoint_target;
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ../src/Project3_source.c: In function 'display_thread':
 ../src/Project3_source.c:1088:9: warning: 'return' with a value, in function returning void [-Wreturn-type]
  1088 |  return -2; //Should never reach here
@@ -53,9 +60,9 @@ mb-gcc -Wl,-T -Wl,../src/lscript.ld -LD:/PortlandState/ECE_544/Labs/project_3/Vi
 'Invoking: MicroBlaze Print Size'
 mb-size FreeRTOS_P3_Application.elf  |tee "FreeRTOS_P3_Application.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  58312	    520	  70136	 128968	  1f7c8	FreeRTOS_P3_Application.elf
+  58332	    520	  70140	 128992	  1f7e0	FreeRTOS_P3_Application.elf
 'Finished building: FreeRTOS_P3_Application.elf.size'
 ' '
 
-12:32:58 Build Finished (took 956ms)
+12:41:18 Build Finished (took 1s.598ms)
 

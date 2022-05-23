@@ -963,7 +963,7 @@ void ROT_ENC_Update(pid_vars* pid_vars){
 				pid_vars->setpoint_target = (pid_vars->setpoint_target <= 245) ? pid_vars->setpoint_target + 10 : pid_vars->setpoint_target;
 			break;
 			case Default:
-				pid_vars->setpoint_target == pid_vars->setpoint_target;
+				pid_vars->setpoint_target;
 			break;
 		}
 	}
@@ -980,7 +980,7 @@ void ROT_ENC_Update(pid_vars* pid_vars){
 				pid_vars->setpoint_target = (pid_vars->setpoint_target >= 10) ? pid_vars->setpoint_target - 10 : pid_vars->setpoint_target - 0;
 			break;
 			case Default:
-				pid_vars->setpoint_target == pid_vars->setpoint_target;
+				pid_vars->setpoint_target;
 			break;
 		}
 	}
