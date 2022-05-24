@@ -424,7 +424,7 @@ void Master_thread(void *p){
 
 	//Register interrupt handlers
 	//Enable WDT interrupt and start WDT
-	//XWdtTb_Start(&XWdtTbInstance);
+	XWdtTb_Start(&XWdtTbInstance);
 
 	//Begin forever loop
 	while(1){
