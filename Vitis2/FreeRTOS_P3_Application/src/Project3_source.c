@@ -254,7 +254,7 @@ typedef struct{
 	volatile u8	 setpoint_target;
 	volatile u32 RPM_Target;
 	volatile u32 RPM_Current;
-	volatile u32 RPM_Error;
+	volatile int RPM_Error;
 	volatile u32 intg_Max;
 	volatile u32 intg_min;
 	volatile u32 EncoderVal;
@@ -279,7 +279,7 @@ int AXI_Timer_initialize(void);
 
 void Master_thread(void *p);
 void display_thread(void *p);
-void PIDController_Thread();
+void PID_Controller_Thread();
 void parameter_input_thread(void *p);
 
 //Updaters for RTOS Conversion
@@ -328,13 +328,13 @@ int main()
 		//Handle it
 		//Restart
 		XWdtTb_RestartWdt(&XWdtTbInstance);
-		xil_printf("\n WDT Reinitialized\n\n");
+		//xil_printf("\n WDT Reinitialized\n\n");
 	}
 
 	microblaze_enable_interrupts();
 
-	xil_printf("ECE 544 Project 3 Test Program \n\r");
-	xil_printf("By Alex Beaulier. 13-May-2022\n\n\r");
+	//xil_printf("ECE 544 Project 3 Test Program \n\r");
+	//xil_printf("By Alex Beaulier. 13-May-2022\n\n\r");
 
 	//START THE MASTER THREAD
 	xStatus = xTaskCreate( Master_thread,
@@ -388,14 +388,14 @@ void Master_thread(void *p){
 	*
 	*****************************************************************************/
 	//Create Task_PID
-	xStatus = xTaskCreate( PIDController_Thread,
+	xStatus = xTaskCreate( PID_Controller_Thread,
 					 ( const char * ) "RX PID Update",	//PC Name
 					 1024,	//usStackDepth
 					 NULL,
 					 2,		//Priority
 					 &xPID_TaskHandler ); //Unsure what this does
 	 if( xStatus == pdPASS ){
-		 xil_printf("Passed PID Generation \r\n");
+		 //xil_printf("Passed PID Generation \r\n");
 	 }
 	//Create Task_Display
 	xStatus = xTaskCreate( display_thread,
@@ -405,7 +405,7 @@ void Master_thread(void *p){
 					 3,		//Priority
 					 &xDisplay_TaskHandler ); //Unsure what this does
 	if( xStatus == pdPASS ){
-		 xil_printf("Passed Displpay Generation\r\n");
+		 //xil_printf("Passed Displpay Generation\r\n");
 	 }
 	//Create Task_Inputs
 	xStatus = xTaskCreate( parameter_input_thread,
@@ -415,16 +415,16 @@ void Master_thread(void *p){
 					 1,		//Priority
 					 &xInputs_TaskHandler );	//Unsure what this does
 	if( xStatus == pdPASS ){
-		 xil_printf("Passed Input Generation\r\n");
+		 //xil_printf("Passed Input Generation\r\n");
 	 }
 	//END TASKS/THREADS SETUP==========================================
 
 	//Begin scheduling, possibly have to swap to main?
-	xil_printf("Starting the scheduler\r\n");
+	//xil_printf("Starting the scheduler\r\n");
 
 	//Register interrupt handlers
 	//Enable WDT interrupt and start WDT
-	XWdtTb_Start(&XWdtTbInstance);
+	//XWdtTb_Start(&XWdtTbInstance);
 
 	//Begin forever loop
 	while(1){
@@ -494,7 +494,7 @@ int	 do_init(void)
 		status = xPortInstallInterruptHandler( GPIO_1_PBSWITCH_INTR_PRESENT, GPIO_PBSWITCH_Handler, NULL );
 		if( status == pdPASS )
 		{
-			xil_printf("Buttons and Switches interrupt handler installed\r\n");
+			//xil_printf("Buttons and Switches interrupt handler installed\r\n");
 			/* Set switches and buttons to input. */
 			XGpio_SetDataDirection( &GPIOButton, 1, ucSetToInput );
 			XGpio_SetDataDirection( &GPIOButton, 2, ucSetToInput );
@@ -557,13 +557,13 @@ int	 do_init(void)
 	  xil_printf("WDT Failed Generation\r\n");
 	  return XST_FAILURE;
 	}
-	xil_printf("WDT Initialized\r\n");
+	//xil_printf("WDT Initialized\r\n");
 	status = xPortInstallInterruptHandler(WDTTB_INTERRUPT_ID, Watchdog_Hand, NULL);
 	if(status != pdPASS)
 	{
 		return XST_FAILURE;
 	}
-	xil_printf("WDT Handler Initialized\r\n");
+	//xil_printf("WDT Handler Initialized\r\n");
 	vPortEnableInterrupt(WDTTB_INTERRUPT_ID);
 
 	//blank the display digits and turn off the decimal points
@@ -809,7 +809,7 @@ void GreenLED_Update(pid_vars* pid_vars){
 
 
 void GreenLED_Clear(){
-	//TODO REPLACE NX4IO_setLEDs(0);
+	//REPLACE NX4IO_setLEDs(0);
 }
 
 
@@ -928,10 +928,9 @@ void PshBtn_Update(pid_vars* pid_vars){
 		if(notpressed_BTNC == 0){
 			notpressed_BTNC = 1;
 			OLED_updatelock = 4;
-			//Motor speed to 0
-			//TODO Turn off PWM sig to motor
+			pid_vars->setpoint_target = 0; //Motor speed to 0 - Turn off PWM sig to motor
+
 			//KPID constants to non zero val to guarantee effect
-			pid_vars->setpoint_target = 0;
 			pid_vars->Kp = 1;
 			pid_vars->Ki = 1;
 			pid_vars->Kd = 1;
@@ -1119,7 +1118,7 @@ void parameter_input_thread(void *p){
 
 /****************************************************************************/
 /**
-* PIDController_Thread() Function
+* PID_Controller_Thread() Function
 *
 * Calculates the appropriate compensation to an input system
 * Based on reference from Kravitz 544 lecture notes
@@ -1131,7 +1130,7 @@ void parameter_input_thread(void *p){
 *
 *****************************************************************************/
 
-void PIDController_Thread(){
+void PID_Controller_Thread(){
 	pid_vars pid_vars_PIDLocal,pid_vars_PIDPrev;
 	int i;
 	//xil_printf("Looped\r\n");
@@ -1145,45 +1144,61 @@ void PIDController_Thread(){
 		PMODHB3_setDIR(pid_vars_PIDLocal.direction);
 
 		//motor speed from tachometer logic
-		pid_vars_PIDLocal.RPM_Current = PMODHB3_getTachometer();
+		pid_vars_PIDLocal.RPM_Current = PMODHB3_getTachometer();	//Only updates every second
 
 		//TODO Finish
 		//Update the PID control algorithm
 		//Calculate Proportional
-		pid_vars_PIDLocal.RPM_Error = (pid_vars_PIDLocal.RPM_Current - pid_vars_PIDLocal.RPM_Target);
+		pid_vars_PIDLocal.RPM_Error = ((int)pid_vars_PIDLocal.RPM_Target - (int)pid_vars_PIDLocal.RPM_Current);
 
 		//Calc Integral
 		//Limit high and low
-		pid_vars_PIDLocal.integral = (pid_vars_PIDLocal.integral + (double)pid_vars_PIDLocal.RPM_Error);
+		if(pid_vars_PIDLocal.RPM_Error < (pid_vars_PIDLocal.RPM_Target/10)){
+			pid_vars_PIDLocal.integral = (pid_vars_PIDLocal.integral + (double)pid_vars_PIDLocal.RPM_Error);
+		}
+		/*
 		if(pid_vars_PIDLocal.integral > 1000)	//Max from sweep
 			pid_vars_PIDLocal.integral = 1000;	//Max from sweep
 		if(pid_vars_PIDLocal.integral < 0)
 			pid_vars_PIDLocal.integral = 0;
+		 */
 
-		//Calc Deriv errors (d error, prev) (Not sure about dt)
-		pid_vars_PIDLocal.derivative = ((double)pid_vars_PIDLocal.RPM_Error - pid_vars_PIDPrev.prev_error); //error - prev_error / dt????
+		//Calc Deriv errors (d error, prev)
+		pid_vars_PIDLocal.derivative = ((double)pid_vars_PIDLocal.RPM_Error - pid_vars_PIDPrev.prev_error); //assuming dt == 1 from delay sample time
 
 		//Calculate new PID output
-		pid_vars_PIDLocal.setpoint = ((double)pid_vars_PIDLocal.RPM_Error * (double)pid_vars_PIDLocal.Kp) + ((pid_vars_PIDLocal.integral) * (double)(pid_vars_PIDLocal.Ki/10)) + (pid_vars_PIDLocal.derivative * (double)pid_vars_PIDLocal.Kd);
-
+		pid_vars_PIDLocal.setpoint = ((double)pid_vars_PIDLocal.RPM_Error * (double)pid_vars_PIDLocal.Kp) +
+				((pid_vars_PIDLocal.integral) * (double)(pid_vars_PIDLocal.Ki)) +
+				(pid_vars_PIDLocal.derivative * (double)pid_vars_PIDLocal.Kd);
 
 		//Convert the PID RPM Setpoint to a scaled pwm value
 		//* Using sweep data @ 5.7V .9A draw
 		//0 - 1000 -> 0 - 255
 
-		//SetpointFromRPM_Convert(&pid_vars_PIDLocal);
-/*
+		//Convert RPM setpoint to a pwm setpoint
+		SetpointFromRPM_Convert(&pid_vars_PIDLocal);
+
+		//xil_printf("PWM Output %d\r\n",(int)pid_vars_PIDLocal.setpoint*1000/255);
+
 		//Limit the PWM value between 0 to 255
 		if(pid_vars_PIDLocal.setpoint > 255)
 			pid_vars_PIDLocal.setpoint = 255;
 		if (pid_vars_PIDLocal.setpoint < 0)
 			pid_vars_PIDLocal.setpoint = 0;
 
-*/
-
 		//Set the PWM of the motor to new calc
 		//PMODHB3_setPWM((u32)pid_vars_PIDLocal.setpoint);
-		PMODHB3_setPWM((pid_vars_PIDLocal.setpoint*255)/1000);
+
+
+		//Debug sweep python read from serial
+		xil_printf("RPM_C: %.4d,RPM_T:%.4d,Kp:%.5d,Ki:%.4d,Kd:%.5d\r\n",
+				pid_vars_PIDLocal.RPM_Current,pid_vars_PIDLocal.RPM_Target,
+				(int)pid_vars_PIDLocal.RPM_Error, (int)pid_vars_PIDLocal.integral, (int)pid_vars_PIDLocal.derivative);
+
+		//Put the setpoint PWM target into the motor
+		xil_printf("PWM Output %d\r\n",(int)pid_vars_PIDLocal.setpoint);
+		PMODHB3_setPWM(pid_vars_PIDLocal.setpoint);
+
 
 		pid_vars_PIDPrev.prev_error = pid_vars_PIDLocal.RPM_Error;
 
@@ -1209,7 +1224,7 @@ void Switch_Update(){
 	}
 
 	/*
-	//SW 14 Test Direction TODO
+	//SW 14 Test Direction
 	mask1 = 1 << (15 - 1);
 	if((switch_values & mask1) == mask1){
 		PMODHB3_setDIR(1);
@@ -1217,9 +1232,9 @@ void Switch_Update(){
 		PMODHB3_setDIR(0);
 	}
 
-	//TODO Tryout sleep test here Direction verification/Step fix
+	//Tryout sleep test here Direction verification/Step fix
 
-	//SW 13 Test PWM TODO
+	//SW 13 Test PWM
 	mask1 = 1 << (14 - 1);
 	if((switch_values & mask1) == mask1){
 		PMODHB3_setPWM(0xFFFF);		//HALF ON 16 bits
@@ -1303,20 +1318,23 @@ void GPIO_PBSWITCH_Handler(void){
 
 void Watchdog_Hand(void *p)
 {
-	xil_printf("In WDT\r\n");
+	//xil_printf("In WDT\r\n");
 	if(!wdt_crash_flag)
 	{
-		xil_printf("WDT normal execution, resetting\r\n");
+		//xil_printf("WDT normal execution, resetting\r\n");
 		XWdtTb_RestartWdt(&XWdtTbInstance);
 	}
 	else
 	{
-		xil_printf("WDT Forcing Crash\r\n");
+		//xil_printf("WDT Forcing Crash\r\n");
 	}
 }
 
 void Setpoint_RPM_Convert(pid_vars* pid_vars){
 
+	pid_vars->RPM_Target = ((pid_vars->setpoint_target *1000)/255); //Scale the target linearly from 0 to max range of pwm
+
+	/*
 	switch(pid_vars->setpoint_target){
 	case 0:
 		pid_vars->RPM_Target = 0;
@@ -1341,36 +1359,11 @@ void Setpoint_RPM_Convert(pid_vars* pid_vars){
 	case 201 ... 255:
 	pid_vars->RPM_Target = (u32)((double)pid_vars->setpoint_target / 0.255178268);
 	break;
-	}
-
+	}*/
 }
 
 void SetpointFromRPM_Convert(pid_vars* pid_vars){
-	switch(pid_vars->setpoint_target){
-	case 0:
-		pid_vars->setpoint = 0;
-	break;
-
-	case 1   ...  50:
-	pid_vars->setpoint = pid_vars->setpoint * 0.068493151;
-	break;
-
-	case 51  ... 100:
-	pid_vars->setpoint = pid_vars->setpoint * 0.114285714;
-	break;
-
-	case 101 ... 150:
-	pid_vars->setpoint = pid_vars->setpoint * 0.166852058;
-	break;
-
-	case 151 ... 200:
-	pid_vars->setpoint = pid_vars->setpoint * 0.223311547;
-	break;
-
-	case 201 ... 255:
-	pid_vars->setpoint = pid_vars->setpoint * 0.255178268;
-	break;
-	}
+	pid_vars->setpoint_target = ((pid_vars->setpoint_target *1000)/255); //Scale the target linearly from 0 to max range of pwm
 }
 
 
