@@ -1352,7 +1352,7 @@ void OLED_Clear(){
 * Clears the interrupt instance
  *****************************************************************************/
 void GPIO_PBSWITCH_Handler(void *p){
-	//xil_printf("I AM HERE@@@@\r\n");
+	xil_printf("I AM HERE@@@@\r\n");
 	xSemaphoreGiveFromISR(binary_sem,NULL);
 	XGpio_InterruptClear( &GPIOButton, 1);
 }
