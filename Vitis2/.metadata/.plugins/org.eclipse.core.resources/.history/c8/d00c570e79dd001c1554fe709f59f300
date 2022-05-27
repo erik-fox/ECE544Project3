@@ -48,6 +48,8 @@
 #include "xgpio.h"
 #include "xintc.h"
 #include "xtmrctr.h"
+//Figure out where this library is???
+//#include "xscugic.h"
 #include "xwdttb.h"
 #include "xil_exception.h"
 
@@ -295,6 +297,12 @@ void Watchdog_Hand(void *);
 void Setpoint_RPM_Convert(pid_vars* pid_vars);
 void SetpointFromRPM_Convert(pid_vars* pid_vars);
 /*****************************************************************************/
+
+
+
+
+
+
 
 
 /************************** MAIN PROGRAM ************************************/
@@ -1340,6 +1348,7 @@ void Switch_Update(){
 }
 
 
+
 void OLED_Clear(){
 
 }
@@ -1362,7 +1371,7 @@ void Watchdog_Hand(void *p)
 	//xil_printf("In WDT\r\n");
 	if(!wdt_crash_flag)
 	{
-		//xil_printf("WDT normal, resetting\r\n");
+		//xil_printf("WDT normal execution, resetting\r\n");
 		XWdtTb_RestartWdt(&XWdtTbInstance);
 	}
 	else
@@ -1371,14 +1380,10 @@ void Watchdog_Hand(void *p)
 	}
 }
 
-/**
-* Calculates the target RPM from the PWM setpoint
-* @note
-* ECE
- *****************************************************************************/
 void Setpoint_RPM_Convert(pid_vars* pid_vars){
 
 	pid_vars->RPM_Target = ((pid_vars->setpoint_target *1000)/255); //Scale the target linearly from 0 to max range of pwm
+
 	/*
 	switch(pid_vars->setpoint_target){
 	case 0:
@@ -1407,11 +1412,6 @@ void Setpoint_RPM_Convert(pid_vars* pid_vars){
 	}*/
 }
 
-/**
-* Calculates the output from controller as PWM from the RPM Target compensation setpoint from PID
-* @note
-* ECE
- *****************************************************************************/
 void SetpointFromRPM_Convert(pid_vars* pid_vars){
 	pid_vars->setpoint_target = ((pid_vars->setpoint_target *1000)/255); //Scale the target linearly from 0 to max range of pwm
 }

@@ -48,6 +48,8 @@
 #include "xgpio.h"
 #include "xintc.h"
 #include "xtmrctr.h"
+//Figure out where this library is???
+//#include "xscugic.h"
 #include "xwdttb.h"
 #include "xil_exception.h"
 
@@ -297,6 +299,12 @@ void SetpointFromRPM_Convert(pid_vars* pid_vars);
 /*****************************************************************************/
 
 
+
+
+
+
+
+
 /************************** MAIN PROGRAM ************************************/
 int main()
 {
@@ -435,6 +443,7 @@ void Master_thread(void *p){
 * This function is executed once at start-up and after resets.  It initializes
 * the peripherals and registers the interrupt handler(s)
 *****************************************************************************/
+
 int	 do_init(void)
 {
 	uint32_t status;				// status from Xilinx Lib calls
@@ -769,12 +778,7 @@ void OLED_Initialize(){
 }
 
 
-/**
-* Masks the LEDs appropriately based on inputs
-*
-* @note
-* ECE
- *****************************************************************************/
+
 void GreenLED_Update(pid_vars* pid_vars){
 	int switchvalues2 = 0;
 
@@ -800,46 +804,22 @@ void GreenLED_Update(pid_vars* pid_vars){
 }
 
 
-/**
-* Potential function without execution
-*
-* @note
-* ECE
- *****************************************************************************/
+
 void GreenLED_Clear(){
 	//REPLACE NX4IO_setLEDs(0);
 }
 
 
-/**
-* Update SSEG Display with the target PWM and the calculated target RPM
-*
-* @note
-* ECE
- *****************************************************************************/
 void SSEG_Update( pid_vars* pid_vars){
 	u32_ss_disp_val = (pid_vars->setpoint_target  * 10000) + (pid_vars->RPM_Target); //simple answer...
 	NX4IO_SSEG_putU32Dec(u32_ss_disp_val,0);
 }
 
-/**
-* Clears all SSEG
-*
-* @note
-* ECE
- *****************************************************************************/
 void SSEG_Clear(){
 	NX410_SSEG_setAllDigits(SSEGLO, CC_BLANK, CC_BLANK, CC_BLANK, CC_BLANK, DP_NONE);
 	NX410_SSEG_setAllDigits(SSEGHI, CC_BLANK, CC_BLANK, CC_BLANK, CC_BLANK, DP_NONE);
 }
 
-
-/**
-* Updates all Pushbuttons based on input, sets OLED locks for updating concisely
-* Can Reset entire system with BTNC
-* @note
-* ECE
- *****************************************************************************/
 void PshBtn_Update(pid_vars* pid_vars){
 	if(Button_isPressed(&GPIOButton,BBTNU))
 	{
@@ -960,12 +940,7 @@ void PshBtn_Update(pid_vars* pid_vars){
 
 
 
-/**
-* Moves the setpoint based on ROTENC value
-*
-* @note
-* ECE
- *****************************************************************************/
+
 void ROT_ENC_Update(pid_vars* pid_vars){
 	state = PMODENC544_getBtnSwReg();
 	//Update the Encoder value, wrap if necessary
@@ -1012,12 +987,6 @@ void ROT_ENC_Update(pid_vars* pid_vars){
 
 }
 
-/**
-* Switch status for direction control
-*
-* @note
-* ECE
- *****************************************************************************/
 bool ROT_ENC_State_Update(){
 	u_int32_t BtnStatus;
 	int mask1 = 1 << (2 - 1);
@@ -1030,16 +999,10 @@ bool ROT_ENC_State_Update(){
 	return (bool)BtnStatus;
 }
 
-
-/**
-* Receive new messages from parameter_input_thread()
-* Receive new messages from PID_thread()
-* Update LEDs Update Display
-* Updates SSEG
-* Updates Green LED
-* @note
-* ECE
- *****************************************************************************/
+//
+//Receive new messages from parameter_input_thread()
+//Receive new messages from PID_thread()
+//Update LEDs Update Display
 void display_thread(void *p){
 	pid_vars pid_vars_OLED, pid_var_prev;
 	while(1){
@@ -1124,12 +1087,6 @@ void display_thread(void *p){
 }
 
 
-/**
-* Takes the input from Encoder and sets the direction signal.
-* Calls pushbutton and switch update to send info out to display and PID threads
-* @note
-* ECE
- *****************************************************************************/
 void parameter_input_thread(void *p){
 	pid_vars pid_vars_OLED = {0};	//Initialize all to 0, otherwise randomness occurs
 	int status;
@@ -1163,16 +1120,13 @@ void parameter_input_thread(void *p){
 * Calculates the appropriate compensation to an input system
 * Based on reference from Kravitz 544 lecture notes
 * (Output Control Methods) - May 4th
-* Reads current RPM
-* Passes info to display thread on the current RPM
-* Calculates interpreted RPM and compensation
-* Sends our the converted PID Compensation RPM as PWM to hardware 0-255
 *
 * @return *NONE*
 *
 * @note
 *
 *****************************************************************************/
+
 void PID_Controller_Thread(){
 	pid_vars pid_vars_PIDLocal,pid_vars_PIDPrev;
 	int i;
@@ -1228,6 +1182,10 @@ void PID_Controller_Thread(){
 			pid_vars_PIDLocal.setpoint = 255;
 		if (pid_vars_PIDLocal.setpoint < 0)
 			pid_vars_PIDLocal.setpoint = 0;
+
+		//Set the PWM of the motor to new calc
+		//PMODHB3_setPWM((u32)pid_vars_PIDLocal.setpoint);
+
 
 		//Debug sweep python read from serial
 		/*xil_printf("RPM_C: %.4d,RPM_T:%.4d,Kp:%.5d,Ki:%.4d,Kd:%.5d\r\n",
@@ -1340,6 +1298,7 @@ void Switch_Update(){
 }
 
 
+
 void OLED_Clear(){
 
 }
@@ -1362,7 +1321,7 @@ void Watchdog_Hand(void *p)
 	//xil_printf("In WDT\r\n");
 	if(!wdt_crash_flag)
 	{
-		//xil_printf("WDT normal, resetting\r\n");
+		//xil_printf("WDT normal execution, resetting\r\n");
 		XWdtTb_RestartWdt(&XWdtTbInstance);
 	}
 	else
@@ -1371,14 +1330,10 @@ void Watchdog_Hand(void *p)
 	}
 }
 
-/**
-* Calculates the target RPM from the PWM setpoint
-* @note
-* ECE
- *****************************************************************************/
 void Setpoint_RPM_Convert(pid_vars* pid_vars){
 
 	pid_vars->RPM_Target = ((pid_vars->setpoint_target *1000)/255); //Scale the target linearly from 0 to max range of pwm
+
 	/*
 	switch(pid_vars->setpoint_target){
 	case 0:
@@ -1407,11 +1362,6 @@ void Setpoint_RPM_Convert(pid_vars* pid_vars){
 	}*/
 }
 
-/**
-* Calculates the output from controller as PWM from the RPM Target compensation setpoint from PID
-* @note
-* ECE
- *****************************************************************************/
 void SetpointFromRPM_Convert(pid_vars* pid_vars){
 	pid_vars->setpoint_target = ((pid_vars->setpoint_target *1000)/255); //Scale the target linearly from 0 to max range of pwm
 }
