@@ -274,7 +274,7 @@ void PMDIO_itoa(int32_t value, char *string, int32_t radix);
 void PMDIO_puthex(PmodOLEDrgb* InstancePtr, uint32_t num);
 void PMDIO_putnum(PmodOLEDrgb* InstancePtr, int32_t num, int32_t radix);
 int	 do_init(void);											// initialize system
-void GPIO_PBSWITCH_Handler(void);										// fixed interval timer interrupt handler
+void GPIO_PBSWITCH_Handler(void *p);										// fixed interval timer interrupt handler
 int AXI_Timer_initialize(void);
 
 void Master_thread(void *p);
@@ -424,7 +424,7 @@ void Master_thread(void *p){
 
 	//Register interrupt handlers
 	//Enable WDT interrupt and start WDT
-	//XWdtTb_Start(&XWdtTbInstance);
+	XWdtTb_Start(&XWdtTbInstance);
 
 	//Begin forever loop
 	while(1){
@@ -491,31 +491,28 @@ int	 do_init(void)
 		/* Install the handler defined in this task for the button input.
 		*NOTE* The FreeRTOS defined xPortInstallInterruptHandler() API function
 		must be used for this purpose. */
-		status = xPortInstallInterruptHandler( GPIO_1_PBSWITCH_INTR_PRESENT, GPIO_PBSWITCH_Handler, NULL );
+		status = xPortInstallInterruptHandler(XPAR_MICROBLAZE_0_AXI_INTC_AXI_GPIO_1_IP2INTC_IRPT_INTR,GPIO_PBSWITCH_Handler, NULL );
+
 		if( status == pdPASS )
 		{
-			//xil_printf("Buttons and Switches interrupt handler installed\r\n");
+			xil_printf("Buttons and Switches interrupt handler installed\r\n");
+
 			/* Set switches and buttons to input. */
-			XGpio_SetDataDirection( &GPIOButton, 1, ucSetToInput );
-			XGpio_SetDataDirection( &GPIOButton, 2, ucSetToInput );
+			XGpio_SetDataDirection( &GPIOButton, 1, ucSetToInput ); //Pb
+			XGpio_SetDataDirection( &GPIOButton, 2, ucSetToInput ); //Sw
 
 			/* Enable the button input interrupts in the interrupt controller.
 			*NOTE* The vPortEnableInterrupt() API function must be used for this
 			purpose. */
 
-			vPortEnableInterrupt( GPIO_1_PBSWITCH_INTR_PRESENT );
+			vPortEnableInterrupt( XPAR_MICROBLAZE_0_AXI_INTC_AXI_GPIO_1_IP2INTC_IRPT_INTR );
 
 			/* Enable GPIO channel interrupts. */
-			XGpio_InterruptEnable( &GPIOButton, 1 );
+			XGpio_InterruptEnable( &GPIOButton, XPAR_AXI_GPIO_1_IP2INTC_IRPT_MASK);
 			XGpio_InterruptGlobalEnable( &GPIOButton );
 		}
 	}
 	configASSERT( ( status == pdPASS ) );
-	// GPIOButton channel 1 is an 16-bit output port. // Pushbutton
-	// GPIOButton channel 2 is an 16-bit output port. // Switch
-	XGpio_SetDataDirection(&GPIOButton, GPIO_1_Channel_1, 0x00);
-	XGpio_SetDataDirection(&GPIOButton, GPIO_1_Channel_2, 0x00);
-
 	NX4IO_SSEG_setSSEG_DATA(SSEGLO, 0x4);
 	//Initialize OLED
 	OLEDrgb_begin(&pmodOLEDrgb_inst, RGBDSPLY_GPIO_BASEADDR, RGBDSPLY_SPI_BASEADDR);
@@ -814,7 +811,7 @@ void GreenLED_Clear(){
 
 
 void SSEG_Update( pid_vars* pid_vars){
-	u32_ss_disp_val = (pid_vars->setpoint_target  * 10000) + (pid_vars->setpoint_current); //simple answer...
+	u32_ss_disp_val = (pid_vars->setpoint_target  * 10000) + (pid_vars->RPM_Target); //simple answer...
 	NX4IO_SSEG_putU32Dec(u32_ss_disp_val,0);
 }
 
@@ -1100,7 +1097,7 @@ void parameter_input_thread(void *p){
 		pid_vars_OLED.direction = ROT_ENC_State_Update();
 
 		//TODO Turn this back on once interrupts on
-		//if(xSemaphoreTake(binary_sem,0)){
+		//if(xSemaphoreTake(binary_sem,10)){
 			//Update Push Button
 			PshBtn_Update(&pid_vars_OLED);
 			//Update Switches
@@ -1153,7 +1150,7 @@ void PID_Controller_Thread(){
 
 		//Calc Integral
 		//Limit high and low
-		if(pid_vars_PIDLocal.RPM_Error < (pid_vars_PIDLocal.RPM_Target/10)){
+		if(pid_vars_PIDLocal.RPM_Error < (pid_vars_PIDLocal.RPM_Target/100)){
 			pid_vars_PIDLocal.integral = (pid_vars_PIDLocal.integral + (double)pid_vars_PIDLocal.RPM_Error);
 		}
 		/*
@@ -1191,12 +1188,14 @@ void PID_Controller_Thread(){
 
 
 		//Debug sweep python read from serial
-		xil_printf("RPM_C: %.4d,RPM_T:%.4d,Kp:%.5d,Ki:%.4d,Kd:%.5d\r\n",
+		/*xil_printf("RPM_C: %.4d,RPM_T:%.4d,Kp:%.5d,Ki:%.4d,Kd:%.5d\r\n",
 				pid_vars_PIDLocal.RPM_Current,pid_vars_PIDLocal.RPM_Target,
 				(int)pid_vars_PIDLocal.RPM_Error, (int)pid_vars_PIDLocal.integral, (int)pid_vars_PIDLocal.derivative);
+		*/
+		xil_printf("%d,%d\r\n", pid_vars_PIDLocal.RPM_Current,pid_vars_PIDLocal.RPM_Target);
 
 		//Put the setpoint PWM target into the motor
-		xil_printf("PWM Output %d\r\n",(int)pid_vars_PIDLocal.setpoint);
+		//xil_printf("PWM Output %d\r\n",(int)pid_vars_PIDLocal.setpoint);
 		PMODHB3_setPWM(pid_vars_PIDLocal.setpoint);
 
 
@@ -1311,7 +1310,8 @@ void OLED_Clear(){
 * Enables a semaphore for the gpio input function thread
 * Clears the interrupt instance
  *****************************************************************************/
-void GPIO_PBSWITCH_Handler(void){
+void GPIO_PBSWITCH_Handler(void *p){
+	xil_printf("I AM HERE@@@@\r\n");
 	xSemaphoreGiveFromISR(binary_sem,NULL);
 	XGpio_InterruptClear( &GPIOButton, 1);
 }

@@ -39,3 +39,5 @@ platform generate -domains
 platform clean
 platform clean
 platform generate
+platform active {FreeRTOS_P3_Update}
+platform generate -domains freertos10_xilinx_domain 
